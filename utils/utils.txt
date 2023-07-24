@@ -1,0 +1,1 @@
+Most likely you will have some JS functions which you will use over and over again. I would recommend you to outsource them into separate files.

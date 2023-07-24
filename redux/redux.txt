@@ -1,0 +1,1 @@
+You only need this folder if you use the React Context API. If you use Redux, MobX, Recoil, or any other state management library you will most likely have different folders.
