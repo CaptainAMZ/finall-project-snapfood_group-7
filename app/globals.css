@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer {
+  @font-face {
+      font-family: "Vazirmatn-Regular";
+      src: url("./font/Vazirmatn-Regular.ttf");
+  }
+  @font-face {
+      font-family: "Vazirmatn-Medium";
+      src: url("./font/Vazirmatn-Medium.ttf");
+  }
+  @font-face {
+      font-family: "Vazirmatn-Semibo";
+      src: url("./font/Vazirmatn-Semibo.ttf");
+  }
+  @font-face {
+      font-family: "Vazirmatn-Thin";
+      src: url("./font/Vazirmatn-Thin.ttf");
+  }
+  @font-face {
+      font-family: "Vazirmatn-Thin";
+      src: url("./font/Vazirmatn-Thin.ttf");
+  }
+  @font-face {
+      font-family: "Vazirmatn-Thin";
+      src: url("./font/Vazirmatn-Thin.ttf");
+  }
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
