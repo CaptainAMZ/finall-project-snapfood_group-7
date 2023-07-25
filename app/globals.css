@@ -2,30 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+@layer components {
+  
+}
+
 @layer {
+  
   @font-face {
     font-family: "Vazirmatn-Regular";
-    src: url("./font/Vazirmatn-Regular.ttf");
+    src: url("../public/font/Vazirmatn-Regular.ttf");
   }
 
   @font-face {
     font-family: "Vazirmatn-Medium";
-    src: url("./font/Vazirmatn-Medium.ttf");
+    src: url("../public/font/Vazirmatn-Medium.ttf");
   }
 
   @font-face {
     font-family: "Vazirmatn-SemiBold";
-    src: url("./font/Vazirmatn-SemiBold.ttf");
+    src: url("../public/font/Vazirmatn-SemiBold.ttf");
   }
 
   @font-face {
     font-family: "Vazirmatn-Bold";
-    src: url("./font/Vazirmatn-Bold.ttf");
+    src: url("../public/font/Vazirmatn-Bold.ttf");
   }
 
   @font-face {
     font-family: "Vazirmatn-ExtraBold";
-    src: url("./font/Vazirmatn-ExtraBold.ttf");
+    src: url("../public/font/Vazirmatn-ExtraBold.ttf");
   }
 }
 
