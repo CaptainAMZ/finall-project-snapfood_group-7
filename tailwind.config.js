@@ -7,6 +7,23 @@ module.exports = {
   ],
   theme: {
 
+    zIndex: {
+      '999': '999',
+    },
+
+    boxShadow: {
+      'header1': 'rgba(58, 61, 66, 0.06) 0px 1px 0px',
+      'header5':  'rgba(0, 0, 0, 0.05) 0px 2px 8px -2px',
+    },
+
+    colors: {
+      'location': 'rgb(24, 28, 32)',
+    },
+
+    height: {
+      '4.5': '4.5rem',
+    },
+
     screens : {
       "xs" : "320px",
       "sm" : "600px",
