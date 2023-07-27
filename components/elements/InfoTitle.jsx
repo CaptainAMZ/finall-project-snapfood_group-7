@@ -6,9 +6,9 @@ import FastFoodCategoryList from './FastFoodCategoryList'
 
 export default function InfoTitle() {
   return (
-    <div className='w-[100%] p-[16px] font-vmd  rounded-lg  '>
+    <div className='w-[100%] p-[16px] font-vmd  rounded-lg'>
     <div className='flex w-[100%]  mb-spacing-4'>
-        <div className='pl-spacing-2' >
+        <div className='pl-spacing-2 min-w-[100px]'  >
            <Image
            src="/images/5ced6a4b46383.png"
            width={100}
