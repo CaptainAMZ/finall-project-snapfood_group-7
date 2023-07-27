@@ -52,20 +52,20 @@ export default function Header() {
 
                    
                 
-                <div className='end-spacing-0 w-spacing-15  p-spacing-2 absolute left-spacing-0'>
+                <div className='flex items-center end-spacing-0 w-spacing-15  p-spacing-2 absolute m-auto max-h-spacing-6 rounded-lgg left-spacing-0 md:right-spacing-0 md:w-29 bg-surface-dark '>
 
                     <Image className='ml-spacing-1' src={search}
                                                     width={20}
                                                     height={20}
                                                     alt="search" />
-                        <p className='hidden'>
+                        <p className='hidden md:inline-block text-inactive-dark text-start font-vrg leading-lineHeight-default tracking-tighter'>
                                     جست و جو در اسنپ فود
                         </p>
 
                 </div>
 
 
-                <div className=' flex items-center z-999'> 
+                <div className=' flex items-center z-999 gap-x-spacing-3'> 
 
                             <div className='p-spacing-2 cursor-pointer items-baseline flex'>
 
@@ -88,7 +88,7 @@ export default function Header() {
                                                     alt="order" />
 
                                 <p className='hidden 
-                                md:inline-block ml-spacing-1 font-vrg leading-lineHeight-body text-surface-overlay text-start text-vm tracking-tighter cursor-pointer '>سفارش ها </p>
+                                md:inline-block  ml-spacing-1  font-vrg leading-lineHeight-body text-surface-overlay text-start text-vm tracking-tighter cursor-pointer '>سفارش ها </p>
                              </div>
                 </div>
             </div>
