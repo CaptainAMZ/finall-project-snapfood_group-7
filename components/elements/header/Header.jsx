@@ -34,7 +34,8 @@ export default function Header() {
                         <div className='me-spacing-12 flex cursor-pointer' >
                             
                             <div className='flex justify-center items-baseline '>
-                                <span className='pt-spacing-13 font-vrg text-vsm leading-lineHeight-tiny inline-block text-surface-overlay min-w-29 max-w-29 opacity-60 truncate w-auto ' >
+                                <span className='pt-spacing-13 font-vrg text-vsm leading-lineHeight-tiny inline-block text-surface-overlay min-w-29 max-w-29 opacity-60 truncate w-auto 
+                                sm:max-w-[calc(57vw-85px)] sm:min-w-0' >
                                      ابوذر، پرستار، امیر حسین معماری</span>
                                 <Image className='ms-spacing-14 mt-spacing-11' src={down}
                                                 width={17}
@@ -86,7 +87,8 @@ export default function Header() {
                                                     height={28}
                                                     alt="order" />
 
-                                <p className='hidden'>سفارش ها </p>
+                                <p className='hidden 
+                                md:inline-block ml-spacing-1 font-vrg leading-lineHeight-body text-surface-overlay text-start text-vm tracking-tighter cursor-pointer '>سفارش ها </p>
                              </div>
                 </div>
             </div>
