@@ -160,22 +160,23 @@ module.exports = {
 
       minWidth: {
         '29': '29vw',
+        '9.375':'9.375rem'
         
         
       },
 
       maxWidth:{
         '29': '29vw',
-        '20':'10vw',
+        '20':'10vw'
       },
       borderRadius:{
         'lgg': '.625rem'
       },
       zIndex: {
-        '999': '999',
+        '999': '999'
       },
       width: {
-        '29': '29vw',
+        '29': '29vw'
       }
         
     },
