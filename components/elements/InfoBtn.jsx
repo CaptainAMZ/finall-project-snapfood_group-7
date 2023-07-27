@@ -12,7 +12,7 @@ export default function InfoBtn() {
 
   return (
     <div>
-     <button className='w-full text-center bg-white py-2 rounded-full text-green-600 shadow-xl mb-4' onClick={modalHandler}> Customer commant</button>
+     <button className='w-full text-center bg-surface-main shadow-shadows-high p-spacing-1 rounded-full font-vrg text-scales-default text-accent2-main border-borders-xs' onClick={modalHandler}> اطلاعات و نظرات</button>
     </div>
   )
 }
