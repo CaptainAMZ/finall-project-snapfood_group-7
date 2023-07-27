@@ -135,14 +135,50 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+
+      willChange: {
+        'right-top': 'right, top',
+      },
       fontFamily: {
         "vrg": "Vazirmatn-Regular",
         "vmd": "Vazirmatn-Medium",
         "vsb": "Vazirmatn-SemiBold",
         "vb": "Vazirmatn-Bold",
         "vxb": "Vazirmatn-ExtraBold"
+      },
+
+      fontSize: {
+        vsm: '0.625rem',
+        '.75':'.75rem',
+        vm:'.875rem'
+        
+      },
+
+      minWidth: {
+        '29': '29vw',
+        '9.375':'9.375rem',
+        '5.5':'5.5rem'
+        
+        
+      },
+
+      maxWidth:{
+        '29': '29vw',
+        '20':'10vw'
+      },
+      borderRadius:{
+        'lgg': '.625rem'
+      },
+      zIndex: {
+        '999': '999'
+      },
+      width: {
+        '29': '29vw'
       }
+        
     },
   },
   plugins: [],
 }
+
+
