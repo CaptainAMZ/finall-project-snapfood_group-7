@@ -52,11 +52,11 @@ export default function Header() {
 
                    
                 
-                <div className='flex items-center end-spacing-0 w-spacing-15  p-spacing-2 absolute m-auto max-h-spacing-6 rounded-lgg left-spacing-0 md:right-spacing-0 md:w-29 bg-surface-dark '>
+                <div className='flex items-center end-spacing-0 w-spacing-15  p-spacing-2 absolute m-auto max-h-spacing-6 rounded-lgg left-spacing-0 md:right-spacing-0 md:w-29 md:bg-surface-dark '>
 
                     <Image className='ml-spacing-1' src={search}
-                                                    width={20}
-                                                    height={20}
+                                                    width={12}
+                                                    height={12}
                                                     alt="search" />
                         <p className='hidden md:inline-block text-inactive-dark text-start font-vrg leading-lineHeight-default tracking-tighter'>
                                     جست و جو در اسنپ فود
@@ -65,13 +65,13 @@ export default function Header() {
                 </div>
 
 
-                <div className=' flex items-center z-999 gap-x-spacing-3'> 
+                <div className=' flex items-center z-999 md:gap-x-spacing-3'> 
 
                             <div className='p-spacing-2 cursor-pointer items-baseline flex'>
 
                                  <Image className='ml-spacing-1 block cursor-pointer' src={person}
-                                                    width={20}
-                                                    height={20}
+                                                    width={12}
+                                                    height={14}
                                                     alt="person" />
                                    
 
@@ -83,12 +83,13 @@ export default function Header() {
                              <div className=' relative cursor-pointer flex max-h-spacing-6 mr-spacing-2 rounded-lgg'>
                                             
                                 <Image className='ml-spacing-1 ' src={order}
-                                                    width={20}
-                                                    height={28}
+                                                    width={12}
+                                                    height={12}
                                                     alt="order" />
 
                                 <p className='hidden 
-                                md:inline-block  ml-spacing-1  font-vrg leading-lineHeight-body text-surface-overlay text-start text-vm tracking-tighter cursor-pointer '>سفارش ها </p>
+                                md:inline-block  md:ml-spacing-1   md:font-vrg  md:leading-lineHeight-body md:text-surface-overlay  md:text-start  md:text-vm  md:tracking-tighter  md:cursor-pointer '
+                                >سفارش ها </p>
                              </div>
                 </div>
             </div>
