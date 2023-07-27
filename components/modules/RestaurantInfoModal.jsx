@@ -1,8 +1,12 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 
 export default function RestaurantInfoModal() {
 
+    const[modal, openModal] =  useState(false)
 
+      
 
   return (
     <div>
