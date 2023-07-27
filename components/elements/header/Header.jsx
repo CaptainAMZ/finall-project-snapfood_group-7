@@ -15,13 +15,13 @@ export default function Header() {
     <div className='position sticky transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-999 w-full'>
         <header className='w-full bg-white flex flex-col'>
             <div className=' flex justify-between  items-center p-spacing-2  max-h-spacing-9'>
-                <div className='flex-row items-center' >
+                <div className='flex items-center' >
 
-                    <a href="" className='hidden'>
+                    <a href="" className='hidden sm:block ml-spacing-5 outline-none cursor-pointer'>
                         <Image  src={logo}
-                                        width={50}
-                                         height={50}
-                                         alt="Picture of the author"/>       
+                                        width={68}
+                                         height={34}
+                                         alt="logo"/>       
                     </a>
                     <div className='max-h-spacing-5 p-spacing-11 cursor-pointer  inline-flex items-center  '>
                         
@@ -54,8 +54,8 @@ export default function Header() {
                 <div className='end-spacing-0 w-spacing-15  p-spacing-2 absolute left-spacing-0'>
 
                     <Image className='ml-spacing-1' src={search}
-                                                    width={19}
-                                                    height={19}
+                                                    width={20}
+                                                    height={20}
                                                     alt="search" />
                         <p className='hidden'>
                                     جست و جو در اسنپ فود
@@ -69,8 +69,8 @@ export default function Header() {
                             <div className='p-spacing-2 cursor-pointer items-baseline flex'>
 
                                  <Image className='ml-spacing-1 block cursor-pointer' src={person}
-                                                    width={17}
-                                                    height={18}
+                                                    width={20}
+                                                    height={20}
                                                     alt="person" />
                                    
 
