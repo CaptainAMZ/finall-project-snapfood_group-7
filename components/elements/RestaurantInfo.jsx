@@ -1,6 +1,5 @@
 import React from 'react'
 import InfoTitle from './InfoTitle'
-
 export default function RestaurantInfo() {
   return (
     <div className='w-full min-h-screen pt-[68px] px-[40px] bg-surface-dark'>
@@ -17,6 +16,7 @@ export default function RestaurantInfo() {
         <div>
             Retaurant info delivery and cart section
         </div>
+        
     </div>
     </div>
   )

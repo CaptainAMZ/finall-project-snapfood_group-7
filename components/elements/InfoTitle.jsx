@@ -2,10 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import InfoBtn from './InfoBtn'
 import FoodCategoryList from './FoodCategoryList'
+import FastFoodCategoryList from './FastFoodCategoryList'
 
 export default function InfoTitle() {
   return (
-    <div className=' w-[100%] p-[16px] font-vmd  rounded-lg  '>
+    <div className='w-[100%] p-[16px] font-vmd  rounded-lg  '>
     <div className='flex w-[100%]  mb-spacing-4'>
         <div className='pl-spacing-2' >
            <Image
@@ -37,6 +38,10 @@ export default function InfoTitle() {
         <div className='w-full'>
             <FoodCategoryList/>
         </div>
+        <div className='w-full'>
+            <FastFoodCategoryList/>
+        </div>
+        
     </div>
   )
 }

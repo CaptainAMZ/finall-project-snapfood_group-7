@@ -135,6 +135,10 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+
+      willChange: {
+        'right-top': 'right, top',
+      },
       fontFamily: {
         "vrg": "Vazirmatn-Regular",
         "vmd": "Vazirmatn-Medium",
@@ -144,7 +148,9 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
   
 }
 

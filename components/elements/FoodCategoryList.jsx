@@ -6,7 +6,7 @@ import React from 'react'
 export default function FoodCategoryList() {
 
   const listHandler = () =>{
-
+      console.log("category")
   }
 
   return (
