@@ -173,6 +173,9 @@ module.exports = {
       },
       zIndex: {
         '999': '999',
+      },
+      width: {
+        '29': '29vw',
       }
         
     },
