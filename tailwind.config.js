@@ -114,6 +114,7 @@ module.exports = {
       "spacing-15": "10.5625rem",
       
       
+      
 
     },
 
@@ -153,14 +154,19 @@ module.exports = {
 
       fontSize: {
         vsm: '0.625rem',
+        vm:'.875rem'
+        
       },
 
       minWidth: {
         '29': '29vw',
+        
+        
       },
 
       maxWidth:{
         '29': '29vw',
+        '20':'10vw',
       },
       borderRadius:{
         'lgg': '.625rem'
