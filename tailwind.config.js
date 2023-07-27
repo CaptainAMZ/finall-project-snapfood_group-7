@@ -107,6 +107,14 @@ module.exports = {
       "spacing-8": "4rem",
       "spacing-9": "4.5rem",
       "spacing-10": "5rem",
+      "spacing-11":".25rem",
+      "spacing-12" : ".625rem",
+      "spacing-13": ".125rem",
+      "spacing-14": ".6rem",
+      "spacing-15": "10.5625rem",
+      
+      
+
     },
 
     borderWidth: {
@@ -141,8 +149,27 @@ module.exports = {
         "vsb": "Vazirmatn-SemiBold",
         "vb": "Vazirmatn-Bold",
         "vxb": "Vazirmatn-ExtraBold"
+      },
+
+      fontSize: {
+        vsm: '0.625rem',
+      },
+
+      minWidth: {
+        '29': '29vw',
+      },
+
+      maxWidth:{
+        '29': '29vw',
+      },
+      borderRadius:{
+        'lgg': '.625rem'
+      },
+      zIndex: {
+        '999': '999',
       }
+        
     },
-  },
-  plugins: [],
+    plugins: []
+  }
 }
