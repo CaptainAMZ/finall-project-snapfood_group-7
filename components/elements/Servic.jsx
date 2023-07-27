@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import food from "../../../public/images/images-home/service-food.png"; 
+import food from "../../public/images/images-home/service-food.png"; 
 
 export default function Servic() {
   return (

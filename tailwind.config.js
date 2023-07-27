@@ -154,13 +154,15 @@ module.exports = {
 
       fontSize: {
         vsm: '0.625rem',
+        '.75':'.75rem',
         vm:'.875rem'
         
       },
 
       minWidth: {
         '29': '29vw',
-        '9.375':'9.375rem'
+        '9.375':'9.375rem',
+        '5.5':'5.5rem'
         
         
       },
