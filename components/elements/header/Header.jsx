@@ -50,7 +50,7 @@ export default function Header() {
                 </div>
 
                    
-
+                
                 <div className='end-spacing-0 w-spacing-15  p-spacing-2 absolute left-spacing-0'>
 
                     <Image className='ml-spacing-1' src={search}
