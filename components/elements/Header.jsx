@@ -12,7 +12,7 @@ import Servic from "./Service";
 
 export default function Header() {
   return (
-    <div className="position sticky transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-999 w-full">
+   
       <header className="w-full bg-white flex flex-col">
         <div className=" flex justify-between  items-center p-spacing-2  max-h-spacing-9">
           <div className="flex items-center">
@@ -93,9 +93,7 @@ export default function Header() {
           </div>
         </div>
       </header>
-    </div>
-    // <div>
-    //     <Servic/>
-    // </div>
+    
+    
   );
 }
