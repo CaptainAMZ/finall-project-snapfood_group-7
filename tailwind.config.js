@@ -107,8 +107,11 @@ module.exports = {
       "spacing-8": "4rem",
       "spacing-9": "4.5rem",
       "spacing-10": "5rem",
-      
-
+      "spacing-11":".25rem",
+      "spacing-12" : ".625rem",
+      "spacing-13": ".125rem",
+      "spacing-14": ".6rem",
+      "spacing-15": "10.5625rem",
     },
 
     borderWidth: {
@@ -136,10 +139,6 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-
-      willChange: {
-        'right-top': 'right, top',
       },
       fontFamily: {
         "vrg": "Vazirmatn-Regular",
@@ -183,7 +182,12 @@ module.exports = {
 
     
     },
-  plugins: [],
+  },
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
 
-}
+
+
+
