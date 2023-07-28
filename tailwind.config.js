@@ -85,6 +85,7 @@ module.exports = {
       "tangerine-yellow-color": "#ffce00",
       "snappExpress-color": "#ff661f",
       "modal-backdrop": "#40404066",
+      'white': 'rgb(255,255,255)',
     },
     lineHeight: {
       "lineHeight-default": "1.5rem",
@@ -112,6 +113,14 @@ module.exports = {
       "spacing-13": ".125rem",
       "spacing-14": ".6rem",
       "spacing-15": "10.5625rem",
+      "spacing-16": "5.937rem",
+      "spacing-17": "0.8125rem",
+      "spacing-18": "0.75rem",
+      "spacing-19": "0.8125rem",
+      "spacing-20": "0.1875rem",
+
+
+
     },
 
     borderWidth: {
@@ -133,6 +142,7 @@ module.exports = {
       "md": "960px",
       "lg": "1280px",
       "xs": "1536px",
+
     },
     extend: {
       backgroundImage: {
@@ -151,7 +161,10 @@ module.exports = {
       fontSize: {
         vsm: '0.625rem',
         '.75':'.75rem',
-        vm:'.875rem'
+        vm:'.875rem',
+        '1':'1rem',
+       
+      
         
       },
 
@@ -161,11 +174,15 @@ module.exports = {
         '5.5':'5.5rem'
         
         
+        
       },
 
       maxWidth:{
         '29': '29vw',
-        '20':'10vw'
+        '20':'10vw',
+        '85.375':'85.375rem',
+        '1/2':'50%',
+        '1/3':'33.333%',
       },
       borderRadius:{
         'lgg': '.625rem'
@@ -178,7 +195,18 @@ module.exports = {
       },
       boxShadow: {
         'head': 'rgba(58, 61, 66, 0.06) 0px 1px 0px, rgba(0, 0, 0, 0.05) 0px 2px 8px -2px',
+        'category':'rgba(58, 61, 66, 0.06) 0px 1px 0px, rgba(0, 0, 0, 0.3) 0px 8px 32px -16px',
       },
+
+
+      screen:{
+        '37.49875':'37.49875',
+        
+      }
+
+     
+      
+     
 
     
     },
