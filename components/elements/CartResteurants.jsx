@@ -39,7 +39,11 @@ function CartResteurants() {
           </div>
         </div>
       </div>
-      <div></div>
+      <div>
+        <div>
+          <img src="./public/images/rick.png" alt="rick"/>
+        </div>
+      </div>
  </div>
   );
 }
