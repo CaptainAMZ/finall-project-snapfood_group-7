@@ -3,6 +3,10 @@
 .btn{
   @apply mb-spacing-2 focus:font-vsb pl-spacing-4 relative block w-full text-left
 }
+
+
+
+
 .btn::after{
   @apply content-[''] bg-surface-overlay h-[0px] w-[2px] absolute rounded-lg opacity-0 mr-[20px]
   transition
@@ -74,24 +78,26 @@ body {
 }
 
 
+
+
 /* width */
-::-webkit-scrollbar {
+::-webkit-scrollbar:horizontal {
   width: 10px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track:horizontal  {
   background: #f0efef;
   border-radius: 5px;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:horizontal {
   background: #bebebeb6;
   border-radius: 5px;
   border: 2px solid #fff;
 }
  /* Handle on hover  */
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover:horizontal {
   background: #c5c5c5;
 }
