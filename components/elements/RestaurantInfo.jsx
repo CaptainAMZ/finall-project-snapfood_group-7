@@ -10,8 +10,13 @@ export default function RestaurantInfo() {
             {/* Retaurant info Title section */}
             <InfoTitle/>
         </div>
-        <div>
-            Retaurant info Food List section
+        <div className='md:max-w-[100%] text-center px-spacing-3 max-w-[50rem] flex flex-col justify-center mt-spacing-3 
+        md:flex-row '>
+            {/* Retaurant info Food List section */}
+           <div className='md:max-w-[700px]  '>
+           <FoodList/>
+           </div>
+        <div className=' bg-accent-light md:max-w-[100%] '>
         </div>
         <div>
             Retaurant info delivery and cart section
