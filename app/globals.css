@@ -72,3 +72,26 @@ body {
  
  
 }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f0efef;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bebebeb6;
+  border-radius: 5px;
+  border: 2px solid #fff;
+}
+ /* Handle on hover  */
+::-webkit-scrollbar-thumb:hover {
+  background: #c5c5c5;
+}
