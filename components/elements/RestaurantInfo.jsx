@@ -14,7 +14,9 @@ export default function RestaurantInfo() {
                 Retaurant info Food List section
             </div>
             {/* DeliveryInfo */}
-            <PageSides/>
+            <div className='basis-1/4 max-w-full xs:basis-full'>
+                <PageSides/>
+            </div>
         </div>
     </div>
   )
