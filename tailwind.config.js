@@ -185,6 +185,7 @@ module.exports = {
       borderRadius:{
         'lgg': '.625rem',
         '0.375':'0.375rem',
+        '3':'3rem'
       },
 
       borderWidth:{
