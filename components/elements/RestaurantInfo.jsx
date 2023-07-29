@@ -1,20 +1,23 @@
 import React from 'react'
 import InfoTitle from './InfoTitle'
+import FoodList from './FoodList'
 export default function RestaurantInfo() {
   return (
-    <div className='w-full min-h-screen pt-[68px] px-[40px] bg-surface-dark'>
-        <h1 className='text-center font-bold'>RestaurantInfo page(main Page)</h1>
-    <div className='flex flex-col items-center justify-center md:justify-between md:flex-row'>
+    <div className='w-full min-h-screen pt-[68px]  bg-surface-main lg:max-w-[1440px] '>
+    <div className='flex flex-col  md:flex-row items-center md:items-start md:justify-center gap-spacing-3'>
 
-        <div>
+        <div className='md:w-[25%] w-[100%]'>
             {/* Retaurant info Title section */}
             <InfoTitle/>
         </div>
-        <div>
-            Retaurant info Food List section
+        <div className='md:max-w-[100%] text-center px-spacing-3 max-w-[50rem] flex flex-col justify-center mt-spacing-3 
+        md:flex-row '>
+            {/* Retaurant info Food List section */}
+           <div className='md:max-w-[700px]  '>
+           <FoodList/>
+           </div>
+        <div className=' bg-accent-light md:max-w-[100%] '>
         </div>
-        <div>
-            Retaurant info delivery and cart section
         </div>
         
     </div>
