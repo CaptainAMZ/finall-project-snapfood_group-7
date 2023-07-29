@@ -24,7 +24,7 @@ export default function Orders() {
 
     // </div>
   <div className='' >
-    <div className='min-w-17.8125 w-21 absolute left-spacing-0  min-h-screen py-spacing-0 px-spacing-2 overflow-auto  shadow-shadows-modal animate-order max-h-90'>
+    <div className='min-w-[21rem] w-21 absolute left-spacing-0  min-h-screen py-spacing-0 px-spacing-2 overflow-auto  shadow-shadows-modal animate-order max-h-90'>
                     
       <div className='mt-spacing-2 flex flex-col items-start '>
 
