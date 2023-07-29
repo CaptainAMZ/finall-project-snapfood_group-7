@@ -112,6 +112,9 @@ module.exports = {
       "spacing-13": ".125rem",
       "spacing-14": ".6rem",
       "spacing-15": "10.5625rem",
+      "spacing-16":".75rem",
+      "spacing-17":".0625rem",
+      "spacing-18":".375rem",
       
       
       
@@ -162,23 +165,48 @@ module.exports = {
       minWidth: {
         '29': '29vw',
         '9.375':'9.375rem',
-        '5.5':'5.5rem'
+        '5.5':'5.5rem',
+        '17.8125':'17.8125rem',
+        '6.6875':'6.6875rem',
         
         
       },
 
       maxWidth:{
         '29': '29vw',
-        '20':'10vw'
+        '20':'10vw',
+        
       },
+
+      maxHeight: {
+        '90': '90vh',
+      },
+
       borderRadius:{
-        'lgg': '.625rem'
+        'lgg': '.625rem',
+        '0.375':'0.375rem',
+      },
+
+      borderWidth:{
+        '0.0625':'0.0625rem',
+        '.75':'0.75rem',
+        '0.09375':'0.09375rem',
+
       },
       zIndex: {
-        '999': '999'
+        '999': '999',
+        '10000':'10000',
       },
       width: {
-        '29': '29vw'
+        '29': '29vw',
+        '21':'21vw',
+      },
+      animation: {
+        'order': '0.3s ease 0s 1 normal forwards running  translate3d(-2rem, 0px, 0px);',
+      },
+
+      flex: {
+        '0': '0 0 auto'
       }
         
     },
