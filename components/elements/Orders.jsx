@@ -1,8 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import nanak from '../../public/images/images-home/nanak.jpg'
+import clock from '../../public/images/images-home/clock.svg'
 import Order from './OrderItem'
 import OrderItem from './OrderItem'
+
 
 export default function Orders() {
   return (
@@ -10,8 +11,11 @@ export default function Orders() {
     // <div id='modal-root'>
       
     //     
-    //        
-    //       
+    
+    // <div>
+
+    //   <OrderItem/>
+    //   </div>
 
 
     //    
@@ -31,6 +35,16 @@ export default function Orders() {
         <div className='mt-spacing-16 border-t-0.0625 border-r-0.0625 border-l-0.0625 border-carbon-alphaMedium rounded-t-xl'>
             <OrderItem/>
         </div>
+
+        <button className='h-[3.75rem] mt-spacing-11 mx-auto mb-spacing-0 inline-flex justify-center items-center cursor-pointer transition-all 
+        w-auto min-w-[6.6875rem] shadow-shadows-medium border-accent2-alphaLight rounded-3 py[1px] px-[6px]'>
+
+            <Image src={clock} width={17} height={18} />
+
+            <p className='mr-spacing-1 font-vsb text-vm leading-lineHeight-body text-accent2-main inline-block tracking-tight'>
+              مشاهده همه سفارش ها
+            </p>
+        </button>
 
       </div>
 
