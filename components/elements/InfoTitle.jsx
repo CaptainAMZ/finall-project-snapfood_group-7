@@ -17,7 +17,7 @@ export default function InfoTitle() {
            className='object-cover rounded-xl borders-lg border-borders-xs border-surface-light  '/>
         </div>
         <div className='flex flex-col h-0 '>
-        <div className='flex mb-10 flex-row justify-between items-center mb-spacing-4'>
+        <div className='flex mb-10 flex-row justify-between items-center'>
             <div className='flex flex-col pl-5 '>
                 <div className=' flex items-center justify-start'>
                 <p className='px-1 pl-spacing-1'>*</p>
