@@ -125,6 +125,9 @@ module.exports = {
         "spacing-13": ".125rem",
         "spacing-14": ".6rem",
         "spacing-15": "10.5625rem",
+        "spacing-16":".75rem",
+        "spacing-17":".0625rem",
+        "spacing-18":".375rem",
       },
   
       borderWidth: {
