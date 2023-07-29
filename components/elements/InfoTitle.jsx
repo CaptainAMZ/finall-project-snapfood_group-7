@@ -6,9 +6,9 @@ import FastFoodCategoryList from './FastFoodCategoryList'
 
 export default function InfoTitle() {
   return (
-    <div className='w-[100%] p-[16px] font-vmd  rounded-lg  '>
+    <div className='min-w-[300px] w-[100%] p-[16px] font-vmd  rounded-lg'>
     <div className='flex w-[100%]  mb-spacing-4'>
-        <div className='pl-spacing-2' >
+        <div className='pl-spacing-2 min-w-[100px]'  >
            <Image
            src="/images/5ced6a4b46383.png"
            width={100}
@@ -17,7 +17,7 @@ export default function InfoTitle() {
            className='object-cover rounded-xl borders-lg border-borders-xs border-surface-light  '/>
         </div>
         <div className='flex flex-col h-0 '>
-        <div className='flex mb-10 flex-row justify-between items-center mb-spacing-4'>
+        <div className='flex mb-10 flex-row justify-between items-center'>
             <div className='flex flex-col pl-5 '>
                 <div className=' flex items-center justify-start'>
                 <p className='px-1 pl-spacing-1'>*</p>
@@ -38,9 +38,9 @@ export default function InfoTitle() {
         <div className='w-full'>
             <FoodCategoryList/>
         </div>
-        <div className='w-full'>
+        {/* <div className='w-full'>
             <FastFoodCategoryList/>
-        </div>
+        </div> */}
         
     </div>
   )
