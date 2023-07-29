@@ -72,3 +72,28 @@ body {
   
  
 }
+
+::-webkit-scrollbar {
+  width: 14px;
+  background-color: #f4f4f4;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border: 3px solid #fff;
+  border-radius: 16px;
+  
+  transition: all .2s linear;
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: #0000;
+  border-radius: 7px;
+  cursor: pointer;
+}
