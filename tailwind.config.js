@@ -85,6 +85,7 @@ module.exports = {
       "tangerine-yellow-color": "#ffce00",
       "snappExpress-color": "#ff661f",
       "modal-backdrop": "#40404066",
+      "off-badge-color": "#F8EBF7",
     },
     lineHeight: {
       "lineHeight-default": "1.5rem",
