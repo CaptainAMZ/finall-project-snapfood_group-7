@@ -17,6 +17,7 @@ export default function RestaurantInfo() {
            <FoodList/>
            </div>
         <div className=' bg-accent-light md:max-w-[100%] '>
+          اثممنخخنحخ
         </div>
         </div>
         
