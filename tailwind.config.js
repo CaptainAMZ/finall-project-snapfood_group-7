@@ -161,7 +161,8 @@ module.exports = {
       fontSize: {
         vsm: '0.625rem',
         '.75':'.75rem',
-        vm:'.875rem'
+        vm:'.875rem',
+        '1.5':'1.5rem',
         
       },
 
