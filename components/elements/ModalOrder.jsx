@@ -36,7 +36,7 @@ export default function ModalOrder() {
                         <div className='mr-spacing-13 inline-flex'>
                           <div className=' mr-spacing-13 inline-flex items-center'>
                             <div className='mr-spacing-13 '>
-                              <span className='mr-spacing-13 font-vrg text-vm leading-lineHeight-body carbon-light '>
+                              <span className='mr-spacing-13 font-vsb text-vm leading-lineHeight-body carbon-light '>
                                         70,000
                               </span>
 
@@ -56,36 +56,82 @@ export default function ModalOrder() {
 
                   </div>
 
-                  <div>
-                    <span>
+                  <div className='h-8 px-spacing-2 flex items-center justify-between'>
+                    <span className=' font-vrg text-vm leading-lineHeight-body carbon-light'>
 
+
+
+                                            جمع کل 
                     </span>
 
                     <div>
-                          <div>
-                            <div>
-                              <span>
-
+                          
+                            
+                              <span className=' font-vrg text-vm leading-lineHeight-body carbon-light'>
+                                        70,000
                               </span>
 
-                              <span>
-
+                              <span className=' mr-spacing-13 font-vrg text-vm leading-lineHeight-body carbon-light'>
+                                        تومان
                               </span>
-                            </div>
-                          </div>
+                           
+                          
+                    </div>
+
+
+
+                  </div>
+                  <div className='h-8 px-spacing-2 flex items-center justify-between'>
+                    <span className=' font-vrg text-vm leading-lineHeight-body carbon-light'>
+
+
+
+                                           هزینه ارسال 
+                    </span>
+
+                    <div>
+                          
+                            
+                              <span className=' font-vrg text-vm leading-lineHeight-body carbon-light'>
+                                       12,000
+                              </span>
+
+                              <span className=' mr-spacing-13 font-vrg text-vm leading-lineHeight-body carbon-light'>
+                                        تومان
+                              </span>
+                           
+                          
                     </div>
 
 
 
                   </div>
 
-                    <div>
-                    
-                    </div>
+                  <div className='h-8 px-spacing-2 flex items-center justify-between'>
+                    <span className=' font-vsb text-vm leading-lineHeight-body carbon-main'>
+
+
+
+                                           مجموع
+                    </span>
 
                     <div>
-                    
+                          
+                            
+                              <span className=' font-vsb text-vm leading-lineHeight-body carbon-light'>
+                                       82,000
+                              </span>
+
+                              <span className=' mr-spacing-13 font-vrg text-vm leading-lineHeight-body carbon-light'>
+                                        تومان
+                              </span>
+                           
+                          
                     </div>
+
+
+
+                  </div>
                 </div>
             </div>
     </div>
