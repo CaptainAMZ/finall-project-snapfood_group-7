@@ -28,7 +28,8 @@ export default function Categories() {
         return (
          <Category type={item.type} img={item.img}/>
         );
-      })}
+      }
+      )}
     </div>
   </div>
   )
