@@ -1,24 +1,48 @@
+
+"use client"
 import Link from 'next/link'
-import React from 'react'
 import Image from 'next/image'
 import AddFoodBtn from './AddFoodBtn'
+import React, { useState } from 'react'
+import RestaurantInfoModal from '../modules/RestaurantInfoModal'
+import FoodModal from '../modules/FoodModal'
+
+
 
 export default function FoodCard() {
+
+  const[openModal, setOpenModal] = useState(false)
+
+  const handleOpenModal = (e) =>{
+    setOpenModal(true)
+      console.log("yess")
+
+      document.body.style.overflow = 'hidden';
+  }
+
+
+  const handleCloseModal = () =>{
+    setOpenModal(false)
+    document.body.style.overflow = 'scroll';
+    console.log("baste")
+  }
+
+
   return (
     
-    <div className='font-vrg  md:min-w-[50%] border-l-borders-xs border-t-borders-xs border-black-alphaMedium flex flex-col'>
-        <Link href="#" >
-        <div className=' font-vrg flex justify-between py-spacing-2 px-spacing-2 '>
+    <div className='font-vrg  md:w-[50%] border-l-borders-xs border-t-borders-xs border-black-alphaMedium'>
+        <Link href="#" onClick={handleOpenModal}>
+        <div className=' font-vrg flex justify-between py-spacing-2 px-spacing-2'>
           <div className='mt-spacing-2'>
             <h3 className='font-vmd text-scales-body text-surface-overlay'>سالاد فصل</h3>
             <p className='text-right font-vrg text-scales-caption text-carbon-light mt-spacing-1'>یک نفره</p>
           </div>
-          <div className='min-w-[150px] '>
+          <div className='md:w-[90px] '>
           <Image
             className='object-cover rounded-xl'
             src="/images/612c6182c8d3d.jpeg"
-            width={150}
-            height={150}
+            width={100}
+            height={100}
             alt=''
             />
           </div>
@@ -40,6 +64,14 @@ export default function FoodCard() {
            </div>
         </div>
       </Link>
+      <div>
+        {
+            openModal &&(<div className='fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-[100vh] z-50' >
+           <FoodModal closeModal={handleCloseModal}/>
+           </div>)
+           
+        }
+      </div>
         </div>
     
   )

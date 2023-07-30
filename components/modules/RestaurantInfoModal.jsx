@@ -9,7 +9,7 @@ export default function RestaurantInfoModal({closeModal}) {
 
   
   return (
-    <div className='w-[45rem] bg-surface-light min-h-[45rem] rounded-xl '>
+    <div className='w-[46rem] bg-surface-light min-h-[45rem] rounded-xl '>
       <div className='block p-spacing-3'>
       <button className='cursor-pointer block w-full text-right px-spacing-1' onClick={closeModal}>
       <Image
@@ -379,6 +379,8 @@ export default function RestaurantInfoModal({closeModal}) {
           </div>
           </div>
           </div>
+
+
           <div className='flex h-[72px] p-spacing-2 my-spacing-1 '>
             <h2 className='flex-1 text-scales-large text-surface-overlay'>نظرات کاربران</h2>
             <div className='flex items-center justify-start w-[50%]  '>
@@ -391,6 +393,9 @@ export default function RestaurantInfoModal({closeModal}) {
               </div>
             </div>
           </div>
+
+
+          
           <div className='flex flex-col '>
           <div className='flex px-spacing-2'>
             <div className='flex-col w-[30%] '>
@@ -515,6 +520,9 @@ export default function RestaurantInfoModal({closeModal}) {
                 </div>
             </div>
           </div>
+
+
+
 
           </div>
         </div>
