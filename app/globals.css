@@ -27,6 +27,10 @@
 @layer {
   
   @font-face {
+    font-family: "Vazirmatn-light";
+    src: url("../public/font/Vazirmatn-light.ttf");
+  }
+  @font-face {
     font-family: "Vazirmatn-Regular";
     src: url("../public/font/Vazirmatn-Regular.ttf");
   }

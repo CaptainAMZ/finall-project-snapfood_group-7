@@ -7,7 +7,16 @@ module.exports = {
   ],
   theme: {
 
-    height: {
+    
+    screens: {
+      "xs": "320px",
+      "sm": "600px",
+      "md": "960px",
+      "lg": "1280px",
+      "xs": "1536px",
+    },
+    extend: {
+      height: {
       "nav-size-center": "72px",
       "nav-size-not-center": "112px",
       "services-height": "106px",
@@ -21,6 +30,9 @@ module.exports = {
       "scales-large": "1.125rem",
       "scales-body": "0.875rem",
       "scales-tiny": "0.625rem",
+      vsm: '0.625rem',
+      '.75':'.75rem',
+      vm:'.875rem'
     },
 
     colors: {
@@ -126,21 +138,13 @@ module.exports = {
       "shadows-high": "0px 1px 0px rgba(58,61,66,0.06),0px 8px 32px -16px rgba(0,0,0,0.3)",
       "shadows-modal": "0px 2px 8px rgba(0,0,0,0.08),0px 8px 32px rgba(0,0,0,0.16)",
     },
-
-    screens: {
-      "xs": "320px",
-      "sm": "600px",
-      "md": "960px",
-      "lg": "1280px",
-      "xs": "1536px",
-    },
-    extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
+        "vl": "Vazirmatn-light",
         "vrg": "Vazirmatn-Regular",
         "vmd": "Vazirmatn-Medium",
         "vsb": "Vazirmatn-SemiBold",
@@ -148,12 +152,10 @@ module.exports = {
         "vxb": "Vazirmatn-ExtraBold"
       },
 
-      fontSize: {
-        vsm: '0.625rem',
-        '.75':'.75rem',
-        vm:'.875rem'
+      // fontSize: {
+       
         
-      },
+      // },
 
       minWidth: {
         '29': '29vw',
