@@ -5,22 +5,45 @@
 
 
 .btn{
-  @apply mb-spacing-2 focus:font-vsb pl-spacing-4 relative block w-full text-left
+  @apply mb-spacing-2 focus:font-vsb pl-spacing-3 relative block w-full 
 }
 
-.btn::after{
+/* .btn::after{
+>>>>>>> snap-food
   @apply content-[''] bg-surface-overlay h-[0px] w-[2px] absolute rounded-lg opacity-0 mr-[20px]
   transition
   
-}
-.btn:focus::after{
+} */
+/* .btn:focus::after{
   @apply opacity-100 h-[25px] 
+} */
+
+.star{
+  @apply pl-spacing-1
 }
+
 
 
 .scroll-hide::-webkit-scrollbar {
   display: none;
 }
+
+
+.revers-btn{
+  @apply mb-spacing-2 focus:font-vsb pr-spacing-2 relative block w-full 
+}
+/* .revers-btn::before{
+  @apply content-[''] bg-surface-overlay h-[0px] w-[2px] absolute rounded-lg  right-0 top-0
+  transition
+}
+
+.revers-btn:focus::before{
+  @apply opacity-100 h-[25px] 
+} */
+
+
+@tailwind utilities;
+
 
 
 *{
@@ -80,10 +103,7 @@
   }
 }
 
-body {
-  color:#3a3d42;
-  
-}
+
 
 
 ::-webkit-scrollbar-thumb {
@@ -100,3 +120,47 @@ body {
   border-radius: 7px;
   cursor: pointer;
 }
+body{
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
+      overflow-x: hidden;
+      background-color: #F9FAFB;
+
+}
+
+.flipped{
+  direction: ltr;
+}
+
+@media (min-width:600px) {
+  .flipped{
+    direction: rtl;
+  }
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f0efef;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bebebeb6;
+  border-radius: 5px;
+  border: 2px solid #fff;
+}
+ /* Handle on hover  */
+::-webkit-scrollbar-thumb:hover {
+  background: #c5c5c5;
+} 
+
