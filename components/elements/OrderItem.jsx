@@ -37,14 +37,14 @@ export default function OrderItem() {
         </div>
 
         <div className="mt-spacing-16 mb-spacing-1 flex justify-center">
-        <button className=" flex-1 h-[32px] ml-spacing-2 inline-flex items-center justify-center min-w-6.6875 transition-all w-auto border-0.09375 border-solid border-carbon-alphaLight rounded-0.375 bg-carbon-alphaLight bg-clip-padding py-spacing-17 px-spacing-18">
+        <button className=" flex-1 h-[32px] ml-spacing-2 inline-flex items-center justify-center min-w-6.6875 transition-all w-auto border-0.09375 border-solid  rounded-0.375 bg-carbon-alphaLight bg-clip-padding py-spacing-17 px-spacing-18">
           <Image src={factor} width={16} height={16} />
           <p className="mr-spacing-1  font-vsb text-vm leading-lineHeight-body text-carbon-main text-start inline-block flex-0">
             مشاهده فاکتور
           </p>
         </button>
 
-        <button className=" flex-1 h-[32px]  inline-flex items-center justify-center min-w-6.6875 transition-all w-auto border-0.09375 border-solid border-carbon-alphaLight rounded-0.375 bg-carbon-alphaLight  bg-clip-padding py-spacing-17 px-spacing-18">
+        <button className=" flex-1 h-[32px]  inline-flex items-center justify-center min-w-6.6875 transition-all w-auto border-0.09375 border-solid  rounded-0.375 bg-carbon-alphaLight  bg-clip-padding py-spacing-17 px-spacing-18">
           <Image src={cycle} width={16} height={16} />
           <p className="mr-spacing-1  font-vsb text-vm leading-lineHeight-body text-carbon-main text-start inline-block flex-0">
             سفارش مجدد

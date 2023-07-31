@@ -11,20 +11,24 @@ export default function OrderDiv() {
     const [modal , setModal] = useState(false);
 
 
-    const closeModalHandler =() =>{
-        setModal(false);
-        document.body.style.overflow = 'scroll';
+
+    const closeModalHandler =(e) =>{
+
+    if(e.target.className.includes('CLOSE'))setModal(false);
+    
+        
 
     }
 
     const openModalHandler = (e)=>{
         setModal(true)
 
-        document.body.style.overflow='hidden';
+       
     }
   return (
+    <>
     
-    <div onClick={ openModalHandler } className="  relative cursor-pointer flex max-h-spacing-6 mr-spacing-2 rounded-lgg">
+    <div onClick={ openModalHandler } className="  relative cursor-pointer flex max-h-spacing-6 mr-spacing-2 rounded-lgg ">
             <Image
             className="ml-spacing-1 "
             src={order}
@@ -37,14 +41,21 @@ export default function OrderDiv() {
             سفارش ها
             </p>
 
-            {modal && <div className='fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-screen z-50'>
-                
-                    <Orders closeModal />
-                </div>
-
-            }
+           
            
             
-  </div>
+    </div>
+
+            {modal && <div  onClick={closeModalHandler} className='CLOSE  fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-screen z-50'>
+                            
+            <Orders  />
+            </div>
+            }
+        
+    </>
+    
+  
+
+
   )
 }

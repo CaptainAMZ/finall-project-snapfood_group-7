@@ -187,7 +187,8 @@ module.exports = {
         '1/6':'16.66667',
       },
       borderRadius:{
-        'lgg': '.625rem'
+        'lgg': '.625rem',
+        '0.375':'0.375rem'
       },
       zIndex: {
         '999': '999'

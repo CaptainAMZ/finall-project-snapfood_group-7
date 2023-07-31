@@ -8,7 +8,7 @@ import OrderItem from './OrderItem'
 
 
 
-export default function Orders({show}) {
+export default function Orders() {
 
 
  
@@ -30,15 +30,18 @@ export default function Orders({show}) {
   
       // </div>
     
-      <div className=' bg-white min-w-[17.8125rem] w-21 absolute left-spacing-0  min-h-screen py-spacing-0 px-spacing-2 overflow-auto  shadow-shadows-modal animate-order max-h-90'>
+      <div  className=' scroll-hide bg-white min-w-[21rem] sm:min-w-[24rem] md:min-w-[25rem]  w-21 absolute left-spacing-0  min-h-screen py-spacing-0 px-spacing-2 overflow-y-scroll shadow-shadows-modal animate-order max-h-[100px]'>
                       
-        <div className='mt-spacing-2 flex flex-col items-start '>
+        <div className='mt-spacing-2 flex flex-col items-start w-full'>
   
           <p className='font-vsb text-.75 leading-lineHeight-caption inline-block text-carbon-light text-start w-full'>
                                         سفارش های پیشین
           </p>
           
-          <div className='mt-spacing-16 border-t-[0.0625rem] border-r-[0.0625rem] border-l-[0.0625rem] border-carbon-alphaMedium rounded-t-xl'>
+          <div className='mt-spacing-16 border-t-[0.0625rem] border-r-[0.0625rem] border-l-[0.0625rem] border-carbon-alphaMedium rounded-t-xl  w-full'>
+              <OrderItem/>
+              <OrderItem/>
+              <OrderItem/>
               <OrderItem/>
           </div>
   
