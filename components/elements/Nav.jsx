@@ -14,7 +14,7 @@ import meat from "../../public/images/images-home/service-meat.png";
 export default function Nav() {
   const services = [
     { service: "رستوران", img: food },
-    { service: "سوپیرمارکت", img: supermarket },
+    { service: "سویرمارکت", img: supermarket },
     { service: "کافه", img: cafe },
     { service: "شیرینی", img: sweet },
     { service: "نانوایی", img: bakery },
@@ -26,7 +26,7 @@ export default function Nav() {
   ];
 
   return (
-    <nav  className="pt-spacing-2 over overflow-x-auto flex items-baseline  ">
+    <nav  className="pt-spacing-2 over overflow-x-auto flex items-baseline bg-white ">
       {services.map((item) => (
         <Service service={item.service} img={item.img} />
       ))}

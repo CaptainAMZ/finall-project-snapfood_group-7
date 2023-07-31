@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -8,9 +8,13 @@ import logo from "../../public/images/images-home/logo.svg";
 import down from "../../public/images/images-home/down.svg";
 import person from "../../public/images/images-home/person.svg";
 import order from "../../public/images/images-home/order.svg";
+import Orders from "./Orders";
+import { useState } from "react";
 
 
 export default function Header() {
+
+  const [modal , setModal] = useState(false);
   return (
    
       <header className="w-full bg-white flex flex-col">
@@ -77,7 +81,7 @@ export default function Header() {
               <div></div>
             </div>
 
-            <div className=" relative cursor-pointer flex max-h-spacing-6 mr-spacing-2 rounded-lgg">
+            <div onClick={()=>setModal(true)} className="  relative cursor-pointer flex max-h-spacing-6 mr-spacing-2 rounded-lgg">
               <Image
                 className="ml-spacing-1 "
                 src={order}
@@ -86,9 +90,11 @@ export default function Header() {
                 alt="order"
               />
 
-              <p className="hidden md:inline-block  md:ml-spacing-1   md:font-vrg  md:leading-lineHeight-body md:text-surface-overlay  md:text-start  md:text-vm  md:tracking-tighter  md:cursor-pointer  ">
-                سفارش ها{" "}
+              <p  className="hidden md:inline-block  md:ml-spacing-1   md:font-vsb  md:leading-lineHeight-body md:text-surface-overlay  md:text-start  md:text-vm  md:tracking-tighter  md:cursor-pointer  ">
+                سفارش ها
               </p>
+
+              <Orders show ={modal}/>
             </div>
           </div>
         </div>
