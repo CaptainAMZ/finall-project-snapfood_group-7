@@ -4,7 +4,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import clock from '../../public/images/images-home/clock.svg'
-import Order from './OrderItem'
 import OrderItem from './OrderItem'
 
 
@@ -12,8 +11,7 @@ import OrderItem from './OrderItem'
 export default function Orders({show}) {
 
 
-   if (show) {
-          console.log('modal');
+ 
     return (
 
       // <div id='modal-root'>
@@ -31,7 +29,7 @@ export default function Orders({show}) {
   
   
       // </div>
-    <div className='bg-white w-full h-full' >
+    
       <div className=' bg-white min-w-[17.8125rem] w-21 absolute left-spacing-0  min-h-screen py-spacing-0 px-spacing-2 overflow-auto  shadow-shadows-modal animate-order max-h-90'>
                       
         <div className='mt-spacing-2 flex flex-col items-start '>
@@ -58,11 +56,11 @@ export default function Orders({show}) {
   
       </div>
   
-    </div>  
+     
       
     )
 
 
-   }
+   
   
 }
