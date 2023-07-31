@@ -2,8 +2,8 @@ import React from 'react'
 
 function PreOrderModal() {
   return (
-    <div className='relative w-0 h-0 leading-[1.15rem]'>
-        <div className='absolute -top-14 w-[16.8rem] min-h-[3rem] p-0 flex flex-col items-center overflow-hidden text-carbon-main shadow-shadows-high rounded-lg bg-white leading-[1.15rem]'>
+    <div className='relative w-0 h-0'>
+        <div className='absolute -top-11 -left-[19.375rem] w-[19.375rem] min-h-[3rem] p-0 flex flex-col items-center overflow-hidden text-carbon-main shadow-shadows-high rounded-lg bg-white leading-[1.15rem]'>
             <div className='flex flex-row flex-nowrap justify-between items-center w-[calc(100%-32px)] px-4 py-3.5 grow leading-[1.15rem]'>
                 <div className='flex flex-row flex-nowrap justify-center items-center leading-[1.15rem]'>
                     <svg 
