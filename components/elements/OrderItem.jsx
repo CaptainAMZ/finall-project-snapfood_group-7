@@ -6,7 +6,7 @@ import cycle from "../../public/images/images-home/cycle.svg";
 
 export default function OrderItem() {
   return (
-    <div className="pt-spacing-16 px-spacing-0 pb-spacing-1 border-b-0.0625 border-carbon-alphaLight flex justify-center ">
+    <div className="pt-spacing-16 px-spacing-0 pb-spacing-1 border-b-[0.0625rem] border-carbon-alphaLight flex justify-center ">
       <div className="w-[calc(100%-2rem)] flex flex-col ">
         <div className="flex  items-center">
           <div className="w-spacing-6 max-h-spacing-6 cursor-pointer flex-col">
