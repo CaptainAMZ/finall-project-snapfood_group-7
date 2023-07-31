@@ -95,9 +95,14 @@ body {
 .flipped{
   direction: ltr;
 }
-.flippe{
-  direction: rtl;
+
+@media (min-width:600px) {
+  .flipped{
+    direction: rtl;
+  }
 }
+
+
 
 /* width */
 ::-webkit-scrollbar {

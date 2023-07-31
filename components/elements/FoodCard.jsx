@@ -31,7 +31,7 @@ export default function FoodCard() {
   return (
     
     <div className='font-vrg  md:w-[50%] border-l-borders-xs border-t-[.5px] border-b-[.5px] border-surface-dark'>
-        <Link href="#">
+        <Link href="">
         <div className=' font-vrg flex justify-between py-spacing-1 px-spacing-1 lg:px-spacing-2'onClick={handleOpenModal}>
           <div className='mt-spacing-1'>
             <h3 className='font-vmd text-scales-body text-surface-overlay'>سالاد فصل</h3>
