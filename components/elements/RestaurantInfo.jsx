@@ -1,5 +1,4 @@
 import React from 'react'
-import InfoTitle from './InfoTitle'
 import PageSides from './PageSides'
 export default function RestaurantInfo() {
   return (
@@ -7,11 +6,8 @@ export default function RestaurantInfo() {
         <h1 className='text-center font-bold'>RestaurantInfo page(main Page)</h1>
         <div className='flex flex-col md:justify-between md:flex-row p-[calc(1rem)]'>
             <div>
-                {/* Retaurant info Title section */}
-                <InfoTitle/>
             </div>
             <div>
-                Retaurant info Food List section
             </div>
             {/* DeliveryInfo */}
             <div className='basis-1/4 max-w-full xs:basis-full'>
