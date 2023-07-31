@@ -17,7 +17,7 @@ export default function InfoBtn() {
         const closeModalHandler = () =>{
           setModal(false)
           document.body.style.overflow = 'scroll';
-          console.log("baste")
+          
         }
 
 
