@@ -10,6 +10,14 @@ export default function Home() {
  
 
   return (
+
+
+    
+
+
+
+
+
     <div>
       <div className="min-h-screen flex-col items-start">
         {/* <div></div> header + nav */}
