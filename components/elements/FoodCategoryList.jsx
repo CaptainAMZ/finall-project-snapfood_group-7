@@ -10,7 +10,7 @@ export default function FoodCategoryList() {
   }
 
   return (
-    <div className='flex  flex-col  mt-spacing-2 font-vrg text-scales-body text-carbon-light  h-[300px]  '>
+    <div className='flex  flex-col  mt-spacing-2 font-vrg text-scales-body text-carbon-light h-[300px]  '>
         <button className='revers-btn' onClick={listHandler}>تخفیف دار ها</button>
         <button className='revers-btn' onClick={listHandler}>چلوکباب</button>
         <button className='revers-btn' onClick={listHandler}>خوراک</button>

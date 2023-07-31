@@ -11,7 +11,7 @@ export default function FastFoodCategoryList() {
   }
 
   return (
-    <div className='flex flex-col items-end mt-spacing-2 font-vrg text-scales-body text-carbon-light overflow-y-scroll scrollbar  scrollbar-track-surface-alphaHigh  h-[400px] scrollbar-thumb-slate-100'>
+    <div className='flex flex-col items-end mt-spacing-2 font-vrg text-scales-body text-carbon-light overflow-y-scroll h-[400px]'>
         <button className='revers-btn' onClick={listHandler}>تخفیف دار ها</button>
         <button className='revers-btn' onClick={listHandler}>ساندویچ</button>
         <button className='revers-btn' onClick={listHandler}>پیتزا آمریکایی</button>
