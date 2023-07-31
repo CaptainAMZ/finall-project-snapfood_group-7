@@ -1,6 +1,8 @@
 import React from 'react'
 import PreOrder from './PreOrder';
 import Ventor from './Ventor';
+import NoBasket from './NoBasket';
+import Basket from './Basket';
 
 function PageSides() {
   return (
@@ -9,6 +11,9 @@ function PageSides() {
       <PreOrder/>
       {/* Delivery Cost */}
       <Ventor/>
+      {/* Basket Info */}
+      {/* <NoBasket/> */}
+      <Basket/>
     </div>
   )
 }
