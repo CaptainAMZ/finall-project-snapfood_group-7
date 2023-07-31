@@ -6,9 +6,24 @@ import StaticSider from "@/components/elements/StaticSider";
 
 function page() {
   return (
-   <div>
-   
-   </div>
+    <div>
+      <div>
+        <Filter />
+      </div>
+      <div>
+        <div>
+          <CartResteurants />
+        </div>
+        <div>
+          <div>
+            <FilterSider />
+          </div>
+          <div>
+            <StaticSider />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
