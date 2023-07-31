@@ -46,7 +46,7 @@ export default function InfoTitle() {
         <div className='w-full'>
             <InfoBtn/>
         </div>
-        <div className='w-full'>
+        <div className='w-full   '>
         {/* <FoodCategoryList/> */}
         <FastFoodCategoryList/>
         </div>

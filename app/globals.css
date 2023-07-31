@@ -1,31 +1,31 @@
 @tailwind base;
 @tailwind components;
 .btn{
-  @apply mb-spacing-2 focus:font-vsb pl-spacing-4 relative block w-full text-left
+  @apply mb-spacing-2 focus:font-vsb pl-spacing-3 relative block w-full 
 }
-.btn::after{
+/* .btn::after{
   @apply content-[''] bg-surface-overlay h-[0px] w-[2px] absolute rounded-lg opacity-0 mr-[20px]
   transition
   
-}
-.btn:focus::after{
+} */
+/* .btn:focus::after{
   @apply opacity-100 h-[25px] 
-}
+} */
 
 .star{
   @apply pl-spacing-1
 }
 .revers-btn{
-  @apply mb-spacing-2 focus:font-vsb pr-spacing-2 relative block w-full text-right 
+  @apply mb-spacing-2 focus:font-vsb pr-spacing-2 relative block w-full 
 }
-.revers-btn::before{
+/* .revers-btn::before{
   @apply content-[''] bg-surface-overlay h-[0px] w-[2px] absolute rounded-lg  right-0 top-0
   transition
 }
 
 .revers-btn:focus::before{
   @apply opacity-100 h-[25px] 
-}
+} */
 
 
 @tailwind utilities;
@@ -92,6 +92,16 @@ body {
       overflow-x: hidden;
       background-color: #F9FAFB;
 }
+.flipped{
+  direction: ltr;
+}
+
+@media (min-width:600px) {
+  .flipped{
+    direction: rtl;
+  }
+}
+
 
 
 /* width */
