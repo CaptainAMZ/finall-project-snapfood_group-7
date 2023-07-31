@@ -11,9 +11,6 @@ function page() {
         <Filter />
       </div>
       <div className="footer-container">
-        <div className="card-container">
-          <CartResteurants />
-        </div>
         <div className="slider-container">
           <div className="header-container">
             <FilterSider />
@@ -21,6 +18,9 @@ function page() {
           <div className="static-container">
             <StaticSider />
           </div>
+        </div>
+        <div className="card-container">
+          <CartResteurants />
         </div>
       </div>
     </div>
