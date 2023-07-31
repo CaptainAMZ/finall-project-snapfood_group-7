@@ -6,19 +6,19 @@ import StaticSider from "@/components/elements/StaticSider";
 
 function page() {
   return (
-    <div>
-      <div>
+    <div className="main-container">
+      <div className="filter-container">
         <Filter />
       </div>
-      <div>
-        <div>
+      <div className="footer-container">
+        <div className="card-container">
           <CartResteurants />
         </div>
-        <div>
-          <div>
+        <div className="slider-container">
+          <div className="header-container">
             <FilterSider />
           </div>
-          <div>
+          <div className="static-container">
             <StaticSider />
           </div>
         </div>
