@@ -120,7 +120,6 @@ module.exports = {
         "spacing-8": "4rem",
         "spacing-9": "4.5rem",
         "spacing-10": "5rem",
-<<<<<<< HEAD
         "spacing-11": ".25rem",
         "spacing-12": ".625rem",
         "spacing-13": ".125rem",
