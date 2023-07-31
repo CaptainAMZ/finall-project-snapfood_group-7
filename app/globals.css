@@ -71,21 +71,8 @@
 }
 
 body {
- color: #3a3d42;;
-
- 
-
+  color:#3a3d42;
   
- 
-}
-
-::-webkit-scrollbar {
-  width: 14px;
-  background-color: #f4f4f4;
-}
-
-::-webkit-scrollbar-button {
-  display: none;
 }
 
 
