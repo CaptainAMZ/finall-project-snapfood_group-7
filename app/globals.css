@@ -1,8 +1,13 @@
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
+
+
+
 .btn{
   @apply mb-spacing-2 focus:font-vsb pl-spacing-4 relative block w-full text-left
 }
+
 .btn::after{
   @apply content-[''] bg-surface-overlay h-[0px] w-[2px] absolute rounded-lg opacity-0 mr-[20px]
   transition
@@ -11,7 +16,12 @@
 .btn:focus::after{
   @apply opacity-100 h-[25px] 
 }
-@tailwind utilities;
+
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
 
 *{
   padding: 0;
@@ -67,5 +77,22 @@
 }
 
 body {
- 
+  color:#3a3d42;
+  
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border: 3px solid #fff;
+  border-radius: 16px;
+  
+  transition: all .2s linear;
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: #0000;
+  border-radius: 7px;
+  cursor: pointer;
 }
