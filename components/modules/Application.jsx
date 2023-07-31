@@ -180,9 +180,9 @@ const cities = [
 
 const Application = () => {
   return (
-    <>
-      <section className="px-2 w-100 min-h-[600px] bg-surface-dark ">
-        <div className="px-2 py-spacing-8">
+    <div className="w-100 sm:w-[95%] sm:p-4 m-auto">
+      <section className="px-2 w-100 min-h-[600px] bg-surface-dark md:flex md:px-20 md:rounded-br-[100px]">
+        <div className="px-2 py-spacing-8 md:w-[45%]">
           <h1 className="w-[90%] text-4xl font-vmd text-carbon-main mb-10 leading-10">
             اپلیکیشن اسنپ‌فود
           </h1>
@@ -195,7 +195,7 @@ const Application = () => {
             <p className="text-carbon-light font-vmd text-sm">
               برای دریافت لینک دانلود اپلیکیشن، شماره موبایلتان رو وارد کنید
             </p>
-            <form className="mt-1.5 flex rounded-lg bg-white items-center overflow-hidden mb-10 ">
+            <form className="max-w-[288px] mt-1.5 flex rounded-lg bg-white items-center overflow-hidden mb-10 ">
               <input
                 placeholder="09*********"
                 type="text"
@@ -203,7 +203,7 @@ const Application = () => {
               />
               <SSButton content="دریافت لینک" cfs={14} w={108} h={32} />
             </form>
-            <div className="mb-10 flex flex-col gap-2">
+            <div className="mb-10 flex flex-wrap flex-col gap-2 sm:flex-row sm:gap-4 ">
               {imgs.map((item) => (
                 <img
                   key={item.alt}
@@ -215,35 +215,51 @@ const Application = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className=" pt-40 w-100 min-h-[600px]">
-        <div className="px-[65px]">
-          <h2 className="text-4xl font-vmd mb-10 text-surface-overlay">
-            صاحب کسب و کار هستید؟
-          </h2>
-          <p className="text-[21px] font-vl w-[90%] mb-10">
-            با اسنپ فود کسب و کارتان را آنلاین کنید و فروشتان را افزایش دهید.
-          </p>
-          <SSButton
-            w={190}
-            cfs={18}
-            h={48}
-            content="ثبت نام فروشندگان"
-            icon="./images/shopIcon.svg"
+        <div className="hidden md:block md:w-[55%] relative">
+          <img
+            className="w-[450px] h-[630px] absolute -top-36 left-2"
+            src="./images/phones.png"
+            alt="phone"
           />
         </div>
       </section>
-      <section className="p-8 w-100 min-h-[600px] border-t-2">
+      <section className=" py-40 w-100 sm:pb-20">
+        <div className="px-[65px] sm:px-[52px] md:flex ">
+          <div className="flex-1 flex flex-col justify-center md:w-[60%]">
+            <h2 className="text-4xl font-vmd mb-10 text-surface-overlay">
+              صاحب کسب و کار هستید؟
+            </h2>
+            <p className="text-[21px] font-vl w-[90%] mb-10 sm:w-[100%]">
+              با اسنپ فود کسب و کارتان را آنلاین کنید و فروشتان را افزایش دهید.
+            </p>
+            <SSButton
+              w={190}
+              cfs={18}
+              h={48}
+              content="ثبت نام فروشندگان"
+              icon="./images/shopIcon.svg"
+            />
+          </div>
+          <div className="hidden md:block w-[45%]">
+            <img
+              className="w-[350px] h-[330px] mb-10 mr-auto"
+              src="./images/shop.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section className="p-8 w-100 border-t-2 md:px-0">
         <h3 className="text-base font-vsb mb-8">اسنپ‌فود در شهرهای ایران</h3>
         <div className="flex flex-wrap">
           {cities.map((item) => (
-            <p className="basis-1/3 p-1 text-[10px] font-vl text-inactive-dark">
+            <p className="basis-1/3 p-1 text-[10px] font-vl text-inactive-dark sm:basis-1/4 md:basis-1/6 lg:basis-1/12">
               {item}
             </p>
           ))}
         </div>
       </section>
-      <section className="w-100 min-h-[600px]">
+      <section className="w-100  md:flex flex-wrap">
         <div className="flex p-12">
           <div className="flex-1 max-w-fit ml-3">
             <img
@@ -268,10 +284,16 @@ const Application = () => {
             </div>
           </div>
         </div>
-        <StaticList arr={list1} />
-        <StaticList arr={list2} />
-        <div className="p-12 flex justify-end">
-          <img className="w-[70px] h-[70px]" src="./images/enamad.png" alt="enamad" />
+        <div className="sm:flex flex-1">
+          <StaticList arr={list1} />
+          <StaticList arr={list2} />
+        </div>
+        <div className="p-12 flex justify-end md:w-[100%] md:pt-0 lg:w-auto lg:pt-12">
+          <img
+            className="w-[70px] h-[70px]"
+            src="./images/enamad.png"
+            alt="enamad"
+          />
           <img
             className="w-[70px] h-[70px]"
             src="./images/buisness.png"
@@ -279,7 +301,7 @@ const Application = () => {
           />
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
