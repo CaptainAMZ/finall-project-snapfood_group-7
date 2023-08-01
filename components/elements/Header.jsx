@@ -8,12 +8,7 @@ import logo from "../../public/images/images-home/logo.svg";
 import down from "../../public/images/images-home/down.svg";
 import person from "../../public/images/images-home/person.svg";
 
-
 import OrderDiv from "./OrderDiv";
-import order from "../../public/images/images-home/order.svg";
-
-
-
 
 
 

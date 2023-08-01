@@ -13,8 +13,8 @@ export default function OrderDiv() {
 
 
     const closeModalHandler =(e) =>{
-
-    if(e.target.className.includes('CLOSE')){
+     const targetClass=  e.target.className;
+    if(targetClass.includes('CLOSE') && targetClass.includes('CLOSE-ICON') ){
       setModal(false);
       document.body.style.overflow = 'scroll';
      

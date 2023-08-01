@@ -2,13 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 import cross from '../../public/images/images-home/cross.svg'
 
-export default function ModalOrder() {
+export default function ModalOrder({onClose}) {
   return (
-    <div id='prev-order-modal '>
+    
 
             <div className=' w-[25rem] overflow-hidden max-h-90 bg-white shadow-shadows-modal rounded-xl  m-auto'>
                 <div className='relative w-full h-[56px] pl-[56px] flex justify-between items-center '>
-                  <button className='w-[56px] h-[56px]  py[1px] px[6px] flex justify-center items-center'>
+                  <button onClick={onClose} className='w-[56px] h-[56px]  py[1px] px[6px] flex justify-center items-center'>
                         <Image className='cursor-pointer' src={cross} width={14} height={14}/>
                   </button>
 
@@ -47,7 +47,7 @@ export default function ModalOrder() {
                           </div>
                         </div>
 
-                        <Image className='cursor-pointer pt-spacing-11' src={cross} width={6} height={8}/>
+                        <Image   className='cursor-pointer pt-spacing-11' src={cross} width={6} height={8}/>
                         <span className=' pt-spacing-11  mr-spacing-13 ml-spacing-13  font-vrg text-vm leading-lineHeight-body carbon-light'>
                                 1
                         </span>
@@ -134,6 +134,6 @@ export default function ModalOrder() {
                   </div>
                 </div>
             </div>
-    </div>
+    
   )
 }
