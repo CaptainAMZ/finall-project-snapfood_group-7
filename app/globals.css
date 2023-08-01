@@ -91,6 +91,7 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
       overflow-x: hidden;
       background-color: #F9FAFB;
+      max-width: 100%;
 }
 .flipped{
   direction: rtl;

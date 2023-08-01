@@ -21,10 +21,19 @@ export default function FoodCard() {
   }
 
 
-  const handleCloseModal = () =>{
+  const handleCloseModal = (e) =>{
+
+   if(e.target.className.includes('CLOSE')){
+     setOpenModal(false)
+     document.body.style.overflow = 'auto';
+   }
+    
+    
+  }
+
+  const closeModalBtn = () =>{
     setOpenModal(false)
-    document.body.style.overflow = 'scroll';
-    console.log("baste")
+
   }
 
 
@@ -67,8 +76,8 @@ export default function FoodCard() {
       </Link>
       <div>
         {
-            openModal &&(<div className='fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-[100vh] z-50' >
-           <FoodModal closeModal={handleCloseModal}/>
+            openModal &&(<div onClick={handleCloseModal} className='CLOSE fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-[100vh] z-50' >
+           <FoodModal closeModal={closeModalBtn}/>
            </div>)
            
         }

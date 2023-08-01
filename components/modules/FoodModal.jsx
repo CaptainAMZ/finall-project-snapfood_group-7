@@ -35,8 +35,9 @@ export default function FoodModal({closeModal}) {
 
 
   return (
-    <div className='w-[42rem]  bg-surface-light max-h-[45rem] lg:max-h-[35rem] rounded-xl overflow-y-scroll'>
-    <div className='block p-spacing-3 sticky top-0 right-[-2]  bg-surface-light '>
+    <div className='w-[45rem]  bg-surface-light h-[40rem] rounded-xl overflow-hidden '>
+            <div className='overflow-y-auto h-[40rem]'>
+            <div className='block p-spacing-3 sticky top-0 right-[-2]  bg-surface-light '>
     <button className='cursor-pointer block w-full text-right px-spacing-1' onClick={closeModal}>
     <Image
           src="/images/icons8-close-24.png"
@@ -49,19 +50,19 @@ export default function FoodModal({closeModal}) {
       
         <div className='flex  items-start justify-center pb-spacing-2 '>
           <div className='flex '>
-          <div className=' min-w-[250px] text-center'>
+          <div className=' min-w-[300px] text-center pr-3'>
           <Image
           src="/images/612c6182c8d3d.jpeg"
-          width={250}
-          height={250}
+          width={300}
+          height={300}
           alt=''
           className='object-cover rounded-xl borders-lg border-borders-xs border-surface-light  '/>
          </div>
           </div>
-          <div className='flex flex-col px-2 w-[400px]'>
+          <div className='flex flex-col px-4 w-[100%]'>
             <div className='flex items-center  justify-between mt-2 '>
             <h1 className='font-vb text-scales-default '>  هپی کمبو </h1>
-            <div className='flex items-center border-borders-xs  rounded-md border-surface-dark p-[2px] '>
+            <div className='flex items-center border-borders-xs  rounded-md p-[2px] '>
                   <div className='min-w-[15px]'>
                   <Image
                 className='object-cover ml-spacing-1 '
@@ -136,6 +137,8 @@ export default function FoodModal({closeModal}) {
 
               ))
             }
+
+            </div>
       </div>
  
   )
