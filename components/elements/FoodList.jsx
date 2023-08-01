@@ -23,11 +23,6 @@ export default function  () {
       <FoodCard/>
       <FoodCard/>
       <FoodCard/>
-
-      
-      
-      
-     
       </div>
     </div>
   )

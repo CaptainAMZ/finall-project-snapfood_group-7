@@ -4,9 +4,38 @@ import AddFoodBtn from '../elements/AddFoodBtn'
 export default function FoodModal({closeModal}) {
 
 
+  const comment = [
+    {
+      id:1,
+      name:"علی",
+      date:"۱۶ خرداد ۱۴۰۲",
+      point:"۵",
+      text:"من خوراک کباب کوبیده سفارش دادم و خیلی خوشمزه بود.اگر با غذاهای خیلی چرب مشکلی نداید بهتون پیشنهاد میکنم امتحانش کنید",
+      lable:"کباب کوبیده تک سیخ"
+    },
+    {
+      id:2,
+      name:"علی",
+      date:"۱۶ خرداد ۱۴۰۲",
+      point:"۵",
+      text:"من خوراک کباب کوبیده سفارش دادم و خیلی خوشمزه بود.اگر با غذاهای خیلی چرب مشکلی نداید بهتون پیشنهاد میکنم امتحانش کنید",
+      lable:"کباب کوبیده تک سیخ"
+    },
+    {
+      id:3,
+      name:"علی",
+      date:"۱۶ خرداد ۱۴۰۲",
+      point:"۵",
+      text:"من خوراک کباب کوبیده سفارش دادم و خیلی خوشمزه بود.اگر با غذاهای خیلی چرب مشکلی نداید بهتون پیشنهاد میکنم امتحانش کنید",
+      lable:"کباب کوبیده تک سیخ"
+    },
+ 
+  ]
+
+
 
   return (
-    <div className='w-[42rem]  bg-surface-light max-h-[45rem] rounded-xl overflow-y-scroll'>
+    <div className='w-[42rem]  bg-surface-light max-h-[45rem] lg:max-h-[35rem] rounded-xl overflow-y-scroll'>
     <div className='block p-spacing-3 sticky top-0 right-[-2]  bg-surface-light '>
     <button className='cursor-pointer block w-full text-right px-spacing-1' onClick={closeModal}>
     <Image
@@ -69,13 +98,14 @@ export default function FoodModal({closeModal}) {
             <div className='text-right px-3 text-scales-large text-carbon-light font-vsb my-8'>
                 <p>نظرات کاربران</p>
             </div>
-            
-            <div className='flex flex-col  '>
+            {
+              comment.map(item =>(
+            <div key={item.id} className='flex flex-col'>
           <div className='flex px-spacing-2'>
             <div className='flex-col w-[30%] text-right '>
-                <p className='text-scales-body text-carbon-main'>علی</p>
+                <p className='text-scales-body text-carbon-main'>{item.name}</p>
                 <p className='text-scales-caption text-carbon-light my-spacing-1'> 
-                ۱۶ خرداد ۱۴۰۲
+                {item.date}  
                 </p>
                 <div className='flex items-center border-borders-xs w-[40px] rounded-md border-surface-dark'>
                   <div className='min-w-[15px]'>
@@ -87,187 +117,25 @@ export default function FoodModal({closeModal}) {
                 alt=''
                 />
                 </div>
-                <p>۵</p>
+                <p>{item.point}</p>
                 </div>
             </div>
             <div className='flex-col'>
                 <p className='font-vmd text-scales-body text-carbon-light text-right'>
-                عالی بود. به نظر میرسید همه مواد تازه بودند چون توی پیتزا گوشت زیادی بود اما اصلا بوی نا مطبوعی نداشت بر خلاف خیلی جاهای دیگه و خیلی خوش خوراک بود. ممنون از آقای کنی که پیگیری کردند.
+                 {item.text}   
                 </p>
                 <div className='flex'>
                   <p className='font-vmd text-scales-caption mt-spacing-1 p-[8px] bg-surface-dark rounded-lg text-carbon-light'>
-                  هپی کمبو
+                      {item.lable} 
                   </p>
                 </div>
             </div>
           </div>
-            <div className='bg-surface-dark h-[1px] w-[100%] my-spacing-3'></div>
+           <div className='bg-surface-dark h-[1px] w-[100%] my-spacing-3'></div>
         </div>
-            <div className='flex flex-col  '>
-          <div className='flex px-spacing-2'>
-            <div className='flex-col w-[30%] text-right '>
-                <p className='text-scales-body text-carbon-main'>علی</p>
-                <p className='text-scales-caption text-carbon-light my-spacing-1'> 
-                ۱۶ خرداد ۱۴۰۲
-                </p>
-                <div className='flex items-center border-borders-xs w-[40px] rounded-md border-surface-dark'>
-                  <div className='min-w-[15px]'>
-                  <Image
-                className='object-cover ml-spacing-1 '
-                src="/images/icons8-star-40.png"
-                width={15}
-                height={15}
-                alt=''
-                />
-                </div>
-                <p>۵</p>
-                </div>
-            </div>
-            <div className='flex-col'>
-                <p className='font-vmd text-scales-body text-carbon-light text-right'>
-                عالی بود. به نظر میرسید همه مواد تازه بودند چون توی پیتزا گوشت زیادی بود اما اصلا بوی نا مطبوعی نداشت بر خلاف خیلی جاهای دیگه و خیلی خوش خوراک بود. ممنون از آقای کنی که پیگیری کردند.
-                </p>
-                <div className='flex'>
-                  <p className='font-vmd text-scales-caption mt-spacing-1 p-[8px] bg-surface-dark rounded-lg text-carbon-light'>
-                  هپی کمبو
-                  </p>
-                </div>
-            </div>
-          </div>
-            <div className='bg-surface-dark h-[1px] w-[100%] my-spacing-3'></div>
-        </div>
-            <div className='flex flex-col  '>
-          <div className='flex px-spacing-2'>
-            <div className='flex-col w-[30%] text-right '>
-                <p className='text-scales-body text-carbon-main'>علی</p>
-                <p className='text-scales-caption text-carbon-light my-spacing-1'> 
-                ۱۶ خرداد ۱۴۰۲
-                </p>
-                <div className='flex items-center border-borders-xs w-[40px] rounded-md border-surface-dark'>
-                  <div className='min-w-[15px]'>
-                  <Image
-                className='object-cover ml-spacing-1 '
-                src="/images/icons8-star-40.png"
-                width={15}
-                height={15}
-                alt=''
-                />
-                </div>
-                <p>۵</p>
-                </div>
-            </div>
-            <div className='flex-col'>
-                <p className='font-vmd text-scales-body text-carbon-light text-right'>
-                عالی بود. به نظر میرسید همه مواد تازه بودند چون توی پیتزا گوشت زیادی بود اما اصلا بوی نا مطبوعی نداشت بر خلاف خیلی جاهای دیگه و خیلی خوش خوراک بود. ممنون از آقای کنی که پیگیری کردند.
-                </p>
-                <div className='flex'>
-                  <p className='font-vmd text-scales-caption mt-spacing-1 p-[8px] bg-surface-dark rounded-lg text-carbon-light'>
-                  هپی کمبو
-                  </p>
-                </div>
-            </div>
-          </div>
-            <div className='bg-surface-dark h-[1px] w-[100%] my-spacing-3'></div>
-        </div>
-            <div className='flex flex-col  '>
-          <div className='flex px-spacing-2'>
-            <div className='flex-col w-[30%] text-right '>
-                <p className='text-scales-body text-carbon-main'>علی</p>
-                <p className='text-scales-caption text-carbon-light my-spacing-1'> 
-                ۱۶ خرداد ۱۴۰۲
-                </p>
-                <div className='flex items-center border-borders-xs w-[40px] rounded-md border-surface-dark'>
-                  <div className='min-w-[15px]'>
-                  <Image
-                className='object-cover ml-spacing-1 '
-                src="/images/icons8-star-40.png"
-                width={15}
-                height={15}
-                alt=''
-                />
-                </div>
-                <p>۵</p>
-                </div>
-            </div>
-            <div className='flex-col'>
-                <p className='font-vmd text-scales-body text-carbon-light text-right'>
-                عالی بود. به نظر میرسید همه مواد تازه بودند چون توی پیتزا گوشت زیادی بود اما اصلا بوی نا مطبوعی نداشت بر خلاف خیلی جاهای دیگه و خیلی خوش خوراک بود. ممنون از آقای کنی که پیگیری کردند.
-                </p>
-                <div className='flex'>
-                  <p className='font-vmd text-scales-caption mt-spacing-1 p-[8px] bg-surface-dark rounded-lg text-carbon-light'>
-                  هپی کمبو
-                  </p>
-                </div>
-            </div>
-          </div>
-            <div className='bg-surface-dark h-[1px] w-[100%] my-spacing-3'></div>
-        </div>
-            <div className='flex flex-col  '>
-          <div className='flex px-spacing-2'>
-            <div className='flex-col w-[30%] text-right '>
-                <p className='text-scales-body text-carbon-main'>علی</p>
-                <p className='text-scales-caption text-carbon-light my-spacing-1'> 
-                ۱۶ خرداد ۱۴۰۲
-                </p>
-                <div className='flex items-center border-borders-xs w-[40px] rounded-md border-surface-dark'>
-                  <div className='min-w-[15px]'>
-                  <Image
-                className='object-cover ml-spacing-1 '
-                src="/images/icons8-star-40.png"
-                width={15}
-                height={15}
-                alt=''
-                />
-                </div>
-                <p>۵</p>
-                </div>
-            </div>
-            <div className='flex-col'>
-                <p className='font-vmd text-scales-body text-carbon-light text-right'>
-                عالی بود. به نظر میرسید همه مواد تازه بودند چون توی پیتزا گوشت زیادی بود اما اصلا بوی نا مطبوعی نداشت بر خلاف خیلی جاهای دیگه و خیلی خوش خوراک بود. ممنون از آقای کنی که پیگیری کردند.
-                </p>
-                <div className='flex'>
-                  <p className='font-vmd text-scales-caption mt-spacing-1 p-[8px] bg-surface-dark rounded-lg text-carbon-light'>
-                  هپی کمبو
-                  </p>
-                </div>
-            </div>
-          </div>
-            <div className='bg-surface-dark h-[1px] w-[100%] my-spacing-3'></div>
-        </div>
-            <div className='flex flex-col  '>
-          <div className='flex px-spacing-2'>
-            <div className='flex-col w-[30%] text-right '>
-                <p className='text-scales-body text-carbon-main'>علی</p>
-                <p className='text-scales-caption text-carbon-light my-spacing-1'> 
-                ۱۶ خرداد ۱۴۰۲
-                </p>
-                <div className='flex items-center border-borders-xs w-[40px] rounded-md border-surface-dark'>
-                  <div className='min-w-[15px]'>
-                  <Image
-                className='object-cover ml-spacing-1 '
-                src="/images/icons8-star-40.png"
-                width={15}
-                height={15}
-                alt=''
-                />
-                </div>
-                <p>۵</p>
-                </div>
-            </div>
-            <div className='flex-col'>
-                <p className='font-vmd text-scales-body text-carbon-light text-right'>
-                عالی بود. به نظر میرسید همه مواد تازه بودند چون توی پیتزا گوشت زیادی بود اما اصلا بوی نا مطبوعی نداشت بر خلاف خیلی جاهای دیگه و خیلی خوش خوراک بود. ممنون از آقای کنی که پیگیری کردند.
-                </p>
-                <div className='flex'>
-                  <p className='font-vmd text-scales-caption mt-spacing-1 p-[8px] bg-surface-dark rounded-lg text-carbon-light'>
-                  هپی کمبو
-                  </p>
-                </div>
-            </div>
-          </div>
-            <div className='bg-surface-dark h-[1px] w-[100%] my-spacing-3'></div>
-        </div>
+
+              ))
+            }
       </div>
  
   )

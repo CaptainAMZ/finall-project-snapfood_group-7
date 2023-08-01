@@ -9,7 +9,7 @@ export default function RestaurantInfoModal({closeModal}) {
 
   
   return (
-    <div className='w-[46rem] bg-surface-light min-h-[45rem] rounded-xl '>
+    <div className='w-[46rem] bg-surface-light max-h-[45rem] rounded-xl lg:max-h-[35rem] '>
       <div className='block p-spacing-3'>
       <button className='cursor-pointer block w-full text-right px-spacing-1' onClick={closeModal}>
       <Image
@@ -85,7 +85,7 @@ export default function RestaurantInfoModal({closeModal}) {
             </div>
           </div>
         </div>
-        <div className='max-h-[420px] overflow-y-scroll '>
+        <div className='max-h-[420px] lg:max-h-[250px]  overflow-y-scroll '>
         <div className=' flex flex-col '>
           <div className='flex w-[100%] px-spacing-2'>
           <div className='flex flex-col justify-end w-[30%]'>
