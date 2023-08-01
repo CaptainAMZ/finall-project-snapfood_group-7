@@ -2,7 +2,7 @@ import React from "react";
 
 function Filter() {
   return (
-    <div className="w-full h-full bg-white flex  justify-start">
+    <div className="w-full h-full bg-white flex  justify-end mb-8 ">
       <div className="w-56 h-12 flex flex-col absolute text-base items-center justify-center ">
         <div className="w-full h-full flex items-center rounded-md rounded-tl-md rounded-bl-md border border-solid border-carbon-alphaLight hover:shadow-[rgb(38,132,255)_0px_0px_0px_1px]  border-[rgb(38,132,255)]">
           

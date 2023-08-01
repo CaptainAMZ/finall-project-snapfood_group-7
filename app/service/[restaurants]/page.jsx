@@ -6,21 +6,22 @@ import StaticSider from "@/components/elements/StaticSider";
 
 function page() {
   return (
-    <div className=" bg-red-400 h-screen w-screen flex flex-col p-4  ">
-      
-        
-      
-      <div  className="">
-        <div >
-          <div >
+    <div className=" max-w-screen flex flex-col m-6  overflow-hidden">
+      <div className=" flex items-center mb-8" >
+        <Filter />
+      </div>
+      <div className="w-full p-4">
+        <div className="flex flex-col">
+          <div>
             <FilterSider />
           </div>
-          <div className="p-4" >
+          <div >
             <StaticSider />
           </div>
         </div>
-        <div >
-          <CartResteurants />
+        <div className=" w-full">
+          <CartResteurants/>
+          <CartResteurants/>
         </div>
       </div>
     </div>
