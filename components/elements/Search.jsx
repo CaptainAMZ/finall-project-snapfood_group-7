@@ -1,5 +1,5 @@
-
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import search from '../../public/images/images-home/search-dark.svg'
 import crossCircle from'../../public/images/images-home/cross-circle.svg'
@@ -10,19 +10,29 @@ import market from'../../public/images/images-home/market-stall.svg'
 import pizza from '../../public/images/images-home/pizza.jpg'
 
 
-export default function Search() {
+export default function Search({modal}) {
     const icon = search;
     // const icon = crossCircle;
     // width ={20px} height ={20px}
+
+    // useEffect(()=>{
+
+    //     const show = (e)=>{
+
+    //         e.target.focus()
+
+    //     }
+
+    // },[])
     return (
 
         <div className='fixed top-0 flex justify-center w-[31vw] min-w-[18.75rem] m-auto py-spacing-16'>
 
             <div className='w-[95%] flex flex-col'>
-                <div className='relative w-full flex items-center justify-center bg-white'>
+                <div className='relative w-full flex items-center justify-center '>
                    
                     <Image className='absolute top-0 right-4  cursor-pointer pt-spacing-2' src={icon} width={17} height={17}/>
-                    <input  type="text" className=' focus:outline-modal-backdrop w-full  h-12 py-spacing-16 pl-spacing-16 pr-spacing-5 border-[0.0625rem] border-carbon-alphaHigh rounded-[0.625rem] font-vrg 
+                    <input  type="text" className='outline-none focus:border-black w-full  h-12 py-spacing-16 pl-spacing-16 pr-spacing-5 border-[0.0625rem] border-carbon-alphaHigh rounded-[0.625rem] font-vrg 
                     leading-lineHeight-default'/>
 
                 </div>
@@ -47,7 +57,7 @@ export default function Search() {
                     {/* </div> */}
 
                     {/* <div className='flex flex-col border-b-[0.0625rem] border-surface-dark'>
-       //2                 <a href="">
+       //2                 <a >
 
                             <div className='p-[1.125rem] flex items-center '>
 
@@ -76,7 +86,7 @@ export default function Search() {
                             <span  className=' mr-[0.75rem] font-vrg text-[0.875rem] leading-lineHeight-caption text-carbon-main' >
                                             فروشگاه ها
                             </span>
-                            <a href="">
+                            <a >
 
                                 <div className='ml-[0.75rem] flex items-center'>
 
@@ -98,7 +108,7 @@ export default function Search() {
 
                         </div>
 
-                        <a href="">
+                        <a >
 
                         <div className='p-[1.125rem] flex items-center '>
 
@@ -119,13 +129,13 @@ export default function Search() {
 
                     <div className='flex flex-col border-b-[0.0625rem] border-surface-dark'>
 
-                            <div className='my-[1.125rem] flex items-center justify-between'>
+                            <div className='mt-[1.125rem] flex items-center justify-between'>
 
                                 <span  className=' mr-[0.75rem] font-vrg text-[0.875rem] leading-lineHeight-caption text-carbon-main' >
                                     محصولات
                                 </span>
 
-                                <a href="">
+                                <a >
 
                                         <div className='ml-[0.75rem] flex items-center'>
 
@@ -145,7 +155,7 @@ export default function Search() {
 
                             </div>
 
-                            <a href="">
+                            <a >
 
                                 <div className='p-[1.125rem] flex flex-col'>
                                         <div className='flex items-center h-[5rem]'>
