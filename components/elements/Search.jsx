@@ -46,8 +46,8 @@ export default function Search() {
 
                     {/* </div> */}
 
-                    <div className='flex flex-col border-b-[0.0625rem] border-surface-dark'>
-                        <a href="">
+                    {/* <div className='flex flex-col border-b-[0.0625rem] border-surface-dark'>
+       //2                 <a href="">
 
                             <div className='p-[1.125rem] flex items-center '>
 
@@ -66,7 +66,7 @@ export default function Search() {
                         </a>
 
 
-                    </div>
+                    </div> */}
 
 
                     <div className='flex flex-col border-b-[0.0625rem] border-surface-dark'>
