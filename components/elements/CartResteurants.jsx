@@ -5,13 +5,13 @@ function CartResteurants() {
     <div className="flex flex-col items-center pb-6 mb-8 bg-white cursor-pointer mt-12 min-w-[270px] h-[375px] rounded-xl shadow-lg sm:min-w-[310px] md:min-w-[250px]">
       <div className="w-full relative mb-8 min-h-[40%]">
         <img
-          src="rick.png"
+          src="/images/tiger.jpg"
           alt="rick"
           className="w-full h-full object-cover rounded-s-xl"
         />
         <div className="w-24 h-24 absolute right-0 left-0 m-auto bg-white flex items-center justify-center rounded-lg   -bottom-5 shadow-shadows-high">
           <img
-            src="tiger.jpg"
+            src="/images/rick.png"
             alt="tiger"
             className="w-24 h-24 object-cover rounded-xl"
           />
@@ -33,7 +33,7 @@ function CartResteurants() {
             تله پیتزا (ستارخان)
           </h2>
           <div className="w-full flex justify-center mb-2">
-            <i>satr</i>
+            <img src="/images/star.svg" alt="star" />
             <span className="text-xs">4.2</span>
             <span className="text-xs">(14.264 امتیاز)</span>
           </div>

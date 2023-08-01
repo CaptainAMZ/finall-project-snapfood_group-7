@@ -6,20 +6,20 @@ import StaticSider from "@/components/elements/StaticSider";
 
 function page() {
   return (
-    <div className="main-container">
-      <div className="filter-container">
-        <Filter />
-      </div>
-      <div className="footer-container">
-        <div className="slider-container">
-          <div className="header-container">
+    <div className=" bg-red-400 h-screen w-screen flex flex-col p-4  ">
+      
+        
+      
+      <div  className="">
+        <div >
+          <div >
             <FilterSider />
           </div>
-          <div className="static-container">
+          <div className="p-4" >
             <StaticSider />
           </div>
         </div>
-        <div className="card-container">
+        <div >
           <CartResteurants />
         </div>
       </div>
