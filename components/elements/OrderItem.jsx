@@ -14,6 +14,12 @@ export default function OrderItem() {
 
   const [modal , setModal] = useState(false);
   const closeModalHandler =(e) =>{
+    const targetClass=  e.target.className;
+    if( targetClass.includes('CLOSE-ICON') ){
+      setModal(false);
+      
+     
+    }
 
     
   setModal(false);  
@@ -23,7 +29,7 @@ export default function OrderItem() {
     const openModalHandler = (e)=>{
         setModal(true)
        
-        // document.body.style.overflow = 'hidden';
+        
 
        
     }
