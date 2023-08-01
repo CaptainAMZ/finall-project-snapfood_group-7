@@ -10,7 +10,7 @@ export default function Home() {
   return (
    
 
-     <Search/>
+     <ModalOrder/>
 
    
   )

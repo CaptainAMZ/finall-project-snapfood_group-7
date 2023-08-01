@@ -4,9 +4,9 @@ import cross from '../../public/images/images-home/cross.svg'
 
 export default function ModalOrder() {
   return (
-    <div id='prev-order-modal'>
+    <div id='prev-order-modal '>
 
-            <div className='min-w-[25rem] overflow-hidden max-h-90 bg-white shadow-shadows-modal rounded-xl '>
+            <div className=' w-[25rem] overflow-hidden max-h-90 bg-white shadow-shadows-modal rounded-xl  m-auto'>
                 <div className='relative w-full h-[56px] pl-[56px] flex justify-between items-center '>
                   <button className='w-[56px] h-[56px]  py[1px] px[6px] flex justify-center items-center'>
                         <Image className='cursor-pointer' src={cross} width={14} height={14}/>
@@ -107,7 +107,7 @@ export default function ModalOrder() {
 
                   </div>
 
-                  <div className='h-8 px-spacing-2 flex items-center justify-between'>
+                  <div className='h-12 px-spacing-2 py-spacing-1 flex items-center justify-between border-[0.0625rem] border-solid border-carbon-alphaLight'>
                     <span className=' font-vsb text-vm leading-lineHeight-body carbon-main'>
 
 
