@@ -16,7 +16,8 @@ export default function OrderDiv() {
 
     if(e.target.className.includes('CLOSE')){
       setModal(false);
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = 'scroll';
+     
     }
     
         
@@ -25,7 +26,8 @@ export default function OrderDiv() {
 
     const openModalHandler = (e)=>{
         setModal(true)
-        document.body.style.overflow = 'scroll';
+       
+        document.body.style.overflow = 'hidden';
 
        
     }
