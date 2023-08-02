@@ -45,11 +45,11 @@ export default function Search() {
 
                 <div className=' bg-white mt-spacing-11 rounded-[0.375rem]'>
 
-                    {/* <div className='p-[1.125rem] cursor-pointer flex justify-between'> */}
-{/* nothing
+                    <div className='p-[1.125rem] cursor-pointer flex justify-between'> 
+{/* nothing */}
                         <span className='font-vrg text-[0.875rem] leading-lineHeight-caption text-carbon-main'>
                                     عبارت مورد نظر خود را وارد کنید
-                        </span> */}
+                        </span>
 {/* length input one
                         <span className='font-vrg text-[0.875rem] leading-lineHeight-caption text-carbon-main'>
                                         
@@ -60,9 +60,9 @@ export default function Search() {
 
 
 
-                    {/* </div> */}
+                    </div>
 
-                   <SearchCategory category={'ساندویچ'}/>
+                   {/* <SearchCategory category={'ساندویچ'}/>
 
 
                     <SearchMarket resturantName={'پیتزا شیلا'}/>
@@ -71,7 +71,7 @@ export default function Search() {
                     
 
                             
-                    <SearchProduct/>
+                    <SearchProduct/> */}
                             
                           
     
