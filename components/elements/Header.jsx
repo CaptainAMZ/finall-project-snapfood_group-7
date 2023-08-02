@@ -75,7 +75,7 @@ export default function Header() {
                 alt="order"
               />
 
-              <p className="hidden md:inline-block  md:ml-spacing-1   md:font-vb  md:leading-lineHeight-body md:text-surface-overlay  md:text-start  md:text-vm  md:tracking-tighter  md:cursor-pointer  ">
+              <p className="hidden md:inline-block  md:ml-spacing-1   md:font-vb  md:leading-lineHeight-body md:text-surface-overlay  md:text-start  md:text-vm  md:tracking-tighter  md:cursor-pointer md:pl-1 ">
                 سفارش ها{" "}
               </p>
             </div>
