@@ -8,7 +8,7 @@ export default function Category({type,img}) {
     <a className="bg-transparent">
       <div className="relative p-[0.1875rem] h-[6.5rem] border border-solid border-white rounded-xl shadow-category cursor-pointer transition duration-200 flex bg-white ">
         <Image src={img} className="border border-solid border-white rounded-xl w-full min-h-full object-cover"/>
-        <div className="absolute right-spacing-0 bottom-spacing-0 py-spacing-11 pr-spacing-2 pl-[0.8125rem] rounded-tl-xl rounded-br-xl bg-white flex items-center cursor-pointer">
+        <div className="absolute right-spacing-0 bottom-spacing-0 py-[.3rem] pr-spacing-2 pl-[0.4rem] rounded-tl-xl rounded-br-xl bg-white flex items-center cursor-pointer">
            <p className="ml-[0.8125rem] font-vrg text-1 leading-lineHeight-default text-carbon-main inline-block text-start cursor-pointer">
               {type}
 
