@@ -14,23 +14,8 @@ export default function Orders() {
  
     return (
 
-      // <div id='modal-root'>
-        
-      //     
-      
-      // <div>
-  
-      //   <OrderItem/>
-      //   </div>
-  
-  
-      //    
-      //     <div id='prev-order-bill-modal' className='none'></div>
-  
-  
-      // </div>
     
-      <div  className=' scroll-hide bg-white min-w-[21rem] sm:min-w-[24rem] md:min-w-[25rem]  w-21 absolute left-spacing-0  min-h-screen py-spacing-0 px-spacing-2 overflow-y-scroll shadow-shadows-modal animate-order max-h-[100px]'>
+      <div  className=' scroll-hide bg-white min-w-[21rem] sm:min-w-[24rem] md:min-w-[27rem]  w-21 absolute left-spacing-0  min-h-screen py-spacing-0 px-spacing-2 overflow-y-scroll shadow-shadows-modal animate-order max-h-[100px]'>
                       
         <div className='mt-spacing-2 flex flex-col items-start w-full'>
   
