@@ -51,6 +51,38 @@
 .hide {
   display: none;
 }
+.label-toggle {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 23px;
+  margin: 0 10px;
+ 
+  
+}
+.input-toggle {
+  display: none;
+  
+}
+
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 15px;
+  right: 2.5px;
+  bottom: 2.5px;
+  background-color: rgba(242, 139, 12, 0.932);;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.input-toggle:checked + .slider::after {
+  background-color: rgb(37, 162, 104);
+}
+.input-toggle:checked + .slider::before {
+  transform: translateX(-20px);
+}
 
 @media (min-width:320px) {
   .hide {

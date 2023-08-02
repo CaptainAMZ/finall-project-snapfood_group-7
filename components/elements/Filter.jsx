@@ -17,8 +17,8 @@ function Filter() {
           ></textarea>
           <div className="rotate-180 w-px h-9 bg-[rgb(204,204,204)] mx-0 my-2"></div>
           <div className="w-[30px] text-center">
-            <div className="w-full self-center px-1 py-0">
-              <img src="/images/arrow.svg" alt="arrow" />
+            <div className="w-full self-center px-1 py-0 flex justify-center">
+              <img src="/images/arrow.svg" alt="arrow"  />
             </div>
           </div>
         </div>
