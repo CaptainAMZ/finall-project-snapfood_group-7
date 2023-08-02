@@ -1,9 +1,15 @@
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
+
+
+
 .btn{
   @apply mb-spacing-2 focus:font-vsb pl-spacing-3 relative block w-full 
 }
+
 /* .btn::after{
+>>>>>>> snap-food
   @apply content-[''] bg-surface-overlay h-[0px] w-[2px] absolute rounded-lg opacity-0 mr-[20px]
   transition
   
@@ -15,6 +21,14 @@
 .star{
   @apply pl-spacing-1
 }
+
+
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+
 .revers-btn{
   @apply mb-spacing-2 focus:font-vsb pr-spacing-2 relative block w-full 
 }
@@ -31,6 +45,7 @@
 @tailwind utilities;
 
 
+
 *{
   padding: 0;
   margin: 0;
@@ -44,6 +59,10 @@
 
 @layer {
   
+  @font-face {
+    font-family: "Vazirmatn-light";
+    src: url("../public/font/Vazirmatn-light.ttf");
+  }
   @font-face {
     font-family: "Vazirmatn-Regular";
     src: url("../public/font/Vazirmatn-Regular.ttf");
@@ -84,15 +103,35 @@
   }
 }
 
-body {
+
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border: 3px solid #fff;
+  border-radius: 16px;
+  
+  transition: all .2s linear;
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: #0000;
+  border-radius: 7px;
+  cursor: pointer;
+}
+body{
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
       overflow-x: hidden;
       background-color: #F9FAFB;
+
       max-width: 100%;
+
 }
+
 .flipped{
   direction: rtl;
 }
@@ -126,3 +165,4 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #c5c5c5;
 } 
+

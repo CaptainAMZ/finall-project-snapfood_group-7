@@ -21,6 +21,7 @@ export default function FoodCategoryList() {
   }
 
   return (
+
     <div className='flex flex-col lg:items-end mt-spacing-2 font-vrg text-scales-body overflow-y-auto lg:max-h-[400px]  max-h-[200px] flipped '>
     {
     food.map((items) =>{
@@ -32,5 +33,6 @@ export default function FoodCategoryList() {
     }
     
  </div>
+
   )
 }

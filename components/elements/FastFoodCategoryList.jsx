@@ -32,6 +32,7 @@ export default function FastFoodCategoryList() {
 
   return (
     <div className='flex flex-col lg:items-end mt-spacing-2 font-vrg text-scales-body overflow-y-scroll  h-[400px] flipped '>
+
        {
        fastFoodList.map((items) =>{
         return(
@@ -41,6 +42,7 @@ export default function FastFoodCategoryList() {
        })
        }
        
+
     </div>
   )
 }
