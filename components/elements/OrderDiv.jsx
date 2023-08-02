@@ -8,15 +8,17 @@ import { useState } from 'react';
 
 export default function OrderDiv() {
 
-    const [modal , setModal] = useState(false);
+    const [modalOrder , setModalOrder] = useState(false);
 
 
 
     const closeModalHandler =(e) =>{
      const targetClass=  e.target.className;
+     
     if(targetClass.includes('CLOSE') ){
-      setModal(false);
+      setModalOrder(false);
       document.body.style.overflow = 'scroll';
+      
      
     }
     
@@ -25,8 +27,8 @@ export default function OrderDiv() {
     }
 
     const openModalHandler = (e)=>{
-        setModal(true)
-       
+        setModalOrder(true)
+        e.stopPropagation()
         document.body.style.overflow = 'hidden';
 
        
@@ -52,7 +54,7 @@ export default function OrderDiv() {
             
     </div>
 
-            {modal && <div  onClick={closeModalHandler} className='CLOSE  fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-screen z-50'>
+            {modalOrder && <div  onClick={closeModalHandler} className='CLOSE  fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-screen z-50'>
                             
             <Orders  />
             </div>

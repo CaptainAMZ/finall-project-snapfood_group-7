@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import clock from '../../public/images/images-home/clock.svg'
 import OrderItem from './OrderItem'
+import ModalOrder from './ModalOrder'
 
 
 
@@ -12,6 +13,7 @@ export default function Orders() {
 
   const [modal , setModal] = useState(false);
   const closeModalHandler =(e) =>{
+    
     const targetClass=  e.target.className;
     if( targetClass.includes('CLOSE-ICON') ){
       setModal(false);
@@ -25,7 +27,9 @@ export default function Orders() {
     }
 
     const openModalHandler = (e)=>{
+       
         setModal(true)
+        
        
         
 
@@ -48,7 +52,7 @@ export default function Orders() {
           </p>
           
           <div className='mt-spacing-16 border-t-[0.0625rem] border-r-[0.0625rem] border-l-[0.0625rem] border-carbon-alphaMedium rounded-t-xl  w-full'>
-              <OrderItem onclose={closeModalHandler}/>
+              <OrderItem setmodal={setModal}  modal={modal}/>
               <OrderItem/>
               <OrderItem/>
               <OrderItem/>
@@ -67,7 +71,7 @@ export default function Orders() {
         </div>
   
       </div>
-      {modal && <div   className=' CLOSE-ICON  fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-screen z-50 m-auto'>
+      {modal && <div   className=' CLOSE-ICON  sticky  inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-full z-999 m-auto'>
                       
       <ModalOrder onClose={closeModalHandler} />
       </div>}

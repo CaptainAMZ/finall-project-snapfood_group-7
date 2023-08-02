@@ -6,7 +6,7 @@ export default function ModalOrder({onClose}) {
   return (
     
 
-            <div className=' w-[25rem] overflow-hidden max-h-90 bg-white shadow-shadows-modal rounded-xl  m-auto'>
+            <div className=' w-[25rem] overflow-hidden  bg-white shadow-shadows-modal rounded-xl  m-auto '>
                 <div className='relative w-full h-[56px] pl-[56px] flex justify-between items-center '>
                   <button onClick={onClose} className='w-[56px] h-[56px]  py[1px] px[6px] flex justify-center items-center'>
                         <Image className='cursor-pointer' src={cross} width={14} height={14}/>
