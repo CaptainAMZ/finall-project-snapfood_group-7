@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 
+.revers-btn{
+  @apply mb-spacing-2 focus:font-vsb pr-spacing-2 relative block w-full 
+}
+/* .revers-btn::before{
+  @apply content-[''] bg-surface-overlay h-[0px] w-[2px] absolute rounded-lg  right-0 top-0
+  transition
+}
+
+.revers-btn:focus::before{
+  @apply opacity-100 h-[25px] 
+} */
 
 .btn{
   @apply mb-spacing-2 focus:font-vsb pl-spacing-3 relative block w-full 
@@ -51,6 +62,47 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/* @layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #f7f4ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #e0cbcb;
+    border-radius: 100vh;
+    border: 3px solid #f6f7ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c0a0b9;
+  }
+} */
+
+/* ::-webkit-scrollbar {
+  width: 14px;
+  background-color: var(--white2);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--gray3-color);
+  border: 3px solid var(--white);
+  border-radius: 16px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0000;
+  border-radius: 7px;
+  cursor: pointer;
+
+} */
 
 
 /* @layer components {
@@ -108,7 +160,7 @@
 
 ::-webkit-scrollbar-thumb {
   background-color: #babac0;
-  border: 3px solid #fff;
+  border: 10px solid #fff;
   border-radius: 16px;
   
   transition: all .2s linear;

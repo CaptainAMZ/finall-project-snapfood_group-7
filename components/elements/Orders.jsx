@@ -10,27 +10,36 @@ import OrderItem from './OrderItem'
 
 export default function Orders() {
 
+  const [modal , setModal] = useState(false);
+  const closeModalHandler =(e) =>{
+    const targetClass=  e.target.className;
+    if( targetClass.includes('CLOSE-ICON') ){
+      setModal(false);
+      
+     
+    }
 
+    
+  setModal(false);  
+
+    }
+
+    const openModalHandler = (e)=>{
+        setModal(true)
+       
+        
+
+       
+    }
  
     return (
-
-      // <div id='modal-root'>
-        
-      //     
+      <>
       
-      // <div>
-  
-      //   <OrderItem/>
-      //   </div>
-  
-  
-      //    
-      //     <div id='prev-order-bill-modal' className='none'></div>
-  
-  
-      // </div>
+      
+      
+      
     
-      <div  className=' scroll-hide bg-white min-w-[21rem] sm:min-w-[24rem] md:min-w-[25rem]  w-21 absolute left-spacing-0  min-h-screen py-spacing-0 px-spacing-2 overflow-y-scroll shadow-shadows-modal animate-order max-h-[100px]'>
+      <div  className=' scroll-hide bg-white min-w-[21rem] sm:min-w-[24rem] md:min-w-[27rem]  w-21 absolute left-spacing-0  min-h-screen py-spacing-0 px-spacing-2 overflow-y-scroll shadow-shadows-modal animate-order max-h-[100px]'>
                       
         <div className='mt-spacing-2 flex flex-col items-start w-full'>
   
@@ -39,7 +48,7 @@ export default function Orders() {
           </p>
           
           <div className='mt-spacing-16 border-t-[0.0625rem] border-r-[0.0625rem] border-l-[0.0625rem] border-carbon-alphaMedium rounded-t-xl  w-full'>
-              <OrderItem/>
+              <OrderItem onclose={closeModalHandler}/>
               <OrderItem/>
               <OrderItem/>
               <OrderItem/>
@@ -58,8 +67,12 @@ export default function Orders() {
         </div>
   
       </div>
+      {modal && <div   className=' CLOSE-ICON  fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-screen z-50 m-auto'>
+                      
+      <ModalOrder onClose={closeModalHandler} />
+      </div>}
   
-     
+      </>
       
     )
 

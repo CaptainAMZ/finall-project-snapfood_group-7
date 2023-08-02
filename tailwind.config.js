@@ -310,14 +310,26 @@ module.exports = {
       width: {
         '29': '29vw'
       },
-      screen: {
-        '37.49875': '37.49875',
+      animation: {
+        'order': '0.3s cubic-bezier(0.4, 0, 0, 1.5) 0s 1 normal forwards running hmqzdU',
+      },
 
-      }
+      keyframes: {
+        hmqzdU: {
+          ' 0%': {
+            transform: 'translate3d(-2rem, 0px, 0px)'},
+        '100% ':{
+          transform: 'translateZ(0px)'},
+          backgroundImage:'red',
+      },
+      
 
-    },
+  
+      },
+    }
   },
   plugins: [
     require('tailwind-scrollbar'),
   ],
-}
+
+  }

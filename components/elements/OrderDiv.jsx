@@ -13,8 +13,12 @@ export default function OrderDiv() {
 
 
     const closeModalHandler =(e) =>{
-
-    if(e.target.className.includes('CLOSE'))setModal(false);
+     const targetClass=  e.target.className;
+    if(targetClass.includes('CLOSE') ){
+      setModal(false);
+      document.body.style.overflow = 'scroll';
+     
+    }
     
         
 
@@ -22,6 +26,8 @@ export default function OrderDiv() {
 
     const openModalHandler = (e)=>{
         setModal(true)
+       
+        document.body.style.overflow = 'hidden';
 
        
     }
@@ -32,12 +38,12 @@ export default function OrderDiv() {
             <Image
             className="ml-spacing-1 "
             src={order}
-            width={18}
-            height={18}
+            width={20}
+            height={20}
             alt="order"
             />
 
-            <p  className="hidden md:inline-block  md:ml-spacing-1   md:font-vsb  md:leading-lineHeight-body md:text-surface-overlay  md:text-start  md:text-vm  md:tracking-tighter  md:cursor-pointer  ">
+            <p  className="hidden md:inline-block  md:ml-spacing-1   md:font-vxb  md:leading-lineHeight-body md:text-surface-overlay  md:text-start  md:text-vm  md:tracking-tighter  md:cursor-pointer md:pl-2 ">
             سفارش ها
             </p>
 

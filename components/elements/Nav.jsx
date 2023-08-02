@@ -26,7 +26,7 @@ export default function Nav() {
   ];
 
   return (
-    <nav  className="pt-spacing-2 over overflow-x-auto flex items-baseline bg-white ">
+    <nav  className="pt-spacing-2  overflow-x-auto scrollbar-thin  scrollbar-thumb-gray-400 scrollbar-track-gray-300 flex items-baseline bg-white ">
       {services.map((item) => (
         <Service service={item.service} img={item.img} />
       ))}
