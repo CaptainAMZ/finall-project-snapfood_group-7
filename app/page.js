@@ -8,8 +8,9 @@ import Application from '@/components/templates/Application'
 export default function Home() {
 
 
-   return (
 
+
+   return (
       <div>
         <div className="min-h-screen flex-col items-start">
           {/* <div></div> header + nav */}
@@ -22,4 +23,5 @@ export default function Home() {
         </div>
       </div>
    );
+
 }
