@@ -44,7 +44,7 @@ export default function OrderItem() {
             <Image className="rounded w-full max-h-full" src={nanak} />
           </div>
           <div className="mr-spacing-2 flex flex-col">
-            <p className="cursor-pointer font-vsb leading-lineHeight-body text-vm inline-block text-carbon-main text-start">
+            <p className="cursor-pointer font-vxb leading-lineHeight-body text-scales-body inline-block text-carbon-main text-start">
               نان و شیرینی نانک
             </p>
             <div className="flex">
@@ -59,10 +59,10 @@ export default function OrderItem() {
         </div>
 
         <div className="h-[32px] mt-spacing-2 px-spacing-1 rounded bg-accent2-alphaLight flex justify-between items-center">
-          <p className="font-vrg text-vsm leading-lineHeight-tiny text-carbon-main ">
+          <p className="font-vrg text-scales-tiny leading-lineHeight-tiny text-carbon-main ">
             نظرتان را درباره این سفارش به اشتراک بگذارید.
           </p>
-          <p className="font-vxb text-.75 leading-lineHeight-caption text-accent2-main cursor-pointer ml-spacing-11">
+          <p className="font-vxb text-scales-caption leading-lineHeight-caption text-accent2-main cursor-pointer ml-spacing-11">
             ثبت نظر
           </p>
         </div>
@@ -70,14 +70,14 @@ export default function OrderItem() {
         <div className="mt-spacing-16 mb-spacing-1 flex justify-center">
         <button  onClick={openModalHandler}  className=" flex-1 h-[32px] ml-spacing-2 inline-flex items-center justify-center min-w-6.6875 transition-all w-auto border-0.09375 border-solid  rounded-0.375 bg-carbon-alphaLight bg-clip-padding py-spacing-17 px-spacing-18">
           <Image src={factor} width={16} height={16} />
-          <p className="mr-spacing-1  font-vsb text-vm leading-lineHeight-body text-carbon-main text-start inline-block flex-0">
+          <p className="mr-spacing-1  font-vxb text-scales-body leading-lineHeight-body text-carbon-main text-start inline-block flex-0">
             مشاهده فاکتور
           </p>
         </button>
 
         <button className=" flex-1 h-[32px]  inline-flex items-center justify-center min-w-6.6875 transition-all w-auto border-0.09375 border-solid  rounded-0.375 bg-carbon-alphaLight  bg-clip-padding py-spacing-17 px-spacing-18">
           <Image src={cycle} width={16} height={16} />
-          <p className="mr-spacing-1  font-vsb text-vm leading-lineHeight-body text-carbon-main text-start inline-block flex-0">
+          <p className="mr-spacing-1  font-vxb text-scales-body  leading-lineHeight-body text-carbon-main text-start inline-block flex-0">
             سفارش مجدد
           </p>
         </button>
