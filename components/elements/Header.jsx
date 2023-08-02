@@ -8,6 +8,7 @@ import down from "../../public/images/images-home/down.svg";
 import person from "../../public/images/images-home/person.svg";
 
 import OrderDiv from "./OrderDiv";
+import SearchDiv from "./SearchDiv";
 
 
 
@@ -59,14 +60,14 @@ export default function Header() {
           <div className=" flex items-center z-999 md:gap-x-spacing-3">
             <div className="p-spacing-2 cursor-pointer items-baseline flex">
               <Image
-                className="ml-spacing-1 block cursor-pointer"
+                className=" block cursor-pointer"
                 src={person}
                 width={17}
                 height={17}
                 alt="person"
               />
 
-              <div></div>
+              
             </div>
 
             <OrderDiv/>

@@ -15,7 +15,7 @@ export default function Category({type,img}) {
            </p>
 
            <Image src={left} width={17} height={20
-           } className="translate-x-spacing-0 transition ease-in-out duration-200 cursor-pointer "/>
+           } className="hover:-translate-x-spacing-11 translate-x-spacing-0 transition ease-in-out duration-200 cursor-pointer "/>
         </div>
       </div>
     </a>
