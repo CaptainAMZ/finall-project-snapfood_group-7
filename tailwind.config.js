@@ -20,7 +20,7 @@ module.exports = {
         "nav-size-not-center": "112px",
         "services-height": "106px",
       },
-  
+
       fontSize: {
         "scales-default": "1rem",
         "scales-caption": "0.75rem",
@@ -29,8 +29,13 @@ module.exports = {
         "scales-large": "1.125rem",
         "scales-body": "0.875rem",
         "scales-tiny": "0.625rem",
+        vsm: '0.625rem',
+        '.75': '.75rem',
+        vm: '.875rem',
+        '1.5': '1.5rem',
       },
-  
+
+
       colors: {
         "black-alphaMedium": "#0000003D",
         "surface-main": "#F9FAFB",
@@ -115,8 +120,17 @@ module.exports = {
         "spacing-8": "4rem",
         "spacing-9": "4.5rem",
         "spacing-10": "5rem",
+        "spacing-11": ".25rem",
+        "spacing-12": ".625rem",
+        "spacing-13": ".125rem",
+        "spacing-14": ".6rem",
+        "spacing-15": "10.5625rem",
+        "spacing-16": ".75rem",
+        "spacing-17": ".0625rem",
+        "spacing-18": ".375rem",
       },
-  
+
+
       borderWidth: {
         "borders-xs": "0.09375rem",
         "borders-md": "0.1875rem",
@@ -128,13 +142,18 @@ module.exports = {
         "shadows-medium": "0px 1px 0px rgba(58,61,66,0.06),0px 4px 16px -8px rgba(0,0,0,0.2)",
         "shadows-high": "0px 1px 0px rgba(58,61,66,0.06),0px 8px 32px -16px rgba(0,0,0,0.3)",
         "shadows-modal": "0px 2px 8px rgba(0,0,0,0.08),0px 8px 32px rgba(0,0,0,0.16)",
+
+        'head': 'rgba(58, 61, 66, 0.06) 0px 1px 0px, rgba(0, 0, 0, 0.05) 0px 2px 8px -2px',
+        'category': 'rgba(58, 61, 66, 0.06) 0px 1px 0px, rgba(0, 0, 0, 0.3) 0px 8px 32px -16px',
       },
-      
+
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+
       height: {
         "nav-size-center": "72px",
         "nav-size-not-center": "112px",
@@ -255,19 +274,50 @@ module.exports = {
       willChange: {
         'right-top': 'right, top',
       },
+
       fontFamily: {
+        "vl": "Vazirmatn-light",
         "vrg": "Vazirmatn-Regular",
         "vmd": "Vazirmatn-Medium",
         "vsb": "Vazirmatn-SemiBold",
         "vb": "Vazirmatn-Bold",
         "vxb": "Vazirmatn-ExtraBold"
+      },
+
+
+
+      minWidth: {
+        '29': '29vw',
+        '9.375': '9.375rem',
+        '5.5': '5.5rem'
+      },
+      maxWidth: {
+        '29': '29vw',
+        '20': '10vw',
+        '85.375': '85.375rem',
+        '1/2': '50%',
+        '1/3': '33.333%',
+        '1/4': '25%',
+        '1/6': '16.66667',
+      },
+      borderRadius: {
+        'lgg': '.625rem',
+        '0.375': '0.375rem'
+      },
+      zIndex: {
+        '999': '999'
+      },
+      width: {
+        '29': '29vw'
+      },
+      screen: {
+        '37.49875': '37.49875',
+
       }
+
     },
   },
   plugins: [
     require('tailwind-scrollbar'),
   ],
-  
 }
-
-
