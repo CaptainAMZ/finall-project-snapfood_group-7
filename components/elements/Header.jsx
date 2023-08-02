@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import search from "../../public/images/images-home/search.svg";
 import location from "../../public/images/images-home/location.svg";
 import logo from "../../public/images/images-home/logo.svg";
 import down from "../../public/images/images-home/down.svg";
@@ -41,10 +40,10 @@ export default function Header() {
                     ابوذر، پرستار، امیر حسین معماری
                   </span>
                   <Image
-                    className="ms-spacing-14 mt-spacing-11"
+                    className="ms-spacing-14 mt-spacing-11 "
                     src={down}
-                    width={17}
-                    height={18}
+                    width={19}
+                    height={17}
                     alt="down"
                   />
                 </div>
@@ -71,12 +70,12 @@ export default function Header() {
               <Image
                 className="ml-spacing-1 "
                 src={order}
-                width={18}
-                height={18}
+                width={20}
+                height={20}
                 alt="order"
               />
 
-              <p className="hidden md:inline-block  md:ml-spacing-1   md:font-vrg  md:leading-lineHeight-body md:text-surface-overlay  md:text-start  md:text-vm  md:tracking-tighter  md:cursor-pointer  ">
+              <p className="hidden md:inline-block  md:ml-spacing-1   md:font-vb  md:leading-lineHeight-body md:text-surface-overlay  md:text-start  md:text-vm  md:tracking-tighter  md:cursor-pointer  ">
                 سفارش ها{" "}
               </p>
             </div>
