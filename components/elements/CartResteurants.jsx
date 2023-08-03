@@ -1,8 +1,12 @@
 import React from "react";
+import { getLocalData } from '../lib/localdata';
 
-function CartResteurants() {
+ async function CartResteurants() {
+ const {restaurants} =  await getLocalData()
   return (
-    <div className="flex flex-col items-center pb-6 bg-white cursor-pointer  w-full h-[370px] rounded-xl shadow-lg sm:w-[50%]  md:w-[33.33%]  ">
+   {
+    restaurants.map((item)=>(
+      <div className="flex flex-col items-center pb-6 bg-white cursor-pointer  w-full h-[370px] rounded-xl shadow-lg sm:w-[50%]  md:w-[33.33%]  ">
       <div className="w-full relative  min-h-[40%]  ">
         <img
           src="/images/tiger.jpg"
@@ -48,6 +52,8 @@ function CartResteurants() {
         </footer>
       </div>
     </div>
+    ))
+   }
   );
 }
 
