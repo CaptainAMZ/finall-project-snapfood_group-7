@@ -114,7 +114,7 @@
 }
 
 
-<<<<<<< HEAD
+
 .slider::before {
   position: absolute;
   content: "";
@@ -138,7 +138,7 @@
     display: none;
   }
 }
-=======
+
 
 
 ::-webkit-scrollbar-thumb {
