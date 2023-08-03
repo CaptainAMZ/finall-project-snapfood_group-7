@@ -3,8 +3,8 @@ import React from "react";
 
 function StaticSider() {
   return (
-    <div className="min-w-full">
-      <div className="md:flex min-w-[325px] h-[110px] flex border shadow-[rgba(58,61,66,0.06)_0px_1px_0px] flex-col p-4 rounded-xl border-solid border-[rgba(58,61,66,0.06)] hide">
+    <div className="w-full my-4">
+      <div className="md:flex w-full h-[110px] flex border shadow-[rgba(58,61,66,0.06)_0px_1px_0px] flex-col p-4 rounded-xl border-solid border-[rgba(58,61,66,0.06)] hide">
         <p className="w-full text-[rgb(58,61,66)] text-xs font-normal h-4 text-start">
           کلاس قیمتی
         </p>
@@ -28,7 +28,7 @@ function StaticSider() {
         </div>
       </div>
 
-      <div className="min-w-[240px] h-[300px] border bg-[white] shadow-[rgba(58,61,66,0.06)_0px_1px_0px,rgba(0,0,0,0.05)_0px_2px_8px_-2px] p-4 rounded-xl border-solid border-[rgba(58,61,66,0.06)]">
+      <div className="w-full h-[300px] border bg-[white] shadow-[rgba(58,61,66,0.06)_0px_1px_0px,rgba(0,0,0,0.05)_0px_2px_8px_-2px] p-4 rounded-xl border-solid border-[rgba(58,61,66,0.06)]">
       <div className="w-full h-1/5 flex justify-between items-center border-b-[rgba(58,61,66,0.06)] border-b border-solid">
         <span className="text">دارای کوپن</span>
         <label className="label-toggle">

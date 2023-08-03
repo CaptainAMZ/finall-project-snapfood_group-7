@@ -6,20 +6,22 @@ import StaticSider from "@/components/elements/StaticSider";
 
 function page() {
   return (
-    <div className=" max-w-screen flex flex-col m-6  overflow-hidden">
-      <div className=" flex items-center mb-8" >
+    <div className="max-w-screen h-auto flex p-6 flex-col overflow-x-hidden  ">
+      <div className="w-full h-auto mb-8 md:pl-4 "  >
         <Filter />
       </div>
-      <div className="w-full p-4">
-        <div className="flex flex-col">
-          <div>
+      <div className="xs:w-full flex flex-col sm:flex-row ">
+        <div className="sm:w-[30%] p-4">
+          <div className="w-full" >
             <FilterSider />
           </div>
-          <div >
+          <div className="w-full" >
             <StaticSider />
           </div>
         </div>
-        <div className=" w-full">
+        <div className="w-full  p-4  sm:flex  sm:flex-wrap     ">
+          <CartResteurants/>
+          <CartResteurants/>
           <CartResteurants/>
           <CartResteurants/>
         </div>

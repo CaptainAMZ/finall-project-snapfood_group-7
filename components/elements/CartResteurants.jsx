@@ -2,18 +2,18 @@ import React from "react";
 
 function CartResteurants() {
   return (
-    <div className="flex flex-col items-center pb-6 my-3  bg-white cursor-pointer  min-w-full h-[375px] rounded-xl shadow-lg sm:min-w-[310px] md:min-w-[250px] ">
+    <div className="flex flex-col items-center pb-6 bg-white cursor-pointer  w-full h-[370px] rounded-xl shadow-lg sm:w-[50%]  md:w-[33.33%]  ">
       <div className="w-full relative  min-h-[40%]  ">
         <img
           src="/images/tiger.jpg"
           alt="rick"
           className="w-full h-full object-cover rounded-t-xl"
         />
-        <div className="w-24 h-24 absolute right-0 left-0 m-auto bg-white flex items-center justify-center rounded-lg   -bottom-5 shadow-shadows-high">
+        <div className="w-[88px] h-[88px] absolute right-0 left-0 m-auto bg-white flex items-center justify-center rounded-lg   -bottom-5 shadow-shadows-high">
           <img
             src="/images/rick.png"
             alt="tiger"
-            className="w-24 h-24 object-cover rounded-xl"
+            className="w-20 h-20 object-cover rounded-xl"
           />
         </div>
         <div className="absolute right-0 bg-white w-4/5 h-6 flex items-center justify-center top-5 rounded-tl-xl rounded-bl-xl">
