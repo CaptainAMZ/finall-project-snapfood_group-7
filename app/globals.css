@@ -1,20 +1,5 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
-
-
-.revers-btn{
-  @apply mb-spacing-2 focus:font-vsb pr-spacing-2 relative block w-full 
-}
-/* .revers-btn::before{
-  @apply content-[''] bg-surface-overlay h-[0px] w-[2px] absolute rounded-lg  right-0 top-0
-  transition
-}
-
-.revers-btn:focus::before{
-  @apply opacity-100 h-[25px] 
-} */
-
 .btn{
   @apply mb-spacing-2 focus:font-vsb pl-spacing-3 relative block w-full 
 }
@@ -214,5 +199,11 @@ body{
  /* Handle on hover  */
 ::-webkit-scrollbar-thumb:hover {
   background: #c5c5c5;
-} 
 
+}
+
+.move:hover img{
+
+  transform: translateX(-3px);
+
+}
