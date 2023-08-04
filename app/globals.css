@@ -1,93 +1,27 @@
 @tailwind base;
 @tailwind components;
 .btn{
-  @apply mb-spacing-2 focus:font-vsb pl-spacing-3 relative block w-full 
+  @apply mb-spacing-2 focus:font-vsb pl-spacing-4 relative block w-full text-left
 }
 
-/* .btn::after{
->>>>>>> snap-food
+
+
+
+.btn::after{
   @apply content-[''] bg-surface-overlay h-[0px] w-[2px] absolute rounded-lg opacity-0 mr-[20px]
   transition
   
-} */
-/* .btn:focus::after{
+}
+.btn:focus::after{
   @apply opacity-100 h-[25px] 
-} */
-
-.star{
-  @apply pl-spacing-1
 }
-
-
-
-.scroll-hide::-webkit-scrollbar {
-  display: none;
-}
-
-
-.revers-btn{
-  @apply mb-spacing-2 focus:font-vsb pr-spacing-2 relative block w-full 
-}
-/* .revers-btn::before{
-  @apply content-[''] bg-surface-overlay h-[0px] w-[2px] absolute rounded-lg  right-0 top-0
-  transition
-}
-
-.revers-btn:focus::before{
-  @apply opacity-100 h-[25px] 
-} */
-
-
 @tailwind utilities;
-
-
 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
-/* @layer utilities {
-  .scrollbar::-webkit-scrollbar {
-    width: 20px;
-    height: 20px;
-  }
-
-  .scrollbar::-webkit-scrollbar-track {
-    border-radius: 100vh;
-    background: #f7f4ed;
-  }
-
-  .scrollbar::-webkit-scrollbar-thumb {
-    background: #e0cbcb;
-    border-radius: 100vh;
-    border: 3px solid #f6f7ed;
-  }
-
-  .scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #c0a0b9;
-  }
-} */
-
-/* ::-webkit-scrollbar {
-  width: 14px;
-  background-color: var(--white2);
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--gray3-color);
-  border: 3px solid var(--white);
-  border-radius: 16px;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #0000;
-  border-radius: 7px;
-  cursor: pointer;
-
-} */
 
 
 /* @layer components {
@@ -96,10 +30,6 @@
 
 @layer {
   
-  @font-face {
-    font-family: "Vazirmatn-light";
-    src: url("../public/font/Vazirmatn-light.ttf");
-  }
   @font-face {
     font-family: "Vazirmatn-Regular";
     src: url("../public/font/Vazirmatn-Regular.ttf");
@@ -140,67 +70,38 @@
   }
 }
 
+body {
+ color: #3a3d42;;
 
-
-
-::-webkit-scrollbar-thumb {
-  background-color: #babac0;
-  border: 10px solid #fff;
-  border-radius: 16px;
-  
-  transition: all .2s linear;
+ 
+ 
 }
 
-
-::-webkit-scrollbar-track {
-  background-color: #0000;
-  border-radius: 7px;
-  cursor: pointer;
-}
-body{
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
-      overflow-x: hidden;
-      background-color: #F9FAFB;
-
-}
-
-.flipped{
-  direction: ltr;
-}
-
-@media (min-width:600px) {
-  .flipped{
-    direction: rtl;
-  }
-}
 
 
 
 /* width */
-::-webkit-scrollbar {
+::-webkit-scrollbar:horizontal {
   width: 10px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track:horizontal  {
   background: #f0efef;
   border-radius: 5px;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:horizontal {
   background: #bebebeb6;
   border-radius: 5px;
   border: 2px solid #fff;
 }
  /* Handle on hover  */
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover:horizontal {
   background: #c5c5c5;
-
 }
+
 
 .move:hover img{
 
