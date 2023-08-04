@@ -1,17 +1,17 @@
 {
   "cats": [
-    { "id": 1, "title": "ایرانی", "img": "./images/irani" },
-    { "id": 2, "title": "فست فود", "img": "./images/fastfood" },
-    { "id": 3, "title": "کباب", "img": "./images/kebab" },
-    { "id": 4, "title": "پیتزا", "img": "./images/pizza" },
-    { "id": 5, "title": "برگر", "img": "./images/burger" },
-    { "id": 6, "title": "ساندویچ", "img": "./images/sandwich" },
-    { "id": 7, "title": "سوخاری", "img": "./images/sokhari" },
-    { "id": 8, "title": "پاستا", "img": "./images/italy" },
-    { "id": 9, "title": "سالاد", "img": "./images/salad" },
-    { "id": 10, "title": "دریایی", "img": "./images/seafood" },
-    { "id": 11, "title": "بین الملل", "img": "./images/asian" },
-    { "id": 12, "title": "گیلانی", "img": "./images/gilani" }
+    { "id": 1, "title": "ایرانی", "img": "/images/irani.jpg" },
+    { "id": 2, "title": "فست فود", "img": "/images/fastfood.jpg" },
+    { "id": 3, "title": "کباب", "img": "/images/kebab.jpg" },
+    { "id": 4, "title": "پیتزا", "img": "/images/pizza.jpg" },
+    { "id": 5, "title": "برگر", "img": "/images/burger.jpg" },
+    { "id": 6, "title": "ساندویچ", "img": "/images/sandwich.jpg" },
+    { "id": 7, "title": "سوخاری", "img": "/images/sokhari.jpg" },
+    { "id": 8, "title": "پاستا", "img": "/images/italy.jpg" },
+    { "id": 9, "title": "سالاد", "img": "/images/salad.jpg" },
+    { "id": 10, "title": "دریایی", "img": "/images/seafood.jpg" },
+    { "id": 11, "title": "بین الملل", "img": "/images/asian.jpg" },
+    { "id": 12, "title": "گیلانی", "img": "/images/gilani.jpg" }
   ],
   "subCats": [
     { "id": 1, "catId": [1, 3], "title": "کباب" },

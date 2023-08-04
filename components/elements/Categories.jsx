@@ -2,7 +2,6 @@
 
 import React from 'react'
 import Category from "@/components/elements/Category";
-import irani from "../../public/images/images-home/irani.jpg";
 import {getLocalData} from '../../lib/localdata'
 
 export default async function Categories() {
