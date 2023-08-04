@@ -3,7 +3,7 @@
 import Image from 'next/image'
 
 
-export default function RestaurantInfoModal({closeModal}) {
+export default function RestaurantInfoModal() {
 
     
 
@@ -11,7 +11,7 @@ export default function RestaurantInfoModal({closeModal}) {
   return (
     <div className='w-[46rem] bg-surface-light h-[40rem] rounded-xl  overflow-hidden'>
       <div className='block p-spacing-3'>
-      <button  className=' cursor-pointer block w-full text-right px-spacing-1' onClick={closeModal}>
+      <button  className=' cursor-pointer block w-full text-right px-spacing-1' >
       <Image
             src="/images/icons8-close-24.png"
             width={20}

@@ -8,16 +8,26 @@ import RestaurantInfoModal from '../modules/RestaurantInfoModal'
 import FoodModal from '../modules/FoodModal'
 
 
+export default  function FoodCard({name,image,price,rate,items,id}) {
 
-export default function FoodCard() {
+ 
+   
+    const [detail, setDetail] = useState([])
+
+    const detailpage = (product) =>{
+
+          setDetail([{...product}])
+          handleOpenModal()
+    }
+    
+    
 
   const[openModal, setOpenModal] = useState(false)
 
   const handleOpenModal = (e) =>{
     setOpenModal(true)
-      console.log("yess")
-
-      document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+    
   }
 
 
@@ -26,6 +36,7 @@ export default function FoodCard() {
    if(e.target.className.includes('CLOSE')){
      setOpenModal(false)
      document.body.style.overflow = 'auto';
+     console.log("baste")
    }
     
     
@@ -33,7 +44,7 @@ export default function FoodCard() {
 
   const closeModalBtn = () =>{
     setOpenModal(false)
-
+    document.body.style.overflow = 'auto';
   }
 
 
@@ -41,15 +52,15 @@ export default function FoodCard() {
     
     <div className='font-vrg  md:w-[50%] border-l-borders-xs border-t-[.5px] border-b-[.5px] border-surface-dark'>
         <Link href="">
-        <div className=' font-vrg flex justify-between py-spacing-1 px-spacing-1 lg:px-spacing-2'onClick={handleOpenModal}>
+        <div className=' font-vrg flex justify-between py-spacing-1 px-spacing-1 lg:px-spacing-2'onClick={() =>detailpage({items})}>
           <div className='mt-spacing-1'>
-            <h3 className='font-vmd text-scales-body text-surface-overlay'>سالاد فصل</h3>
-            <p className='text-right font-vrg text-scales-caption text-carbon-light mt-spacing-1'>یک نفره</p>
+            <h3 className='font-vmd text-scales-body text-surface-overlay'>{name}</h3>
+            {/* <p className='text-right font-vrg text-scales-caption text-carbon-light mt-spacing-1'>یک نفره</p> */}
           </div>
           <div className='md:w-[100px] lg:w-[120px]'>
           <Image
             className='object-cover rounded-xl'
-            src="/images/612c6182c8d3d.jpeg"
+            src={image}
             width={120}
             height={120}
             alt=''
@@ -62,9 +73,9 @@ export default function FoodCard() {
                 %۷۰
             </div> */}
             <div>
-              <p className='text-scales-body line-through text-inactive-dark text-right  md:d-none'>۵۳,۵۰۰</p>
+              {/* <p className='text-scales-body line-through text-inactive-dark text-right  md:d-none'>۵۳,۵۰۰</p> */}
               <p className='text-scales-body font-vsb'>
-              ۱۶,۰۵۰  تومان
+                       {price} تومان        
               </p>
             </div>
            </div>
@@ -76,9 +87,11 @@ export default function FoodCard() {
       </Link>
       <div>
         {
+          detail.map(info =>(
             openModal &&(<div onClick={handleCloseModal} className='CLOSE fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-[100vh] z-50' >
-           <FoodModal closeModal={closeModalBtn}/>
+           <FoodModal closeModal={closeModalBtn} image={image} name={name} price={price} rate={rate}  />
            </div>)
+          ))
            
         }
       </div>
