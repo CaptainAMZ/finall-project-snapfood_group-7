@@ -101,3 +101,10 @@ body {
 ::-webkit-scrollbar-thumb:hover:horizontal {
   background: #c5c5c5;
 }
+
+
+.move:hover img{
+
+  transform: translateX(-3px);
+
+}
