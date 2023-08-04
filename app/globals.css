@@ -177,7 +177,7 @@ body{
 
 
 
-/* width */
+ /* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -197,6 +197,4 @@ body{
  /* Handle on hover  */
 ::-webkit-scrollbar-thumb:hover {
   background: #c5c5c5;
-} 
-
-
+}
