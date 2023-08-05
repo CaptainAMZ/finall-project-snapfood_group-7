@@ -7,7 +7,7 @@ import {getLocalData} from '../../lib/localdata'
 export default async function Categories() {
 
   const { cats} = await getLocalData();
-  console.log(cats)
+  
 
 
   

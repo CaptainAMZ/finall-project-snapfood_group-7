@@ -4,6 +4,11 @@ import './globals.css'
 import Category from '@/components/elements/Category'
 import Application from '@/components/templates/Application'
 
+export const metadata = {
+  title: " اسنپ فود | سفارش آنلاین",
+  description: "سایت اسنپ فود",
+  
+}
 
 export default function Home() {
 
