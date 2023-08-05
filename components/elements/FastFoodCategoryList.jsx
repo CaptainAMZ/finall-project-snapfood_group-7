@@ -3,6 +3,27 @@
 
 import React from 'react'
 
+const fastFoodList = [
+  
+  "تخفیف دارها",
+  "ساندویچ ها",
+  "چلو کباب ها",
+  "غذای ایرانی",
+  "خوراک ها",
+  "سوخاری",
+  "پاستا",
+  "استیک",
+  "پیتزا آمریکایی",
+  "کباب ترک",
+  "پیتزا ایتالیایی",
+  "سالاد",
+  "پیتزا کانزاسی",
+  "برگر ",
+  "غذای پرسی ",
+
+]
+
+
 export default function FastFoodCategoryList() {
 
   const listHandler = () =>{
@@ -10,20 +31,18 @@ export default function FastFoodCategoryList() {
   }
 
   return (
-    <div className='flex flex-col items-end mt-spacing-2 font-vrg text-scales-body text-carbon-light overflow-y-scroll scrollbar scrollbar-thumb-inactive-dark scrollbar-track-surface-alphaHigh h-[400px]'>
-        <button className='btn' onClick={listHandler}>تخفیف دار ها</button>
-        <button className='btn' onClick={listHandler}>ساندویچ</button>
-        <button className='btn' onClick={listHandler}>پیتزا آمریکایی</button>
-        <button className='btn' onClick={listHandler}>پیتزا ایتالیایی</button>
-        <button className='btn' onClick={listHandler}>پیتزا ترکیبی (نصف و نصف)</button>
-        <button className='btn' onClick={listHandler}> اسلایدر گوشت</button>
-        <button className='btn' onClick={listHandler}>اسلایدر مرغ گریل</button>
-        <button className='btn' onClick={listHandler}>  اسلایدر مرغ سوخاری</button>
-        <button className='btn' onClick={listHandler}> سوخاری</button>
-        <button className='btn' onClick={listHandler}> کمبو</button>
-        <button className='btn' onClick={listHandler}> منو رژیمی</button>
-        <button className='btn' onClick={listHandler}>  سالادر و پیش غذا</button>
+    <div className='flex flex-col lg:items-end mt-spacing-2 font-vrg text-scales-body overflow-y-scroll  h-[400px] flipped '>
+
+       {
+       fastFoodList.map((items) =>{
+        return(
+          <button key={items} className=' lg:text-left lg:ml-4 btn before:absolute before:h-5 before:w-[2px] before:bg-surface-overlay before:left-0
+          before:opacity-0 focus:before:opacity-100 ' onClick={listHandler}>{items}</button>
+        )
+       })
+       }
        
+
     </div>
   )
 }

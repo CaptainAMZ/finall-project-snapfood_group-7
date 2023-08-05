@@ -1,23 +1,22 @@
 import React from 'react'
 import InfoTitle from './InfoTitle'
+import FoodList from './FoodList'
 import PageSides from './PageSides'
+import DeleteBasketModal from './DeleteBasketModal'
 export default function RestaurantInfo() {
   return (
-    <div className='w-full min-h-screen pt-[68px] px-[16px] bg-surface-dark'>
-        <h1 className='text-center font-bold'>RestaurantInfo page(main Page)</h1>
-        <div className='flex flex-col md:justify-between md:flex-row p-[calc(1rem)]'>
-            <div>
-                {/* Retaurant info Title section */}
-                <InfoTitle/>
-            </div>
-            <div>
-                Retaurant info Food List section
-            </div>
-            {/* DeliveryInfo */}
-            <div className='basis-1/4 max-w-full xs:basis-full'>
-                <PageSides/>
-            </div>
+    <div className='flex flex-wrap pt-[68px] px-4 pb-4'>
+      <div className='max-w-full basis-full p-[calc(1rem)] sm:basis-1/2 md:basis-1/4 md:max-w-[25%]'>
+        <div className='sticky top-[4rem] right-0'>
+          <InfoTitle/>
         </div>
+      </div>
+      <div className='max-w-full basis-full p-[calc(1rem)] sm:basis-1/2 sm:max-w-[50%]'>
+        <FoodList/>
+      </div>
+      <div className='max-w-full basis-full p-[calc(1rem)] md:basis-1/4 md:max-w-[25%]'>
+        <PageSides/>
+      </div>
     </div>
   )
 }
