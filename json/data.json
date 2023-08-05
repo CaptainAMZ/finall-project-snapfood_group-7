@@ -1,4 +1,16 @@
-{
+{  
+  "service":[
+    { "service": "رستوران", "img": "/images/images-home/service-food.png" },
+    { "service": "سویرمارکت", "img": "/images/images-home/service-supermarket.png" },
+    {" service": "کافه", "img":  "/images/images-home/service-cafe.png"},
+    { "service": "شیرینی", "img":  "/images/images-home/service-sweet.png" },
+    { "service": "نانوایی", "img":  "/images/images-home/service-bakery.png" },
+    { "service": "میوه", "img":  "/images/images-home/service-fruit.png" },
+    { "service": "آبمیوه بستنی", "img":  "/images/images-home/service-icecream.png"},
+    { "service": "آجیل", "img":  "/images/images-home/service-nut.png" },
+    { "service": "پروتئین", "img":  "/images/images-home/service-meat.png"},
+    { "service": "سایر", "img":  "/images/images-home/service-other2.png"}
+  ],
   "cats": [
     { "id": 1, "title": "ایرانی", "img": "/images/irani.jpg" },
     { "id": 2, "title": "فست فود", "img": "/images/fastfood.jpg" },

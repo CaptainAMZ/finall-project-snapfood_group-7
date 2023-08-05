@@ -9,12 +9,14 @@ import person from "../../public/images/images-home/person.svg";
 
 import OrderDiv from "./OrderDiv";
 import SearchDiv from "./SearchDiv";
+import {getLocalData} from '../../lib/localdata'
 
 
 
-export default function Header() {
 
-  
+export default async function Header() {
+
+  const {foods,restaurants} = await getLocalData();
   return (
    
       <header className="w-full bg-white flex flex-col">
