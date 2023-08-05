@@ -2,6 +2,7 @@ import React from 'react'
 import InfoTitle from './InfoTitle'
 import FoodList from './FoodList'
 import PageSides from './PageSides'
+import DeleteBasketModal from './DeleteBasketModal'
 export default function RestaurantInfo() {
   return (
     <div className='flex flex-wrap pt-[68px] px-4 pb-4'>
@@ -13,7 +14,7 @@ export default function RestaurantInfo() {
       <div className='max-w-full basis-full p-[calc(1rem)] sm:basis-1/2 sm:max-w-[50%]'>
         <FoodList/>
       </div>
-      <aside className='max-w-full basis-full p-[calc(1rem)]p-[calc(1rem)] md:basis-1/4 md:max-w-[25%]'>
+      <aside className='max-w-full basis-full p-[calc(1rem)] md:basis-1/4 md:max-w-[25%]'>
         <PageSides/>
       </aside>
     </div>
