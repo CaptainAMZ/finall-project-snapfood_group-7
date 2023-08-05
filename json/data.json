@@ -255,7 +255,7 @@
       "restId": 1,
       "restCatId": 1,
       "name": "چلو کباب میکس",
-      "image": "./images/kabab-mix.jpg",
+      "image": "/images/kabab-mix.jpg",
       "price": "180,000",
       "rate": 5
     },
@@ -266,7 +266,7 @@
       "restId": 1,
       "restCatId": 2,
       "name": "خوراک ماهی قزل آلا سرخ شده",
-      "image": "./images/mahi-sorkh-shode.jpg",
+      "image": "/images/mahi-sorkh-shode.jpg",
       "price": "210,000",
       "rate": "جدید"
     },
@@ -277,7 +277,7 @@
       "restId": 1,
       "restCatId": 3,
       "name": "چلو ماهیچه",
-      "image": "./images/mahiche.jpg",
+      "image": "/images/mahiche.jpg",
       "price": "260,000",
       "rate": 4.5
     },
@@ -288,7 +288,7 @@
       "restId": 1,
       "restCatId": 4,
       "name": "چلو خورشت خلال",
-      "image": "./images/khalal.jpg",
+      "image": "/images/khalal.jpg",
       "price": "150,000",
       "rate": 4.5
     },
@@ -299,7 +299,7 @@
       "restId": 1,
       "restCatId": 5,
       "name": "سالاد فصل",
-      "image": "./images/salad-fasl.jpg",
+      "image": "/images/salad-fasl.jpg",
       "price": "20,000",
       "rate": 5
     },
@@ -310,7 +310,7 @@
       "restId": 2,
       "restCatId": 6,
       "name": "چلوکباب کوبیده",
-      "image": "./images/kubide.jpg",
+      "image": "/images/kubide.jpg",
       "price": "90,000",
       "rate": 5
     },
@@ -321,7 +321,7 @@
       "restId": 2,
       "restCatId": 7,
       "name": "خوراک کباب کوبیده",
-      "image": "./images/kubide.jpg",
+      "image": "/images/kubide.jpg",
       "price": "270,000",
       "rate": 5
     },
@@ -343,7 +343,7 @@
       "restId": 2,
       "restCatId": 9,
       "name": "سالاد فصل",
-      "image": "./images/salad-fasl.jpg",
+      "image": "/images/salad-fasl.jpg",
       "price": "17,000",
       "rate": 5
     },
@@ -354,7 +354,7 @@
       "restId": 2,
       "restCatId": 10,
       "name": "نوشابه بطری",
-      "image": "./images/nushabe.jpg",
+      "image": "/images/nushabe.jpg",
       "price": "11,000",
       "rate": 5
     },
@@ -365,7 +365,7 @@
       "restId": 3,
       "restCatId": 11,
       "name": "چلو جوجه کباب با استخوان",
-      "image": "./images/juje.jpg",
+      "image": "/images/juje.jpg",
       "price": "190,000",
       "rate": 5
     },
@@ -376,7 +376,7 @@
       "restId": 3,
       "restCatId": 12,
       "name": "خوراک دنده کباب مخصوص",
-      "image": "./images/juje.jpg",
+      "image": "/images/juje.jpg",
       "price": "440,000",
       "rate": 5
     },
@@ -387,7 +387,7 @@
       "restId": 3,
       "restCatId": 13,
       "name": "خوراک دنده کباب مخصوص",
-      "image": "./images/juje.jpg",
+      "image": "/images/juje.jpg",
       "price": "440,000",
       "rate": 5
     },
@@ -398,7 +398,7 @@
       "restId": 3,
       "restCatId": 14,
       "name": "سالاد فصل",
-      "image": "./images/salad-fasl.jpg",
+      "image": "/images/salad-fasl.jpg",
       "price": "17,000",
       "rate": 5
     },
@@ -409,7 +409,7 @@
       "restId": 3,
       "restCatId": 15,
       "name": "نوشابه بطری",
-      "image": "./images/nushabe.jpg",
+      "image": "/images/nushabe.jpg",
       "price": "11,000",
       "rate": 5
     },
@@ -420,7 +420,7 @@
       "restId": 4,
       "restCatId": 16,
       "name": "ساندویچ رست بیف کوبیده",
-      "image": "./images/roastbeef.jpg",
+      "image": "/images/roastbeef.jpg",
       "price": "140,000",
       "rate": 5
     },
@@ -431,7 +431,7 @@
       "restId": 4,
       "restCatId": 17,
       "name": "ساندویچ کباب لقمه",
-      "image": "./images/loghme.jpg",
+      "image": "/images/loghme.jpg",
       "price": "105,000",
       "rate": 5
     },
@@ -442,7 +442,7 @@
       "restId": 4,
       "restCatId": 18,
       "name": "نوشابه بطری",
-      "image": "./images/nushabe.jpg",
+      "image": "/images/nushabe.jpg",
       "price": "11,000",
       "rate": 5
     },
@@ -453,7 +453,7 @@
       "restId": 5,
       "restCatId": 19,
       "name": "یک دست کامل کله پاچه",
-      "image": "./images/kale-pache.jpg",
+      "image": "/images/kale-pache.jpg",
       "price": "380,000",
       "rate": 5
     },
@@ -464,7 +464,7 @@
       "restId": 5,
       "restCatId": 20,
       "name": "نوشابه بطری",
-      "image": "./images/nushabe.jpg",
+      "image": "/images/nushabe.jpg",
       "price": "11,000",
       "rate": 5
     },
@@ -475,7 +475,7 @@
       "restId": 6,
       "restCatId": 21,
       "name": "پیتزا پپرونی دو نفره",
-      "image": "./images/peperoni.jpg",
+      "image": "/images/peperoni.jpg",
       "price": "80,000",
       "rate": 5
     },
@@ -486,7 +486,7 @@
       "restId": 6,
       "restCatId": 22,
       "name": "تاپ برگر",
-      "image": "./images/top-burger.jpg",
+      "image": "/images/top-burger.jpg",
       "price": "55,000",
       "rate": 5
     },
@@ -508,7 +508,7 @@
       "restId": 6,
       "restCatId": 24,
       "name": "نوشابه بطری",
-      "image": "./images/nushabe.jpg",
+      "image": "/images/nushabe.jpg",
       "price": "11,000",
       "rate": 5
     },
@@ -519,7 +519,7 @@
       "restId": 7,
       "restCatId": 25,
       "name": "پیتزا پپرونی دو نفره",
-      "image": "./images/peperoni.jpg",
+      "image": "/images/peperoni.jpg",
       "price": "80,000",
       "rate": 5
     },
@@ -530,7 +530,7 @@
       "restId": 7,
       "restCatId": 26,
       "name": "تاپ برگر",
-      "image": "./images/top-burger.jpg",
+      "image": "/images/top-burger.jpg",
       "price": "55,000",
       "rate": 5
     },
@@ -552,7 +552,7 @@
       "restId": 7,
       "restCatId": 28,
       "name": "نوشابه بطری",
-      "image": "./images/nushabe.jpg",
+      "image": "/images/nushabe.jpg",
       "price": "11,000",
       "rate": 5
     },
@@ -563,7 +563,7 @@
       "restId": 8,
       "restCatId": 29,
       "name": "پیتزا قارچ و گوشت آمریکایی",
-      "image": "./images/amricaee.jpg",
+      "image": "/images/amricaee.jpg",
       "price": "103,000",
       "rate": 5
     },
@@ -574,7 +574,7 @@
       "restId": 8,
       "restCatId": 30,
       "name": "سیب زمینی ساده",
-      "image": "./images/potato.jpg",
+      "image": "/images/potato.jpg",
       "price": "50,000",
       "rate": 5
     },
@@ -585,7 +585,7 @@
       "restId": 8,
       "restCatId": 31,
       "name": "نوشابه بطری",
-      "image": "./images/nushabe.jpg",
+      "image": "/images/nushabe.jpg",
       "price": "11,000",
       "rate": 5
     },
@@ -596,7 +596,7 @@
       "restId": 9,
       "restCatId": 32,
       "name": "پیتزا قارچ و گوشت آمریکایی",
-      "image": "./images/amricaee.jpg",
+      "image": "/images/amricaee.jpg",
       "price": "157,000",
       "rate": 5
     },
@@ -607,7 +607,7 @@
       "restId": 9,
       "restCatId": 33,
       "name": "تاپ برگر",
-      "image": "./images/top-burger.jpg",
+      "image": "/images/top-burger.jpg",
       "price": "74,000",
       "rate": 5
     },
@@ -629,7 +629,7 @@
       "restId": 9,
       "restCatId": 35,
       "name": "فیله سوخاری (سه تکه)",
-      "image": "./images/sokhari-2.jpg",
+      "image": "/images/sokhari-2.jpg",
       "price": "153,000",
       "rate": 5
     },
@@ -640,7 +640,7 @@
       "restId": 9,
       "restCatId": 36,
       "name": "سالاد سزار با مرغ سوخاری (بزرگ)",
-      "image": "./images/saladsezar.jpg",
+      "image": "/images/saladsezar.jpg",
       "price": "136,000",
       "rate": 5
     }

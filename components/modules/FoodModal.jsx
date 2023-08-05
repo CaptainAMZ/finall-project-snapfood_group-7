@@ -1,37 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import AddFoodBtn from '../elements/AddFoodBtn'
-export default function FoodModal({closeModal}) {
 
 
-  const comment = [
-    {
-      id:1,
-      name:"علی",
-      date:"۱۶ خرداد ۱۴۰۲",
-      point:"۵",
-      text:"من خوراک کباب کوبیده سفارش دادم و خیلی خوشمزه بود.اگر با غذاهای خیلی چرب مشکلی نداید بهتون پیشنهاد میکنم امتحانش کنید",
-      lable:"کباب کوبیده تک سیخ"
-    },
-    {
-      id:2,
-      name:"علی",
-      date:"۱۶ خرداد ۱۴۰۲",
-      point:"۵",
-      text:"من خوراک کباب کوبیده سفارش دادم و خیلی خوشمزه بود.اگر با غذاهای خیلی چرب مشکلی نداید بهتون پیشنهاد میکنم امتحانش کنید",
-      lable:"کباب کوبیده تک سیخ"
-    },
-    {
-      id:3,
-      name:"علی",
-      date:"۱۶ خرداد ۱۴۰۲",
-      point:"۵",
-      text:"من خوراک کباب کوبیده سفارش دادم و خیلی خوشمزه بود.اگر با غذاهای خیلی چرب مشکلی نداید بهتون پیشنهاد میکنم امتحانش کنید",
-      lable:"کباب کوبیده تک سیخ"
-    },
- 
-  ]
-
+export default  function FoodModal({closeModal, image,name,rate,price, comment, id}) {
 
 
   return (
@@ -52,7 +24,7 @@ export default function FoodModal({closeModal}) {
           <div className='flex '>
           <div className=' min-w-[300px] text-center pr-3'>
           <Image
-          src="/images/612c6182c8d3d.jpeg"
+          src={image}
           width={300}
           height={300}
           alt=''
@@ -61,7 +33,7 @@ export default function FoodModal({closeModal}) {
           </div>
           <div className='flex flex-col px-4 w-[100%]'>
             <div className='flex items-center  justify-between mt-2 '>
-            <h1 className='font-vb text-scales-default '>  هپی کمبو </h1>
+            <h1 className='font-vb text-scales-default '>  {name}  </h1>
             <div className='flex items-center border-borders-xs  rounded-md p-[2px] '>
                   <div className='min-w-[15px]'>
                   <Image
@@ -72,7 +44,7 @@ export default function FoodModal({closeModal}) {
                 alt=''
                 />
                 </div>
-                <p className='text-scales-body font-vsb'>۴.۲</p>
+                <p className='text-scales-body font-vsb'>{rate}</p>
             </div>
             </div>
             <div className='text-right mt-4 text-scales-body font-vmd text-gray-500'>
@@ -85,7 +57,7 @@ export default function FoodModal({closeModal}) {
            <div className='flex items-center '>
             <div>
               <p className='text-scales-body font-vsb'>
-              ۱۶,۰۵۰  تومان
+               {price} تومان
               </p>
             </div>
            </div>
@@ -100,7 +72,10 @@ export default function FoodModal({closeModal}) {
                 <p>نظرات کاربران</p>
             </div>
             {
-              comment.map(item =>(
+
+              comment.
+              filter(item =>item.fId == id)
+              .map(item =>(
             <div key={item.id} className='flex flex-col'>
           <div className='flex px-spacing-2'>
             <div className='flex-col w-[30%] text-right '>
@@ -123,7 +98,7 @@ export default function FoodModal({closeModal}) {
             </div>
             <div className='flex-col'>
                 <p className='font-vmd text-scales-body text-carbon-light text-right'>
-                 {item.text}   
+                 {item.desc}   
                 </p>
                 <div className='flex'>
                   <p className='font-vmd text-scales-caption mt-spacing-1 p-[8px] bg-surface-dark rounded-lg text-carbon-light'>
