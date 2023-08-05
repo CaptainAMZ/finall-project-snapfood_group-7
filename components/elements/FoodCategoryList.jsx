@@ -3,22 +3,36 @@
 
 import React from 'react'
 
+const food = [
+  "تخفیف دار",
+  "چلو کباب",
+  "خوراک",
+  "غذای ایرانی",
+  "سالاد و پیش غذا",
+  "سرویس اضافه",
+  "نوشیدنی",
+]
+
+
 export default function FoodCategoryList() {
 
   const listHandler = () =>{
-      console.log("category")
+      
   }
 
   return (
-    <div className='flex  flex-col  mt-spacing-2 font-vrg text-scales-body text-carbon-light h-[300px]  '>
-        <button className='revers-btn' onClick={listHandler}>تخفیف دار ها</button>
-        <button className='revers-btn' onClick={listHandler}>چلوکباب</button>
-        <button className='revers-btn' onClick={listHandler}>خوراک</button>
-        <button className='revers-btn' onClick={listHandler}>غذای ایرانی</button>
-        <button className='revers-btn' onClick={listHandler}>سالاد و پیش غذا</button>
-        <button className='revers-btn' onClick={listHandler}>سرویس اضافه</button>
-        <button className='revers-btn' onClick={listHandler}>نوشیدنی</button>
-       
-    </div>
+
+    <div className='flex flex-col lg:items-end mt-spacing-2 font-vrg text-scales-body overflow-y-auto lg:max-h-[400px]  max-h-[200px] flipped '>
+    {
+    food.map((items) =>{
+     return(
+       <button key={items} className=' text-right pr-2 lg:text-left lg:ml-4 btn before:absolute before:h-5 before:w-[2px] before:bg-surface-overlay before:left-0 md:text-left
+       before:opacity-0 focus:before:opacity-100 ' onClick={listHandler}>{items}</button>
+     )
+    })
+    }
+    
+ </div>
+
   )
 }

@@ -3,15 +3,15 @@
 import Image from 'next/image'
 
 
-export default function RestaurantInfoModal({closeModal}) {
+export default function RestaurantInfoModal() {
 
     
 
   
   return (
-    <div className='w-[46rem] bg-surface-light min-h-[45rem] rounded-xl '>
+    <div className='w-[46rem] bg-surface-light h-[40rem] rounded-xl  overflow-hidden'>
       <div className='block p-spacing-3'>
-      <button className='cursor-pointer block w-full text-right px-spacing-1' onClick={closeModal}>
+      <button  className=' cursor-pointer block w-full text-right px-spacing-1' >
       <Image
             src="/images/icons8-close-24.png"
             width={20}
@@ -85,7 +85,7 @@ export default function RestaurantInfoModal({closeModal}) {
             </div>
           </div>
         </div>
-        <div className='max-h-[420px] overflow-y-scroll '>
+        <div className=' max-h-[55%] mt-5 overflow-y-auto rounded-e-2xl '>
         <div className=' flex flex-col '>
           <div className='flex w-[100%] px-spacing-2'>
           <div className='flex flex-col justify-end w-[30%]'>
@@ -527,6 +527,9 @@ export default function RestaurantInfoModal({closeModal}) {
           </div>
         </div>
         </div>
+        {/* <div className='overflow-auto lg:max-h-[400px] '>
+        
+        </div> */}
        
     </div>
   )
