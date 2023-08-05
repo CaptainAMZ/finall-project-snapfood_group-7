@@ -62,7 +62,7 @@ export default function Search() {
 
                     </div>
 
-                   {/* <SearchCategory category={'ساندویچ'}/>
+                   <SearchCategory category={'ساندویچ'}/>
 
 
                     <SearchMarket resturantName={'پیتزا شیلا'}/>
@@ -71,7 +71,7 @@ export default function Search() {
                     
 
                             
-                    <SearchProduct/> */}
+                    <SearchProduct/>
                             
                           
     

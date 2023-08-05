@@ -4,6 +4,7 @@ import Image from 'next/image'
 import market from'../../public/images/images-home/market-stall.svg'
 
 export default function SearchMarket({resturantName}) {
+   
   return (
    
 
