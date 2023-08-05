@@ -1,6 +1,6 @@
 import React from 'react'
 import PageSides from './PageSides'
-import BasketModal from './BasketModal'
+import DeleteBasketModal from './DeleteBasketModal'
 export default function RestaurantInfo() {
   return (
     <div className='w-full min-h-screen pt-[68px] px-[16px] bg-surface-dark'>
@@ -9,7 +9,6 @@ export default function RestaurantInfo() {
             <div>
             </div>
             <div>
-              <BasketModal/>
             </div>
             {/* DeliveryInfo */}
             <div className='basis-1/4 max-w-full xs:basis-full'>
