@@ -2,7 +2,7 @@ import React from 'react'
 import InfoTitle from './InfoTitle'
 import FoodList from './FoodList'
 import PageSides from './PageSides'
-import DeleteBasketModal from './DeleteBasketModal'
+
 export default function RestaurantInfo() {
   return (
     <div className='flex flex-wrap pt-[68px] px-4 pb-4'>
