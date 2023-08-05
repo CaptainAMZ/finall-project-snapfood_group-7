@@ -5,6 +5,7 @@ import { getLocalData } from '@/lib/localdata';
 export default async function  () {
 
   const {foods} = await getLocalData();
+  const {fcomments} = await getLocalData();
  
   
 
@@ -16,7 +17,7 @@ export default async function  () {
       <div className='flex flex-col md:flex-row flex-wrap '>
           {
             foods.map(items =>(
-              <FoodCard key={items.id} name={items.name} image={items.image} price={items.price} rate={items.rate} items={items}  id={items.id}/>
+              <FoodCard key={items.id} name={items.name} image={items.image} price={items.price} rate={items.rate} items={items}  id={items.id} comment={fcomments}/>
             ))
           }
       <h1 className='font-vmd text-scales-body py-spacing-2 text-surface-overlay border-l-[.5px] border-surface-dark w-[100%] ' > تخفیف‌ دارها</h1>

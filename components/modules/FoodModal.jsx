@@ -1,23 +1,10 @@
 import React, { useEffect } from 'react'
 import Image from 'next/image'
 import AddFoodBtn from '../elements/AddFoodBtn'
-// import { getLocalData } from '@/lib/localdata'
 
 
+export default  function FoodModal({closeModal, image,name,rate,price, comment, id}) {
 
-export default function FoodModal({closeModal, image,name,rate,price}) {
-
-
-  // useEffect(() => {
-  //   const getUsers = async () => {
-  //     const {fcomments} = await getLocalData();
-  //     console.log(fcomments)
-  //   };
-  
-  //   getUsers(); // run it, run it
-  
-   
-  // }, [])
 
   return (
     <div className='w-[45rem]  bg-surface-light h-[40rem] rounded-xl overflow-hidden '>
@@ -84,8 +71,11 @@ export default function FoodModal({closeModal, image,name,rate,price}) {
             <div className='text-right px-3 text-scales-large text-carbon-light font-vsb my-8'>
                 <p>نظرات کاربران</p>
             </div>
-            {/* {
-              comments.map(item =>(
+            {
+
+              comment.
+              filter(item =>item.fId == id)
+              .map(item =>(
             <div key={item.id} className='flex flex-col'>
           <div className='flex px-spacing-2'>
             <div className='flex-col w-[30%] text-right '>
@@ -121,7 +111,7 @@ export default function FoodModal({closeModal, image,name,rate,price}) {
         </div>
 
               ))
-            } */}
+            }
 
             </div>
       </div>

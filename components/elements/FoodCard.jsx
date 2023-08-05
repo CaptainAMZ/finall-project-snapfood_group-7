@@ -4,13 +4,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 import AddFoodBtn from './AddFoodBtn'
 import React, { useState } from 'react'
-import RestaurantInfoModal from '../modules/RestaurantInfoModal'
 import FoodModal from '../modules/FoodModal'
 
 
-export default  function FoodCard({name,image,price,rate,items,id}) {
+export default  function FoodCard({name,image,price,rate,items, id , comment}) {
 
- 
    
     const [detail, setDetail] = useState([])
 
@@ -20,7 +18,7 @@ export default  function FoodCard({name,image,price,rate,items,id}) {
           handleOpenModal()
     }
     
-    
+  
 
   const[openModal, setOpenModal] = useState(false)
 
@@ -89,7 +87,7 @@ export default  function FoodCard({name,image,price,rate,items,id}) {
         {
           detail.map(info =>(
             openModal &&(<div onClick={handleCloseModal} className='CLOSE fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-[100vh] z-50' >
-           <FoodModal closeModal={closeModalBtn} image={image} name={name} price={price} rate={rate}  />
+           <FoodModal closeModal={closeModalBtn} image={image} name={name} price={price} rate={rate} comment={comment}  id={id}/>
            </div>)
           ))
            
