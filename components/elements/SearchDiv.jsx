@@ -6,7 +6,7 @@ import search from '../../public/images/images-home/search.svg'
 import Search from './Search'
 
 
-export default function SearchDiv() {
+export default function SearchDiv({foods,cats,restaurants}) {
     const [modal , setModal] = useState(false);
 
 
@@ -50,7 +50,7 @@ export default function SearchDiv() {
           </div>
 
           {modal &&<div onClick={closeModalHandler} className='CLOSE  fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-screen z-50 '> 
-                    <Search />
+                    <Search foods={foods} cats={cats} restaurants={restaurants} />
           </div> }
     </>
   )

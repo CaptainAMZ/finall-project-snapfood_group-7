@@ -3,7 +3,7 @@ import leftgreen from'../../public/images/images-home/left-green.svg'
 import Image from 'next/image'
 import market from'../../public/images/images-home/market-stall.svg'
 
-export default function SearchMarket({resturantName}) {
+export default function SearchMarket({resturantName,count}) {
    
   return (
    
@@ -25,7 +25,7 @@ export default function SearchMarket({resturantName}) {
                                 
                                     مشاهده همه
 
-                                    (23)
+                                    ({count})
                         </span>
 
 

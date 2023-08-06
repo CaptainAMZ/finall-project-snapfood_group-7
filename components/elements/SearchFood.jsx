@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import pizza from '../../public/images/images-home/pizza.jpg'
-export default function SearchFood({foodName,resturantName,img}) {
+export default function SearchFood({foodName,restaurant,img,price}) {
   return (
     <a >
 
@@ -19,7 +19,7 @@ export default function SearchFood({foodName,resturantName,img}) {
 
                         <span className='inline-block font-vrg text-[0.875rem] leading-lineHeight-caption text-carbon-main mt-[0.75rem]'>
 
-                            {resturantName}
+                            {restaurant[0].name}
 
                         </span>
                     </div>
@@ -30,14 +30,14 @@ export default function SearchFood({foodName,resturantName,img}) {
                     <div>
 
                         <p className='inline-block font-vrg text-[0.875rem] leading-lineHeight-caption text-carbon-main  ml-[0.25rem]'>
-                                پیک فروشنده
+                        {restaurant[0].delivery.type}
                         </p>
 
                        <span className='inline-block font-vrg text-[0.875rem] leading-lineHeight-caption text-carbon-main'>
 
-                                54,000
+                                {restaurant[0].delivery.price}
                                 <span className='inline-block font-vrg text-[0.875rem] leading-lineHeight-caption text-carbon-main mr-[0.25rem]'>
-                                        نومان
+                                        تومان
                                 </span>
                        </span>
 
@@ -46,7 +46,7 @@ export default function SearchFood({foodName,resturantName,img}) {
                     <div>
                     <span className='inline-block font-vsb text-[0.875rem] leading-lineHeight-caption text-carbon-main'>
 
-                           248,000
+                           {price}
                             <span className='inline-block font-vrg text-[0.875rem] leading-lineHeight-caption text-carbon-main mr-[0.25rem]'>
                                     تومان                                                        </span>
                             </span>

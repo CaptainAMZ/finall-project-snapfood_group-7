@@ -16,7 +16,7 @@ import {getLocalData} from '../../lib/localdata'
 
 export default async function Header() {
 
-  const {foods,restaurants} = await getLocalData();
+  const  {cats,foods,restaurants} = await getLocalData();
   return (
    
       <header className="w-full bg-white flex flex-col">
@@ -57,7 +57,7 @@ export default async function Header() {
             </div>
           </div>
 
-          <SearchDiv/>
+          <SearchDiv cats ={cats} restaurants={restaurants} foods={foods}/>
 
           <div className=" flex items-center z-999 md:gap-x-spacing-3">
             <div className="p-spacing-2 cursor-pointer items-baseline flex">

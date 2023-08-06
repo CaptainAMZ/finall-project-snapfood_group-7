@@ -10,20 +10,24 @@ import bakery from "../../public/images/images-home/service-bakery.png";
 import nut from "../../public/images/images-home/service-nut.png";
 import other2 from "../../public/images/images-home/service-other2.png";
 import meat from "../../public/images/images-home/service-meat.png";
+import { getLocalData } from "@/lib/localdata";
+export default async function Nav() {
+   
+  
+  const {services} = await getLocalData();
 
-export default function Nav() {
-  const services = [
-    { service: "رستوران", img: food },
-    { service: "سویرمارکت", img: supermarket },
-    { service: "کافه", img: cafe },
-    { service: "شیرینی", img: sweet },
-    { service: "نانوایی", img: bakery },
-    { service: "میوه", img: fruit },
-    { service: "آبمیوه بستنی", img: icecream},
-    { service: "آجیل", img: nut },
-    { service: "پروتئین", img: meat },
-    { service: "سایر", img: other2},
-  ];
+  // const services = [
+  //   { service: "رستوران", img: food },
+  //   { service: "سویرمارکت", img: supermarket },
+  //   { service: "کافه", img: cafe },
+  //   { service: "شیرینی", img: sweet },
+  //   { service: "نانوایی", img: bakery },
+  //   { service: "میوه", img: fruit },
+  //   { service: "آبمیوه بستنی", img: icecream},
+  //   { service: "آجیل", img: nut },
+  //   { service: "پروتئین", img: meat },
+  //   { service: "سایر", img: other2},
+  // ];
 
   return (
     <nav  className="pt-spacing-2  overflow-x-auto scrollbar-thin  scrollbar-thumb-gray-400 scrollbar-track-gray-300 flex items-baseline bg-white ">

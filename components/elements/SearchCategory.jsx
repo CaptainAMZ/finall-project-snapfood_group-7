@@ -8,7 +8,7 @@ export default function SearchCategory({category}) {
 
 
 
-<                   div className='flex flex-col border-b-[0.0625rem] border-surface-dark'>
+                    <div className='last:border-b-[0.0625rem]   last:border-surface-dark flex flex-col'>
                       <a >
 
                             <div className='p-[1.125rem] flex items-center '>
