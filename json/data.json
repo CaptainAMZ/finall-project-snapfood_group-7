@@ -73,10 +73,10 @@
       "name": "تهیه غذای کانی کرد",
       "star": 4.2,
       "rate": 82,
-      "logo": "./images/deflogo-1.jpg",
-      "image": "./images/irani-1.jpg",
+      "logo": "/images/deflogo-1.jpg",
+      "image": "/images/irani-1.jpg",
       "delivery": {
-        "icon": "./images/delivery.svg",
+        "icon": "/images/delivery.svg",
         "type": "پیک فروشنده",
         "price": "20,000"
       },

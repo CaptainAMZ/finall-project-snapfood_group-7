@@ -3,16 +3,25 @@ import Image from 'next/image'
 import InfoBtn from './InfoBtn'
 import FoodCategoryList from './FoodCategoryList'
 import FastFoodCategoryList from './FastFoodCategoryList'
+import { getLocalData } from '@/lib/localdata';
 
-export default function InfoTitle() {
+export default async function InfoTitle() {
+
+  const {restCats, restaurants} = await getLocalData();
+ 
+
+    const resturant = restaurants.filter(items=> items.id == 1)
+    
+    
+    
+
   return (
-  
-
+      
     <div className='font-vrg  '>
         <div className='flex mb-10 w-[30%] '>
             <div className='pl-spacing-1 min-w-[100%]'  >
             <Image
-            src="/images/5ced6a4b46383.png"
+            src={resturant[0].logo}
             width={100}
             height={100}
             alt=''
@@ -30,25 +39,27 @@ export default function InfoTitle() {
                  alt=''
                  className='object-cover '/>
                  </div>
-                 <p className='text-scales-caption font-vsb pr-1'>۴.۵</p>
+                 <p className='text-scales-caption font-vsb pr-1'>{resturant[0].star}</p>
                 </div>
                  <p className='px-1 text-inactive-dark font-vrg text-scales-caption'>(۲,۴۵۶ امتیاز)</p>
                 </div>
-                {/* <div className=' shadow-sm font-vsb text-accent-dark  ml-spacing-1 rounded-full border-borders-xs px-[10px] py-[2px] text-center'>
-                %۷۰
-                </div> */}
         </div>
         <div>
-             <h2 className='w-[99%] truncate text-scales-large font-vb'>آشپزخانه صنعتی امیران</h2>
+             <h2 className='w-[99%] truncate text-scales-large font-vb'>{resturant[0].name}</h2>
          </div>
             </div>
         </div>
         <div className='w-full'>
-            <InfoBtn/>
+            <InfoBtn {...resturant[0]}/>
         </div>
         <div className='w-full   '>
-        <FoodCategoryList/>
-        {/* <FastFoodCategoryList/> */}
+          {
+            restCats.filter(item => item.restId == 4)
+            .map(items => (
+              
+              <FoodCategoryList title={items.title}/>
+            ))
+          }
         </div>
     </div>
     
