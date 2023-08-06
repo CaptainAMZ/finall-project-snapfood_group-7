@@ -1,24 +1,22 @@
 import React from 'react'
 import InfoTitle from './InfoTitle'
 import FoodList from './FoodList'
+import PageSides from './PageSides'
+
 export default function RestaurantInfo() {
   return (
-    <div className= ' flex flex-col sm:flex-row sm:flex-wrap gap-5 sm:justify-center px-4 pt-[68px]'>
-     <div className=' sm:w-[45%] md:flex-1 
-     '>
-      <div className='sticky top-0 right-0'>
-        <InfoTitle/>
+    <div className='flex flex-wrap pt-[68px] px-4 pb-4'>
+      <div className='max-w-full basis-full p-[calc(1rem)] sm:basis-1/2 md:basis-1/4 md:max-w-[25%]'>
+        <div className='sticky top-[4rem] right-0'>
+          <InfoTitle/>
+        </div>
       </div>
-     </div>
-     <div className='sm:w-[45%] md:flex-4 lg:flex-[2] '>
-       <FoodList/>
-     </div>
-     <div className='bg-green-400 md:flex-1'>
-        <p>
-         
-        </p>
-     </div>
+      <div className='max-w-full basis-full p-[calc(1rem)] sm:basis-1/2 sm:max-w-[50%]'>
+        <FoodList/>
+      </div>
+      <div className='max-w-full basis-full p-[calc(1rem)] md:basis-1/4 md:max-w-[25%]'>
+        <PageSides/>
+      </div>
     </div>
-    
   )
 }
