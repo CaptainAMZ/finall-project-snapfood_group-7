@@ -3,17 +3,17 @@ import Categories from "@/components/elements/Categories";
 import './globals.css'
 import Category from '@/components/elements/Category'
 import Application from '@/components/templates/Application'
-<<<<<<< HEAD:app/page.js
+
 import RestaurantInfo from "@/components/elements/RestaurantInfo";
 import { Providers } from '../redux/GelobalRedux/provider'
-=======
+
 
 export const metadata = {
   title: " اسنپ فود | سفارش آنلاین",
   description: "سایت اسنپ فود",
   
 }
->>>>>>> snap:app/(root)/page.js
+
 
 export default function Home() {
 
