@@ -1,6 +1,6 @@
 import Image from "next/image"
-import logo from '../public/images/images-home/logo.svg'
-import notfound from '../public/images/images-home/error_404.png'
+import logo from '../../public/images/images-home/logo.svg'
+import notfound from '../../public/images/images-home/error_404.png'
 import Link from 'next/link'
 
 export default function NotFound(){

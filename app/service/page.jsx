@@ -1,4 +1,6 @@
-import '../globals.css'
+
+
+
 import {getLocalData} from '../../lib/localdata'
 // export async function generateMetadata({ params }) {
 //     const userData =await getLocalData(params) //deduped!

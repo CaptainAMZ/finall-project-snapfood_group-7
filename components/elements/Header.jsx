@@ -10,24 +10,35 @@ import person from "../../public/images/images-home/person.svg";
 import OrderDiv from "./OrderDiv";
 import SearchDiv from "./SearchDiv";
 import {getLocalData} from '../../lib/localdata'
+import Link from "next/link";
+
+import { headers } from 'next/headers';
+
+// export default function Navbar() {
+//     const headersList = headers();
+//     const domain = headersList.get('host') || "";
+//     const fullUrl = headersList.get('referer') || "";
+
+//     console.log(fullUrl);
+// }
 
 
+export default async function Header({params}) {
 
-
-export default async function Header() {
-
+  
+  // console.log(params);
   const  {cats,foods,restaurants} = await getLocalData();
   return (
    
       <header className="w-full bg-white flex flex-col">
         <div className=" flex justify-between  items-center p-spacing-2  max-h-spacing-9">
           <div className="flex items-center">
-            <a
-              href=""
+            <Link
+              href="/"
               className="hidden sm:block ml-spacing-5 outline-none cursor-pointer"
             >
               <Image src={logo} width={68} height={34} alt="logo" />
-            </a>
+            </Link>
             <div className="max-h-spacing-5 p-spacing-11 cursor-pointer  inline-flex items-center  ">
               <Image
                 className="me-spacing-12"

@@ -3,7 +3,7 @@ import Image from "next/image";
 import leftgreen from "../../public/images/images-home/left-green.svg";
 import SearchFood from "./SearchFood";
 export default function SearchProduct({ foods, value, restaurants }) {
-  const count = useRef(0);
+  
   const foodFilter=foods.filter((item)=>{
 
     if(item.name.includes(value)){

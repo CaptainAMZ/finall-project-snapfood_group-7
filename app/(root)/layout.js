@@ -1,6 +1,6 @@
 import Header from '@/components/elements/Header'
 import './globals.css'
-import { Inter } from 'next/font/google'
+
 
 
 import Nav from '@/components/elements/Nav'

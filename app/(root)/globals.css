@@ -32,27 +32,27 @@
   
   @font-face {
     font-family: "Vazirmatn-Regular";
-    src: url("../public/font/Vazirmatn-Regular.ttf");
+    src: url("../../public/font/Vazirmatn-Regular.ttf");
   }
 
   @font-face {
     font-family: "Vazirmatn-Medium";
-    src: url("../public/font/Vazirmatn-Medium.ttf");
+    src: url("../../public/font/Vazirmatn-Medium.ttf");
   }
 
   @font-face {
     font-family: "Vazirmatn-SemiBold";
-    src: url("../public/font/Vazirmatn-SemiBold.ttf");
+    src: url("../../public/font/Vazirmatn-SemiBold.ttf");
   }
 
   @font-face {
     font-family: "Vazirmatn-Bold";
-    src: url("../public/font/Vazirmatn-Bold.ttf");
+    src: url("../../public/font/Vazirmatn-Bold.ttf");
   }
 
   @font-face {
     font-family: "Vazirmatn-ExtraBold";
-    src: url("../public/font/Vazirmatn-ExtraBold.ttf");
+    src: url("../../public/font/Vazirmatn-ExtraBold.ttf");
   }
 }
 
