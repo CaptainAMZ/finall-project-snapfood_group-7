@@ -85,10 +85,10 @@
       "name": "تهیه غذای کانی کرد",
       "star": 4.2,
       "rate": 82,
-      "logo": "./images/deflogo-1.jpg",
+      "logo": "/images/deflogo-1.jpg",
       "image": "/images/irani-1.jpg",
       "delivery": {
-        "icon": "./images/delivery.svg",
+        "icon": "/images/delivery.svg",
         "type": "پیک فروشنده",
         "price": "20,000"
       },
@@ -269,7 +269,8 @@
       "name": "چلو کباب میکس",
       "image": "/images/kabab-mix.jpg",
       "price": "180,000",
-      "rate": 5
+      "rate": 5,
+      "desc":"۲ سیخ کباب میکس، ترکیب ۶۰ گرم کباب چنجه گوساله، ۶۰ گرم جوجه کباب ترش، ۶۰ گرم جوجه کباب سینه مرغ، ۶۰ گرم کباب ترش گوشت فیله گوساله، ۴۰۰ گرم برنج ایرانی، گوجه کبابی، کره"
     },
     {
       "id": 2,
@@ -280,7 +281,8 @@
       "name": "خوراک ماهی قزل آلا سرخ شده",
       "image": "/images/mahi-sorkh-shode.jpg",
       "price": "210,000",
-      "rate": "جدید"
+      "rate": "جدید",
+      "desc":"۳۰۰ گرم ماهی قزل آلا سرخ شده"
     },
     {
       "id": 3,
@@ -291,7 +293,9 @@
       "name": "چلو ماهیچه",
       "image": "/images/mahiche.jpg",
       "price": "260,000",
-      "rate": 4.5
+      "rate": 4.5,
+      "desc":"      "
+
     },
     {
       "id": 4,
@@ -302,7 +306,8 @@
       "name": "چلو خورشت خلال",
       "image": "/images/khalal.jpg",
       "price": "150,000",
-      "rate": 4.5
+      "rate": 4.5,
+      "desc":""
     },
     {
       "id": 5,
@@ -324,7 +329,8 @@
       "name": "چلوکباب کوبیده",
       "image": "/images/kubide.jpg",
       "price": "90,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     },
     {
       "id": 7,
@@ -335,7 +341,8 @@
       "name": "خوراک کباب کوبیده",
       "image": "/images/kubide.jpg",
       "price": "270,000",
-      "rate": 5
+      "rate": 5,
+      "desc":"دوسیخ کباب کوبیده ۱۰۰ گرمی به همراه ۳۰۰ گرم برنج خارجی و گوجه"
     },
     {
       "id": 8,
@@ -346,7 +353,8 @@
       "name": "زرشک پلو با مرغ سس پز",
       "image": "",
       "price": "90,000",
-      "rate": 5
+      "rate": 5,
+      "desc":" برنج خارجی به همراه ۱/۸ مرغ ۱۸۰ تا ۲۰۰ گرمی وسس و زرشک"
     },
     {
       "id": 9,
@@ -357,7 +365,8 @@
       "name": "سالاد فصل",
       "image": "/images/salad-fasl.jpg",
       "price": "17,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     },
     {
       "id": 10,
@@ -379,7 +388,8 @@
       "name": "چلو جوجه کباب با استخوان",
       "image": "/images/juje.jpg",
       "price": "190,000",
-      "rate": 5
+      "rate": 5,
+      "desc":"  یک سیخ جوجه کباب سینه مرغ بدون استخوان ۱۵۰ گرمی، ۳۰۰ گرم برنج ایرانی، یک عدد گوجه کبابی، کره  "
     },
     {
       "id": 12,
@@ -387,10 +397,11 @@
       "subCatId": [1, 2, 11],
       "restId": 3,
       "restCatId": 12,
-      "name": "خوراک دنده کباب مخصوص",
+      "name": " خوراک کباب وزیری",
       "image": "/images/juje.jpg",
       "price": "440,000",
-      "rate": 5
+      "rate": "جدید",
+      "desc":"یک سیخ کباب کوبیده ۱۰۰ گرمی گوشت چرخ شده مخلوط گوساله و گوسفندی، یک سیخ جوجه کباب سینه ۲۰۰ گرم، دورچین: یک عدد گوجه کبابی"
     },
     {
       "id": 13,
@@ -401,7 +412,8 @@
       "name": "خوراک دنده کباب مخصوص",
       "image": "/images/juje.jpg",
       "price": "440,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     },
     {
       "id": 14,
@@ -412,7 +424,8 @@
       "name": "سالاد فصل",
       "image": "/images/salad-fasl.jpg",
       "price": "17,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     },
     {
       "id": 15,
@@ -434,7 +447,8 @@
       "name": "ساندویچ رست بیف کوبیده",
       "image": "/images/roastbeef.jpg",
       "price": "140,000",
-      "rate": 5
+      "rate": 5,
+      "desc":" یک عدد هات داگ مجاری ۵۵٪، گوشت رست بیف گوساله، کاهو، گوجه، خیارشور، سس مخصوص، نان باگت"
     },
     {
       "id": 17,
@@ -445,7 +459,9 @@
       "name": "ساندویچ کباب لقمه",
       "image": "/images/loghme.jpg",
       "price": "105,000",
-      "rate": 5
+      "rate": 5,
+      "desc":" یک عدد هات داگ مجاری ۵۵٪، گوشت رست بیف گوساله، کاهو، گوجه، خیارشور، سس مخصوص، نان باگت"
+
     },
     {
       "id": 18,
@@ -467,7 +483,8 @@
       "name": "یک دست کامل کله پاچه",
       "image": "/images/kale-pache.jpg",
       "price": "380,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     },
     {
       "id": 20,
@@ -489,7 +506,8 @@
       "name": "پیتزا پپرونی دو نفره",
       "image": "/images/peperoni.jpg",
       "price": "80,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     },
     {
       "id": 22,
@@ -500,7 +518,8 @@
       "name": "تاپ برگر",
       "image": "/images/top-burger.jpg",
       "price": "55,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     },
     {
       "id": 23,
@@ -511,7 +530,8 @@
       "name": "ساندویچ هات داگ مخصوص",
       "image": "",
       "price": "45,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     },
     {
       "id": 24,
@@ -533,7 +553,8 @@
       "name": "پیتزا پپرونی دو نفره",
       "image": "/images/peperoni.jpg",
       "price": "80,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     },
     {
       "id": 26,
@@ -544,7 +565,8 @@
       "name": "تاپ برگر",
       "image": "/images/top-burger.jpg",
       "price": "55,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     },
     {
       "id": 27,
@@ -577,7 +599,8 @@
       "name": "پیتزا قارچ و گوشت آمریکایی",
       "image": "/images/amricaee.jpg",
       "price": "103,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     },
     {
       "id": 30,
@@ -588,7 +611,8 @@
       "name": "سیب زمینی ساده",
       "image": "/images/potato.jpg",
       "price": "50,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     },
     {
       "id": 31,
@@ -610,7 +634,8 @@
       "name": "پیتزا قارچ و گوشت آمریکایی",
       "image": "/images/amricaee.jpg",
       "price": "157,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     },
     {
       "id": 33,
@@ -621,7 +646,8 @@
       "name": "تاپ برگر",
       "image": "/images/top-burger.jpg",
       "price": "74,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     },
     {
       "id": 34,
@@ -632,7 +658,8 @@
       "name": "ساندویچ هات داگ مخصوص",
       "image": "",
       "price": "45,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     },
     {
       "id": 35,
@@ -643,7 +670,8 @@
       "name": "فیله سوخاری (سه تکه)",
       "image": "/images/sokhari-2.jpg",
       "price": "153,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     },
     {
       "id": 36,
@@ -654,7 +682,8 @@
       "name": "سالاد سزار با مرغ سوخاری (بزرگ)",
       "image": "/images/saladsezar.jpg",
       "price": "136,000",
-      "rate": 5
+      "rate": 5,
+      "desc":""
     }
   ],
   "rComments": [
