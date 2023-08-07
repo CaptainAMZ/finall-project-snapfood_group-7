@@ -9,7 +9,7 @@ export default function RestaurantInfoModal({name,address,logo,rate }) {
 
   
   return (
-    <div className='w-[46rem] bg-surface-light h-[40rem] rounded-xl  overflow-hidden'>
+    <div className=' w-[46rem] bg-surface-light h-[40rem] rounded-xl  overflow-hidden'>
       <div className='block p-spacing-3'>
       <button  className=' cursor-pointer block w-full text-right px-spacing-1' >
       <Image

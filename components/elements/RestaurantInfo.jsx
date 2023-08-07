@@ -14,7 +14,7 @@ export default function RestaurantInfo() {
       <div className='max-w-full basis-full p-[calc(1rem)] sm:basis-1/2 sm:max-w-[50%]'>
         <FoodList/>
       </div>
-      <div className='max-w-full basis-full p-[calc(1rem)] md:basis-1/4 md:max-w-[25%]'>
+      <div className=' sticky max-w-full basis-full p-[calc(1rem)] md:basis-1/4 md:max-w-[25%] z-0'>
         <PageSides/>
       </div>
     </div>

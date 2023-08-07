@@ -61,8 +61,8 @@ export default  function FoodModal({closeModal, image,name,rate,price, comment, 
               </p>
             </div>
            </div>
-           <div className='text-center ml-spacing-1 bg-surface-main w-[25%] p-[4px] rounded-full text-accent-main border-borders-xs border-inactive-light  shadow-shadows-small hover:bg-accent-light hover:text-surface-main transition-colors'>
-              <AddFoodBtn/>
+           <div>
+           <AddFoodBtn/>
            </div>
         </div>
             </div>

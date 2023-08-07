@@ -1,27 +1,32 @@
   
-import React from 'react'
+import React, { useState } from 'react'
 import {useSelector, useDispatch } from 'react-redux';
-import { add, remove } from '../../app/GelobalRedux/Featurs/cartSlice';
+import { add, remove } from '../../redux/GelobalRedux/Featurs/cartSlice';
+import OrderCountChange from './OrderCountChange';
 
-export default function Btn({product}) {
+export default function Btn() {
   
-  const cart = useSelector(store => store.cart)
-  const dispatch = useDispatch()
+  const[btn, setBtn] = useState(false)
+
+    const btnHandler = () =>{
+      setBtn(true)
+    }
+
+    const backToBtnHandler = () =>{
+      setBtn(false)
+    }
   return (
-    <div>
-         {
-                cart.filter(p => p.id == product.id)[0]?.count > 0 ? <div><button onClick={()=>dispatch(add(product))}>💈</button>
-                {cart.filter( p => p.id== product.restId)[0].count} </div> :
-                <button onClick ={() =>dispatch(add(product))}>افزودن</button>
-        }
-
-        {
-           cart.filter(p => p.id == product.restId)[0]?.count > 0 && 
-           <div><button onClick={() => dispatch(remove(product))} >-</button></div>
-
-        }
-        
-    
+    <div className='flex'>
+      {
+        btn && <OrderCountChange onClick={backToBtnHandler}/>
+     
+      }
+      {
+        !btn &&
+        <button className='min-w-[100px] text-center ml-spacing-1 bg-surface-main w-[30%] p-[4px] rounded-full text-accent-main border-borders-xs border-inactive-light 
+         shadow-shadows-small hover:bg-accent-light hover:text-surface-main transition-colors' onClick={btnHandler}>افزودن</button>
+      }
+      
     </div>
   )
 }

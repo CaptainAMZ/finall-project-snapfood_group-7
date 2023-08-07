@@ -9,7 +9,7 @@ import CardDetail from './CardDetail';
 // کامپوننت زمان ارسال، پیک فروشنده و سبد حرید در اینجا قرار میگیرن
 function PageSides() {
   return (
-    <div className='sticky top-[4rem] transition ease duration-0'>
+    <div className=' '>
       {/* PreOrderTime */}
       <PreOrder/>
       {/* Delivery Cost */}
