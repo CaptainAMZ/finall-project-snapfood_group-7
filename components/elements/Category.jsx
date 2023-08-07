@@ -14,7 +14,7 @@ export default function Category({type,img}) {
 
            </p>
 
-           <Image src={left} width={17} height={20
+           <Image src={"/images/images-home/left.svg"} width={17} height={20
            } alt='left' className=" cursor-pointer  "/>
         </div>
       </div>

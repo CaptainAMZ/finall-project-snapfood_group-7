@@ -39,7 +39,7 @@ export default function OrderDiv() {
     <div onClick={ openModalHandler } className="  relative cursor-pointer flex max-h-spacing-6 mr-spacing-2 rounded-lgg ">
             <Image
             className="ml-spacing-1 "
-            src={order}
+            src={"/images/images-home/order.svg"}
             width={20}
             height={20}
             alt="order"
