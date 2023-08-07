@@ -128,15 +128,17 @@ body{
       overflow-x: hidden;
       background-color: #F9FAFB;
 
+      max-width: 100%;
+
 }
 
 .flipped{
-  direction: ltr;
+  direction: rtl;
 }
 
-@media (min-width:600px) {
+@media (min-width:960px) {
   .flipped{
-    direction: rtl;
+    direction: ltr;
   }
 }
 
