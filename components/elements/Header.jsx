@@ -37,12 +37,16 @@ export default async function Header({params}) {
               href="/"
               className="hidden sm:block ml-spacing-5 outline-none cursor-pointer"
             >
+<<<<<<< HEAD
               {/* <Image src={logo} width={68} height={34} alt="logo" /> */}
+=======
+              <Image src={"/images/images-home/logo.svg"} width={68} height={34} alt="logo" />
+>>>>>>> snap
             </Link>
             <div className="max-h-spacing-5 p-spacing-11 cursor-pointer  inline-flex items-center  ">
               <Image
                 className="me-spacing-12"
-                src={location}
+                src={"/images/images-home/location.svg"}
                 width={17}
                 height={18}
                 alt="location"
@@ -58,7 +62,7 @@ export default async function Header({params}) {
                   </span>
                   <Image
                     className="ms-spacing-14 mt-spacing-11 "
-                    src={down}
+                    src={"/images/images-home/down.svg"}
                     width={19}
                     height={17}
                     alt="down"
@@ -74,7 +78,7 @@ export default async function Header({params}) {
             <div className="p-spacing-2 cursor-pointer items-baseline flex">
               <Image
                 className=" block cursor-pointer"
-                src={person}
+                src={"/images/images-home/person.svg"}
                 width={17}
                 height={17}
                 alt="person"

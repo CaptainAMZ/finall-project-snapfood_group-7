@@ -9,7 +9,7 @@ export default function ModalOrder({onClose}) {
             <div className=' w-[25rem] overflow-hidden  bg-white shadow-shadows-modal rounded-xl  m-auto '>
                 <div className='relative w-full h-[56px] pl-[56px] flex justify-between items-center '>
                   <button onClick={onClose} className='w-[56px] h-[56px]  py[1px] px[6px] flex justify-center items-center'>
-                        <Image className='cursor-pointer' src={cross} width={14} height={14}/>
+                        <Image className='cursor-pointer' src={"/images/images-home/cross.svg"} width={14} height={14}/>
                   </button>
 
                  
@@ -47,7 +47,7 @@ export default function ModalOrder({onClose}) {
                           </div>
                         </div>
 
-                        <Image   className='cursor-pointer pt-spacing-11' src={cross} width={6} height={8}/>
+                        <Image   className='cursor-pointer pt-spacing-11' src={"/images/images-home/cross.svg"} width={6} height={8}/>
                         <span className=' pt-spacing-11  mr-spacing-13 ml-spacing-13  font-vrg text-vm leading-lineHeight-body carbon-light'>
                                 1
                         </span>

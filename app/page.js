@@ -4,8 +4,16 @@ import './globals.css'
 import Category from '@/components/elements/Category'
 import Application from '@/components/templates/Application'
 
+
 import RestaurantInfo from "@/components/elements/RestaurantInfo";
 // import { Providers } from '../redux/GelobalRedux/provider'
+
+
+
+
+import RestaurantInfo from "@/components/elements/RestaurantInfo";
+import { Providers } from '../redux/GelobalRedux/provider'
+
 
 
 export const metadata = {
