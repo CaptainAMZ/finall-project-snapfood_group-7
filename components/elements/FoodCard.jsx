@@ -2,11 +2,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import AddFoodBtn from "./AddFoodBtn";
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 import FoodModal from "../modules/FoodModal";
 import defImg from "../../public/images/deflogo-1.jpg";
 
-export default function FoodCard({
+
+
+ function FoodCard({
   name,
   image = "/images/deflogo-1.jpg",
   price,
@@ -15,7 +17,10 @@ export default function FoodCard({
   id,
   comment,
   desc,
+  basket
 }) {
+
+  
   const [detail, setDetail] = useState([]);
 
   const detailpage = (product) => {
@@ -75,7 +80,7 @@ export default function FoodCard({
             </div>
           </div>
           <div>
-            <AddFoodBtn />
+            <AddFoodBtn id={id} price={price} name={name} basket={basket} />
           </div>
         </div>
       </div>
@@ -103,3 +108,6 @@ export default function FoodCard({
     </div>
   );
 }
+
+
+export default memo(FoodCard)
