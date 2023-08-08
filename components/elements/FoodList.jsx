@@ -8,14 +8,6 @@ export default async function  () {
   const {foods,fcomments } = await getLocalData();
   
 
-
- 
-
-  
-  
-
-
-
   return (
     <div className='border-t-[.5px] text-center border-r-borders-xs border-b-borders-xs border-surface-dark rounded-md overflow-hidden bg-surface-light flex flex-col justify-start sx:w-[100%] lg:w-[100%] '> 
       <div className='flex flex-col md:flex-row flex-wrap '>
