@@ -3,25 +3,19 @@ import Categories from "@/components/elements/Categories";
 import './globals.css'
 import Category from '@/components/elements/Category'
 import Application from '@/components/templates/Application'
-<<<<<<< HEAD:app/(root)/page.js
+
 
 import RestaurantInfo from "@/components/elements/RestaurantInfo";
 import { Providers } from '../redux/GelobalRedux/provider'
 
-=======
-import RestaurantInfo from "@/components/elements/RestaurantInfo";
-// import { Providers } from '../redux/GelobalRedux/provider'
->>>>>>> c4f10431926fa04a0ffd7a2d47a043d6a9f88aef:app/page.js
+
+
 
 export const metadata = {
   title: " اسنپ فود | سفارش آنلاین",
   description: "سایت اسنپ فود",
   
 }
-<<<<<<< HEAD:app/(root)/page.js
-
-=======
->>>>>>> c4f10431926fa04a0ffd7a2d47a043d6a9f88aef:app/page.js
 
 export default function Home() {
 
