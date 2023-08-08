@@ -1,7 +1,7 @@
   
 import React, { useState } from 'react'
-import {useSelector, useDispatch } from 'react-redux';
-import { add, remove } from '../../redux/GelobalRedux/Featurs/cartSlice';
+// import {useSelector, useDispatch } from 'react-redux';
+// import { add, remove } from '../../redux/GelobalRedux/Featurs/cartSlice';
 import OrderCountChange from './OrderCountChange';
 
 export default function Btn() {

@@ -15,7 +15,7 @@ export default function SearchDiv({foods,cats,restaurants}) {
     const [modal , setModal] = useState(false);
     
   
-   const location =window.location;
+   const location = window.location;
     const path = location.pathname;
     // console.log(location);
     let restaurantName;
@@ -106,7 +106,7 @@ export default function SearchDiv({foods,cats,restaurants}) {
         <div onClick={openModalHandler}className="flex items-center end-spacing-0 w-spacing-15  p-spacing-2 absolute m-auto max-h-spacing-6 rounded-lgg left-spacing-0 md:right-spacing-0 md:w-29 md:bg-surface-dark ">
             <Image
               className="ml-spacing-1"
-              src={search}
+              src={"/images/images-home/search.svg"}
               width={18}
               height={18}
               alt="search"

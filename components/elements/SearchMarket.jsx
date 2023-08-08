@@ -29,7 +29,7 @@ export default function SearchMarket({resturantName,count}) {
                         </span>
 
 
-                        <Image src={leftgreen} width={22} />
+                        <Image src={"/images/images-home/left-green.svg"} width={22} height={22} />
                 </div>
             
             </a>
@@ -42,7 +42,7 @@ export default function SearchMarket({resturantName,count}) {
 
         <div className='p-[1.125rem] flex items-center '>
 
-            <Image className='ml-spacing-2' src={market} width={20} height={20}/>
+            <Image className='ml-spacing-2' src={"/images/images-home/market-stall.svg"} width={20} height={20}/>
 
             <div >
                 <span className='inline-block font-vrg text-[0.875rem] leading-lineHeight-caption text-carbon-main '>
