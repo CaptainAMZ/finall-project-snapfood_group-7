@@ -2,34 +2,47 @@
 
 import React from "react";
 import Image from "next/image";
-import search from "../../public/images/images-home/search.svg";
 import location from "../../public/images/images-home/location.svg";
 import logo from "../../public/images/images-home/logo.svg";
 import down from "../../public/images/images-home/down.svg";
 import person from "../../public/images/images-home/person.svg";
 
 import OrderDiv from "./OrderDiv";
+import SearchDiv from "./SearchDiv";
+import {getLocalData} from '../../lib/localdata'
+import Link from "next/link";
+
+import { headers } from 'next/headers';
+
+// export default function Navbar() {
+//     const headersList = headers();
+//     const domain = headersList.get('host') || "";
+//     const fullUrl = headersList.get('referer') || "";
+
+//     console.log(fullUrl);
+// }
 
 
-
-export default function Header() {
+export default async function Header({params}) {
 
   
+  // console.log(params);
+  const  {cats,foods,restaurants} = await getLocalData();
   return (
    
       <header className="w-full bg-white flex flex-col">
         <div className=" flex justify-between  items-center p-spacing-2  max-h-spacing-9">
           <div className="flex items-center">
-            <a
-              href=""
+            <Link
+              href="/"
               className="hidden sm:block ml-spacing-5 outline-none cursor-pointer"
             >
-              <Image src={logo} width={68} height={34} alt="logo" />
-            </a>
+              <Image src={"/images/images-home/logo.svg"} width={68} height={34} alt="logo" />
+            </Link>
             <div className="max-h-spacing-5 p-spacing-11 cursor-pointer  inline-flex items-center  ">
               <Image
                 className="me-spacing-12"
-                src={location}
+                src={"/images/images-home/location.svg"}
                 width={17}
                 height={18}
                 alt="location"
@@ -44,10 +57,10 @@ export default function Header() {
                     ابوذر، پرستار، امیر حسین معماری
                   </span>
                   <Image
-                    className="ms-spacing-14 mt-spacing-11"
-                    src={down}
-                    width={17}
-                    height={18}
+                    className="ms-spacing-14 mt-spacing-11 "
+                    src={"/images/images-home/down.svg"}
+                    width={19}
+                    height={17}
                     alt="down"
                   />
                 </div>
@@ -55,30 +68,19 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="flex items-center end-spacing-0 w-spacing-15  p-spacing-2 absolute m-auto max-h-spacing-6 rounded-lgg left-spacing-0 md:right-spacing-0 md:w-29 md:bg-surface-dark ">
-            <Image
-              className="ml-spacing-1"
-              src={search}
-              width={18}
-              height={18}
-              alt="search"
-            />
-            <p className="hidden md:inline-block md:text-inactive-dark md:text-start md:font-vrg md:leading-lineHeight-default md:tracking-tighter">
-              جست و جو در اسنپ فود
-            </p>
-          </div>
+          <SearchDiv cats ={cats} restaurants={restaurants} foods={foods}/>
 
           <div className=" flex items-center z-999 md:gap-x-spacing-3">
             <div className="p-spacing-2 cursor-pointer items-baseline flex">
               <Image
-                className="ml-spacing-1 block cursor-pointer"
-                src={person}
+                className=" block cursor-pointer"
+                src={"/images/images-home/person.svg"}
                 width={17}
                 height={17}
                 alt="person"
               />
 
-              <div></div>
+              
             </div>
 
             <OrderDiv/>

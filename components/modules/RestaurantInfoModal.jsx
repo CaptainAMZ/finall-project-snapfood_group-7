@@ -3,15 +3,15 @@
 import Image from 'next/image'
 
 
-export default function RestaurantInfoModal({closeModal}) {
+export default function RestaurantInfoModal({name,address,logo,rate }) {
 
     
 
   
   return (
-    <div className='w-[46rem] bg-surface-light min-h-[45rem] rounded-xl '>
+    <div className=' w-[46rem] bg-surface-light h-[40rem] rounded-xl  overflow-hidden'>
       <div className='block p-spacing-3'>
-      <button className='cursor-pointer block w-full text-right px-spacing-1' onClick={closeModal}>
+      <button  className=' cursor-pointer block w-full text-right px-spacing-1' >
       <Image
             src="/images/icons8-close-24.png"
             width={20}
@@ -25,17 +25,17 @@ export default function RestaurantInfoModal({closeModal}) {
             <div className='flex  gap-spacing-1'>
             <div className='pl-spacing-2 min-w-[100px]'  >
             <Image
-            src="/images/5ced6a4b46383.png"
+            src={logo}
             width={100}
             height={100}
             alt=''
             className='object-cover rounded-xl borders-lg border-borders-xs border-surface-light  '/>
            </div>
               <div>
-                  <h1 className='font-vb text-scales-xxlarge pb-spacing-1'>آشپزخانه صنعتی امیران</h1>
+                  <h1 className='font-vb text-scales-xxlarge pb-spacing-1'> {name} </h1>
                   <p className='font-vrg text-scales-body pb-spacing-1'>ایرانی, سنتی, کباب, پیش‌غذای ایرانی</p>
                   <p className='font-vrg text-scales-caption'>
-                  میدان سرگل، بلوار شمسی پور، رستوران دنده کباب ریژان
+                    {address}
                   </p>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function RestaurantInfoModal({closeModal}) {
             </div>
           </div>
         </div>
-        <div className='max-h-[420px] overflow-y-scroll '>
+        <div className=' max-h-[55%] mt-5 overflow-y-auto rounded-e-2xl '>
         <div className=' flex flex-col '>
           <div className='flex w-[100%] px-spacing-2'>
           <div className='flex flex-col justify-end w-[30%]'>
@@ -97,7 +97,7 @@ export default function RestaurantInfoModal({closeModal}) {
                 height={20}
                 alt=''
                 />
-                <p className='font-vb mr-spacing-1 text-scales-xlarge'>۴.۴</p>
+                <p className='font-vb mr-spacing-1 text-scales-xlarge'>{rate}</p>
           </div>
           <div>
             <p className='font-vrg text-scales-caption'>از مجموع ۳,۹۷۳ امتیاز و ۶۲۷ نظر</p>
@@ -527,6 +527,9 @@ export default function RestaurantInfoModal({closeModal}) {
           </div>
         </div>
         </div>
+        {/* <div className='overflow-auto lg:max-h-[400px] '>
+        
+        </div> */}
        
     </div>
   )
