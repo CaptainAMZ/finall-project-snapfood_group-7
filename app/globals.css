@@ -1,50 +1,21 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
-
-
-
 .btn{
-  @apply mb-spacing-2 focus:font-vsb pl-spacing-3 relative block w-full 
+  @apply mb-spacing-2 focus:font-vsb pl-spacing-4 relative block w-full text-left
 }
 
-/* .btn::after{
->>>>>>> snap-food
+
+
+
+.btn::after{
   @apply content-[''] bg-surface-overlay h-[0px] w-[2px] absolute rounded-lg opacity-0 mr-[20px]
   transition
   
-} */
-/* .btn:focus::after{
+}
+.btn:focus::after{
   @apply opacity-100 h-[25px] 
-} */
-
-.star{
-  @apply pl-spacing-1
 }
-
-
-
-.scroll-hide::-webkit-scrollbar {
-  display: none;
-}
-
-
-.revers-btn{
-  @apply mb-spacing-2 focus:font-vsb pr-spacing-2 relative block w-full 
-}
-/* .revers-btn::before{
-  @apply content-[''] bg-surface-overlay h-[0px] w-[2px] absolute rounded-lg  right-0 top-0
-  transition
-}
-
-.revers-btn:focus::before{
-  @apply opacity-100 h-[25px] 
-} */
-
-
 @tailwind utilities;
-
-
 
 *{
   padding: 0;
@@ -60,32 +31,28 @@
 @layer {
   
   @font-face {
-    font-family: "Vazirmatn-light";
-    src: url("../public/font/Vazirmatn-light.ttf");
-  }
-  @font-face {
     font-family: "Vazirmatn-Regular";
-    src: url("../public/font/Vazirmatn-Regular.ttf");
+    src: url("/font/Vazirmatn-Regular.ttf");
   }
 
   @font-face {
     font-family: "Vazirmatn-Medium";
-    src: url("../public/font/Vazirmatn-Medium.ttf");
+    src: url("/font/Vazirmatn-Medium.ttf");
   }
 
   @font-face {
     font-family: "Vazirmatn-SemiBold";
-    src: url("../public/font/Vazirmatn-SemiBold.ttf");
+    src: url("/font/Vazirmatn-SemiBold.ttf");
   }
 
   @font-face {
     font-family: "Vazirmatn-Bold";
-    src: url("../public/font/Vazirmatn-Bold.ttf");
+    src: url("/font/Vazirmatn-Bold.ttf");
   }
 
   @font-face {
     font-family: "Vazirmatn-ExtraBold";
-    src: url("../public/font/Vazirmatn-ExtraBold.ttf");
+    src: url("/font/Vazirmatn-ExtraBold.ttf");
   }
 }
 
@@ -103,66 +70,41 @@
   }
 }
 
+body {
+ color: #3a3d42;;
 
-
-
-::-webkit-scrollbar-thumb {
-  background-color: #babac0;
-  border: 3px solid #fff;
-  border-radius: 16px;
-  
-  transition: all .2s linear;
+ 
+ 
 }
 
-
-::-webkit-scrollbar-track {
-  background-color: #0000;
-  border-radius: 7px;
-  cursor: pointer;
-}
-body{
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
-      overflow-x: hidden;
-      background-color: #F9FAFB;
-
-      max-width: 100%;
-
-}
-
-.flipped{
-  direction: rtl;
-}
-
-@media (min-width:960px) {
-  .flipped{
-    direction: ltr;
-  }
-}
 
 
 
 /* width */
-::-webkit-scrollbar {
+::-webkit-scrollbar:horizontal {
   width: 10px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track:horizontal  {
   background: #f0efef;
   border-radius: 5px;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:horizontal {
   background: #bebebeb6;
   border-radius: 5px;
   border: 2px solid #fff;
 }
  /* Handle on hover  */
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover:horizontal {
   background: #c5c5c5;
-} 
+}
 
+
+.move:hover img{
+
+  transform: translateX(-3px);
+
+}

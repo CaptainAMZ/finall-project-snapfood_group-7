@@ -1,6 +1,6 @@
 import Image from "next/image"
-import logo from '../../public/images/images-home/logo.svg'
-import notfound from '../../public/images/images-home/error_404.png'
+// import logo from '@/public/images/images-home/logo.svg'
+import notfound from '@/public/images/images-home/error_404.png'
 import Link from 'next/link'
 
 export default function NotFound(){
@@ -10,7 +10,7 @@ export default function NotFound(){
         <div className="flex flex-col justify-center items-center h-[66vh]">
            <div className="p-[1.25rem]">
                 <Link href={"/"}>
-                    <Image src={logo} width={82} height={42}/>
+                    <Image src={"/images/images-home/logo.svg"} width={82} height={42}/>
                 </Link>
            </div>
 
