@@ -45,7 +45,7 @@ export default function FoodCard({
 
   return (
     <div className="font-vrg  md:w-[50%] border-l-borders-xs border-t-[.5px] border-b-[.5px] border-surface-dark">
-      <Link href="#">
+      <div className="cursor-pointer">
         <div
           className=" font-vrg flex justify-between py-spacing-1 px-spacing-1 lg:px-spacing-2"
           onClick={() => detailpage({ items })}
@@ -78,7 +78,7 @@ export default function FoodCard({
             <AddFoodBtn />
           </div>
         </div>
-      </Link>
+      </div>
       <div>
         {detail.map(
           (info) =>
