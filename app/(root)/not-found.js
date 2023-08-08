@@ -10,7 +10,7 @@ export default function NotFound(){
         <div className="flex flex-col justify-center items-center h-[66vh]">
            <div className="p-[1.25rem]">
                 <Link href={"/"}>
-                    <Image src={logo} width={82} height={42}/>
+                    {/* <Image src={logo} width={82} height={42}/> */}
                 </Link>
            </div>
 
