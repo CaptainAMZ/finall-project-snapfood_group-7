@@ -108,7 +108,7 @@
       "logo": "/images/deflogo-2.jpg",
       "image": "/images/irani-2.jpg",
       "delivery": {
-        "icon": "./images/delivery.svg",
+        "icon": "/images/delivery.svg",
         "type": "پیک فروشنده",
         "price": "15,000"
       },
@@ -128,7 +128,7 @@
       "logo": "/images/rezaee-logo.jpg",
       "image": "/images/irani-3.jpg",
       "delivery": {
-        "icon": "./images/delivery.svg",
+        "icon": "/images/delivery.svg",
         "type": "پیک فروشنده",
         "price": "20,000"
       },
@@ -148,7 +148,7 @@
       "logo": "/images/deflogo-1.jpg",
       "image": "/images/irani-4.jpg",
       "delivery": {
-        "icon": "./images/delivery.svg",
+        "icon": "/images/delivery.svg",
         "type": "پیک فروشنده",
         "price": "25,000"
       },
@@ -168,7 +168,7 @@
       "logo": "/images/deflogo-1.jpg",
       "image": "/images/irani-5.jpg",
       "delivery": {
-        "icon": "./images/delivery.svg",
+        "icon": "/images/delivery.svg",
         "type": "پیک فروشنده",
         "price": "40,000"
       },
@@ -188,7 +188,7 @@
       "logo": "/images/deflogo-1.jpg",
       "image": "/images/fastfood-1.jpg",
       "delivery": {
-        "icon": "./images/delivery.svg",
+        "icon": "/images/delivery.svg",
         "type": "پیک فروشنده",
         "price": "25,000"
       },
@@ -208,7 +208,7 @@
       "logo": "/images/chi-logo.jpg",
       "image": "/images/fastfood-2.jpg",
       "delivery": {
-        "icon": "./images/delivery.svg",
+        "icon": "/images/delivery.svg",
         "type": "پیک فروشنده",
         "price": "25,000"
       },
@@ -228,7 +228,7 @@
       "logo": "/images/goldmom-logo.jpg",
       "image": "/images/fastfood-3.jpg",
       "delivery": {
-        "icon": "./images/express.svg",
+        "icon": "/images/express.svg",
         "type": "ارسال اکسپرس",
         "price": "20,500"
       },
@@ -248,7 +248,7 @@
       "logo": "/images/deflogo-2.jpg",
       "image": "/images/fastfood-5.jpg",
       "delivery": {
-        "icon": "./images/express.svg",
+        "icon": "/images/express.svg",
         "type": "ارسال اکسپرس",
         "price": "18,500"
       },

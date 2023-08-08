@@ -7,6 +7,7 @@ module.exports = {
   ],
   theme: {
 
+
     screens: {
       "xs": "320px",
       "sm": "600px",
@@ -33,7 +34,13 @@ module.exports = {
         '.75': '.75rem',
         vm: '.875rem',
         '1.5': '1.5rem',
+
       },
+  
+
+       
+ 
+
 
 
       colors: {
@@ -120,6 +127,10 @@ module.exports = {
         "spacing-8": "4rem",
         "spacing-9": "4.5rem",
         "spacing-10": "5rem",
+
+      
+  
+
         "spacing-11": ".25rem",
         "spacing-12": ".625rem",
         "spacing-13": ".125rem",
@@ -129,6 +140,7 @@ module.exports = {
         "spacing-17": ".0625rem",
         "spacing-18": ".375rem",
       },
+
 
 
       borderWidth: {
@@ -143,9 +155,13 @@ module.exports = {
         "shadows-high": "0px 1px 0px rgba(58,61,66,0.06),0px 8px 32px -16px rgba(0,0,0,0.3)",
         "shadows-modal": "0px 2px 8px rgba(0,0,0,0.08),0px 8px 32px rgba(0,0,0,0.16)",
 
+
         'head': 'rgba(58, 61, 66, 0.06) 0px 1px 0px, rgba(0, 0, 0, 0.05) 0px 2px 8px -2px',
         
+
+
       },
+
 
 
       backgroundImage: {
