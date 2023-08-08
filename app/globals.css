@@ -122,12 +122,12 @@
   width: 15px;
   right: 2.5px;
   bottom: 2.5px;
-  background-color: rgba(146, 140, 132, 0.932);;
+  background-color: rgba(104, 101, 99, 0.716);;
   transition: 0.4s;
   border-radius: 50%;
 }
-.input-toggle:checked + .slider::after {
-  background-color: rgb(37, 162, 104);
+.input-toggle:checked + .slider{
+  background-color: rgb(27, 196, 117);
 }
 .input-toggle:checked + .slider::before {
   transform: translateX(-20px);
@@ -197,4 +197,7 @@ body{
  /* Handle on hover  */
 ::-webkit-scrollbar-thumb:hover {
   background: #c5c5c5;
+}
+.scroll-service{
+  direction: ltr;
 }

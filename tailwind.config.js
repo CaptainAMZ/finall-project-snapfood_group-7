@@ -7,11 +7,7 @@ module.exports = {
   ],
   theme: {
 
-<<<<<<< HEAD
-    
 
-=======
->>>>>>> snap-resteurants
     screens: {
       "xs": "320px",
       "sm": "600px",
@@ -25,11 +21,7 @@ module.exports = {
         "nav-size-not-center": "112px",
         "services-height": "106px",
       },
-<<<<<<< HEAD
-  
-=======
 
->>>>>>> snap-resteurants
       fontSize: {
         "scales-default": "1rem",
         "scales-caption": "0.75rem",
@@ -38,18 +30,19 @@ module.exports = {
         "scales-large": "1.125rem",
         "scales-body": "0.875rem",
         "scales-tiny": "0.625rem",
-<<<<<<< HEAD
-      },
-  
-=======
         vsm: '0.625rem',
         '.75': '.75rem',
         vm: '.875rem',
         '1.5': '1.5rem',
+
       },
+  
+
+       
+ 
 
 
->>>>>>> snap-resteurants
+
       colors: {
         "black-alphaMedium": "#0000003D",
         "surface-main": "#F9FAFB",
@@ -134,10 +127,10 @@ module.exports = {
         "spacing-8": "4rem",
         "spacing-9": "4.5rem",
         "spacing-10": "5rem",
-<<<<<<< HEAD
-      },
+
+      
   
-=======
+
         "spacing-11": ".25rem",
         "spacing-12": ".625rem",
         "spacing-13": ".125rem",
@@ -149,7 +142,7 @@ module.exports = {
       },
 
 
->>>>>>> snap-resteurants
+
       borderWidth: {
         "borders-xs": "0.09375rem",
         "borders-md": "0.1875rem",
@@ -161,16 +154,11 @@ module.exports = {
         "shadows-medium": "0px 1px 0px rgba(58,61,66,0.06),0px 4px 16px -8px rgba(0,0,0,0.2)",
         "shadows-high": "0px 1px 0px rgba(58,61,66,0.06),0px 8px 32px -16px rgba(0,0,0,0.3)",
         "shadows-modal": "0px 2px 8px rgba(0,0,0,0.08),0px 8px 32px rgba(0,0,0,0.16)",
-<<<<<<< HEAD
-      },
-=======
 
-        'head': 'rgba(58, 61, 66, 0.06) 0px 1px 0px, rgba(0, 0, 0, 0.05) 0px 2px 8px -2px',
-        'category': 'rgba(58, 61, 66, 0.06) 0px 1px 0px, rgba(0, 0, 0, 0.3) 0px 8px 32px -16px',
       },
 
 
->>>>>>> snap-resteurants
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
