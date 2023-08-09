@@ -1,8 +1,10 @@
 
-
- function CartResteurants({productCards,catFilter}) {
+import { useSearchParams } from "next/navigation";
+ function CartResteurants({productCards}) {
+  const searchParam = useSearchParams()
+  const getSearch =Number(searchParam.get("cat")) 
   const filteredRestaurants = productCards.filter((item)=>{
-    if(catFilter !="") return item.catId ===catFilter
+    if(getSearch !="") return item.catId.includes(getSearch)
     else{return item}
   }) 
   return (
