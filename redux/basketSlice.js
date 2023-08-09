@@ -6,9 +6,8 @@ const basketSlice = createSlice({
 
     name:"basket",
     initialState:{
-        foods:[
-          
-            ]
+        foods:[],
+        orders:[]
     },
     reducers:{
 
@@ -16,13 +15,22 @@ const basketSlice = createSlice({
             
             const index = state.foods.findIndex(item => item.id === action.payload.id)
 
+            const date = new Date()
+
             if(index == -1){
-                state.foods.push({...action.payload, count:1})
-                console.log("in ife", action.payload)
+                state.foods.push({...action.payload, count:1,Date:{
+                    hour:date.getHours(),
+                    min:date.getMinutes(),
+                    day:date.getDay(),
+                    date:date.getDate(),
+                    month:date.getMonth()
+                  }})
+               
             }else{
                  
                 state.foods[index].count += 1
-                console.log("in else", action.payload)
+                
+
             }
         },
         decrease: (state, action) => {
@@ -30,20 +38,38 @@ const basketSlice = createSlice({
             const {payload} = action
             const index = state.foods.findIndex(item => item.id === payload)
             state.foods[index].count -= 1
+            if((state.foods[index].count < 1)){
+                state.foods = state.foods.filter(item=>item.count != "0")
+            }  
         },
-        removeItem: (state, action) => {
-            //id
+        addBasketBtn:(state,action) =>{
+
+            const index = state.foods.findIndex(item => item.id === action.payload) 
+        
+            state.foods[index].count += 1
+
+        },
+        removeBasketBtn:(state,action) =>{
             const {payload} = action
             const index = state.foods.findIndex(item => item.id === payload)
-            state.foods.splice(index, 1)
+            state.foods[index].count -= 1
+            if((state.foods[index].count < 1)){
+                state.foods = state.foods.filter(item=>item.count != "0")
+            }
         },
         reset: (state) => {
             state.foods.length = 0;
+        },
+
+        addToOrders: (state) =>{
+            state.orders=[]
+            state.orders.push(...state.foods)
+
         }
     }
 })
 
 
-export const {addToBasket, decrease} = basketSlice.actions
+export const {addToBasket, decrease, addBasketBtn, removeBasketBtn ,reset, addToOrders} = basketSlice.actions
 
 export default basketSlice

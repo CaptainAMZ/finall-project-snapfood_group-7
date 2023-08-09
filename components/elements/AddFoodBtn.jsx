@@ -8,17 +8,18 @@ export default function Btn({name,price,id,basket}) {
 
     const index = basket.findIndex(item => item.id == id)
     const count = basket[index]?.count
-  
+
+   
+
     const product = {name,price,id}
 
- 
+      
     
   const dispatch = useDispatch()
   
-  const[btn, setBtn] = useState(false)
+  
 
     const btnHandler = () =>{
-      setBtn(true)
       dispatch(addToBasket(product))
 
     }
@@ -30,7 +31,7 @@ export default function Btn({name,price,id,basket}) {
       }else if
       (count == 1){
         dispatch(decrease(id))
-        setBtn(false)
+        
       }
     }
   return (
@@ -38,11 +39,11 @@ export default function Btn({name,price,id,basket}) {
     <div className='flex'>
       
       {
-        btn && <OrderCountChange onClick={backToBtnHandler} onAdd={btnHandler} count={count} id={id}  />
+        !count == "0" && <OrderCountChange onClick={backToBtnHandler} onAdd={btnHandler} count={count} id={id}  />
      
       }
       {
-        !btn &&
+        !count &&
         <button className='min-w-[100px] text-center ml-spacing-1 bg-surface-main w-[30%] p-[4px] rounded-full text-accent-main border-borders-xs border-inactive-light 
          shadow-shadows-small hover:bg-accent-light hover:text-surface-main transition-colors' onClick={btnHandler}>افزودن</button>
       }

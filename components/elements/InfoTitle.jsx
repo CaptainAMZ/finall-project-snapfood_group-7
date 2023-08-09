@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 import InfoBtn from './InfoBtn'
 import FoodCategoryList from './FoodCategoryList'
-// import FastFoodCategoryList from './FastFoodCategoryList'
 import { getLocalData } from '@/lib/localdata';
 
 
@@ -60,7 +59,7 @@ export default async function InfoTitle({params}) {
         </div>
         <div className='w-full   '>
           {
-            restCats.filter(item => item.restId == 4)
+            restCats.filter(item => item.restId == params.restaurant)
             .map(items => (
               
               <FoodCategoryList title={items.title}/>

@@ -15,7 +15,7 @@ export default function FoodCardWrapper({foods,fcomments, getSearch, url}) {
               
               foods.filter(items => getSearch ? items.restId == url.restaurant && items.name.includes(getSearch): items.restId == url.restaurant)
               .map(items =>(
-                <FoodCard key={items.id} name={items.name} image={items.image} price={items.price} rate={items.rate} items={items}  id={items.id} comment={fcomments} desc={items.desc} basket={basket}/>
+                <FoodCard key={items.id} name={items.name} image={items.image} price={items.price} rate={items.rate} items={items} id={items.id} comment={fcomments} desc={items.desc} basket={basket}/>
               ))
             }
     </>

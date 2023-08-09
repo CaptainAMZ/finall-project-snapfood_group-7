@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import Image from "next/image";
 import AddFoodBtn from "./AddFoodBtn";
 import React, { memo, useState } from "react";
@@ -21,7 +20,9 @@ import defImg from "../../public/images/deflogo-1.jpg";
 }) {
 
   
+  
   const [detail, setDetail] = useState([]);
+ 
 
   const detailpage = (product) => {
     setDetail([{ ...product }]);
@@ -35,11 +36,14 @@ import defImg from "../../public/images/deflogo-1.jpg";
     document.body.style.overflow = "hidden";
   };
 
+  
+
   const handleCloseModal = (e) => {
     if (e.target.className.includes("CLOSE")) {
       setOpenModal(false);
       document.body.style.overflow = "auto";
-      console.log("baste");
+      
+      
     }
   };
 
@@ -85,14 +89,14 @@ import defImg from "../../public/images/deflogo-1.jpg";
         </div>
       </div>
       <div>
-        {detail.map(
-          (info) =>
+        {
             openModal && (
               <div
                 onClick={handleCloseModal}
                 className="CLOSE fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-[100vh] z-50"
               >
                 <FoodModal
+                  desc={desc}
                   closeModal={closeModalBtn}
                   image={image}
                   name={name}
@@ -100,10 +104,11 @@ import defImg from "../../public/images/deflogo-1.jpg";
                   rate={rate}
                   comment={comment}
                   id={id}
+                  basket={basket}
                 />
               </div>
             )
-        )}
+        }
       </div>
     </div>
   );
