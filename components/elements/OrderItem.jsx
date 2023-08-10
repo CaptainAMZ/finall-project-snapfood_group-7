@@ -27,7 +27,7 @@ export default function OrderItem({setmodal,modal,info}) {
   // const index = historyList.findIndex(item=>item.id === passID)
   // // const {items,id,totalPrice} = info 
   // const {resName,foodName,price,count,dateHour,dateMounth} = historyList[index]
-   const {items,resName,id,dataHour,dataMounth,totalPrice,tax,deliveryPay,total} = info 
+   const {resName,id,dateHour,dateMonth,totalPrice,tax,dateMin,dateDay,deliveryCost,total,logo,dateDate} = info 
    
   
   //  console.log('item',items);
@@ -73,7 +73,7 @@ export default function OrderItem({setmodal,modal,info}) {
       <div className="w-[calc(100%-2rem)] flex flex-col ">
         <div className="flex  items-center">
           <div className="w-spacing-6 max-h-spacing-6 cursor-pointer flex-col">
-            <Image className="rounded w-full max-h-full" src={nanak} />
+            <Image className="rounded w-full max-h-full" src={logo} width={100} height={100} />
           </div>
           <div className="mr-spacing-2 flex flex-col">
             <p className="cursor-pointer font-vxb leading-lineHeight-body text-scales-body inline-block text-carbon-main text-start">
@@ -81,10 +81,10 @@ export default function OrderItem({setmodal,modal,info}) {
             </p>
             <div className="flex">
               <p className="font-vrg text-.75 leading-lineHeight-caption text-carbon-main">
-                دوشنبه 26 تیر
+              {dateDay} {dateDate} {dateMonth}   
               </p>
               <p className="font-vrg text-.75 leading-lineHeight-caption text-carbon-main mr-spacing-2">
-                19:03
+                {dateHour}:{dateMin}
               </p>
             </div>
           </div>

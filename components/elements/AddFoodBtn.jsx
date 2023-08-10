@@ -20,12 +20,14 @@ export default function Btn({name,price,id,basket}) {
   
 
     const btnHandler = () =>{
+      
       dispatch(addToBasket(product))
 
     }
     
 
-    const backToBtnHandler = (id) =>{
+    const backToBtnHandler = (e,id) =>{
+      e.stopPropagation()
       if(count > 1){
         dispatch(decrease(id))
       }else if

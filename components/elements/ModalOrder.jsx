@@ -7,10 +7,10 @@ import OrderFoodName from './OrderFoodName';
 export default function ModalOrder({onClose}) {
   
   
-  const {historyList,userId,passID} =useSelector(state=>state.orderHistory);
+  const {historyList,userId,passID} =useSelector(state=>state.history);
 
   const index = historyList.findIndex(item=>item.id === passID)
-  const {items,resName,id,dataHour,dataMounth,totalPrice,tax,deliveryPay,total} = historyList[index]
+  const {items,resName,id,dataHour,dataMounth,totalPrice,tax,deliveryCost,payment} = historyList[index]
   
  
   console.log('i',items);
@@ -40,7 +40,7 @@ export default function ModalOrder({onClose}) {
 
                   <div>
 
-                        {items.map(item=><OrderFoodName key={item.key} infoFood ={item}/>)}
+                        {items.map(item=><OrderFoodName key={item.key} infoFood ={item} />)}
                      
                   </div>
 
@@ -81,7 +81,7 @@ export default function ModalOrder({onClose}) {
                           
                             
                               <span className=' font-vrg text-vm leading-lineHeight-body carbon-light'>
-                                      {deliveryPay}
+                                      {deliveryCost}
                               </span>
 
                               <span className=' mr-spacing-13 font-vrg text-vm leading-lineHeight-body carbon-light'>
@@ -107,7 +107,7 @@ export default function ModalOrder({onClose}) {
                           
                             
                               <span className=' font-vsb text-vm leading-lineHeight-body carbon-light'>
-                                       {total}
+                                       {payment}
                               </span>
 
                               <span className=' mr-spacing-13 font-vrg text-vm leading-lineHeight-body carbon-light'>

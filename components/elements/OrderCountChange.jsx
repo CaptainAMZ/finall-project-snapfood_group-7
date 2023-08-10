@@ -16,7 +16,7 @@ function OrderCountChange({onClick, onAdd,count ,id}) {
   return (
     <div className='flex flex-col flex-nowrap items-center m-0 leading-[1.15rem]'>
         <div className='flex flex-row flex-nowrap justify-center items-center leading-[1.15rem]'>
-            <GrayDeleteOrderBtn onClick={()=>onClick(id)}/>
+            <GrayDeleteOrderBtn onClick={(e)=>onClick(e,id)}/>
            
               <OrderCounter ordercount={count || 0}/>
             <OrderIncreaseBtn onAdd={() => onAdd (id)}/>

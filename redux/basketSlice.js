@@ -56,15 +56,8 @@ const basketSlice = createSlice({
         },
 
         addToOrders: (state,action) =>{
-            const date = new Date()
             state.orders=[]
-            state.orders.push({...action.payload, foods:[...state.foods], date:{
-                hour:date.getHours(),
-                min:date.getMinutes(),
-                day:date.getDay(),
-                date:date.getDate(),
-                month:date.getMonth()
-              },})
+            state.orders.push({...action.payload, foods:[...state.foods],})
             
         }
     }

@@ -12,7 +12,7 @@ import {useSelector} from 'react-redux'
 
 export default function Orders() {
   
-  const {historyList,passID , userId} =useSelector(state=>state.orderHistory);
+  const {historyList,passID , userId} = useSelector(state=>state.history);
   
   
   console.log('h',historyList );

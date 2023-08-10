@@ -3,11 +3,11 @@ import cross from '../../public/images/images-home/cross.svg'
 import Image from 'next/image'
 
 export default function OrderFoodName({infoFood}) {
-    const {id , foodName , price, count} = infoFood
+    const {id , name , price, count} = infoFood
   return (
     <div className=' h-12  px-spacing-2 border-b-[0.0625rem] border-solid border-carbon-alphaLight flex items-center justify-between'>
     <span className='font-vrg text-vm leading-lineHeight-body carbon-light'>
-            {foodName}
+            {name}
     </span>
 
     <div className='flex items-center flex-row-reverse'>

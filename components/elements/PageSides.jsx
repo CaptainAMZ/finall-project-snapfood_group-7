@@ -30,7 +30,7 @@ function PageSides
       <Ventor  restaurants={restaurants}/>
 
       { basket.length !="0" ? <CardDetail  basket={basket}restaurants={restaurants}/> :
-                <p></p>    
+                <NoBasket />   
       }
         
     </div>
