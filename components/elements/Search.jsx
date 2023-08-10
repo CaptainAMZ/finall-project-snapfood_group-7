@@ -1,9 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import searchDark from "../../public/images/images-home/search-dark.svg";
-import crossCircle from "../../public/images/images-home/cross-circle.svg";
-import left from "../../public/images/images-home/left.svg";
+
 
 import SearchCategory from "./SearchCategory";
 import SearchMarket from "./SearchMarket";

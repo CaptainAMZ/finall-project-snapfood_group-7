@@ -1,9 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import location from "../../public/images/images-home/location.svg";
-import logo from "../../public/images/images-home/logo.svg";
-import down from "../../public/images/images-home/down.svg";
-import person from "../../public/images/images-home/person.svg";
+
 
 import OrderDiv from "./OrderDiv";
 import SearchDiv from "./SearchDiv";
@@ -11,15 +8,6 @@ import {getLocalData} from '../../lib/localdata'
 import Link from "next/link";
 
 import { headers } from 'next/headers';
-
-// export default function Navbar() {
-//     const headersList = headers();
-//     const domain = headersList.get('host') || "";
-//     const fullUrl = headersList.get('referer') || "";
-
-//     console.log(fullUrl);
-// }
-
 
 export default async function Header({params}) {
 

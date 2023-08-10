@@ -1,7 +1,5 @@
 import React from 'react'
-import leftgreen from'../../public/images/images-home/left-green.svg'
 import Image from 'next/image'
-import market from'../../public/images/images-home/market-stall.svg'
 
 export default function SearchMarket({resturantName,count}) {
    

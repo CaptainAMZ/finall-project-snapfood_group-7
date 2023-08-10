@@ -1,5 +1,4 @@
 import React from 'react'
-import menu from'../../public/images/images-home/menu-4.svg'
 import Image from 'next/image'
 
 export default function SearchCategory({category}) {
@@ -13,7 +12,7 @@ export default function SearchCategory({category}) {
 
                             <div className='p-[1.125rem] flex items-center '>
 
-                                <Image className='ml-spacing-2' src={"/images/images-home/menu-4.svg"} width={20} height={20}/>
+                                <Image className='ml-spacing-2' src="/images/images-home/menu-4.svg" width={20} height={20}/>
 
                                 <div >
                                     <span className='inline-block font-vrg text-[0.875rem] leading-lineHeight-caption text-carbon-main '>

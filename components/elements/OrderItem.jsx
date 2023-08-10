@@ -4,8 +4,6 @@
 import React from "react";
 import Image from "next/image";
 import nanak from "../../public/images/images-home/nanak.jpg";
-import factor from "../../public/images/images-home/factor.svg";
-import cycle from "../../public/images/images-home/cycle.svg";
 import ModalOrder from "./ModalOrder";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
@@ -101,14 +99,14 @@ export default function OrderItem({setmodal,modal,info}) {
 
         <div className="mt-spacing-16 mb-spacing-1 flex justify-center">
         <button  onClick={()=>handlerInfo(id)}  className=" flex-1 h-[32px] ml-spacing-2 inline-flex items-center justify-center min-w-6.6875 transition-all w-auto border-0.09375 border-solid  rounded-0.375 bg-carbon-alphaLight bg-clip-padding py-spacing-17 px-spacing-18">
-          <Image src={factor} width={16} height={16} />
+          <Image src='/images/images-home/factor.svg' width={16} height={16} />
           <p className="mr-spacing-1  font-vxb text-scales-body leading-lineHeight-body text-carbon-main text-start inline-block flex-0">
             مشاهده فاکتور
           </p>
         </button>
 
         <button className=" flex-1 h-[32px]  inline-flex items-center justify-center min-w-6.6875 transition-all w-auto border-0.09375 border-solid  rounded-0.375 bg-carbon-alphaLight  bg-clip-padding py-spacing-17 px-spacing-18">
-          <Image src={"/images/images-home/cycle.svg"} width={16} height={16} />
+          <Image src="/images/images-home/cycle.svg" width={16} height={16} />
           <p className="mr-spacing-1  font-vxb text-scales-body  leading-lineHeight-body text-carbon-main text-start inline-block flex-0">
             سفارش مجدد
           </p>

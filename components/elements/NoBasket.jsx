@@ -1,11 +1,11 @@
 import React from 'react'
-import BasketIcon from '@/public/images/icon-basket.svg'
+// import BasketIcon from '@/public/images/icon-basket.svg'
 
 // کامپوننت سبد خرید شما خالی است
 function NoBasket() {
   return (
     <div className='flex flex-col flex-nowrap items-center mt-2 pt-12'>
-        <BasketIcon />
+        <img src='/images/icon-basket.svg' />
         <p className='inline-block w-auto h-auto mt-6 p-0 font-vmd text-scales-body leading-lineHeight-body text-initial text-inactive-dark'>سبد خرید شما خالی است!</p>
     </div>
   )

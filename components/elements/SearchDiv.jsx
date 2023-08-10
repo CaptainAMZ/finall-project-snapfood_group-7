@@ -2,7 +2,6 @@
 
 import React, { useState,useRef } from "react";
 import Image from "next/image";
-import search from "../../public/images/images-home/search.svg";
 import Search from "./Search";
 // import { useRouter } from 'next/router'
 import { useSelectedLayoutSegment } from "next/navigation";

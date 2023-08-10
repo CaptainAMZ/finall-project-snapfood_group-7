@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import cross from '../../public/images/images-home/cross.svg'
+// import cross from '../../public/images/images-home/cross.svg'
 import { useSelector } from 'react-redux';
 import OrderFoodName from './OrderFoodName';
 
