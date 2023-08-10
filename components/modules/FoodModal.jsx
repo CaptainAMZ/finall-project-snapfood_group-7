@@ -1,9 +1,19 @@
 import React, { useEffect } from 'react'
 import Image from 'next/image'
 import AddFoodBtn from '../elements/AddFoodBtn'
+import defImg from "../../public/images/deflogo-1.jpg";
 
 
-export default  function FoodModal({closeModal, image,name,rate,price, comment, id}) {
+export default  function FoodModal({closeModal,
+   image = "/images/deflogo-1.jpg",
+   name,
+   rate,
+   price,
+   comment,
+   id,
+   basket,
+   desc}) 
+   {
 
 
   return (
@@ -24,7 +34,7 @@ export default  function FoodModal({closeModal, image,name,rate,price, comment, 
           <div className='flex '>
           <div className=' min-w-[300px] text-center pr-3'>
           <Image
-          src={image}
+          src={image || defImg}
           width={300}
           height={300}
           alt=''
@@ -49,7 +59,9 @@ export default  function FoodModal({closeModal, image,name,rate,price, comment, 
             </div>
             <div className='text-right mt-4 text-scales-body font-vmd text-gray-500'>
                 <p >
-                پیتزا رست بیف ۲۳ سانتی متری، سیب زمینی هات داگ فرایز، ۲ عدد نوشابه قوطی کوکا کولا
+                  {
+                    desc
+                  }
                 </p>
             </div>
             <div>
@@ -62,7 +74,7 @@ export default  function FoodModal({closeModal, image,name,rate,price, comment, 
             </div>
            </div>
            <div>
-           <AddFoodBtn/>
+           <AddFoodBtn id={id} price={price} name={name} basket={basket}/>
            </div>
         </div>
             </div>

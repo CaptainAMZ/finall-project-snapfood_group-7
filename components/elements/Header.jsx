@@ -37,7 +37,11 @@ export default async function Header({params}) {
               href="/"
               className="hidden sm:block ml-spacing-5 outline-none cursor-pointer"
             >
+
+              {/* <Image src={logo} width={68} height={34} alt="logo" /> */}
+
               <Image src={"/images/images-home/logo.svg"} width={68} height={34} alt="logo" />
+
             </Link>
             <div className="max-h-spacing-5 p-spacing-11 cursor-pointer  inline-flex items-center  ">
               <Image

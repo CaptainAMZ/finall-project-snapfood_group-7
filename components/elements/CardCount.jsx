@@ -1,6 +1,7 @@
 import React from 'react'
 import RedDeleteOrderBtn from './RedDeleteOrderBtn'
 
+
 // کامپوننت سبد خرید و تعداد سفارش داخل پرانتز
 // see CardDetail.jsx
 
@@ -11,7 +12,7 @@ function CardCount({ count }) {
             <p className='inline-block w-auto h-auto p-0 ml-1 font-vb text-scales-body leading-lineHeight-body text-carbon-light'>سبد خرید</p>
             <span className='inline-block w-auto h-auto p-0 m-0 font-vrg text-scales-body leading-lineHeight-body text-carbon-light'>({count})</span>
         </div>
-        <RedDeleteOrderBtn/>
+        <RedDeleteOrderBtn />
     </div>
   )
 }
