@@ -6,7 +6,12 @@ import Application from '@/components/templates/Application'
 
 
 import RestaurantInfo from "@/components/elements/RestaurantInfo";
+<<<<<<< HEAD
 import { Providers } from '../redux/GelobalRedux/provider'
+=======
+
+
+>>>>>>> dbe300137cace3040f628eed5569c781ba62e83e
 
 
 
@@ -16,6 +21,9 @@ export const metadata = {
   description: "سایت اسنپ فود",
   
 }
+
+
+
 
 export default function Home() {
 
