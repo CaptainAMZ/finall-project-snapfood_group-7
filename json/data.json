@@ -90,7 +90,7 @@
       "delivery": {
         "icon": "/images/delivery.svg",
         "type": "پیک فروشنده",
-        "price": "20,000"
+        "price": 20000
       },
       "address": "شهرک فجر(خیابان اول)، کوچه شهید محمدرضا سورانی، بن بست هشتم، طبقه یک، تهیه غذای کانی کرد",
       "worktime": "باز امروز از ساعت ۱۰:۳۰ تا ۲۲:۰۰",
@@ -110,7 +110,7 @@
       "delivery": {
         "icon": "/images/delivery.svg",
         "type": "پیک فروشنده",
-        "price": "15,000"
+        "price": 15000
       },
       "address": "شهرک معلم، کوچه نیروی انتظامی، بلوار رودکی، طبقه همکف، تهیه غذای لوکس زرین",
       "worktime": "باز امروز از ساعت ۱۰:۳۰ تا ۲۲:۰۰",
@@ -130,7 +130,7 @@
       "delivery": {
         "icon": "/images/delivery.svg",
         "type": "پیک فروشنده",
-        "price": "20,000"
+        "price": 20000
       },
       "address": "طاقبستان، جنب شهر شادی، رضایی",
       "worktime": "باز امروز از ساعت ۱۰:۳۰ تا ۲۲:۰۰",
@@ -150,7 +150,7 @@
       "delivery": {
         "icon": "/images/delivery.svg",
         "type": "پیک فروشنده",
-        "price": "25,000"
+        "price": 25000
       },
       "address": "بلوار نوبهار، نبش کوی ۱۱۶، کره کباب",
       "worktime": "باز امروز از ساعت ۱۰:۳۰ تا ۲۲:۰۰",
@@ -170,7 +170,7 @@
       "delivery": {
         "icon": "/images/delivery.svg",
         "type": "پیک فروشنده",
-        "price": "40,000"
+        "price": 40000
       },
       "address": "میدان طاق بستان، به سمت جاده قدیم، نرسیده به پارک شرقی، طباخی کاخ",
       "worktime": "باز امروز از ساعت ۱۰:۳۰ تا ۲۲:۰۰",
@@ -190,7 +190,7 @@
       "delivery": {
         "icon": "/images/delivery.svg",
         "type": "پیک فروشنده",
-        "price": "25,000"
+        "price": 25000
       },
       "address": "سی متری دوم، کوچه ۱۲۱ (معتمدی)، کافه چی",
       "worktime": "باز امروز از ساعت ۱۰:۳۰ تا ۲۲:۰۰",
@@ -210,7 +210,7 @@
       "delivery": {
         "icon": "/images/delivery.svg",
         "type": "پیک فروشنده",
-        "price": "25,000"
+        "price": 25000
       },
       "address": " سی متری دوم، کوچه ۱۲۱ (معتمدی)، فست فود بی بی جون",
       "worktime": "باز امروز از ساعت ۱۰:۳۰ تا ۲۲:۰۰",
@@ -230,7 +230,7 @@
       "delivery": {
         "icon": "./images/express.svg",
         "type": "ارسال اکسپرس",
-        "price": "20,500"
+        "price": 20500
       },
       "address": "خیابان ۲۲ بهمن، میدان مرکزی، خیابان نهم، نبش کوچه ۱۰۹، فست فود گلد مام (شعبه برق باباخانی)",
       "worktime": "باز امروز از ساعت ۱۰:۳۰ تا ۲۲:۰۰",
@@ -250,7 +250,7 @@
       "delivery": {
         "icon": "./images/express.svg",
         "type": "ارسال اکسپرس",
-        "price": "18,500"
+        "price": 18500
       },
       "address": "میدان مرکزی، نبش کوچه ۱۳۹، فست فود استاف",
       "worktime": "باز امروز از ساعت ۱۰:۳۰ تا ۲۲:۰۰",
@@ -268,7 +268,7 @@
       "restCatId": 1,
       "name": "چلو کباب میکس",
       "image": "/images/kabab-mix.jpg",
-      "price": "180,000",
+      "price": 180000,
       "rate": 5,
       "desc":"۲ سیخ کباب میکس، ترکیب ۶۰ گرم کباب چنجه گوساله، ۶۰ گرم جوجه کباب ترش، ۶۰ گرم جوجه کباب سینه مرغ، ۶۰ گرم کباب ترش گوشت فیله گوساله، ۴۰۰ گرم برنج ایرانی، گوجه کبابی، کره"
     },
@@ -280,7 +280,7 @@
       "restCatId": 2,
       "name": "خوراک ماهی قزل آلا سرخ شده",
       "image": "/images/mahi-sorkh-shode.jpg",
-      "price": "210,000",
+      "price": 210000,
       "rate": "جدید",
       "desc":"۳۰۰ گرم ماهی قزل آلا سرخ شده"
     },
@@ -292,7 +292,7 @@
       "restCatId": 3,
       "name": "چلو ماهیچه",
       "image": "/images/mahiche.jpg",
-      "price": "260,000",
+      "price": 260000,
       "rate": 4.5,
       "desc":"      "
 
@@ -305,7 +305,7 @@
       "restCatId": 4,
       "name": "چلو خورشت خلال",
       "image": "/images/khalal.jpg",
-      "price": "150,000",
+      "price": 150000,
       "rate": 4.5,
       "desc":""
     },
@@ -317,7 +317,7 @@
       "restCatId": 5,
       "name": "سالاد فصل",
       "image": "/images/salad-fasl.jpg",
-      "price": "20,000",
+      "price": 20000,
       "rate": 5
     },
     {
@@ -328,7 +328,7 @@
       "restCatId": 6,
       "name": "چلوکباب کوبیده",
       "image": "/images/kubide.jpg",
-      "price": "90,000",
+      "price": 90000,
       "rate": 5,
       "desc":""
     },
@@ -340,7 +340,7 @@
       "restCatId": 7,
       "name": "خوراک کباب کوبیده",
       "image": "/images/kubide.jpg",
-      "price": "270,000",
+      "price": 270000,
       "rate": 5,
       "desc":"دوسیخ کباب کوبیده ۱۰۰ گرمی به همراه ۳۰۰ گرم برنج خارجی و گوجه"
     },
@@ -352,7 +352,7 @@
       "restCatId": 8,
       "name": "زرشک پلو با مرغ سس پز",
       "image": "",
-      "price": "90,000",
+      "price": 90000,
       "rate": 5,
       "desc":" برنج خارجی به همراه ۱/۸ مرغ ۱۸۰ تا ۲۰۰ گرمی وسس و زرشک"
     },
@@ -364,7 +364,7 @@
       "restCatId": 9,
       "name": "سالاد فصل",
       "image": "/images/salad-fasl.jpg",
-      "price": "17,000",
+      "price": 17000,
       "rate": 5,
       "desc":""
     },
@@ -376,7 +376,7 @@
       "restCatId": 10,
       "name": "نوشابه بطری",
       "image": "/images/nushabe.jpg",
-      "price": "11,000",
+      "price": 11000,
       "rate": 5
     },
     {
@@ -387,7 +387,7 @@
       "restCatId": 11,
       "name": "چلو جوجه کباب با استخوان",
       "image": "/images/juje.jpg",
-      "price": "190,000",
+      "price": 190000,
       "rate": 5,
       "desc":"  یک سیخ جوجه کباب سینه مرغ بدون استخوان ۱۵۰ گرمی، ۳۰۰ گرم برنج ایرانی، یک عدد گوجه کبابی، کره  "
     },
@@ -399,7 +399,7 @@
       "restCatId": 12,
       "name": " خوراک کباب وزیری",
       "image": "/images/juje.jpg",
-      "price": "440,000",
+      "price": 440000,
       "rate": "جدید",
       "desc":"یک سیخ کباب کوبیده ۱۰۰ گرمی گوشت چرخ شده مخلوط گوساله و گوسفندی، یک سیخ جوجه کباب سینه ۲۰۰ گرم، دورچین: یک عدد گوجه کبابی"
     },
@@ -411,7 +411,7 @@
       "restCatId": 13,
       "name": "خوراک دنده کباب مخصوص",
       "image": "/images/juje.jpg",
-      "price": "440,000",
+      "price": 440000,
       "rate": 5,
       "desc":""
     },
@@ -423,7 +423,7 @@
       "restCatId": 14,
       "name": "سالاد فصل",
       "image": "/images/salad-fasl.jpg",
-      "price": "17,000",
+      "price": 17000,
       "rate": 5,
       "desc":""
     },
@@ -435,7 +435,7 @@
       "restCatId": 15,
       "name": "نوشابه بطری",
       "image": "/images/nushabe.jpg",
-      "price": "11,000",
+      "price": 11000,
       "rate": 5
     },
     {
@@ -446,7 +446,7 @@
       "restCatId": 16,
       "name": "ساندویچ رست بیف کوبیده",
       "image": "/images/roastbeef.jpg",
-      "price": "140,000",
+      "price": 140000,
       "rate": 5,
       "desc":" یک عدد هات داگ مجاری ۵۵٪، گوشت رست بیف گوساله، کاهو، گوجه، خیارشور، سس مخصوص، نان باگت"
     },
@@ -458,7 +458,7 @@
       "restCatId": 17,
       "name": "ساندویچ کباب لقمه",
       "image": "/images/loghme.jpg",
-      "price": "105,000",
+      "price": 105000,
       "rate": 5,
       "desc":" یک عدد هات داگ مجاری ۵۵٪، گوشت رست بیف گوساله، کاهو، گوجه، خیارشور، سس مخصوص، نان باگت"
 
@@ -471,7 +471,7 @@
       "restCatId": 18,
       "name": "نوشابه بطری",
       "image": "/images/nushabe.jpg",
-      "price": "11,000",
+      "price": 11000,
       "rate": 5
     },
     {
@@ -482,7 +482,7 @@
       "restCatId": 19,
       "name": "یک دست کامل کله پاچه",
       "image": "/images/kale-pache.jpg",
-      "price": "380,000",
+      "price": 380000,
       "rate": 5,
       "desc":""
     },
@@ -494,7 +494,7 @@
       "restCatId": 20,
       "name": "نوشابه بطری",
       "image": "/images/nushabe.jpg",
-      "price": "11,000",
+      "price": 11000,
       "rate": 5
     },
     {
@@ -505,7 +505,7 @@
       "restCatId": 21,
       "name": "پیتزا پپرونی دو نفره",
       "image": "/images/peperoni.jpg",
-      "price": "80,000",
+      "price": 80000,
       "rate": 5,
       "desc":""
     },
@@ -517,7 +517,7 @@
       "restCatId": 22,
       "name": "تاپ برگر",
       "image": "/images/top-burger.jpg",
-      "price": "55,000",
+      "price": 55000,
       "rate": 5,
       "desc":""
     },
@@ -529,7 +529,7 @@
       "restCatId": 23,
       "name": "ساندویچ هات داگ مخصوص",
       "image": "",
-      "price": "45,000",
+      "price": 45000,
       "rate": 5,
       "desc":""
     },
@@ -541,7 +541,7 @@
       "restCatId": 24,
       "name": "نوشابه بطری",
       "image": "/images/nushabe.jpg",
-      "price": "11,000",
+      "price": 11000,
       "rate": 5
     },
     {
@@ -552,7 +552,7 @@
       "restCatId": 25,
       "name": "پیتزا پپرونی دو نفره",
       "image": "/images/peperoni.jpg",
-      "price": "80,000",
+      "price": 80000,
       "rate": 5,
       "desc":""
     },
@@ -564,7 +564,7 @@
       "restCatId": 26,
       "name": "تاپ برگر",
       "image": "/images/top-burger.jpg",
-      "price": "55,000",
+      "price": 55000,
       "rate": 5,
       "desc":""
     },
@@ -576,7 +576,7 @@
       "restCatId": 27,
       "name": "ساندویچ هات داگ مخصوص",
       "image": "",
-      "price": "45,000",
+      "price": 45000,
       "rate": 5
     },
     {
@@ -587,7 +587,7 @@
       "restCatId": 28,
       "name": "نوشابه بطری",
       "image": "/images/nushabe.jpg",
-      "price": "11,000",
+      "price": 11000,
       "rate": 5
     },
     {
@@ -598,7 +598,7 @@
       "restCatId": 29,
       "name": "پیتزا قارچ و گوشت آمریکایی",
       "image": "/images/amricaee.jpg",
-      "price": "103,000",
+      "price": 103000,
       "rate": 5,
       "desc":""
     },
@@ -610,7 +610,7 @@
       "restCatId": 30,
       "name": "سیب زمینی ساده",
       "image": "/images/potato.jpg",
-      "price": "50,000",
+      "price": 50000,
       "rate": 5,
       "desc":""
     },
@@ -622,7 +622,7 @@
       "restCatId": 31,
       "name": "نوشابه بطری",
       "image": "/images/nushabe.jpg",
-      "price": "11,000",
+      "price": 11000,
       "rate": 5
     },
     {
@@ -633,7 +633,7 @@
       "restCatId": 32,
       "name": "پیتزا قارچ و گوشت آمریکایی",
       "image": "/images/amricaee.jpg",
-      "price": "157,000",
+      "price": 157000,
       "rate": 5,
       "desc":""
     },
@@ -645,7 +645,7 @@
       "restCatId": 33,
       "name": "تاپ برگر",
       "image": "/images/top-burger.jpg",
-      "price": "74,000",
+      "price": 74000,
       "rate": 5,
       "desc":""
     },
@@ -657,7 +657,7 @@
       "restCatId": 34,
       "name": "ساندویچ هات داگ مخصوص",
       "image": "",
-      "price": "45,000",
+      "price": 45000,
       "rate": 5,
       "desc":""
     },
@@ -669,7 +669,7 @@
       "restCatId": 35,
       "name": "فیله سوخاری (سه تکه)",
       "image": "/images/sokhari-2.jpg",
-      "price": "153,000",
+      "price": 153000,
       "rate": 5,
       "desc":""
     },
@@ -681,7 +681,7 @@
       "restCatId": 36,
       "name": "سالاد سزار با مرغ سوخاری (بزرگ)",
       "image": "/images/saladsezar.jpg",
-      "price": "136,000",
+      "price": 136000,
       "rate": 5,
       "desc":""
     }
