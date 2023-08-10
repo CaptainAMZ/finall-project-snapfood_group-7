@@ -5,8 +5,9 @@ import TotalPrice from './TotalPrice'
 import Payable from './Payable'
 import Description from './Description'
 import SubmitOrderBtn from './SubmitOrderBtn'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'next/navigation'
+import { addToOrders } from '@/redux/basketSlice'
 
 // کامپوننت سبد خرید
 // see PageSides.jsx
@@ -14,14 +15,30 @@ import { useParams } from 'next/navigation'
 function CardDetail({basket, restaurants}) {
 
   const {restaurant} = useParams()
-  const deliveryCost = restaurants.find(items => items.id == restaurant).delivery.price
+  const {id,delivery,logo,name,tax} = restaurants.find(items => items.id == restaurant)
+  const deliveryCost = delivery.price
 
+  const {foods, orders} = useSelector(state => state.basket)
   
 
-let totalPrice = 0
-const basketPrice = useSelector(state => state.basket.foods.forEach(item => {
+       let totalPrice = 0
+    const basketPrice =foods.forEach(item => {
     totalPrice += item.count * item.price  
-}));
+});
+
+
+
+const dispatch = useDispatch()
+
+const OrdersHandler = (e)=>{
+  e.preventDefault()
+    dispatch(addToOrders({payment,totalPrice,deliveryCost,logo,name,id,tax}))
+    
+  } 
+
+  console.log(orders)
+  
+  const payment = totalPrice + deliveryCost
 
         let totalCount = 0
 
@@ -51,9 +68,9 @@ const basketPrice = useSelector(state => state.basket.foods.forEach(item => {
           ))
         }
         <TotalPrice deliveryCost={deliveryCost} totalPrice={totalPrice} />
-        <Payable deliveryCost={deliveryCost} totalPrice={totalPrice} />
+        <Payable payment={payment} />
         <Description/>
-        <SubmitOrderBtn  />
+        <SubmitOrderBtn onAdd={OrdersHandler}/>
       </form>
     </div>
   )

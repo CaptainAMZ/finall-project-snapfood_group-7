@@ -2,9 +2,9 @@ import React from 'react'
 
 // کامپوننت قابل پرداخت در سبد خرید
 // see CardDetail.jsx
-function Payable({ deliveryCost, totalPrice }) {
+function Payable({ payment }) {
 
-        const payment = totalPrice + deliveryCost
+        
 
   return (
     <div className='flex flex-row flex-nowrap justify-between items-center h-12'>

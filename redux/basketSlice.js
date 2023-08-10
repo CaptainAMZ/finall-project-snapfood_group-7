@@ -15,16 +15,10 @@ const basketSlice = createSlice({
             
             const index = state.foods.findIndex(item => item.id === action.payload.id)
 
-            const date = new Date()
+           
 
             if(index == -1){
-                state.foods.push({...action.payload, count:1,Date:{
-                    hour:date.getHours(),
-                    min:date.getMinutes(),
-                    day:date.getDay(),
-                    date:date.getDate(),
-                    month:date.getMonth()
-                  }})
+                state.foods.push({...action.payload, count:1})
                
             }else{
                  
@@ -61,9 +55,16 @@ const basketSlice = createSlice({
             state.foods.length = 0;
         },
 
-        addToOrders: (state) =>{
+        addToOrders: (state,action) =>{
+            const date = new Date()
             state.orders=[]
-            state.orders.push(...state.foods)
+            state.orders.push({...action.payload, foods:[...state.foods], Date:{
+                hour:date.getHours(),
+                min:date.getMinutes(),
+                day:date.getDay(),
+                date:date.getDate(),
+                month:date.getMonth()
+              },})
             
         }
     }

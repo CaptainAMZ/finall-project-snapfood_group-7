@@ -16,6 +16,7 @@ import defImg from "../../public/images/deflogo-1.jpg";
   id,
   comment,
   desc,
+  restId,
   basket
 }) {
 
@@ -84,7 +85,7 @@ import defImg from "../../public/images/deflogo-1.jpg";
             </div>
           </div>
           <div>
-            <AddFoodBtn id={id} price={price} name={name} basket={basket} />
+            <AddFoodBtn id={id} price={price} name={name} basket={basket} restId={restId} />
           </div>
         </div>
       </div>
