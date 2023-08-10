@@ -7,7 +7,6 @@ const basketSlice = createSlice({
     name:"basket",
     initialState:{
         foods:[],
-        orders:[]
     },
     reducers:{
 
@@ -54,12 +53,6 @@ const basketSlice = createSlice({
         reset: (state) => {
             state.foods.length = 0;
         },
-
-        addToOrders: (state,action) =>{
-            state.orders=[]
-            state.orders.push({...action.payload, foods:[...state.foods],})
-            
-        }
     }
 })
 
