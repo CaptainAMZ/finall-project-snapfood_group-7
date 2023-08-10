@@ -7,17 +7,18 @@ import Search from './Search'
 // import { useRouter } from 'next/router'
 import { useSelectedLayoutSegment } from 'next/navigation'
 import { useRouter } from 'next/navigation'
- 
+import { useParams } from 'next/navigation'
 import { usePathname, useSearchParams } from 'next/navigation'
  
 
 export default function SearchDiv({foods,cats,restaurants}) {
     const [modal , setModal] = useState(false);
     
-  
-   const location = window.location;
+    const a = useParams()
+   console.log(a);
+   const location =window.location;
     const path = location.pathname;
-    // console.log(location);
+    console.log(location);
     let restaurantName;
     
     let text='';

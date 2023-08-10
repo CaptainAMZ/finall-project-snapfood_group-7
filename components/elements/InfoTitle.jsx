@@ -2,15 +2,20 @@ import React from 'react'
 import Image from 'next/image'
 import InfoBtn from './InfoBtn'
 import FoodCategoryList from './FoodCategoryList'
-import FastFoodCategoryList from './FastFoodCategoryList'
 import { getLocalData } from '@/lib/localdata';
 
-export default async function InfoTitle() {
 
-  const {restCats, restaurants} = await getLocalData();
- 
 
-    const resturant = restaurants.filter(items=> items.id == 1)
+
+
+export default async function InfoTitle({params}) {
+
+
+      
+    const {restCats, restaurants} = await getLocalData();
+    const resturant = restaurants.filter(items=> items.id == params.restaurant)
+
+   
     
     
     
@@ -54,10 +59,10 @@ export default async function InfoTitle() {
         </div>
         <div className='w-full   '>
           {
-            restCats.filter(item => item.restId == 4)
+            restCats.filter(item => item.restId == params.restaurant)
             .map(items => (
               
-              <FoodCategoryList title={items.title}/>
+              <FoodCategoryList key={items.id} title={items.title}/>
             ))
           }
         </div>

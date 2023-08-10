@@ -1,31 +1,32 @@
+
+'use client'
+
 import React from 'react'
-import FoodCard from './FoodCard'
-import { getLocalData } from '@/lib/localdata';
+import { useParams, useSearchParams } from 'next/navigation'
+import { Provider } from "react-redux";
+import { store } from "@/redux/index";
+import FoodCardWrapper from './FoodCardWrapper';
 
-export default async function  () {
-
-  
-  const {foods,fcomments } = await getLocalData();
-  
-
-
- 
+export default  function  ({foods, fcomments}) {
 
   
+  const search = useSearchParams();
+
+  const getSearch = search.get("search")
+
+  const url = useParams()
+
+   
   
 
-
+  
 
   return (
     <div className='border-t-[.5px] text-center border-r-borders-xs border-b-borders-xs border-surface-dark rounded-md overflow-hidden bg-surface-light flex flex-col justify-start sx:w-[100%] lg:w-[100%] '> 
       <div className='flex flex-col md:flex-row flex-wrap '>
-          {
-            foods.filter(items => items.restId == 2)
-            .map(items =>(
-              <FoodCard key={items.id} name={items.name} image={items.image} price={items.price} rate={items.rate} items={items}  id={items.id} comment={fcomments} desc={items.desc}/>
-            ))
-          }
-
+      <Provider store={store}>
+        <FoodCardWrapper foods={foods} fcomments={fcomments} getSearch={getSearch} url={url}/>
+      </Provider>
   
       </div>
     </div>

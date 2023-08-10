@@ -1,12 +1,13 @@
 "use client";
-import Link from "next/link";
 import Image from "next/image";
 import AddFoodBtn from "./AddFoodBtn";
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 import FoodModal from "../modules/FoodModal";
 import defImg from "../../public/images/deflogo-1.jpg";
 
-export default function FoodCard({
+
+
+ function FoodCard({
   name,
   image = "/images/deflogo-1.jpg",
   price,
@@ -15,8 +16,14 @@ export default function FoodCard({
   id,
   comment,
   desc,
+  restId,
+  basket
 }) {
+
+  
+  
   const [detail, setDetail] = useState([]);
+ 
 
   const detailpage = (product) => {
     setDetail([{ ...product }]);
@@ -30,11 +37,14 @@ export default function FoodCard({
     document.body.style.overflow = "hidden";
   };
 
+  
+
   const handleCloseModal = (e) => {
     if (e.target.className.includes("CLOSE")) {
       setOpenModal(false);
       document.body.style.overflow = "auto";
-      console.log("baste");
+      
+      
     }
   };
 
@@ -45,7 +55,7 @@ export default function FoodCard({
 
   return (
     <div className="font-vrg  md:w-[50%] border-l-borders-xs border-t-[.5px] border-b-[.5px] border-surface-dark">
-      <Link href="#">
+      <div className="cursor-pointer">
         <div
           className=" font-vrg flex justify-between py-spacing-1 px-spacing-1 lg:px-spacing-2"
           onClick={() => detailpage({ items })}
@@ -75,19 +85,19 @@ export default function FoodCard({
             </div>
           </div>
           <div>
-            <AddFoodBtn />
+            <AddFoodBtn id={id} price={price} name={name} basket={basket} restId={restId} />
           </div>
         </div>
-      </Link>
+      </div>
       <div>
-        {detail.map(
-          (info) =>
+        {
             openModal && (
               <div
                 onClick={handleCloseModal}
                 className="CLOSE fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-[100vh] z-50"
               >
                 <FoodModal
+                  desc={desc}
                   closeModal={closeModalBtn}
                   image={image}
                   name={name}
@@ -95,11 +105,15 @@ export default function FoodCard({
                   rate={rate}
                   comment={comment}
                   id={id}
+                  basket={basket}
                 />
               </div>
             )
-        )}
+        }
       </div>
     </div>
   );
 }
+
+
+export default memo(FoodCard)

@@ -6,8 +6,14 @@ import React from 'react'
 // see OrderCountChange.jsx
 
 function OrderCounter({ ordercount }) {
+
+  
   return (
-    <span className='inline-block w-spacing-6 h-auto p-0 m-0 text-center font-vb text-scales-body leading-lineHeight-body text-carbon-main'>{ordercount}</span>
+   
+      
+      <span className='inline-block w-spacing-6 h-auto p-0 m-0 text-center font-vb text-scales-body leading-lineHeight-body text-carbon-main'>{ordercount}</span>
+
+    
   )
 }
 
