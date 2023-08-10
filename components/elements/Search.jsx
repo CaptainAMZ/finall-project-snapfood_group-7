@@ -11,7 +11,14 @@ import SearchFood from "./SearchFood";
 import SearchProduct from "./SearchProduct";
 import { useRouter } from "next/navigation";
 
-export default function Search({ foods, cats, restaurants }) {
+export default function Search({
+  foods,
+  cats,
+  restaurants,
+  onClose,
+  setSearchedText,
+  restId,
+}) {
   const router = useRouter();
   const location = window.location;
   const path = location.pathname;
@@ -22,26 +29,31 @@ export default function Search({ foods, cats, restaurants }) {
 
   const [value, setValue] = useState("");
 
+  const submitHandler = (e) => {
+    e.preventDefault();
+    switch (path) {
+      case "/" || "":
+        router.push(`/?search=${value}`);
+        break;
+      case "/service/restaurants":
+        router.push(`/service/restaurants?search=${value}`);
+        break;
+      case `/service/restaurants/${restId}`:
+        router.push(`/service/restaurants/${restId}?search=${value}`);
+        break;
+    }
+    onClose();
+    setSearchedText(value);
+  };
+
+  const condition = path.includes(`/service/restaurants/${restId}`);
+
   const handleSearchChange = (e) => {
     const content = e.target.value;
     setValue(content);
-    console.log(e);
-
-    // if (e.key == "Enter")
-    //   switch (path) {
-    //     case "/":
-    //       router.push(`/?search=${value}`);
-    //       break;
-    //     case "/service/restaurants":
-    //       text = "رستوران";
-    //       break;
-    //     case `/service/restaurants/${restId}`:
-    //       restaurantName = restaurants.find((item) => item.id == restId).name;
-    //       text = restaurantName;
-    //   }
   };
 
-  const emtyInputValue = () => {
+  const emptyInputValue = () => {
     setValue("");
   };
 
@@ -51,11 +63,14 @@ export default function Search({ foods, cats, restaurants }) {
   }, []);
 
   return (
-    <form className="fixed top-0 flex justify-center w-[31vw] min-w-[18.75rem] m-auto py-spacing-16 mt-[.8rem]">
+    <form
+      onSubmit={submitHandler}
+      className="fixed top-0 flex justify-center w-[31vw] min-w-[18.75rem] m-auto py-spacing-16 mt-[.8rem]"
+    >
       <div className="w-[95%] flex flex-col">
         <div className="relative w-full flex items-center justify-center ">
           <Image
-            onClick={value.length ? emtyInputValue : undefined}
+            onClick={value.length ? emptyInputValue : undefined}
             className="absolute top-0 right-4  cursor-pointer pt-spacing-2"
             src={`${
               !value.length
@@ -79,7 +94,7 @@ export default function Search({ foods, cats, restaurants }) {
         <div className=" bg-white mt-[0.25rem] rounded-[0.375rem] overflow-y-auto max-h-[70vh]">
           <div
             className={`${
-              value.length > 1 ? "hidden" : ""
+              !condition && value.length > 1 ? "hidden" : ""
             } px-[1.125rem] pb-[1.125rem] pt-[.8rem] cursor-pointer `}
           >
             {/* nothing */}
@@ -90,7 +105,16 @@ export default function Search({ foods, cats, restaurants }) {
             )}
             {/* length input one */}
 
-            {value.length === 1 && (
+            {!condition && value.length == 1 &&(
+              <div className="flex justify-between">
+                <span className="font-vrg text-[0.875rem] leading-lineHeight-caption text-carbon-main">
+                  جستجوی {value}
+                </span>
+
+                <Image src={left} />
+              </div>
+            )}
+            {condition && !!value.length && (
               <div className="flex justify-between">
                 <span className="font-vrg text-[0.875rem] leading-lineHeight-caption text-carbon-main">
                   جستجوی {value}
@@ -103,7 +127,8 @@ export default function Search({ foods, cats, restaurants }) {
 
           {/* <SearchCategory category={'پیتزا'}/> */}
 
-          {value.length > 1 &&
+          {!condition &&
+            value.length > 1 &&
             cats
               .filter((item) => {
                 if (item.title.includes(value)) {
@@ -113,7 +138,8 @@ export default function Search({ foods, cats, restaurants }) {
               })
               .map((item) => <SearchCategory category={item.title} />)}
 
-          {value.length > 1 &&
+          {!condition &&
+            value.length > 1 &&
             restaurants
               .filter((item) => {
                 if (item.name.includes(value)) {
@@ -141,7 +167,7 @@ export default function Search({ foods, cats, restaurants }) {
                         console.log(arrayRef);
                     return<SearchProduct foodName={item.name} img={item.image} price={item.price} count={arrayRef.length} />})}  */}
 
-          {value.length > 1 && (
+          {!condition && value.length > 1 && (
             <SearchProduct
               foods={foods}
               value={value}

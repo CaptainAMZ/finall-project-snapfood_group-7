@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import Image from "next/image";
 import location from "../../public/images/images-home/location.svg";
@@ -25,6 +23,7 @@ import { headers } from 'next/headers';
 
 export default async function Header({params}) {
 
+  
   
   // console.log(params);
   const  {cats,foods,restaurants} = await getLocalData();

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import Image from "next/image";
 import search from "../../public/images/images-home/search.svg";
 import Search from "./Search";
@@ -12,10 +12,13 @@ import { usePathname, useSearchParams } from "next/navigation";
 
 export default function SearchDiv({ foods, cats, restaurants }) {
   const [modal, setModal] = useState(false);
-
-  const { restaurant: restId } = useParams();
   const location = window.location;
   const path = location.pathname;
+  const showFilter = useRef()
+  const [searchedText , setSearchedText] = useState('')
+
+  const { restaurant: restId } = useParams();
+
   let restaurantName;
 
   let text = "";
@@ -29,6 +32,10 @@ export default function SearchDiv({ foods, cats, restaurants }) {
     case `/service/restaurants/${restId}`:
       restaurantName = restaurants.find((item) => item.id == restId).name;
       text = restaurantName;
+  }
+
+  const closeFunc = () => {
+    showFilter.current.click()
   }
 
   const closeModalHandler = (e) => {
@@ -59,16 +66,18 @@ export default function SearchDiv({ foods, cats, restaurants }) {
           alt="search"
         />
         <p className="hidden md:inline-block md:text-inactive-dark md:text-start md:font-vrg md:leading-lineHeight-default md:tracking-tighter">
-          جست و جو در {text}
+          {!searchedText ? `جست و جو در ${text}` : searchedText}
         </p>
       </div>
 
       {modal && (
         <div
+        ref={showFilter}
+        
           onClick={closeModalHandler}
           className="CLOSE  fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-screen z-50 "
         >
-          <Search foods={foods} cats={cats} restaurants={restaurants} />
+          <Search restId={restId} setSearchedText={setSearchedText} foods={foods} cats={cats} restaurants={restaurants} onClose={closeFunc} />
         </div>
       )}
     </>
