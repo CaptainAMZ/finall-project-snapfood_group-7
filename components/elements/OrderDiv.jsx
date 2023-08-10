@@ -5,6 +5,8 @@ import Image from "next/image";
 import Orders from './Orders'
 import order from '../../public/images/images-home/order.svg'
 import { useState } from 'react';
+import { Provider } from 'react-redux';
+import { store } from '../../redux/store';
 
 export default function OrderDiv() {
 
@@ -55,8 +57,11 @@ export default function OrderDiv() {
     </div>
 
             {modalOrder && <div  onClick={closeModalHandler} className='CLOSE  fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-screen z-50'>
-                            
-            <Orders  />
+            <Provider store={store}>
+              
+                           
+              <Orders  />
+            </Provider>  
             </div>
             }
         

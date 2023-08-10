@@ -6,11 +6,16 @@ import Image from 'next/image'
 import clock from '../../public/images/images-home/clock.svg'
 import OrderItem from './OrderItem'
 import ModalOrder from './ModalOrder'
+import {useSelector} from 'react-redux'
 
 
 
 export default function Orders() {
-
+  
+  const {historyList,passID , userId} =useSelector(state=>state.orderHistory);
+  
+  
+  console.log('h',historyList );
   const [modal , setModal] = useState(false);
   const closeModalHandler =(e) =>{
     
@@ -52,10 +57,8 @@ export default function Orders() {
           </p>
           
           <div className='mt-spacing-16 border-t-[0.0625rem] border-r-[0.0625rem] border-l-[0.0625rem] border-carbon-alphaMedium rounded-t-xl  w-full'>
-              <OrderItem setmodal={setModal}  modal={modal}/>
-              <OrderItem/>
-              <OrderItem/>
-              <OrderItem/>
+              {historyList.map(item=><OrderItem key={item.id} setmodal={setModal}  modal={modal} info={item} />)}
+             
           </div>
   
           <button className='h-[3.75rem] mt-spacing-11 mx-auto mb-spacing-0 inline-flex justify-center items-center cursor-pointer transition-all 
@@ -73,7 +76,7 @@ export default function Orders() {
       </div>
       {modal && <div   className=' CLOSE-ICON  sticky  inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-full z-999 m-auto'>
                       
-      <ModalOrder onClose={closeModalHandler} />
+      <ModalOrder onClose={closeModalHandler}  />
       </div>}
   
       </>
