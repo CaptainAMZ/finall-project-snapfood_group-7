@@ -53,7 +53,7 @@ export default function Search({foods,cats,restaurants}) {
             <div className='w-[95%] flex flex-col'>
                 <div className='relative w-full flex items-center justify-center '>
                    
-                    <Image onClick={value.length&&emtyInputValue} className='absolute top-0 right-4  cursor-pointer pt-spacing-2' src={`${!value.length ?'/images/images-home/search-dark.svg': '/images/images-home/cross-circle.svg'}`} width={17} height={17}/>
+                    <Image onClick={value.length ? emtyInputValue : undefined} className='absolute top-0 right-4  cursor-pointer pt-spacing-2' src={`${!value.length ?'/images/images-home/search-dark.svg': '/images/images-home/cross-circle.svg'}`} width={17} height={17}/>
                    
 
                     
