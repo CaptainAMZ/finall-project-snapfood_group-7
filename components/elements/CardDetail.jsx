@@ -8,6 +8,7 @@ import SubmitOrderBtn from './SubmitOrderBtn'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'next/navigation'
 import { addToOrders } from '@/redux/basketSlice'
+import { addToHistory } from '@/redux/orderHistorySlice'
 
 // کامپوننت سبد خرید
 // see PageSides.jsx
@@ -26,13 +27,14 @@ function CardDetail({basket, restaurants}) {
     totalPrice += item.count * item.price  
 });
 
-
+    
 
 const dispatch = useDispatch()
 
 const OrdersHandler = (e)=>{
   e.preventDefault()
     dispatch(addToOrders({payment,totalPrice,deliveryCost,logo,name,id,tax}))
+    dispatch(addToHistory(orders))
     
   } 
 
