@@ -8,11 +8,43 @@ import factor from "../../public/images/images-home/factor.svg";
 import cycle from "../../public/images/images-home/cycle.svg";
 import ModalOrder from "./ModalOrder";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { passID } from "@/redux/orderHistorySlice";
+import { useSelector } from 'react-redux';
 
-export default function OrderItem({setmodal,modal}) {
+export default function OrderItem({setmodal,modal,info}) {
+   
+  console.log('info',info);
+   const dispatch = useDispatch()
+   const handlerInfo=(id)=>{
+      dispatch(passID(id))
+      console.log('id',id);
+      setmodal(true)
+   }
 
 
-  // const [modal , setModal] = useState(false);
+  //  const {historyList,userId,passID} =useSelector(state=>state.orderHistory);
+  // const index = historyList.findIndex(item=>item.id === passID)
+  // // const {items,id,totalPrice} = info 
+  // const {resName,foodName,price,count,dateHour,dateMounth} = historyList[index]
+   const {items,resName,id,dataHour,dataMounth,totalPrice,tax,deliveryPay,total} = info 
+   
+  
+  //  console.log('item',items);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // const [modal , setModal] = useState(false);
   // const closeModalHandler =(e) =>{
   //   const targetClass=  e.target.className;
   //   if( targetClass.includes('CLOSE-ICON') ){
@@ -45,7 +77,7 @@ export default function OrderItem({setmodal,modal}) {
           </div>
           <div className="mr-spacing-2 flex flex-col">
             <p className="cursor-pointer font-vxb leading-lineHeight-body text-scales-body inline-block text-carbon-main text-start">
-              نان و شیرینی نانک
+              {resName}
             </p>
             <div className="flex">
               <p className="font-vrg text-.75 leading-lineHeight-caption text-carbon-main">
@@ -68,8 +100,8 @@ export default function OrderItem({setmodal,modal}) {
         </div>
 
         <div className="mt-spacing-16 mb-spacing-1 flex justify-center">
-        <button  onClick={()=>setmodal(true)}  className=" flex-1 h-[32px] ml-spacing-2 inline-flex items-center justify-center min-w-6.6875 transition-all w-auto border-0.09375 border-solid  rounded-0.375 bg-carbon-alphaLight bg-clip-padding py-spacing-17 px-spacing-18">
-          <Image src={"/images/images-home/factor.svg"} width={16} height={16} />
+        <button  onClick={()=>handlerInfo(id)}  className=" flex-1 h-[32px] ml-spacing-2 inline-flex items-center justify-center min-w-6.6875 transition-all w-auto border-0.09375 border-solid  rounded-0.375 bg-carbon-alphaLight bg-clip-padding py-spacing-17 px-spacing-18">
+          <Image src={factor} width={16} height={16} />
           <p className="mr-spacing-1  font-vxb text-scales-body leading-lineHeight-body text-carbon-main text-start inline-block flex-0">
             مشاهده فاکتور
           </p>
@@ -89,11 +121,6 @@ export default function OrderItem({setmodal,modal}) {
 
     
 
-      {/* {modal && <div   className=' CLOSE-ICON  fixed  inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full min-h-screen z-50'>
-                      
-      <ModalOrder />
-      </div>} */}
-      
   
   </> 
    
