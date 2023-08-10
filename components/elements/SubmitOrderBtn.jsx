@@ -7,6 +7,9 @@ import { useDispatch, useSelector } from 'react-redux'
 // دکمه ثبت سفارش
 function SubmitOrderBtn({onAdd}) {
 
+  const history = useSelector(state => state.history.historyList)
+
+  console.log(history);
        
 
   return (

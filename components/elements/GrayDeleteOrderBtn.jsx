@@ -7,6 +7,7 @@ import GrayDeleteIcon from '@/public/images/icon-gray-delete.svg'
 // see OrderCountChange.jsx
 
 function GrayDeleteOrderBtn({onClick}) {
+  
   return (
     <button
         onClick={onClick}
