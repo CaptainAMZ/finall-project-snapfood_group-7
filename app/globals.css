@@ -163,3 +163,6 @@ body {
 .scroll-service{
   direction: ltr;
 }
+.change-direction{
+  direction: rtl;
+}

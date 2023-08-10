@@ -38,7 +38,7 @@ function FilterSider({ cats }) {
                 </div>
               </div>
               <div>
-                <img src="/images/iconarrowgray.png" alt="arrow" className="" />
+                <img src="/images/iconarrowgray.png" alt="arrow" className="rotate-180" />
               </div>
             </div>
           ))}

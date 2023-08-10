@@ -47,7 +47,7 @@ import { useSearchParams } from "next/navigation";
               </div>
               <h3 className="text-xs text-gray-400 font-vrg">{item.otherCats}</h3>
             </div>
-            <footer className="flex justify-center">
+            <footer className="flex justify-center ">
               <div className="w-48 h-10 flex items-center justify-center rounded-[72px] shadow-shadows-medium">
                 <img src={item.delivery.icon} alt="Dlivery"  className="ml-2"/>
                 <p className="text-xs ml-2 font-vrg">{item.delivery.type}</p>

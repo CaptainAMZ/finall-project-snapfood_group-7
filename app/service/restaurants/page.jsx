@@ -10,7 +10,7 @@ async function page() {
 
 
   return (
-   <MainServer restaurants={restaurants}  cats={cats} className=""/>
+   <MainServer restaurants={restaurants}  cats={cats} />
   );
 }
 
