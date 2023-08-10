@@ -100,4 +100,4 @@ const orderHistorySlice = createSlice({
 });
 
 export const {passID,addToHistory} = orderHistorySlice.actions;
-export default orderHistorySlice.reducer;
+export default orderHistorySlice;
