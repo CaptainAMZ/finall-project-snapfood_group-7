@@ -1,5 +1,7 @@
 @tailwind base;
 @tailwind components;
+
+
 .btn{
   @apply mb-spacing-2 focus:font-vsb pl-spacing-4 relative block w-full text-left
 }

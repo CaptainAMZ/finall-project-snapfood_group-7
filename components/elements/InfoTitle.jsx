@@ -62,7 +62,7 @@ export default async function InfoTitle({params}) {
             restCats.filter(item => item.restId == params.restaurant)
             .map(items => (
               
-              <FoodCategoryList title={items.title}/>
+              <FoodCategoryList key={items.id} title={items.title}/>
             ))
           }
         </div>

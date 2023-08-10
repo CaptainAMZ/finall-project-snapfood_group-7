@@ -1,6 +1,6 @@
 'use client'
 
-import { addToOrders } from '@/redux/basketSlice'
+import { addToOrders, reset } from '@/redux/basketSlice'
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
@@ -13,6 +13,7 @@ function SubmitOrderBtn() {
         const OrdersHandler = (e)=>{
           e.preventDefault()
             dispatch(addToOrders(1))
+            
           } 
           console.log(orders)
 

@@ -64,7 +64,7 @@ const basketSlice = createSlice({
         addToOrders: (state) =>{
             state.orders=[]
             state.orders.push(...state.foods)
-
+            
         }
     }
 })
