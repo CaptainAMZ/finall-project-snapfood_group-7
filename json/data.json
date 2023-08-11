@@ -228,7 +228,7 @@
       "logo": "/images/goldmom-logo.jpg",
       "image": "/images/fastfood-3.jpg",
       "delivery": {
-        "icon": "./images/express.svg",
+        "icon": "/images/express.svg",
         "type": "ارسال اکسپرس",
         "price": 20500
       },
@@ -248,7 +248,7 @@
       "logo": "/images/deflogo-2.jpg",
       "image": "/images/fastfood-5.jpg",
       "delivery": {
-        "icon": "./images/express.svg",
+        "icon": "/images/express.svg",
         "type": "ارسال اکسپرس",
         "price": 18500
       },
