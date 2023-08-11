@@ -1,15 +1,18 @@
-
-
- function CartResteurants({productCards,catFilter}) {
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
+ function CartResteurants({productCards}) {
+  const searchParam = useSearchParams()
+  const getSearch =Number(searchParam.get("cat")) 
   const filteredRestaurants = productCards.filter((item)=>{
-    if(catFilter !="") return item.catId ===catFilter
+    if(getSearch !="") return item.catId.includes(getSearch)
     else{return item}
   }) 
   return (
     <div>
       <div className=" md:flex md:flex-row md:flex-wrap  ">
       {filteredRestaurants.map((item) => (
-        <div className=" cursor-pointer  flex mb-6 flex-col shadow-md  items-center  pb-6 bg-white   w-full h-[370px] rounded-xl  hover:shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px]   sm:w-[100%]  md:w-[47%]  lg:w-[30%] md:mr-4 lg:mr-7   " key={item.id}>
+       
+            <Link  href={`/service/restaurants/${item.id}`} className=" cursor-pointer  flex mb-6 flex-col shadow-md  items-center  pb-6 bg-white   w-full h-[370px] rounded-xl  hover:shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px]   sm:w-[100%]  md:w-[47%]  lg:w-[30%] md:mr-4 lg:mr-7   " key={item.id} >
           <div className="w-full relative  min-h-[40%]  ">
             <img
               src={item.image}
@@ -45,7 +48,7 @@
               </div>
               <h3 className="text-xs text-gray-400 font-vrg">{item.otherCats}</h3>
             </div>
-            <footer className="flex justify-center">
+            <footer className="flex justify-center ">
               <div className="w-48 h-10 flex items-center justify-center rounded-[72px] shadow-shadows-medium">
                 <img src={item.delivery.icon} alt="Dlivery"  className="ml-2"/>
                 <p className="text-xs ml-2 font-vrg">{item.delivery.type}</p>
@@ -53,7 +56,8 @@
               </div>
             </footer>
           </div>
-        </div>
+        </Link>
+        
       ))}
     </div>
     </div>

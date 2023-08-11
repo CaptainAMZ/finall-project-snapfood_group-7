@@ -1,7 +1,16 @@
 "use client";
+import { useRouter } from "next/navigation";
+import { useSearchParams } from "next/navigation";
+const List =["فست فود", "ایرانی","کباب" ,"سالاد","بین الملل"]
+function FilterSider({ cats }) {
+  const router = useRouter()
+  const searchParam = useSearchParams()
+  const getSearch = searchParam.get("cat")
+  const handler = (id)=>{
+    router.push(`/service/restaurants?cat=${id}`)
+    
+  }
 
-function FilterSider({ cats, setCatFilter }) {
-  const List =["فست فود", "ایرانی","کباب" ,"سالاد","بین الملل"]
   return (
     <div className=" min-w-[240px] min-h-[375px] border shadow-[rgba(58,61,66,0.06)_0px_1px_0px,rgba(0,0,0,0.05)_0px_2px_8px_-2px] flex flex-col p-4 pb-5 rounded-xl border-solid border-[rgba(58,61,66,0.06)] sm:min-w-[178px] sm:h-[385px] mb-[8px]">
       <div className="w-full h-[70px] bg-[rgba(58,61,66,0.06)] flex items-center cursor-pointer p-[5px] rounded-lg sm:h-[45px]">
@@ -12,14 +21,15 @@ function FilterSider({ cats, setCatFilter }) {
           {cats.filter((item)=>List.includes(item.title)).map((item) => (
             <div
               className=" w-[100%] h-[55px] flex items-center justify-between mb-1"
-              onClick={() => setCatFilter(item.id)}
+              onClick={()=>handler(item.id)}
+
               key={item.id}
             >
               <div className="h-full">
                 <div className="w-full h-full flex flex-row items-center justify-between  ">
                   <img
-                    src="/images/rick.png"
-                    alt="tiger"
+                    src={item.logo}
+                    alt="logo"
                     className=" w-8 h-8 object-cover rounded-[50%]"
                   />
                   <p className=" text-[13px] font-vrg mr-3 text-zinc-900 ">
@@ -28,7 +38,7 @@ function FilterSider({ cats, setCatFilter }) {
                 </div>
               </div>
               <div>
-                <img src="/image/iconarrowgray.png" alt="arrow" />
+                <img src="/images/iconarrowgray.png" alt="arrow" className="rotate-180" />
               </div>
             </div>
           ))}
