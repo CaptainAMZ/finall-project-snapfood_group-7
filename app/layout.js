@@ -5,6 +5,7 @@ import './globals.css'
 
 import Nav from '@/components/elements/Nav'
 import RestaurantInfo from '@/components/elements/RestaurantInfo'
+import SearchProductCard from '@/components/elements/SearchProductCard'
 
 
 export const metadata = {
@@ -18,11 +19,13 @@ export default function RootLayout({ children }) {
 
       <body>
        
-        <div className="position sticky transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-999 w-full shadow-head">
+        {/* <div className="position sticky transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-999 w-full shadow-head">
 
               <Header/>
-              {/* <Nav/> */}
-        </div>
+              <Nav/>
+        </div> */}
+
+        <SearchProductCard/>
 
        
         {children}
