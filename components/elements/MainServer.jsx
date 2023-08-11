@@ -1,7 +1,7 @@
 "use client"
 
 
-import CartResteurants from "@/components/elements/CardResteurants";
+import CartResteurants from "@/components/elements/CartResteurants";
 import Filter from "@/components/elements/Filter";
 import FilterSider from "@/components/elements/FilterSider";
 import StaticSider from "@/components/elements/StaticSider";
