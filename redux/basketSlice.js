@@ -44,7 +44,7 @@ const basketSlice = createSlice({
         },
         removeBasketBtn:(state,action) =>{
             const {payload} = action
-            const index = state.foods.findIndex(item => item.id === payload)
+            const index = state.foods.findIndex(item => item.id == payload)
             state.foods[index].count -= 1
             if((state.foods[index].count < 1)){
                 state.foods = state.foods.filter(item=>item.count != "0")

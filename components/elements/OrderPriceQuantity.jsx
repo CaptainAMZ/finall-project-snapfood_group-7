@@ -19,7 +19,7 @@ function OrderPriceQuantity({count, price, id}) {
             
         }
 
-        const basketRemoveHandler = (id) =>{
+        const basketRemoveHandler = (e,id) =>{
             dispatch(removeBasketBtn(id))
             
         }
