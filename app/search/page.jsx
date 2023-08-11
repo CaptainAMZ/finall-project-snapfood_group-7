@@ -10,10 +10,13 @@ export default async function page({searchParams}) {
     const searchValue=searchParams.search;
 
     const filteredFoods=foods.filter(item=> item.name.includes(searchValue) );
+    const filteredRestaurants= restaurants.filter(item=>item.title.includes(searchValue))
   return (
  
 
-   <>
+   <>  
+
+        {/* {filteredRestaurants.map(item=>)} */}
         {filteredFoods.map(item => <SearchProductCard/>)}
    </>
 
