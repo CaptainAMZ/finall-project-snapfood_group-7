@@ -64,26 +64,77 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+.hide {
+  display: none;
+}
+.label-toggle {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 23px;
+  margin: 0 10px;
+ 
+  
+}
+.input-toggle {
+  display: none;
+  
 }
 
 body {
  color: #3a3d42;;
+}
 
  
  
+
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 15px;
+  right: 2.5px;
+  bottom: 2.5px;
+  background-color: rgba(104, 101, 99, 0.716);;
+  transition: 0.4s;
+  border-radius: 50%;
 }
+.input-toggle:checked + .slider{
+  background-color: rgb(27, 196, 117);
+}
+.input-toggle:checked + .slider::before {
+  transform: translateX(-20px);
+}
+
+@media (min-width:320px) {
+  .hide {
+    display: none;
+  }
+}
+
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border: 3px solid #fff;
+  border-radius: 16px;
+  
+  transition: all .2s linear;
+
+}
+
 
 
 
 
 /* width */
-::-webkit-scrollbar:horizontal {
+
+
+ /* width */
+::-webkit-scrollbar {
+
   width: 10px;
 }
 
@@ -105,8 +156,15 @@ body {
 }
 
 
+
 .move:hover img{
 
   transform: translateX(-3px);
 
+}
+.scroll-service{
+  direction: ltr;
+}
+.change-direction{
+  direction: rtl;
 }
