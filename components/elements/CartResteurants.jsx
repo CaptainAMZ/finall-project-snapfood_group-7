@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
  function CartResteurants({productCards}) {
   const searchParam = useSearchParams()
@@ -11,7 +11,8 @@ import { useSearchParams } from "next/navigation";
     <div>
       <div className=" md:flex md:flex-row md:flex-wrap  ">
       {filteredRestaurants.map((item) => (
-        <div className=" cursor-pointer  flex mb-6 flex-col shadow-md  items-center  pb-6 bg-white   w-full h-[370px] rounded-xl  hover:shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px]   sm:w-[100%]  md:w-[47%]  lg:w-[30%] md:mr-4 lg:mr-7   " key={item.id}>
+       
+            <Link  href={`/service/restaurants/${item.id}`} className=" cursor-pointer  flex mb-6 flex-col shadow-md  items-center  pb-6 bg-white   w-full h-[370px] rounded-xl  hover:shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px]   sm:w-[100%]  md:w-[47%]  lg:w-[30%] md:mr-4 lg:mr-7   " key={item.id} >
           <div className="w-full relative  min-h-[40%]  ">
             <img
               src={item.image}
@@ -55,7 +56,8 @@ import { useSearchParams } from "next/navigation";
               </div>
             </footer>
           </div>
-        </div>
+        </Link>
+        
       ))}
     </div>
     </div>
