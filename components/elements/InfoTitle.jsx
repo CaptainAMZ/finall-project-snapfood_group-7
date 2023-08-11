@@ -13,7 +13,7 @@ export default async function InfoTitle({params}) {
 
       
     const {restCats, restaurants} = await getLocalData();
-    const resturant = restaurants.filter(items=> items.id == params.restaurant)
+    const resturant = restaurants.find(items=> items.id == params.restaurant)
 
    
     
@@ -26,7 +26,7 @@ export default async function InfoTitle({params}) {
         <div className='flex mb-10 w-[30%] '>
             <div className='pl-spacing-1 min-w-[100%]'  >
             <Image
-            src={resturant[0].logo}
+            src={resturant.logo}
             width={100}
             height={100}
             alt=''
@@ -44,18 +44,18 @@ export default async function InfoTitle({params}) {
                  alt=''
                  className='object-cover '/>
                  </div>
-                 <p className='text-scales-caption font-vsb pr-1'>{resturant[0].star}</p>
+                 <p className='text-scales-caption font-vsb pr-1'>{resturant.star}</p>
                 </div>
                  <p className='px-1 text-inactive-dark font-vrg text-scales-caption'>(۲,۴۵۶ امتیاز)</p>
                 </div>
         </div>
         <div>
-             <h2 className='w-[99%] truncate text-scales-large font-vb'>{resturant[0].name}</h2>
+             <h2 className='w-[99%] truncate text-scales-large font-vb'>{resturant.name}</h2>
          </div>
             </div>
         </div>
         <div className='w-full'>
-            <InfoBtn {...resturant[0]}/>
+            <InfoBtn {...resturant}/>
         </div>
         <div className='w-full   '>
           {
