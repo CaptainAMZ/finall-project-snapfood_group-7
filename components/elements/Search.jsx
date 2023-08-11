@@ -37,7 +37,7 @@ export default function Search({
         router.push(`/service/restaurants/search?search=${value}`);
         break;
       case `/service/restaurants/${restId}`:
-        router.push(`/service/restaurants/${restId}/search?search=${value}`);
+        router.push(`/service/restaurants/${restId}/?search=${value}`);
         break;
     }
     onClose();
@@ -131,7 +131,7 @@ export default function Search({
             cats
               .filter((item) => {
                 if (item.title.includes(value)) {
-                  console.log(item.title);
+               
                   return item.title;
                 }
               })
@@ -142,7 +142,7 @@ export default function Search({
             restaurants
               .filter((item) => {
                 if (item.name.includes(value)) {
-                  console.log(item.name);
+                  
                   return item;
                 }
               })
@@ -152,19 +152,7 @@ export default function Search({
                   count={arrayRef.length}
                 />
               ))}
-          {/* <SearchMarket resturantName={'پیتزا شیلا'}/> */}
-
-          {/*                         
-                    {value.length>1&&foods.filter((item)=>{
-                        if(item.name.includes(value)){
-
-                            // console.log(item);
-                            return item
-                            
-                        }
-                    }).map((item,index,arrayRef)=>{
-                        console.log(arrayRef);
-                    return<SearchProduct foodName={item.name} img={item.image} price={item.price} count={arrayRef.length} />})}  */}
+       
 
           {!condition && value.length > 1 && (
             <SearchProduct
