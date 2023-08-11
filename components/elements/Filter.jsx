@@ -34,8 +34,8 @@ function Filter({ productCards, setProductCards }) {
       setProductCards([
         ...productCards.sort(
           (a, b) =>
-            a.delivery.price.replace(",", "") -
-            b.delivery.price.replace(",", "")
+            a.delivery.price -
+            b.delivery.price
         ),
       ]);
 
@@ -46,8 +46,8 @@ function Filter({ productCards, setProductCards }) {
       setProductCards([
         ...productCards.sort(
           (a, b) =>
-            b.delivery.price.replace(",", "") -
-            a.delivery.price.replace(",", "")
+            b.delivery.price -
+            a.delivery.price
         ),
       ]);
       console.log("ali");
