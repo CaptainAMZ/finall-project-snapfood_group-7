@@ -31,6 +31,7 @@ export default function SearchDiv({ foods, cats, restaurants }) {
     case `/service/restaurants/${restId}`:
       restaurantName = restaurants.find((item) => item.id == restId).name;
       text = restaurantName;
+      break
   }
 
   const closeFunc = () => {

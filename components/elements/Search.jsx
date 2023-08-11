@@ -64,7 +64,7 @@ export default function Search({
   return (
     <form
       onSubmit={submitHandler}
-      className="fixed top-0 flex justify-center w-[31vw] min-w-[18.75rem] m-auto py-spacing-16 mt-[.8rem]"
+      className="fixed top-0 flex justify-center w-[31vw] min-w-[18.75rem] m-auto py-spacing-16 "
     >
       <div className="w-[95%] flex flex-col">
         <div className="relative w-full flex items-center justify-center ">
