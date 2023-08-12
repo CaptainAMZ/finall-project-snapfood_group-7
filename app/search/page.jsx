@@ -38,7 +38,7 @@ export default async function page({ searchParams }) {
             </header>
             <div className="mt-[1.5625rem] w-[calc(100%+1.5rem)] m-[calc(-0.75rem)] flex flex-wrap">
               {filteredRestaurants.map((item) => (
-                <Card item={item} />
+                <Card key={item.id} item={item} />
               ))}
             </div>
           </section>
@@ -59,7 +59,7 @@ export default async function page({ searchParams }) {
             </header>
             <div className="mt-[1.5625rem] w-[calc(100%+1.5rem)] m-[calc(-0.75rem)] flex flex-wrap">
               {filteredFoods.map((item) => (
-                <SearchProductCard item={item} restaurants={restaurants} />
+                <SearchProductCard key={item.id} item={item} restaurants={restaurants} />
               ))}
             </div>
           </section>

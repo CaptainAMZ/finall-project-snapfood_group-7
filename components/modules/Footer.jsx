@@ -39,7 +39,7 @@ const Footer = () => {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             {icons.map((item) => (
-              <div className="w-10 h-10 rounded-full flex items-center justify-center shadow-md">
+              <div key={item} className="w-10 h-10 rounded-full flex items-center justify-center shadow-md">
                 <img className="w-6 h-6"  src={`/images/${item}.svg`} alt={item + "icon"} />
               </div>
             ))}
