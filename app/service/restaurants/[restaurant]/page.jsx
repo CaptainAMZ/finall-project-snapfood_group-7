@@ -2,11 +2,8 @@
 import Header from "@/components/elements/Header";
 import RestaurantInfo from "@/components/elements/RestaurantInfo";
 import React from "react";
-import { getLocalData } from "@/lib/localdata";
-
-import RestaurantInfo from '@/components/elements/RestaurantInfo'
-import React from 'react'
 import { getLocalData } from '@/lib/localdata';
+import Footer from "@/components/modules/Footer";
 
 
 
@@ -41,9 +38,9 @@ export default function page({ params }) {
     <>
       <div className="position fixed transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-[1] w-full shadow-head">
         <Header />
-        {/* <Nav /> */}
       </div>
       <RestaurantInfo params={params} />
+      <Footer />
     </>
   );
 }

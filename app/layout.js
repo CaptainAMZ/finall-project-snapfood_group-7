@@ -18,16 +18,6 @@ export default function RootLayout({ children }) {
     <html lang="fa" dir='rtl'>
 
       <body>
-       
-        {/* <div className="position fixed transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-[20] w-full shadow-head">
-
-              <Header/>
-              <Nav/>
-        </div> */}
-
-       
-
-       
         {children}
         
         </body>
