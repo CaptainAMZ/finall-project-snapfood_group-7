@@ -10,8 +10,11 @@ export async function generateMetadata({ params }) {
   
   const {restaurants} = await getLocalData();
   const res= restaurants.find(item => item.name)
-   
- return {title :`${res.name}-سفارش آنلاین` }
+
+  
+  
+ return {title :`${res.name}-سفارش آنلاین`,
+           }
   
 }
  

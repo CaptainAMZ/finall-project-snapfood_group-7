@@ -17,7 +17,9 @@ import './globals.css'
 export const metadata = {
   title: "  اسنپ فود | سفارش آنلاین غذا از تمامی",
   description: "سایت اسنپ فود",
-  
+  icons: {
+    icon: '/favicon',
+  },
 }
 
 
