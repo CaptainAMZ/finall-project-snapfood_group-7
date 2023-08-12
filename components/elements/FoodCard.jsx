@@ -17,7 +17,7 @@ import defImg from "../../public/images/deflogo-1.jpg";
   comment,
   desc,
   restId,
-  basket
+  basket,
 }) {
 
   
@@ -54,7 +54,7 @@ import defImg from "../../public/images/deflogo-1.jpg";
   };
 
   return (
-    <div className="font-vrg  md:w-[50%] border-l-borders-xs border-t-[.5px] border-b-[.5px] border-surface-dark">
+    <div className="font-vrg  md:w-[50%] border-l-borders-xs  border-b-[.5px] border-surface-dark">
       <div className="cursor-pointer">
         <div
           className=" font-vrg flex justify-between py-spacing-1 px-spacing-1 lg:px-spacing-2"

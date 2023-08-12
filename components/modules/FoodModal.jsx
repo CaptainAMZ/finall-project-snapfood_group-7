@@ -105,7 +105,7 @@ export default  function FoodModal({closeModal,
                 alt=''
                 />
                 </div>
-                <p>{item.point}</p>
+                <p>{item.rate}</p>
                 </div>
             </div>
             <div className='flex-col'>
@@ -114,7 +114,7 @@ export default  function FoodModal({closeModal,
                 </p>
                 <div className='flex'>
                   <p className='font-vmd text-scales-caption mt-spacing-1 p-[8px] bg-surface-dark rounded-lg text-carbon-light'>
-                      {item.lable} 
+                      {item.stuff} 
                   </p>
                 </div>
             </div>
