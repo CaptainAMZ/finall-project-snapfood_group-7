@@ -1,7 +1,5 @@
 import React from 'react'
-import leftgreen from'../../public/images/images-home/left-green.svg'
 import Image from 'next/image'
-import market from'../../public/images/images-home/market-stall.svg'
 
 export default function SearchMarket({resturantName,count}) {
    
@@ -29,7 +27,7 @@ export default function SearchMarket({resturantName,count}) {
                         </span>
 
 
-                        <Image src={"/images/images-home/left-green.svg"} width={22} height={22} />
+                        <Image src={"/images/images-home/left-green.svg"} width={22} height={22}  alt='left'/>
                 </div>
             
             </a>
@@ -42,7 +40,7 @@ export default function SearchMarket({resturantName,count}) {
 
         <div className='p-[1.125rem] flex items-center '>
 
-            <Image className='ml-spacing-2' src={"/images/images-home/market-stall.svg"} width={20} height={20}/>
+            <Image className='ml-spacing-2' src={"/images/images-home/market-stall.svg"} width={20} height={20} alt='market'/> 
 
             <div >
                 <span className='inline-block font-vrg text-[0.875rem] leading-lineHeight-caption text-carbon-main '>

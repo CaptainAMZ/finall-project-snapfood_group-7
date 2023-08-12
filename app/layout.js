@@ -5,6 +5,7 @@ import './globals.css'
 
 import Nav from '@/components/elements/Nav'
 import RestaurantInfo from '@/components/elements/RestaurantInfo'
+import SearchProductCard from '@/components/elements/SearchProductCard'
 
 
 export const metadata = {
@@ -23,6 +24,8 @@ export default function RootLayout({ children }) {
               <Header/>
               <Nav/>
         </div> */}
+
+       
 
        
         {children}

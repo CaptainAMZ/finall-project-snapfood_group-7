@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
-import leftgreen from "../../public/images/images-home/left-green.svg";
 import SearchFood from "./SearchFood";
 export default function SearchProduct({ foods, value, restaurants }) {
   
@@ -26,7 +25,7 @@ export default function SearchProduct({ foods, value, restaurants }) {
               )
             </span>
 
-            <Image src={leftgreen} width={22} />
+            <Image src="/images/images-home/left-green.svg" width={22} height={22} alt="left" />
           </div>
         </a>
       </div>

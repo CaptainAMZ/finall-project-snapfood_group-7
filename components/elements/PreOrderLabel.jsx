@@ -1,5 +1,5 @@
 import React from 'react'
-import CheckIcon from '@/public/images/icon-check.svg'
+
 
 // کامپوننت دیو اطلاعات زمان ارسال و زمان دیگر
 // see PreOrderModal.jsx
@@ -9,13 +9,13 @@ function PreOrderLabel({ info, labeltext, icon }) {
         <label 
             dir="rtl" 
             className='inline-flex items-center select-none cursor-pointer '>
-            <CheckIcon/>
+            <img src='/images/icon-check.svg'/>
             <div className='flex flex-col flex-nowrap mr-[16.83px] cursor-pointer'>
                 <p className='inline-block w-auto h-auto p-0 m-0 font-vb text-scales-caption leading-lineHeight-caption text-carbon-main'>{labeltext}</p>
                 <p className='inline-block w-auto h-auto p-0 m-0 font-vrg text-scales-caption leading-lineHeight-caption text-carbon-main'>{info}</p>
             </div>
         </label>
-        {icon}
+        <img src={icon}/>
     </div>
   )
 }

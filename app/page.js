@@ -7,9 +7,11 @@ import './globals.css'
 import { getLocalData } from '@/lib/localdata';
 
 export const metadata = {
-  title: " اسنپ فود | سفارش آنلاین",
+  title: "  اسنپ فود | سفارش آنلاین غذا از تمامی",
   description: "سایت اسنپ فود",
-
+  icons: {
+    icon: '/favicon',
+  },
 }
 
 export default async function Home() {

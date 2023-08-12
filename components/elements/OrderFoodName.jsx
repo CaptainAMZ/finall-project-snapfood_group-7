@@ -1,5 +1,4 @@
 import React from 'react'
-import cross from '../../public/images/images-home/cross.svg'
 import Image from 'next/image'
 
 export default function OrderFoodName({infoFood}) {

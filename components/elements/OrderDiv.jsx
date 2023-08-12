@@ -3,7 +3,6 @@
 import React from 'react'
 import Image from "next/image";
 import Orders from './Orders'
-import order from '../../public/images/images-home/order.svg'
 import { useState } from 'react';
 import { Provider } from 'react-redux';
 import { store } from '@/redux';

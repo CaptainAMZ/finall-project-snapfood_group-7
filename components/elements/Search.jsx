@@ -1,13 +1,8 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import searchDark from "../../public/images/images-home/search-dark.svg";
-import crossCircle from "../../public/images/images-home/cross-circle.svg";
-import left from "../../public/images/images-home/left.svg";
-
 import SearchCategory from "./SearchCategory";
 import SearchMarket from "./SearchMarket";
-import SearchFood from "./SearchFood";
 import SearchProduct from "./SearchProduct";
 import { useRouter } from "next/navigation";
 
@@ -19,13 +14,12 @@ export default function Search({
   setSearchedText,
   restId,
 }) {
+
+
+
   const router = useRouter();
   const location = window.location;
   const path = location.pathname;
-
-  const icon = searchDark;
-  // const icon = crossCircle;
-  // width ={20px} height ={20px}
 
   const [value, setValue] = useState("");
 
@@ -33,10 +27,10 @@ export default function Search({
     e.preventDefault();
     switch (path) {
       case "/" || "":
-        router.push(`/?search=${value}`);
+        router.push(`/search?search=${value}`);
         break;
       case "/service/restaurants":
-        router.push(`/?search=${value}`);
+        router.push(`/search?search=${value}`);
         break;
       case `/service/restaurants/${restId}`:
         router.push(`/service/restaurants/${restId}?search=${value}`);
@@ -47,6 +41,7 @@ export default function Search({
   };
 
   const condition = path.includes(`/service/restaurants/${restId}`);
+
 
   const handleSearchChange = (e) => {
     const content = e.target.value;
@@ -65,7 +60,7 @@ export default function Search({
   return (
     <form
       onSubmit={submitHandler}
-      className="fixed top-0 flex justify-center w-[31vw] min-w-[18.75rem] m-auto py-spacing-16 mt-[.8rem]"
+      className="fixed top-0 flex justify-center w-[31vw] min-w-[18.75rem] m-auto py-spacing-16 "
     >
       <div className="w-[95%] flex flex-col">
         <div className="relative w-full flex items-center justify-center ">
@@ -79,6 +74,7 @@ export default function Search({
             }`}
             width={17}
             height={17}
+            alt="search"
           />
 
           <input
@@ -111,7 +107,7 @@ export default function Search({
                   جستجوی {value}
                 </span>
 
-                <Image src={left} />
+                <Image src={"/images/images-home/left.svg"} width={6} height={6} alt="left" />
               </div>
             )}
             {condition && !!value.length && (
@@ -120,52 +116,40 @@ export default function Search({
                   جستجوی {value}
                 </span>
 
-                <Image src={left} />
+                <Image src={"/images/images-home/left.svg"} width={6} height={6} alt="left"/> 
               </div>
             )}
           </div>
 
-          {/* <SearchCategory category={'پیتزا'}/> */}
 
           {!condition &&
             value.length > 1 &&
             cats
               .filter((item) => {
                 if (item.title.includes(value)) {
-                  console.log(item.title);
+               
                   return item.title;
                 }
               })
-              .map((item) => <SearchCategory category={item.title} />)}
+              .map((item) => <SearchCategory key={item.id} category={item.title} />)}
 
           {!condition &&
             value.length > 1 &&
             restaurants
               .filter((item) => {
                 if (item.name.includes(value)) {
-                  console.log(item.name);
+                  
                   return item;
                 }
               })
               .map((item, index, arrayRef) => (
-                <SearchMarket
+                <SearchMarket 
+                key={ item.id}
                   resturantName={item.name}
                   count={arrayRef.length}
                 />
               ))}
-          {/* <SearchMarket resturantName={'پیتزا شیلا'}/> */}
-
-          {/*                         
-                    {value.length>1&&foods.filter((item)=>{
-                        if(item.name.includes(value)){
-
-                            // console.log(item);
-                            return item
-                            
-                        }
-                    }).map((item,index,arrayRef)=>{
-                        console.log(arrayRef);
-                    return<SearchProduct foodName={item.name} img={item.image} price={item.price} count={arrayRef.length} />})}  */}
+       
 
           {!condition && value.length > 1 && (
             <SearchProduct
