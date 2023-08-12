@@ -1,3 +1,4 @@
+import Header from "@/components/elements/Header";
 import React from "react";
 import { getLocalData } from "../../lib/localdata";
 import SearchProductCard from "@/components/elements/SearchProductCard";

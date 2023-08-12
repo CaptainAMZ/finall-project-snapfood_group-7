@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import { store } from "@/redux/index";
 import FoodCardWrapper from './FoodCardWrapper';
 
-export default  function  ({foods, fcomments}) {
+export default  function FoodList ({foods, fcomments}) {
 
   
   const search = useSearchParams();

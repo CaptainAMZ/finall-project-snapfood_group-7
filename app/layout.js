@@ -1,4 +1,3 @@
-import Header from '@/components/elements/Header'
 import './globals.css'
 
 
