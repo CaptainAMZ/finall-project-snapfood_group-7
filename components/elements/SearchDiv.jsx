@@ -3,20 +3,18 @@
 import React, { useState,useRef } from "react";
 import Image from "next/image";
 import Search from "./Search";
-// import { useRouter } from 'next/router'
-import { useSelectedLayoutSegment } from "next/navigation";
-import { useRouter } from "next/navigation";
 import { useParams } from "next/navigation";
-import { usePathname, useSearchParams } from "next/navigation";
+
 
 export default function SearchDiv({ foods, cats, restaurants }) {
+
+
   const [modal, setModal] = useState(false);
+  const [searchedText , setSearchedText] = useState('');
+  const { restaurant: restId } = useParams();
+  const showFilter = useRef();
   const location = window.location;
   const path = location.pathname;
-  const showFilter = useRef()
-  const [searchedText , setSearchedText] = useState('')
-
-  const { restaurant: restId } = useParams();
 
   let restaurantName;
 
@@ -33,11 +31,7 @@ export default function SearchDiv({ foods, cats, restaurants }) {
       text = restaurantName;
 
 
-    case "/search":  
-    case "/service/restaurants/search":  
-    case "/search":  
-
-  }
+}
 
   const closeFunc = () => {
     showFilter.current.click()

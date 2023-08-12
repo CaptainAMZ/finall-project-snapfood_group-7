@@ -1,12 +1,8 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-
-
-
 import SearchCategory from "./SearchCategory";
 import SearchMarket from "./SearchMarket";
-import SearchFood from "./SearchFood";
 import SearchProduct from "./SearchProduct";
 import { useRouter } from "next/navigation";
 
@@ -18,12 +14,12 @@ export default function Search({
   setSearchedText,
   restId,
 }) {
+
+
+
   const router = useRouter();
   const location = window.location;
   const path = location.pathname;
-
-
-  
 
   const [value, setValue] = useState("");
 
@@ -34,10 +30,10 @@ export default function Search({
         router.push(`/search?search=${value}`);
         break;
       case "/service/restaurants":
-        router.push(`/service/restaurants/search?search=${value}`);
+        router.push(`/search?search=${value}`);
         break;
       case `/service/restaurants/${restId}`:
-        router.push(`/service/restaurants/${restId}/?search=${value}`);
+        router.push(`/service/restaurants/${restId}?search=${value}`);
         break;
     }
     onClose();
@@ -78,6 +74,7 @@ export default function Search({
             }`}
             width={17}
             height={17}
+            alt="search"
           />
 
           <input
@@ -110,7 +107,7 @@ export default function Search({
                   جستجوی {value}
                 </span>
 
-                <Image src={"/images/images-home/left.svg"} width={6} height={6} />
+                <Image src={"/images/images-home/left.svg"} width={6} height={6} alt="left" />
               </div>
             )}
             {condition && !!value.length && (
@@ -119,12 +116,11 @@ export default function Search({
                   جستجوی {value}
                 </span>
 
-                <Image src={"/images/images-home/left.svg"} width={6} height={6}/>
+                <Image src={"/images/images-home/left.svg"} width={6} height={6} alt="left"/> 
               </div>
             )}
           </div>
 
-          {/* <SearchCategory category={'پیتزا'}/> */}
 
           {!condition &&
             value.length > 1 &&
@@ -135,7 +131,7 @@ export default function Search({
                   return item.title;
                 }
               })
-              .map((item) => <SearchCategory category={item.title} />)}
+              .map((item) => <SearchCategory key={item.id} category={item.title} />)}
 
           {!condition &&
             value.length > 1 &&
@@ -147,7 +143,8 @@ export default function Search({
                 }
               })
               .map((item, index, arrayRef) => (
-                <SearchMarket
+                <SearchMarket 
+                key={ item.id}
                   resturantName={item.name}
                   count={arrayRef.length}
                 />

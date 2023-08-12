@@ -12,10 +12,9 @@ import {useSelector} from 'react-redux'
 export default function Orders() {
   
   const {historyList,passID , userId} = useSelector(state=>state.history);
-  
-  
-  console.log('h',historyList );
   const [modal , setModal] = useState(false);
+
+
   const closeModalHandler =(e) =>{
     
     const targetClass=  e.target.className;
@@ -63,7 +62,7 @@ export default function Orders() {
           <button className='h-[3.75rem] mt-spacing-11 mx-auto mb-spacing-0 inline-flex justify-center items-center cursor-pointer transition-all 
           w-auto min-w-[6.6875rem] shadow-shadows-medium  border-accent2-alphaLight border-[0.09375rem] rounded-[3rem] py[1px] px-[6px]'>
   
-              <Image src="/images/images-home/clock.svg" width={17} height={18} />
+              <Image src="/images/images-home/clock.svg" width={17} height={18} alt='clock' />
   
               <p className='mr-spacing-1 font-vsb text-vm leading-lineHeight-body text-accent2-main inline-block tracking-tight'>
                 مشاهده همه سفارش ها

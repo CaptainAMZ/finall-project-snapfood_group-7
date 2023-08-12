@@ -10,8 +10,8 @@ import { getLocalData } from '@/lib/localdata';
 
 export default async function InfoTitle({params}) {
 
-
-      
+   
+      console.log(params);
     const {restCats, restaurants} = await getLocalData();
     const resturant = restaurants.find(items=> items.id == params.restaurant)
 

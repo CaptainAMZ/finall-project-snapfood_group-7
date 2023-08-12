@@ -25,7 +25,7 @@ export default function SearchProduct({ foods, value, restaurants }) {
               )
             </span>
 
-            <Image src="/images/images-home/left-green.svg" width={22} height={22} />
+            <Image src="/images/images-home/left-green.svg" width={22} height={22} alt="left" />
           </div>
         </a>
       </div>
