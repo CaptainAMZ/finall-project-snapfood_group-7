@@ -20,7 +20,7 @@ export default async function Categories() {
     <div className="mb-spacing-4 w-[calc(100% + 2rem)] m-[calc(-1rem)] flex flex-wrap">
       {cats.map((item) => {
         return ( 
-         <Category key={item.id} type={item.title} img={item.img}/>
+         <Category key={item.id} type={item.title} img={item.img} link={item.id}/>
         );
       }
       )}
