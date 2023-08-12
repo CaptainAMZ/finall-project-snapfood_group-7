@@ -36,7 +36,7 @@ export default function Search({
         router.push(`/?search=${value}`);
         break;
       case "/service/restaurants":
-        router.push(`/service/restaurants?search=${value}`);
+        router.push(`/?search=${value}`);
         break;
       case `/service/restaurants/${restId}`:
         router.push(`/service/restaurants/${restId}?search=${value}`);

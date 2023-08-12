@@ -1,27 +1,21 @@
-import RestaurantInfo from '@/components/elements/RestaurantInfo'
-import React from 'react'
-import { getLocalData } from '@/lib/localdata';
-export async function generateStaticParams () {
+import Header from "@/components/elements/Header";
+import RestaurantInfo from "@/components/elements/RestaurantInfo";
+import React from "react";
+import { getLocalData } from "@/lib/localdata";
+export async function generateStaticParams() {
+  const { restaurants } = await getLocalData();
 
-  const {restaurants} = await getLocalData();
-
-  return restaurants.map(item => (
-    {id : item.id.toString()}
-    ))
-    
-    
+  return restaurants.map((item) => ({ id: item.id.toString() }));
 }
 
-
-
-
-
-export default function page({params}) {
-      
+export default function page({ params }) {
   return (
-    <div>
-      <RestaurantInfo params={params}/>
-      
-    </div>
-  )
+    <>
+      <div className="position fixed transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-[1] w-full shadow-head">
+        <Header />
+        {/* <Nav /> */}
+      </div>
+      <RestaurantInfo params={params} />
+    </>
+  );
 }

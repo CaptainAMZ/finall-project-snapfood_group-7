@@ -14,7 +14,7 @@ function MainServer({restaurants ,cats}) {
 
 
   return (
-    <div className="max-w-screen h-screen flex  flex-col overflow-x-hidden  p-4  xs:mx-[50px] bg-white ">
+    <div className="max-w-screen h-screen flex  flex-col p-4  xs:mx-[50px] bg-white ">
       <div className="w-full md:pl-4 mb-4  ">
         <Filter
           restaurants={restaurants}
