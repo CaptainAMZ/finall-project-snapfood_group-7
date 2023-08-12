@@ -2,7 +2,7 @@ import Header from '@/components/elements/Header';
 import Nav from '@/components/elements/Nav';
 import Categories from '@/components/elements/Categories';
 import Application from '@/components/templates/Application';
-import CardSlider from '@/components/elements/CardSlider';
+// import CardSlider from '@/components/elements/CardSlider';
 import './globals.css'
 import { getLocalData } from '@/lib/localdata';
 
@@ -30,7 +30,7 @@ export default async function Home() {
         {/* <div></div> header + nav */}
         <main className=" grow w-full max-w-85.375 mx-auto p-spacing-2 sm:p-spacing-3 md:p-spacing-5 lg:p-4">
           <Categories />
-          <CardSlider restaurants={restaurants} />
+          {/* <CardSlider restaurants={restaurants} /> */}
           <Application />
         </main>
       </div>
