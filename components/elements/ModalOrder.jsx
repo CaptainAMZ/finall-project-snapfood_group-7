@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 // import cross from '../../public/images/images-home/cross.svg'

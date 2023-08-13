@@ -1,4 +1,4 @@
-  
+'use client'
 import React, { useState } from 'react'
 import OrderCountChange from './OrderCountChange';
 import {  useDispatch, useSelector } from 'react-redux';

@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 
 // دکمه کاهش تعداد سفارش
 // see OrderCountChange.jsx
