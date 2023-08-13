@@ -1,5 +1,4 @@
 import React from 'react'
-import left from '../../public/images/images-home/left.svg'
 import Image from "next/image";
 import Link from 'next/link';
 
