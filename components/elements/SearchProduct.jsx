@@ -1,12 +1,12 @@
 
 import Image from "next/image";
 import SearchFood from "./SearchFood";
+import { useCallback } from "react";
 export default function SearchProduct({ foods, value, restaurants }) {
   
+  
   const foodFilter=foods.filter((item)=>{
-
     if(item.name.includes(value)){
-      
       return item
     }
   })
@@ -30,13 +30,13 @@ export default function SearchProduct({ foods, value, restaurants }) {
         </a>
       </div>
 
-      {foodFilter.map((food, index, arrayRef) => {
+      {foodFilter.map((food ) => {
           return (
             <SearchFood
               key={food.id}
               foodName={food.name}
               restaurant={restaurants.filter(
-                (item, index) => item.id === food.restId
+                (item) => item.id === food.restId
               )}
               img={food.image}
               price={food.price}

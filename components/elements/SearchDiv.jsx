@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Search from "./Search";
 import { useParams } from "next/navigation";
@@ -38,23 +38,28 @@ export default function SearchDiv({ foods, cats, restaurants }) {
       text = restaurantName;
   }
 
-  const closeFunc = () => {
-    showFilter.current.click();
-  };
 
-  const closeModalHandler = (e) => {
+  const closeFunc = useCallback(()=>{
+    showFilter.current.click();
+  },[])
+  
+
+  const closeModalHandler = useCallback((e)=>{
     const targetClass = e.target.className;
     if (targetClass.includes("CLOSE")) {
       setModal(false);
       document.body.style.overflow = "scroll";
     }
-  };
 
-  const openModalHandler = (e) => {
+  },[])
+  
+  const openModalHandler = useCallback((e)=>{
+
     setModal(true);
     document.body.style.overflow = "hidden";
-  };
+  },[])
 
+ 
   return (
     <>
       <div

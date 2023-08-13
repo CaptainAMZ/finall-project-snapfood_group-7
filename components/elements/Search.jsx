@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import SearchCategory from "./SearchCategory";
 import SearchMarket from "./SearchMarket";
@@ -22,6 +22,16 @@ export default function Search({
   const path = location.pathname;
 
   const [value, setValue] = useState("");
+  
+  const condition = path.includes(`/service/restaurants/${restId}`);
+
+  const INPUT = useRef();
+  useEffect(() => {
+    INPUT.current.focus();
+  }, []);
+
+
+  
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -40,8 +50,7 @@ export default function Search({
     setSearchedText(value);
   };
 
-  const condition = path.includes(`/service/restaurants/${restId}`);
-
+  
 
   const handleSearchChange = (e) => {
     const content = e.target.value;
@@ -52,10 +61,6 @@ export default function Search({
     setValue("");
   };
 
-  const INPUT = useRef();
-  useEffect(() => {
-    INPUT.current.focus();
-  }, []);
 
   return (
     <form
