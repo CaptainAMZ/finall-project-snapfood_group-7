@@ -153,7 +153,7 @@ export default function Search({
                   return item;
                 }
               })
-              .map((item, arrayRef) => (
+              .map((item, index,arrayRef) => (
                 <SearchMarket 
                 key={ item.id}
                   resturantName={item.name}

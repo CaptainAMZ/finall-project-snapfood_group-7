@@ -9,6 +9,15 @@ export default function SearchProduct({ foods, value, restaurants }) {
       return item
     }
   })
+
+
+  const restaurantFinder = (food)=>{
+    return( restaurants.find(
+      (item) => item.id === food.restId
+    )
+    )}
+  
+
   return (
     <div className={`${foodFilter.length ? '' : 'hidden'} flex flex-col border-b-[0.0625rem] border-surface-dark`}>
       <div className="mt-[1.125rem] flex items-center justify-between">
@@ -34,9 +43,7 @@ export default function SearchProduct({ foods, value, restaurants }) {
             <SearchFood
               key={food.id}
               foodName={food.name}
-              restaurant={restaurants.filter(
-                (item) => item.id === food.restId
-              )}
+              restaurant= {restaurantFinder(food)}
               img={food.image}
               price={food.price}
             />

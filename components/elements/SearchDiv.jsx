@@ -101,7 +101,7 @@ export default function SearchDiv({ foods, cats, restaurants }) {
         >
           <Search
             restId={restId}
-            
+          
             foods={foods}
             cats={cats}
             restaurants={restaurants}
