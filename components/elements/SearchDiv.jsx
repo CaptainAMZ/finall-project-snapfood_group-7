@@ -1,22 +1,31 @@
 "use client";
 
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import React, { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import Image from "next/image";
 import Search from "./Search";
 import { useParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 
 
 export default function SearchDiv({ foods, cats, restaurants }) {
 
   const [modal, setModal] = useState(false);
-  const [searchedText, setSearchedText] = useState("");
   const [path, setPath] = useState("");
 
   const { restaurant: restId } = useParams();
   const showFilter = useRef();
 
   let restaurantName;
-  let text = "";
+  let text;
+
+
+  
+
+  
+
+
+
+
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -36,8 +45,14 @@ export default function SearchDiv({ foods, cats, restaurants }) {
     case `/service/restaurants/${restId}`:
       restaurantName = restaurants.find((item) => item.id == restId).name;
       text = restaurantName;
+
+      
+      
   }
 
+  
+  const searchquery = useSearchParams();
+  const searchText = searchquery.get('search')
 
   const closeFunc = useCallback(()=>{
     showFilter.current.click();
@@ -74,7 +89,7 @@ export default function SearchDiv({ foods, cats, restaurants }) {
           alt="search"
         />
         <p className="hidden md:inline-block md:text-inactive-dark md:text-start md:font-vrg md:leading-lineHeight-default md:tracking-tighter">
-          {!searchedText ? `جست و جو در ${text}` : searchedText}
+          {(text && !searchText) ? `جست و جو در ${text}` : searchText}
         </p>
       </div>
 
@@ -86,7 +101,7 @@ export default function SearchDiv({ foods, cats, restaurants }) {
         >
           <Search
             restId={restId}
-            setSearchedText={setSearchedText}
+            
             foods={foods}
             cats={cats}
             restaurants={restaurants}

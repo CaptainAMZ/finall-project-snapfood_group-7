@@ -1,7 +1,6 @@
 
 import Image from "next/image";
 import SearchFood from "./SearchFood";
-import { useCallback } from "react";
 export default function SearchProduct({ foods, value, restaurants }) {
   
   

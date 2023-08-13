@@ -11,7 +11,6 @@ export default function Search({
   cats,
   restaurants,
   onClose,
-  setSearchedText,
   restId,
 }) {
 
@@ -45,22 +44,29 @@ export default function Search({
       case `/service/restaurants/${restId}`:
         router.push(`/service/restaurants/${restId}?search=${value}`);
         break;
+
+      default :
+        router.push(`/search?search=${value}`)  
     }
     onClose();
-    setSearchedText(value);
+
   };
 
   
-
-  const handleSearchChange = (e) => {
+  const handleSearchChange = useCallback((e)=>{
     const content = e.target.value;
     setValue(content);
-  };
+  },[])
 
-  const emptyInputValue = () => {
+  
+  const emptyInputValue = useCallback(()=>{
     setValue("");
-  };
+  })
 
+  
+
+
+  
 
   return (
     <form
@@ -147,7 +153,7 @@ export default function Search({
                   return item;
                 }
               })
-              .map((item, index, arrayRef) => (
+              .map((item, arrayRef) => (
                 <SearchMarket 
                 key={ item.id}
                   resturantName={item.name}
