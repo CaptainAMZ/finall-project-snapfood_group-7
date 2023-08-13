@@ -1,4 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
+import tale from '../public/images/images-home/tale.png';
+import shila from '../public/images/images-home/shila.jpg';
 const days = ["یکشنبه", "دوشنبه", "سه شنبه", "چهارشنبه", "پنجشنبه", "جمعه", "شنبه"]
 const d = new Date
 
@@ -12,47 +14,57 @@ const orderHistorySlice = createSlice({
     historyList: [
       {
         id: 1,
-        resName: 'Shila',
-        image: '',
-        dataMounth: '',
-        dataHour: '',
+        resName: 'پیتزا شیلا (پیروزی)',
+        logo: shila,
+        dateMonth:'تیر',//تیر
+        dateHour:20,
+        dateMin: 44,
+        dateDay: days[4],//جمعه
+        dateDate: 8, //9
         items: [
           {
             id: 1,
-            foodName: 'Pizza',
-            price: 200,
-            count: 2
+            name: 'کمبو چیز',
+            price: '348,000',
+            count: 1
           },
           {
             id: 2,
-            foodName: 'salad',
-            price: 200,
-            count: 2
+           name: 'پیتزا مخلوط (۳۰ سانتی متری)',
+            price: '218,000',
+            count: 1
           }
         ],
-        totalPrice: 400,
-        deliveryPay: 15000,
-        tax: 554,
-        total: 56
+        totalPrice: '566,000',
+        deliveryCost: '14,000',
+        payment: '570,000'
       },
       {
-        id: 2,
-        resName: 'kabab',
-        image: '',
-        dateMounth: '',
-        dateHour: '',
+        id: 1,
+        resName: 'تله پیتزا (پیروزی)',
+        logo: tale,
+        dateMonth:'تیر',//تیر
+        dateHour:12,
+        dateMin: 25,
+        dateDay: days[6],//جمعه
+        dateDate: 24, //9
         items: [
           {
             id: 1,
-            foodName: 'loghme',
-            price: 200,
-            count: 2
+            name: 'کمبو چیز',
+            price: '348,000',
+            count: 1
           },
+          {
+            id: 2,
+           name: 'پیتزا پنجره ای چیکن آلفردو (۱۸ سانتی)',
+            price: '140,000',
+            count: 1
+          }
         ],
-        totalPrice: 400,
-        deliveryPay: 15000,
-        tax: 554,
-        total: 56
+        totalPrice: '140,000',
+        deliveryCost: '13,900',
+        payment: '153,900'
       },
     ],
     passID: ''
