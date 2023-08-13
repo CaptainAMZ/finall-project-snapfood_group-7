@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import SearchCategory from "./SearchCategory";
 import SearchMarket from "./SearchMarket";
@@ -11,7 +11,6 @@ export default function Search({
   cats,
   restaurants,
   onClose,
-  setSearchedText,
   restId,
 }) {
 
@@ -22,6 +21,16 @@ export default function Search({
   const path = location.pathname;
 
   const [value, setValue] = useState("");
+  
+  const condition = path.includes(`/service/restaurants/${restId}`);
+
+  const INPUT = useRef();
+  useEffect(() => {
+    INPUT.current.focus();
+  }, []);
+
+
+  
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -35,27 +44,29 @@ export default function Search({
       case `/service/restaurants/${restId}`:
         router.push(`/service/restaurants/${restId}?search=${value}`);
         break;
+
+      default :
+        router.push(`/search?search=${value}`)  
     }
     onClose();
-    setSearchedText(value);
+
   };
 
-  const condition = path.includes(`/service/restaurants/${restId}`);
-
-
-  const handleSearchChange = (e) => {
+  
+  const handleSearchChange = useCallback((e)=>{
     const content = e.target.value;
     setValue(content);
-  };
+  },[])
 
-  const emptyInputValue = () => {
+  
+  const emptyInputValue = useCallback(()=>{
     setValue("");
-  };
+  })
 
-  const INPUT = useRef();
-  useEffect(() => {
-    INPUT.current.focus();
-  }, []);
+  
+
+
+  
 
   return (
     <form
@@ -142,7 +153,7 @@ export default function Search({
                   return item;
                 }
               })
-              .map((item, index, arrayRef) => (
+              .map((item, index,arrayRef) => (
                 <SearchMarket 
                 key={ item.id}
                   resturantName={item.name}

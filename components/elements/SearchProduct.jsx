@@ -3,13 +3,21 @@ import Image from "next/image";
 import SearchFood from "./SearchFood";
 export default function SearchProduct({ foods, value, restaurants }) {
   
+  
   const foodFilter=foods.filter((item)=>{
-
     if(item.name.includes(value)){
-      
       return item
     }
   })
+
+
+  const restaurantFinder = (food)=>{
+    return( restaurants.find(
+      (item) => item.id === food.restId
+    )
+    )}
+  
+
   return (
     <div className={`${foodFilter.length ? '' : 'hidden'} flex flex-col border-b-[0.0625rem] border-surface-dark`}>
       <div className="mt-[1.125rem] flex items-center justify-between">
@@ -30,14 +38,12 @@ export default function SearchProduct({ foods, value, restaurants }) {
         </a>
       </div>
 
-      {foodFilter.map((food, index, arrayRef) => {
+      {foodFilter.map((food ) => {
           return (
             <SearchFood
               key={food.id}
               foodName={food.name}
-              restaurant={restaurants.filter(
-                (item, index) => item.id === food.restId
-              )}
+              restaurant= {restaurantFinder(food)}
               img={food.image}
               price={food.price}
             />
