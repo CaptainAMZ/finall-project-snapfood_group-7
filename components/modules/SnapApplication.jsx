@@ -10,7 +10,7 @@ const imgs = [
 
 const SnapApplication = () => {
   return (
-    <section className="px-4 w-100 min-h-[600px] bg-surface-dark md:flex md:px-20 md:rounded-br-[100px]">
+    <section className="mt-44 px-4 w-100 min-h-[600px] bg-surface-dark md:flex md:px-20 md:rounded-br-[100px]">
       <div className="px-2 py-spacing-8 md:w-[45%]">
         <h1 className="w-[90%] text-4xl leading-lineHeight-xlarge font-vmd text-carbon-main mb-10 ">
           اپلیکیشن اسنپ‌فود

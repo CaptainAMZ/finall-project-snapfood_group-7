@@ -7,6 +7,8 @@ import Cities from "../components/modules/Cities";
 import './globals.css'
 import SnapTops from '@/components/modules/SnapTops';
 import "./globals.css";
+import { getLocalData } from "@/lib/localdata";
+
 
 export const metadata = {
   title: "  اسنپ فود | سفارش آنلاین غذا از تمامی",
@@ -16,7 +18,12 @@ export const metadata = {
   },
 };
 
+
+
 export default async function Home() {
+
+  const { restaurants } = await getLocalData();
+
   return (
     <div>
       <div className="sticky transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-[1] w-full shadow-head">
@@ -29,7 +36,8 @@ export default async function Home() {
         </div>
 
         <div className='grow w-full max-w-85.375 mx-auto px-[1rem] sm:px-[1.5rem] md:px-[2.5rem]'>
-          <SnapTops />
+          <SnapTops data={restaurants} title={"برترین ها"} />
+          <SnapTops data={restaurants} title={"پیشنهاد کابران"} />
           <SnapApplication />
           <SnapBusiness />
         </div>
