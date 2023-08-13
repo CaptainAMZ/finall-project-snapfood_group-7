@@ -257,7 +257,29 @@
       "pay": "آنلاین، اعتبار جایزه خرید",
       "tax": 0.09,
       "basketminimum": "ندارد"
+    },{
+      
+        "id": 10,
+        "catId": [1,3],
+        "otherCats": ["ایرانی, کباب, سنتی"],
+        "name": "شاهپسند",
+        "star": 4.4,
+        "rate": 21042,
+        "logo": "/images/rezaee-logo.jpg",
+        "image": "/images/irani-3.jpg",
+        "delivery": {
+          "icon": "/images/delivery.svg",
+          "type": "پیک فروشنده",
+          "price": 15000
+        },
+        "address": "پیروزی، نیرو هوایی جنب پمب بنزین",
+        "worktime": "باز امروز از ساعت ۱۰:۳۰ تا ۲۲:۰۰",
+        "pay": "آنلاین، اعتبار جایزه خرید",
+        "tax": 0.09,
+        "basketminimum": "300,000"
+      
     }
+
   ],
   "foods": [
     {

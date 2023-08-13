@@ -50,7 +50,7 @@ export default async function Home() {
           <Cities />
          
           
-          <Footer />
+          
         
         
       </div>

@@ -32,13 +32,13 @@ export default async function page({ searchParams }) {
   
   return (
     <>
-      <div className="sticky transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-[20] w-full shadow-head">
+      <div className="sticky transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-[20] w-full shadow-head overflow-auto bg-white">
         <Header />
       </div>
       <div className=" transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-[20] w-full ">
         <Nav />
       </div>
-      <main className="min-w-[80vh] pt-[4.25rem] pb-[1.5rem] px-[1.5rem] mx-auto my-0 max-w-[85.375rem]">
+      <main className="min-w-[80vh] pt-[4.25rem] pb-[1.5rem] px-[1.5rem] mx-auto my-0 max-w-[85.375rem] bg-white">
         {!!filteredRestaurants.length && (
           <section className="mb-[3.75rem]">
             <header className="flex justify-between">

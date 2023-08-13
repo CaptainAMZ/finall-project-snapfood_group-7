@@ -1,10 +1,8 @@
 import './globals.css'
+import Footer from '@/components/modules/Footer'
 
 
 
-import Nav from '@/components/elements/Nav'
-import RestaurantInfo from '@/components/elements/RestaurantInfo'
-import SearchProductCard from '@/components/elements/SearchProductCard'
 
 
 export const metadata = {
@@ -18,8 +16,8 @@ export default function RootLayout({ children }) {
 
       <body>
         {children}
-        
-        </body>
+        <Footer />
+      </body>
 
     </html>
   )
