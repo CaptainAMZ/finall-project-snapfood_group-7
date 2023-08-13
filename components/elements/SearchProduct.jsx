@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+
 import Image from "next/image";
 import SearchFood from "./SearchFood";
 export default function SearchProduct({ foods, value, restaurants }) {

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import FoodCard from './FoodCard'
 import { useSelector } from "react-redux";

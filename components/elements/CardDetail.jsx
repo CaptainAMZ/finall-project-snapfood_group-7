@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+'use client'
 import CardCount from "./CardCount";
 import OrderedFoods from "./OrderedFoods";
 import TotalPrice from "./TotalPrice";

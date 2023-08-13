@@ -1,5 +1,4 @@
-import ArrowDownBtn from "./ArrowDownBtn"
-import PreOrderModal from "./PreOrderModal"
+
 
 
 // کامپوننت دریافت در سریع ترین زمان ممکن

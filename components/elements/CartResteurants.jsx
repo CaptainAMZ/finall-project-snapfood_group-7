@@ -1,3 +1,4 @@
+'use client'
 import { useSearchParams } from "next/navigation";
 import Card from "./Card";
  function CartResteurants({productCards}) {

@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 
 import React from 'react'
 // import IncreaseIcon from '@/public/images/icon-increase.svg'
