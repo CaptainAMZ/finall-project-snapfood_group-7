@@ -6,20 +6,17 @@ import SnapBusiness from "../components/modules/SnapBusiness";
 import Cities from "../components/modules/Cities";
 import './globals.css'
 import SnapTops from '@/components/modules/SnapTops';
+import "./globals.css";
 
 export const metadata = {
   title: "  اسنپ فود | سفارش آنلاین غذا از تمامی",
   description: "سایت اسنپ فود",
   icons: {
-    icon: '/favicon',
+    icon: "/favicon",
   },
-}
+};
 
 export default async function Home() {
-
-
-
-
   return (
     <div>
       <div className="sticky transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-[1] w-full shadow-head">
@@ -37,9 +34,9 @@ export default async function Home() {
           <SnapBusiness />
         </div>
         <div className="border-t-2"></div>
+
         <Cities />
       </div>
     </div>
   );
-
 }
