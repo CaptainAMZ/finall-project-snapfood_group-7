@@ -10,6 +10,7 @@ export default function RestaurantInfoModal({closeModal, name,address,logo,rate,
 
   
   return (
+    
     <div className='font-vrg w-[46rem] bg-surface-light h-[40rem] rounded-xl  overflow-hidden'>
       <div className='block p-spacing-3'>
       <button onClick={closeModal}  className=' cursor-pointer block w-full text-right px-spacing-1' >

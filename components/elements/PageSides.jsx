@@ -24,7 +24,7 @@ function PageSides
     
   return (
    
-    <div >
+    <div>
    
       <PreOrder/>
       
