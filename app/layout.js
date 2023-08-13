@@ -1,10 +1,8 @@
+import Header from '@/components/elements/Header'
 import './globals.css'
+import Footer from '@/components/modules/Footer'
 
 
-
-import Nav from '@/components/elements/Nav'
-import RestaurantInfo from '@/components/elements/RestaurantInfo'
-import SearchProductCard from '@/components/elements/SearchProductCard'
 
 
 export const metadata = {
@@ -15,12 +13,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir='rtl'>
-
       <body>
+        <div className="sticky top-0 right-0 left-0 z-[2] w-full ">
+          <Header />
+        </div>
         {children}
-        
-        </body>
-
+        <Footer />
+      </body>
     </html>
   )
 }

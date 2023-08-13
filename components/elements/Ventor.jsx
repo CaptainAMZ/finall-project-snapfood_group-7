@@ -12,7 +12,8 @@ function Ventor
 
   
   const {restaurant} = useParams()
-  const deliveryCost = restaurants.find(items => items.id == restaurant).delivery.price
+  const {price, type} = restaurants.find(items => items.id == restaurant).delivery
+    
 
   return (
     // white bg container
@@ -23,7 +24,7 @@ function Ventor
                 {/* ventor icon */}
                 <img src='/images/icon-ventor.svg' className='ml-4 w-5 h-5'/>
                 {/* ventor's price, see VentorPrice.jsx */}
-                <VentorPrice price={deliveryCost}/>
+                <VentorPrice price={price} type={type}/>
             </div>
           
         </div>

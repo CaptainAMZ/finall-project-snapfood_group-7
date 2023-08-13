@@ -1,17 +1,19 @@
 "use client"
 
 import Image from 'next/image'
+import RComments from '../elements/RComments'
 
 
-export default function RestaurantInfoModal({name,address,logo,rate }) {
+export default function RestaurantInfoModal({closeModal, name,address,logo,rate, comments,id,otherCats }) {
 
     
 
   
   return (
-    <div className=' w-[46rem] bg-surface-light h-[40rem] rounded-xl  overflow-hidden'>
+    
+    <div className='font-vrg w-[46rem] bg-surface-light h-[40rem] rounded-xl  overflow-hidden'>
       <div className='block p-spacing-3'>
-      <button  className=' cursor-pointer block w-full text-right px-spacing-1' >
+      <button onClick={closeModal}  className=' cursor-pointer block w-full text-right px-spacing-1' >
       <Image
             src="/images/icons8-close-24.png"
             width={20}
@@ -33,7 +35,7 @@ export default function RestaurantInfoModal({name,address,logo,rate }) {
            </div>
               <div>
                   <h1 className='font-vb text-scales-xxlarge pb-spacing-1'> {name} </h1>
-                  <p className='font-vrg text-scales-body pb-spacing-1'>ایرانی, سنتی, کباب, پیش‌غذای ایرانی</p>
+                  <p className='font-vrg text-scales-body pb-spacing-1'>{otherCats}</p>
                   <p className='font-vrg text-scales-caption'>
                     {address}
                   </p>
@@ -394,142 +396,22 @@ export default function RestaurantInfoModal({name,address,logo,rate }) {
             </div>
           </div>
 
-
-          
-          <div className='flex flex-col '>
-          <div className='flex px-spacing-2'>
-            <div className='flex-col w-[30%] '>
-                <p className='text-scales-body text-carbon-main'>علی</p>
-                <p className='text-scales-caption text-carbon-light my-spacing-1'> 
-                ۱۶ خرداد ۱۴۰۲
-                </p>
-                <div className='flex items-center border-borders-xs w-[40px] rounded-md border-surface-dark'>
-                  <div className='min-w-[15px]'>
-                  <Image
-                className='object-cover ml-spacing-1 '
-                src="/images/icons8-star-40.png"
-                width={15}
-                height={15}
-                alt=''
-                />
-                </div>
-                <p>۵</p>
-                </div>
-            </div>
-            <div className='flex-col'>
-                <p className='font-vmd text-scales-body text-carbon-light'>
-                من خوراک کباب کوبیده سفارش دادم و خیلی خوشمزه بود.اگر با غذاهای خیلی چرب مشکلی نداید بهتون پیشنهاد میکنم امتحانش کنید
-                </p>
-                <div className='flex'>
-                  <p className='font-vmd text-scales-caption mt-spacing-1 p-[8px] bg-surface-dark rounded-lg text-carbon-light'>
-                  کباب کوبیده تک سیخ
-                  </p>
-                </div>
-            </div>
-          </div>
-            <div className='bg-surface-dark h-[2px] w-[100%] my-spacing-2'></div>
-            <div className='flex px-spacing-2'>
-            <div className='flex-col w-[30%] '>
-                <p className='text-scales-body text-carbon-main'>علی</p>
-                <p className='text-scales-caption text-carbon-light my-spacing-1'> 
-                ۱۶ خرداد ۱۴۰۲
-                </p>
-                <div className='flex items-center border-borders-xs w-[40px] rounded-md border-surface-dark'>
-                  <div className='min-w-[15px]'>
-                  <Image
-                className='object-cover ml-spacing-1 '
-                src="/images/icons8-star-40.png"
-                width={15}
-                height={15}
-                alt=''
-                />
-                </div>
-                <p>۵</p>
-                </div>
-            </div>
-            <div className='flex-col'>
-                <p className='font-vmd text-scales-body text-carbon-light'>
-                من خوراک کباب کوبیده سفارش دادم و خیلی خوشمزه بود.اگر با غذاهای خیلی چرب مشکلی نداید بهتون پیشنهاد میکنم امتحانش کنید
-                </p>
-                <div className='flex'>
-                  <p className='font-vmd text-scales-caption mt-spacing-1 p-[8px] bg-surface-dark rounded-lg text-carbon-light'>
-                  کباب کوبیده تک سیخ
-                  </p>
-                </div>
-            </div>
-          </div>
-          <div className='bg-surface-dark h-[2px] w-[100%] my-spacing-2'></div>
-          <div className='flex px-spacing-2'>
-            <div className='flex-col w-[30%] '>
-                <p className='text-scales-body text-carbon-main'>علی</p>
-                <p className='text-scales-caption text-carbon-light my-spacing-1'> 
-                ۱۶ خرداد ۱۴۰۲
-                </p>
-                <div className='flex items-center border-borders-xs w-[40px] rounded-md border-surface-dark'>
-                  <div className='min-w-[15px]'>
-                  <Image
-                className='object-cover ml-spacing-1 '
-                src="/images/icons8-star-40.png"
-                width={15}
-                height={15}
-                alt=''
-                />
-                </div>
-                <p>۵</p>
-                </div>
-            </div>
-            <div className='flex-col'>
-                <p className='font-vmd text-scales-body text-carbon-light'>
-                من خوراک کباب کوبیده سفارش دادم و خیلی خوشمزه بود.اگر با غذاهای خیلی چرب مشکلی نداید بهتون پیشنهاد میکنم امتحانش کنید
-                </p>
-                <div className='flex'>
-                  <p className='font-vmd text-scales-caption mt-spacing-1 p-[8px] bg-surface-dark rounded-lg text-carbon-light'>
-                  کباب کوبیده تک سیخ
-                  </p>
-                </div>
-            </div>
-          </div>
-          <div className='bg-surface-dark h-[2px] w-[100%] my-spacing-2'></div>
-          <div className='flex px-spacing-2'>
-            <div className='flex-col w-[30%] '>
-                <p className='text-scales-body text-carbon-main'>علی</p>
-                <p className='text-scales-caption text-carbon-light my-spacing-1'> 
-                ۱۶ خرداد ۱۴۰۲
-                </p>
-                <div className='flex items-center border-borders-xs w-[40px] rounded-md border-surface-dark'>
-                  <div className='min-w-[15px]'>
-                  <Image
-                className='object-cover ml-spacing-1 '
-                src="/images/icons8-star-40.png"
-                width={15}
-                height={15}
-                alt=''
-                />
-                </div>
-                <p>۵</p>
-                </div>
-            </div>
-            <div className='flex-col'>
-                <p className='font-vmd text-scales-body text-carbon-light'>
-                من خوراک کباب کوبیده سفارش دادم و خیلی خوشمزه بود.اگر با غذاهای خیلی چرب مشکلی نداید بهتون پیشنهاد میکنم امتحانش کنید
-                </p>
-                <div className='flex'>
-                  <p className='font-vmd text-scales-caption mt-spacing-1 p-[8px] bg-surface-dark rounded-lg text-carbon-light'>
-                  کباب کوبیده تک سیخ
-                  </p>
-                </div>
-            </div>
-          </div>
-
-
-
-
-          </div>
+                {
+                  comments.filter(items =>items.restId == id)
+                  .map(({date,name,rate,desc,stuff,id}) =>(
+                      <RComments 
+                      key={id}
+                      date={date}
+                      name={name}
+                      rate={rate}
+                      desc={desc}
+                      stuff={stuff}
+                       />
+                  ))
+                }
         </div>
         </div>
-        {/* <div className='overflow-auto lg:max-h-[400px] '>
-        
-        </div> */}
+       
        
     </div>
   )

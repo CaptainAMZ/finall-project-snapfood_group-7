@@ -8,10 +8,10 @@ import { getLocalData } from '@/lib/localdata';
 
 
 
-export default async function InfoTitle({params}) {
+export default async function InfoTitle({params,comments}) {
 
    
-      console.log(params);
+    
     const {restCats, restaurants} = await getLocalData();
     const resturant = restaurants.find(items=> items.id == params.restaurant)
 
@@ -22,9 +22,9 @@ export default async function InfoTitle({params}) {
 
   return (
       
-    <div className='font-vrg  '>
-        <div className='flex mb-10 w-[30%] '>
-            <div className='pl-spacing-1 min-w-[100%]'  >
+    <div className='font-vrg'>
+        <div className='flex mb-10 '>
+            <div className='pl-spacing-1 min-w-[100px]'>
             <Image
             src={resturant.logo}
             width={100}
@@ -32,17 +32,17 @@ export default async function InfoTitle({params}) {
             alt=''
             className='object-cover rounded-xl borders-lg border-borders-xs border-surface-light  shadow-md '/>
             </div>
-            <div className='flex flex-col '>
-            <div className='flex mb-2 md:mb-2 lg:mb-6 sm:mb-7  items-center  justify-between mt-2 '>
+            <div className='flex flex-col mr-1'>
+            <div className='flex mb-2 md:mb-2 lg:mb-6 sm:mb-7  items-center  justify-between mt-2  w-[100%]'>
                 <div className='flex '>
-                <div className=' flex items-center '>
+                <div className=' flex items-center'>
                  <div>
                  <Image
                  src="/images/icons8-star-20.png"
-                 width={10}
-                 height={10}
+                 width={12}
+                 height={12}
                  alt=''
-                 className='object-cover '/>
+                 className='object-cover pb-1'/>
                  </div>
                  <p className='text-scales-caption font-vsb pr-1'>{resturant.star}</p>
                 </div>
@@ -50,22 +50,21 @@ export default async function InfoTitle({params}) {
                 </div>
         </div>
         <div>
-             <h2 className='w-[99%] truncate text-scales-large font-vb'>{resturant.name}</h2>
+             <h2 className='w-[95%] truncate text-scales-large font-vb'>{resturant.name}</h2>
          </div>
             </div>
         </div>
-        <div className='w-full'>
-            <InfoBtn {...resturant}/>
+        <div>
+            <InfoBtn {...resturant} comments={comments}/>
         </div>
-        <div className='w-full   '>
+     
           {
             restCats.filter(item => item.restId == params.restaurant)
-            .map(items => (
-              
-              <FoodCategoryList key={items.id} title={items.title}/>
+            .map(({id,title} )=> (
+              <FoodCategoryList key={id} title={title}/>
             ))
           }
-        </div>
+    
     </div>
     
   )

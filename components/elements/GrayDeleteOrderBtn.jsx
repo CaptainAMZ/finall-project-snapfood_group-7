@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-// import GrayDeleteIcon from '@/public/images/icon-gray-delete.svg'
+
 
 // دکمه سطل زباله خاکستری در سبد خرید
 // see OrderCountChange.jsx

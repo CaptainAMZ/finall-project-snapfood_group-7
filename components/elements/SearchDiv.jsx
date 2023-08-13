@@ -1,17 +1,31 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import Image from "next/image";
 import Search from "./Search";
 import { useParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
+
 
 export default function SearchDiv({ foods, cats, restaurants }) {
+
   const [modal, setModal] = useState(false);
-  const [searchedText, setSearchedText] = useState("");
+  const [path, setPath] = useState("");
+
   const { restaurant: restId } = useParams();
   const showFilter = useRef();
 
-  const [path, setPath] = useState("");
+  let restaurantName;
+  let text='';
+
+
+  
+
+  
+
+
+
+
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -19,9 +33,7 @@ export default function SearchDiv({ foods, cats, restaurants }) {
     }
   });
 
-  let restaurantName;
-  let text = "";
-
+  
 
   switch (path) {
     case "/":
@@ -33,26 +45,36 @@ export default function SearchDiv({ foods, cats, restaurants }) {
     case `/service/restaurants/${restId}`:
       restaurantName = restaurants.find((item) => item.id == restId).name;
       text = restaurantName;
+
+      
+      
   }
 
-  const closeFunc = () => {
-    showFilter.current.click();
-  };
+  
+  const searchquery = useSearchParams();
+  const searchText = searchquery.get('search')
 
-  const closeModalHandler = (e) => {
+  const closeFunc = useCallback(()=>{
+    showFilter.current.click();
+  },[])
+  
+
+  const closeModalHandler = useCallback((e)=>{
     const targetClass = e.target.className;
     if (targetClass.includes("CLOSE")) {
       setModal(false);
       document.body.style.overflow = "scroll";
     }
-  };
 
-  const openModalHandler = (e) => {
+  },[])
+  
+  const openModalHandler = useCallback((e)=>{
+
     setModal(true);
-
     document.body.style.overflow = "hidden";
-  };
+  },[])
 
+ 
   return (
     <>
       <div
@@ -67,7 +89,7 @@ export default function SearchDiv({ foods, cats, restaurants }) {
           alt="search"
         />
         <p className="hidden md:inline-block md:text-inactive-dark md:text-start md:font-vrg md:leading-lineHeight-default md:tracking-tighter">
-          {!searchedText ? `جست و جو در ${text}` : searchedText}
+          {(!searchText) ? `جست و جو در ${text}` : searchText}
         </p>
       </div>
 
@@ -79,7 +101,7 @@ export default function SearchDiv({ foods, cats, restaurants }) {
         >
           <Search
             restId={restId}
-            setSearchedText={setSearchedText}
+          
             foods={foods}
             cats={cats}
             restaurants={restaurants}

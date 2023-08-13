@@ -6,12 +6,15 @@ import Footer from "../modules/Footer";
 
 const Application = () => {
   return (
-    <div className="w-100 sm:w-[95%] sm:p-4 m-auto">
-      <SnapApplication />
-      <SnapBusiness />
-      <Cities />
-      <Footer />
-    </div>
+    <>
+    
+{/*    
+      <SnapApplication className='grow w-full max-w-85.375 mx-auto p-[1rem] sm:p-[1.5rem] md:p-[2.5rem]' />
+      <SnapBusiness  className ='grow w-full max-w-85.375 mx-auto p-[1rem] sm:p-[1.5rem] md:p-[2.5rem]'/>
+      <div className="border-t-2"></div>
+      <Cities className ='grow w-full max-w-85.375 mx-auto p-[1rem] sm:p-[1.5rem] md:p-[2.5rem]' />
+      <Footer /> */}
+      </>
   );
 };
 

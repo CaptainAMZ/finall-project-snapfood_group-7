@@ -1,4 +1,3 @@
-import Header from "@/components/elements/Header";
 import React from "react";
 import { getLocalData } from "../../lib/localdata";
 import SearchProductCard from "@/components/elements/SearchProductCard";
@@ -8,12 +7,9 @@ import Nav from "@/components/elements/Nav";
 import Image from "next/image";
 
 export async function generateMetadata({ searchParams }) {
-
   const searchValue = searchParams.search;
-  
- return {title :` نتایج جستجو برای ${searchValue} | اسنپ فود`,
-           }
-  
+
+  return { title: ` نتایج جستجو برای ${searchValue} | اسنپ فود` };
 }
 
 export default async function page({ searchParams }) {
@@ -27,18 +23,10 @@ export default async function page({ searchParams }) {
     item.name.includes(searchValue)
   );
 
-
-
-  
   return (
     <>
-      <div className="sticky transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-[20] w-full shadow-head">
-        <Header />
-      </div>
-      <div className=" transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-[20] w-full ">
-        <Nav />
-      </div>
-      <main className="min-w-[80vh] pt-[4.25rem] pb-[1.5rem] px-[1.5rem] mx-auto my-0 max-w-[85.375rem]">
+      <Nav />
+      <main className="min-w-[80vh] pt-[4.25rem] pb-[1.5rem] px-[1.5rem] mx-auto my-0 max-w-[85.375rem] bg-white">
         {!!filteredRestaurants.length && (
           <section className="mb-[3.75rem]">
             <header className="flex justify-between">
@@ -85,12 +73,18 @@ export default async function page({ searchParams }) {
           </section>
         )}
 
-
-        {!(!!filteredRestaurants.length && !!filteredFoods)&&<div className="flex flex-col items-center justify-center m-0 h-[50vh]" >
-          <Image src={"/images/images-home/no-result.svg"} width={48} height={48}/>
-          <p className="font-vrg text-scales-body leading-lineHeight-body my-[1rem] text-inactive-dark ">هیچ نتیجه ای یافت نشد!</p>
-
-        </div> }
+        {!(!!filteredRestaurants.length && !!filteredFoods) && (
+          <div className="flex flex-col items-center justify-center m-0 h-[50vh]">
+            <Image
+              src={"/images/images-home/no-result.svg"}
+              width={48}
+              height={48}
+            />
+            <p className="font-vrg text-scales-body leading-lineHeight-body my-[1rem] text-inactive-dark ">
+              هیچ نتیجه ای یافت نشد!
+            </p>
+          </div>
+        )}
 
         <div className="p-[2rem] m-[3.75rem]"></div>
       </main>

@@ -1,42 +1,36 @@
 "use client";
 
-import React from 'react'
+import React, { useCallback } from 'react'
 import Image from "next/image";
 import Orders from './Orders'
 import { useState } from 'react';
 import { Provider } from 'react-redux';
 import { store } from '@/redux';
-import { useRef } from 'react';
+
 
 
 export default function OrderDiv() {
 
-  const [modalOrder, setModalOrder] = useState(false);
+  const [modal, setModal] = useState(false);
 
-  const modal = useRef(null)
+  const closeModalHandler = useCallback((e) => {
 
-  const closeModalHandler = (e) => {
     const targetClass = e.target.className;
-
     if (targetClass.includes('CLOSE')) {
-      setModalOrder(false);
+      setModal(false);
       document.body.style.overflow = 'scroll';
-
-
-
     }
+  }, [])
 
 
+  const openModalHandler = useCallback((e) => {
 
-  }
-
-  const openModalHandler = (e) => {
-    setModalOrder(true)
+    setModal(true)
     e.stopPropagation()
     document.body.style.overflow = 'hidden';
+  }, [])
 
 
-  }
   return (
     <>
 
@@ -52,16 +46,10 @@ export default function OrderDiv() {
         <p className="hidden md:inline-block  md:ml-spacing-1   md:font-vxb  md:leading-lineHeight-body md:text-surface-overlay  md:text-start  md:text-vm  md:tracking-tighter  md:cursor-pointer md:pl-2 ">
           سفارش ها
         </p>
-
-
-
-
       </div>
 
-      {modalOrder && <div ref={modal} onClick={closeModalHandler} className='CLOSE  fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-screen z-50'>
+      {modal && <div onClick={closeModalHandler} className='CLOSE  fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-screen z-50'>
         <Provider store={store}>
-
-
           <Orders />
         </Provider>
       </div>

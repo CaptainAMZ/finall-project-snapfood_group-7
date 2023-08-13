@@ -5,8 +5,8 @@ const Card = ({ item, inSlide }) => {
   return (
     <Link
       href={`/service/restaurants/${item.id}`}
-      className={`m-auto cursor-pointer  flex mb-6 flex-col shadow-md ${
-        inSlide && "w-[90%] sm:w-[90%]"
+      className={`cursor-pointer  flex mb-6 flex-col shadow-md ${
+        inSlide && "w-full m-auto"
       } items-center  pb-6 bg-white  h-[370px] rounded-xl  hover:shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px] ${
         !inSlide && "sm:w-[100%]  md:w-[47%]  lg:w-[30%] md:mr-4 lg:mr-7"
       }  `}

@@ -5,11 +5,11 @@ import Link from "next/link";
 
 export default function SearchProductCard({item,restaurants}) {
 
-    const {delivery} = restaurants.find(restaurant => restaurant.id === item.restId)
+    const {delivery, id} = restaurants.find(restaurant => restaurant.id === item.restId)
 
   return (
-    <div className=" min-w-[267px] max-w-[500px]  p-[.75rem]">
-      {/* <Link href={"/"}> */}
+    <Link href={`/service/restaurants/${id}`} className=" min-w-[267px] max-w-[500px]  p-[.75rem]">
+      
       <section className="border border-surface-dark rounded-[0.75rem] p-[1rem] cursor-pointer shadow-shadows-small">
         <div className="flex flex-col items-center justify-center">
           <h3 className="flex flex-col items-center text-center mb-[0.375rem] text-ellipsis font-vrg text-scales-tiny leading-lineHeight-tiny h-auto text-carbon-main">
@@ -46,7 +46,7 @@ export default function SearchProductCard({item,restaurants}) {
             </div>
         </div>
       </section>
-      {/* </Link> */}
-    </div>
+      
+    </Link>
   );
 }

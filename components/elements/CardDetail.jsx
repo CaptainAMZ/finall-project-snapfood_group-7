@@ -37,7 +37,7 @@ function CardDetail({ basket, restaurants }) {
   };
 
 
-  // console.log("orders  =  ", orders);
+ 
 
   const payment = totalPrice + deliveryCost;
 
@@ -54,8 +54,8 @@ function CardDetail({ basket, restaurants }) {
   }
 
   return (
-    <div>
-      <form className="mt-2 pt-4 pb-3 px-4 bg-surface-light border-[0.0625rem] border-carbon-alphaLight rounded-lg leading-[1.15rem]">
+    <div >
+      <form className="mt-2 pt-4 pb-3 px-4 bg-surface-light border-[0.0625rem] border-carbon-alphaLight rounded-lg leading-[1.15rem] ">
         <CardCount count={totalCount} />
         {basket.map((item, index) => (
           <>
