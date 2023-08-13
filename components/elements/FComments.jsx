@@ -9,7 +9,7 @@ export default function FComments({name,date,rate,desc,stuff}) {
           <p className='text-scales-caption text-carbon-light my-spacing-1'> 
           {date}  
           </p>
-          <div className='flex items-center border-borders-xs w-[40px] rounded-md border-surface-dark'>
+          <div className='flex items-center border-borders-xs w-[50px] rounded-md border-surface-dark px-[4px]'>
             <div className='min-w-[15px]'>
             <Image
           className='object-cover ml-spacing-1 '
@@ -19,7 +19,7 @@ export default function FComments({name,date,rate,desc,stuff}) {
           alt=''
           />
           </div>
-          <p>{rate}</p>
+          <p className='pt-[2px]'>{rate}</p>
           </div>
       </div>
       <div className='flex-col'>
