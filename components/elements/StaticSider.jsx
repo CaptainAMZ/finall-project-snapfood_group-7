@@ -38,31 +38,31 @@ function StaticSider() {
       </div>
       <div className="w-full h-1/5 flex justify-between items-center border-b-[rgba(58,61,66,0.06)] border-b border-solid">
         <span className="text-md font-vrg text-gray-600">دارای تخفیف</span>
-        <label className="label-toggle">
-          <input type="checkbox" className="input-toggle" />
-          <span className="slider"></span>
-        </label>
+        <input 
+            type="checkbox" 
+            className="relative appearance-none inline-block h-[24px] w-[40px] cursor-pointer rounded-full bg-[rgba(58,61,66,0.06)] transition-all after:content[``]  after:absolute after:right-[2px]  after:bottom-[2px]  after:h-[20px] after:w-[20px] after:rounded-full after:bg-slate-50 after:shadow-sm after:transition-all checked:bg-lime-600 checked:after:translate-x-[-15px]" 
+          ></input>
       </div>
       <div className="w-full h-1/5 flex justify-between items-center border-b-[rgba(58,61,66,0.06)] border-b border-solid">
         <span className="text-md font-vrg text-gray-600">ارسال اکسپرس</span>
-        <label className="label-toggle">
-          <input type="checkbox" className="input-toggle" />
-          <span className="slider"></span>
-        </label>
+        <input 
+            type="checkbox" 
+            className="relative appearance-none inline-block h-[24px] w-[40px] cursor-pointer rounded-full bg-[rgba(58,61,66,0.06)] transition-all after:content[``]  after:absolute after:right-[2px]  after:bottom-[2px]  after:h-[20px] after:w-[20px] after:rounded-full after:bg-slate-50 after:shadow-sm after:transition-all checked:bg-lime-600 checked:after:translate-x-[-15px]" 
+          ></input>
       </div>
       <div className="w-full h-1/5 flex justify-between items-center border-b-[rgba(58,61,66,0.06)] border-b border-solid">
         <span className="text-md font-vrg text-gray-600">فود پرو</span>
-        <label className="label-toggle">
-          <input type="checkbox" className="input-toggle" />
-          <span className="slider"></span>
-        </label>
+        <input 
+            type="checkbox" 
+            className="relative appearance-none inline-block h-[24px] w-[40px] cursor-pointer rounded-full bg-[rgba(58,61,66,0.06)] transition-all after:content[``]  after:absolute after:right-[2px]  after:bottom-[2px]  after:h-[20px] after:w-[20px] after:rounded-full after:bg-slate-50 after:shadow-sm after:transition-all checked:bg-lime-600 checked:after:translate-x-[-15px]" 
+          ></input>
       </div>
       <div className=" w-full h-1/5 flex justify-between items-center">
         <span className="text-md font-vrg text-gray-600">رستوران های به صرفه</span>
-        <label className="label-toggle">
-          <input type="checkbox" className="input-toggle" />
-          <span className="slider"></span>
-        </label>
+        <input 
+            type="checkbox" 
+            className="relative appearance-none inline-block h-[24px] w-[40px] cursor-pointer rounded-full bg-[rgba(58,61,66,0.06)] transition-all after:content[``]  after:absolute after:right-[2px]  after:bottom-[2px]  after:h-[20px] after:w-[20px] after:rounded-full after:bg-slate-50 after:shadow-sm after:transition-all checked:bg-lime-600 checked:after:translate-x-[-15px]" 
+          ></input>
       </div>
     </div>
     </div>

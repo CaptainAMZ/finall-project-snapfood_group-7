@@ -23,9 +23,7 @@ async function page() {
         </div>
         <MainServer restaurants={restaurants} cats={cats} />
       </div>
-      <div>
-        <Footer />
-      </div>
+      
     </>
   );
 }

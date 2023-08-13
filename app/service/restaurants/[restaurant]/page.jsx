@@ -40,7 +40,7 @@ export default function page({ params }) {
         <Header />
       </div>
       <RestaurantInfo params={params} />
-      <Footer />
+      
     </>
   );
 }
