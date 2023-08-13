@@ -37,7 +37,7 @@ function CardDetail({ basket, restaurants }) {
   };
 
 
-  // console.log("orders  =  ", orders);
+ 
 
   const payment = totalPrice + deliveryCost;
 

@@ -74,7 +74,7 @@ import defImg from "../../public/images/deflogo-1.jpg";
             />
           </div>
         </div>
-        <div className="w-[100%] hover:bg-surface-main transition-colors flex items-center justify-between px-spacing-2  mb-spacing-2 md:px-0 lg:px-spacing-2">
+        <div className="w-[100%] hover:bg-surface-main transition-colors flex items-center justify-between px-spacing-2 py-spacing-1  mb-spacing-2 md:px-0 lg:px-spacing-2">
           <div className="flex items-center">
             <div>
               <p className="text-scales-body font-vsb">{price} تومان</p>

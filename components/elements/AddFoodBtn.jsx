@@ -48,8 +48,8 @@ export default function Btn({name,price,id,basket}) {
       }
       {
         !count &&
-        <button className='min-w-[100px] text-center ml-spacing-1 bg-surface-main w-[30%] p-[4px] rounded-full text-accent-main border-borders-xs border-inactive-light 
-         shadow-shadows-small hover:bg-accent-light hover:text-surface-main transition-colors' onClick={btnHandler}>افزودن</button>
+        <button className='min-w-[100px] text-center ml-spacing-1 bg-white w-[30%] p-[6px] rounded-full text-accent-main border-borders-xs border-inactive-light 
+         shadow-shadows-small hover:bg-accent-light hover:text-surface-main transition-colors text-sm' onClick={btnHandler}>افزودن</button>
       }
 
      
