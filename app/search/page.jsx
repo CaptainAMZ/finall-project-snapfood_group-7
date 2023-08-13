@@ -1,18 +1,18 @@
-import React from "react";
-import { getLocalData } from "@/lib/localdata";
-import SearchProductCard from "@/components/elements/SearchProductCard";
-import Card from "@/components/elements/Card";
+import { getLocalData } from "../../lib/localdata";
+import SearchProductCard from "../../components/elements/SearchProductCard";
+import Card from "../../components/elements/Card";
 import Link from "next/link";
-import Nav from "@/components/elements/Nav";
+import Nav from "../../components/elements/Nav";
 import Image from "next/image";
 
 export async function generateMetadata({ searchParams }) {
-  const searchValue = searchParams.search;
+  const searchValueTitle = searchParams.search;
 
-  return { title: ` نتایج جستجو برای ${searchValue} | اسنپ فود` };
+  return { title: ` نتایج جستجو برای ${searchValueTitle} | اسنپ فود` };
 }
 
 export default async function page({ searchParams }) {
+
   const { foods, restaurants } = await getLocalData();
 
   const searchValue = searchParams.search;

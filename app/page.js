@@ -1,4 +1,3 @@
-import Header from '@/components/elements/Header';
 import Nav from '@/components/elements/Nav';
 import Categories from '@/components/elements/Categories';
 import SnapApplication from "../components/modules/SnapApplication";
