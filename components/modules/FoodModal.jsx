@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import Image from "next/image";
 import AddFoodBtn from "../elements/AddFoodBtn";
 import defImg from "../../public/images/deflogo-1.jpg";

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import food from "../../public/images/peperoni.jpg";
 import Link from "next/link";
 
 export default function SearchProductCard({item,restaurants}) {

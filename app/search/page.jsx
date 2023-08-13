@@ -1,5 +1,5 @@
 import React from "react";
-import { getLocalData } from "../../lib/localdata";
+import { getLocalData } from "@/lib/localdata";
 import SearchProductCard from "@/components/elements/SearchProductCard";
 import Card from "@/components/elements/Card";
 import Link from "next/link";
