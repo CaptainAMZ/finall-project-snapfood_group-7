@@ -2,6 +2,10 @@ import Header from '@/components/elements/Header';
 import Nav from '@/components/elements/Nav';
 import Categories from '@/components/elements/Categories';
 import Application from '@/components/templates/Application';
+import SnapApplication from "../components/modules/SnapApplication";
+import SnapBusiness from "../components/modules/SnapBusiness";
+import Cities from "../components/modules/Cities";
+import Footer from "../components/modules/Footer";
 // import CardSlider from '@/components/elements/CardSlider';
 import './globals.css'
 import { getLocalData } from '@/lib/localdata';
@@ -16,7 +20,7 @@ export const metadata = {
 
 export default async function Home() {
 
-  const { restaurants } = await getLocalData()
+ 
 
 
   return (
@@ -26,13 +30,29 @@ export default async function Home() {
         <Header />
         <Nav />
       </div>
-      <div className="min-h-screen flex-col items-start">
+      <div className="min-h-screen flex-col items-start bg-white">
         {/* <div></div> header + nav */}
-        <main className=" grow w-full max-w-85.375 mx-auto p-spacing-2 sm:p-spacing-3 md:p-spacing-5 lg:p-4">
+        <div className=" grow w-full max-w-85.375 mx-auto p-[1rem] sm:p-[1.5rem] md:p-[2.5rem] ">
           <Categories />
           {/* <CardSlider restaurants={restaurants} /> */}
-          <Application />
-        </main>
+          </div>
+
+          <div className='grow w-full max-w-85.375 mx-auto px-[1rem] sm:px-[1.5rem] md:px-[2.5rem]'>
+          <SnapApplication  />
+          <SnapBusiness  />
+
+          </div>
+         
+           <div className="border-t-2"></div>
+
+          
+
+          <Cities />
+         
+          
+          <Footer />
+        
+        
       </div>
     </div>
   );
