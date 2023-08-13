@@ -36,8 +36,10 @@ export default async function Home() {
         </div>
 
         <div className='grow w-full max-w-85.375 mx-auto px-[1rem] sm:px-[1.5rem] md:px-[2.5rem]'>
+          <div className="mb-24">
           <SnapTops data={restaurants} title={"برترین ها"} />
           <SnapTops data={restaurants} title={"پیشنهاد کابران"} />
+          </div>
           <SnapApplication />
           <SnapBusiness />
         </div>
