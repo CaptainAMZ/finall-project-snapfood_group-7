@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir='rtl'>
       <body>
-        <div className="sticky top-0 right-0 left-0 z-[2] w-full shadow-head">
+        <div className="sticky top-0 right-0 left-0 z-[2] w-full ">
           <Header />
         </div>
         {children}
