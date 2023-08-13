@@ -16,7 +16,7 @@ export default function SearchDiv({ foods, cats, restaurants }) {
   const showFilter = useRef();
 
   let restaurantName;
-  let text;
+  let text='';
 
 
   
@@ -89,7 +89,7 @@ export default function SearchDiv({ foods, cats, restaurants }) {
           alt="search"
         />
         <p className="hidden md:inline-block md:text-inactive-dark md:text-start md:font-vrg md:leading-lineHeight-default md:tracking-tighter">
-          {(text && !searchText) ? `جست و جو در ${text}` : searchText}
+          {(!searchText) ? `جست و جو در ${text}` : searchText}
         </p>
       </div>
 

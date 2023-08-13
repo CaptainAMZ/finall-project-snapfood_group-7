@@ -105,6 +105,7 @@ module.exports = {
         "tangerine-yellow-color": "#ffce00",
         "snappExpress-color": "#ff661f",
         "modal-backdrop": "#40404066",
+        "body-color":"#F9FAFB"
       },
       lineHeight: {
         "lineHeight-default": "1.5rem",

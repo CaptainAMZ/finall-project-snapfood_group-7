@@ -8,7 +8,7 @@ export default async function RestaurantInfo({params}) {
   const {foods,fcomments, restaurants,rComments } = await getLocalData();
   return (
 
-    <div className='flex flex-wrap pt-[68px] mt-[98px] px-4 pb-4 lg:mx-[90px] '>
+    <div className='flex flex-wrap pt-32  px-4 pb-4 lg:mx-[90px] '>
       <div className='max-w-full basis-full p-[calc(1rem)] sm:basis-1/2 md:basis-1/4 md:max-w-[25%] '>
           <InfoTitle params={params} comments={rComments}/>
       </div>
