@@ -3,20 +3,21 @@
 
 
 .btn{
-  @apply mb-spacing-2 focus:font-vsb pl-spacing-4 relative block w-full text-left
+  @apply mb-spacing-2 focus:font-vsb  relative block w-full text-left
 }
 
 
 
 
-.btn::after{
-  @apply content-[''] bg-surface-overlay h-[0px] w-[2px] absolute rounded-lg opacity-0 mr-[20px]
+/* .btn::before{
+  @apply content-[''] bg-surface-overlay h-[0px] w-[2px] absolute rounded-lg opacity-0 mr-[0px]
   transition
   
-}
-.btn:focus::after{
+} */
+
+/* .btn:focus::before{
   @apply opacity-100 h-[25px] 
-}
+} */
 @tailwind utilities;
 
 *{
@@ -84,6 +85,7 @@
 
 body {
  color: #3a3d42;;
+ background-color: #F9FAFB;
 }
 
  
@@ -165,4 +167,6 @@ body {
 .scroll-service{
   direction: ltr;
 }
+
+
 

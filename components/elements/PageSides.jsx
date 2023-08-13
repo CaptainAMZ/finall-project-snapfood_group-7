@@ -23,17 +23,19 @@ function PageSides
 
     
   return (
-    <div className=' '>
+   
+    <div >
    
       <PreOrder/>
       
       <Ventor  restaurants={restaurants}/>
 
       { basket.length !="0" ? <CardDetail  basket={basket}restaurants={restaurants}/> :
-                <NoBasket />   
+        <NoBasket />   
       }
         
     </div>
+    
   )
 }
 
