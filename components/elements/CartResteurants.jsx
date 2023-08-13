@@ -10,7 +10,7 @@ import Card from "./Card";
   }) 
   return (
     <div>
-      <div className=" md:flex md:flex-row md:flex-wrap  ">
+      <div className=" md:flex md:flex-row md:flex-wrap ">
       {filteredRestaurants.map((item) => (
        
            <Card key={item.id} item={item}/>
