@@ -5,6 +5,7 @@ import SearchProductCard from "@/components/elements/SearchProductCard";
 import Card from "@/components/elements/Card";
 import Link from "next/link";
 import Nav from "@/components/elements/Nav";
+import Image from "next/image";
 
 export default async function page({ searchParams }) {
   const { foods, restaurants } = await getLocalData();
@@ -16,6 +17,9 @@ export default async function page({ searchParams }) {
   const filteredRestaurants = restaurants.filter((item) =>
     item.name.includes(searchValue)
   );
+
+
+
   
   return (
     <>
@@ -71,6 +75,13 @@ export default async function page({ searchParams }) {
             </div>
           </section>
         )}
+
+
+        {!(!!filteredRestaurants.length && !!filteredFoods)&&<div className="flex flex-col items-center justify-center m-0 h-[50vh]" >
+          <Image src={"/images/images-home/no-result.svg"} width={48} height={48}/>
+          <p className="font-vrg text-scales-body leading-lineHeight-body my-[1rem] text-inactive-dark ">هیچ نتیجه ای یافت نشد!</p>
+
+        </div> }
 
         <div className="p-[2rem] m-[3.75rem]"></div>
       </main>
