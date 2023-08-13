@@ -1,19 +1,17 @@
 import React from "react";
 import SnapSlider from "./SnapSlider";
-import { getLocalData } from "@/lib/localdata";
 
-const SnapTops = async () => {
-  const { restaurants } = await getLocalData();
+const SnapTops = async ({title , data}) => {
   return (
-    <div>
+    <div className="mb-24">
       <div className="w-full flex items-center justify-between mb-6 font-vb">
-        <p className=" text-2xl">برترین ها</p>
-        <p className="text-lg flex text-accent2-dark cursor-pointer">
+        <p className=" text-2xl text-carbon-main">{title}</p>
+        <p className="text-lg flex text-accent2-main cursor-pointer items-center gap-2">
           مشاهده همه
-          <img className="rotate-90" src="/images/arrow-down-bold.svg" alt="" />
+          <img className="rotate-90 w-5 h-5" src="/images/arrow-left-bold.svg" alt="arrow" />
         </p>
       </div>
-      <SnapSlider restaurants={restaurants} />
+      <SnapSlider data={data} />
     </div>
   );
 };
