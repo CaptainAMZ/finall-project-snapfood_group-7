@@ -2,9 +2,9 @@ import Header from '@/components/elements/Header';
 import Nav from '@/components/elements/Nav';
 import Categories from '@/components/elements/Categories';
 import Application from '@/components/templates/Application';
-import SnapSlider from '@/components/modules/SnapSlider';
 import './globals.css'
 import { getLocalData } from '@/lib/localdata';
+import SnapTops from '@/components/modules/SnapTops';
 
 export const metadata = {
   title: "  اسنپ فود | سفارش آنلاین غذا از تمامی",
@@ -30,7 +30,7 @@ export default async function Home() {
         {/* <div></div> header + nav */}
         <main className=" grow w-full max-w-85.375 mx-auto p-spacing-2 sm:p-spacing-3 md:p-spacing-5 lg:p-4">
           <Categories />
-          <SnapSlider restaurants={restaurants} />
+          <SnapTops rests={restaurants} />
           <Application />
         </main>
       </div>
