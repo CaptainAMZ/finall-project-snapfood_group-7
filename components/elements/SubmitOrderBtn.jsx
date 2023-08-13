@@ -1,8 +1,7 @@
 'use client'
 
-import { addToOrders, reset } from '@/redux/basketSlice'
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 // دکمه ثبت سفارش
 function SubmitOrderBtn({onAdd}) {

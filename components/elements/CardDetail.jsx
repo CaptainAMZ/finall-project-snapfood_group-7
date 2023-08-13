@@ -7,7 +7,6 @@ import Description from "./Description";
 import SubmitOrderBtn from "./SubmitOrderBtn";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "next/navigation";
-import { addToOrders } from "@/redux/basketSlice";
 import { addToHistory } from "@/redux/orderHistorySlice";
 import { reset } from "@/redux/basketSlice";
 
