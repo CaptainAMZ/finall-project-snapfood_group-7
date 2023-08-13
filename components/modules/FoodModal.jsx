@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Image from 'next/image'
 import AddFoodBtn from '../elements/AddFoodBtn'
 import defImg from "../../public/images/deflogo-1.jpg";
+import FComments from '../elements/FComments';
 
 
 export default  function FoodModal({closeModal,
@@ -87,40 +88,14 @@ export default  function FoodModal({closeModal,
 
               comment.
               filter(item =>item.fId == id)
-              .map(item =>(
-            <div key={item.id} className='flex flex-col'>
-          <div className='flex px-spacing-2'>
-            <div className='flex-col w-[30%] text-right '>
-                <p className='text-scales-body text-carbon-main'>{item.name}</p>
-                <p className='text-scales-caption text-carbon-light my-spacing-1'> 
-                {item.date}  
-                </p>
-                <div className='flex items-center border-borders-xs w-[40px] rounded-md border-surface-dark'>
-                  <div className='min-w-[15px]'>
-                  <Image
-                className='object-cover ml-spacing-1 '
-                src="/images/icons8-star-40.png"
-                width={15}
-                height={15}
-                alt=''
-                />
-                </div>
-                <p>{item.rate}</p>
-                </div>
-            </div>
-            <div className='flex-col'>
-                <p className='font-vmd text-scales-body text-carbon-light text-right'>
-                 {item.desc}   
-                </p>
-                <div className='flex'>
-                  <p className='font-vmd text-scales-caption mt-spacing-1 p-[8px] bg-surface-dark rounded-lg text-carbon-light'>
-                      {item.stuff} 
-                  </p>
-                </div>
-            </div>
-          </div>
-           <div className='bg-surface-dark h-[1px] w-[100%] my-spacing-3'></div>
-        </div>
+              .map(({id,name,stuff,desc,rate}) =>(
+                <FComments 
+                key={id}
+                name={name}
+                stuff={stuff}
+                desc={desc}
+                rate={rate}
+                 />
 
               ))
             }

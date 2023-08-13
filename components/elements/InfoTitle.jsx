@@ -60,9 +60,9 @@ export default async function InfoTitle({params,comments}) {
         <div className='w-full '>
           {
             restCats.filter(item => item.restId == params.restaurant)
-            .map(items => (
+            .map(({id,title} )=> (
               
-              <FoodCategoryList key={items.id} title={items.title}/>
+              <FoodCategoryList key={id} title={title}/>
             ))
           }
         </div>

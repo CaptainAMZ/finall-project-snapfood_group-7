@@ -16,7 +16,7 @@ export default function FoodCardWrapper({foods,fcomments, getSearch, url}) {
        {
               
               resultFilter.length ?
-              resultFilter.map(items =>(
+              resultFilter.map((items) =>(
                 <FoodCard key={items.id} {...items} comment={fcomments} desc={items.desc} basket={basket} />
                 
               )) 

@@ -1,9 +1,10 @@
 "use client"
 
 import Image from 'next/image'
+import RComments from '../elements/RComments'
 
 
-export default function RestaurantInfoModal({closeModal, name,address,logo,rate, comments,id }) {
+export default function RestaurantInfoModal({closeModal, name,address,logo,rate, comments,id,otherCats }) {
 
     
 
@@ -33,7 +34,7 @@ export default function RestaurantInfoModal({closeModal, name,address,logo,rate,
            </div>
               <div>
                   <h1 className='font-vb text-scales-xxlarge pb-spacing-1'> {name} </h1>
-                  <p className='font-vrg text-scales-body pb-spacing-1'>ایرانی, سنتی, کباب, پیش‌غذای ایرانی</p>
+                  <p className='font-vrg text-scales-body pb-spacing-1'>{otherCats}</p>
                   <p className='font-vrg text-scales-caption'>
                     {address}
                   </p>
@@ -396,40 +397,15 @@ export default function RestaurantInfoModal({closeModal, name,address,logo,rate,
 
                 {
                   comments.filter(items =>items.restId == id)
-                  .map(items =>(
-                    <div key={items.id} className='flex flex-col '>
-                    <div className='flex px-spacing-2'>
-                   <div className='flex-col w-[30%] '>
-                       <p className='text-scales-body text-carbon-main'>{items.name}</p>
-                       <p className='text-scales-caption text-carbon-light my-spacing-1'> 
-                          {items.date}
-                       </p>
-                       <div className='flex items-center border-borders-xs w-[40px] rounded-md border-surface-dark'>
-                         <div className='min-w-[15px]'>
-                         <Image
-                       className='object-cover ml-spacing-1 '
-                       src="/images/icons8-star-40.png"
-                       width={15}
-                       height={15}
-                       alt=''
+                  .map(({date,name,rate,desc,stuff,id}) =>(
+                      <RComments 
+                      key={id}
+                      date={date}
+                      name={name}
+                      rate={rate}
+                      desc={desc}
+                      stuff={stuff}
                        />
-                       </div>
-                       <p>{items.rate}</p>
-                       </div>
-                   </div>
-                   <div className='flex-col'>
-                       <p className='font-vmd text-scales-body text-carbon-light'>
-                        {items.desc}
-                       </p>
-                       <div className='flex'>
-                         <p className='font-vmd text-scales-caption mt-spacing-1 p-[8px] bg-surface-dark rounded-lg text-carbon-light'>
-                        {items.stuff}
-                         </p>
-                       </div>
-                   </div>
-                 </div>
-                   <div className='bg-surface-dark h-[2px] w-[100%] my-spacing-2'></div>
-                 </div>
                   ))
                 }
         </div>

@@ -1,7 +1,7 @@
   
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import OrderCountChange from './OrderCountChange';
-import {  useDispatch, useSelector } from 'react-redux';
+import {  useDispatch,  } from 'react-redux';
 import { addToBasket, decrease } from '@/redux/basketSlice';
 
 export default function Btn({name,price,id,basket}) {
@@ -24,9 +24,8 @@ export default function Btn({name,price,id,basket}) {
       dispatch(addToBasket(product))
 
     }
-    
 
-    const backToBtnHandler = (e,id) =>{
+    const backToBtnHandler =useCallback((e,id)=>{
       e.stopPropagation()
       if(count > 1){
         dispatch(decrease(id))
@@ -35,7 +34,9 @@ export default function Btn({name,price,id,basket}) {
         dispatch(decrease(id))
         
       }
-    }
+    })
+
+  
   return (
   
     <div className='flex'>
@@ -68,7 +69,3 @@ export default function Btn({name,price,id,basket}) {
 
 
 
-// export const calculateShoppingCart = (cart) => {
-//   return cart.reduce( (init, current) => init = init + (current.count * current.price), 0)
-// }
-// const totalPrice = useMemo(() => calculateShoppingCart(cart), [cart])
