@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function FoodCardWrapper({foods,fcomments, getSearch, url}) {
 
-  console.log(url.restaurant);
+ 
 
     const basket = useSelector(state=> state.basket.foods)
     

@@ -5,13 +5,18 @@ import Image from "next/image";
 import Search from "./Search";
 import { useParams } from "next/navigation";
 
+
 export default function SearchDiv({ foods, cats, restaurants }) {
+
   const [modal, setModal] = useState(false);
   const [searchedText, setSearchedText] = useState("");
+  const [path, setPath] = useState("");
+
   const { restaurant: restId } = useParams();
   const showFilter = useRef();
 
-  const [path, setPath] = useState("");
+  let restaurantName;
+  let text = "";
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -19,9 +24,7 @@ export default function SearchDiv({ foods, cats, restaurants }) {
     }
   });
 
-  let restaurantName;
-  let text = "";
-
+  
 
   switch (path) {
     case "/":
@@ -49,7 +52,6 @@ export default function SearchDiv({ foods, cats, restaurants }) {
 
   const openModalHandler = (e) => {
     setModal(true);
-
     document.body.style.overflow = "hidden";
   };
 

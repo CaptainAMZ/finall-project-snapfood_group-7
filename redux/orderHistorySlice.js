@@ -40,7 +40,7 @@ const orderHistorySlice = createSlice({
         payment: '570,000'
       },
       {
-        id: 1,
+        id: 2,
         resName: 'تله پیتزا (پیروزی)',
         logo: tale,
         dateMonth:'تیر',//تیر
