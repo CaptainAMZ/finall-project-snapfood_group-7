@@ -14,8 +14,7 @@ export default function FoodModal({
   id,
   basket,
   desc,
-  date,
-  stuff
+ 
 }) {
   return (
     <div className="w-[45rem]  bg-surface-light h-[40rem] rounded-xl overflow-hidden ">

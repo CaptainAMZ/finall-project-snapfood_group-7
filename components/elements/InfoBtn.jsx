@@ -30,7 +30,7 @@ export default function InfoBtn({name,rate,address,logo, comments, id,otherCats}
 <div>
      <button className='w-[100%] text-center bg-surface-main shadow-shadows-high p-spacing-1 rounded-full font-vrg text-scales-default text-accent2-main border-borders-xs' onClick={openModalHandler}> اطلاعات و نظرات</button>
     </div>
-    { modal &&(<div onClick={closeModalHandler} className='MODAL fixed top-0 left-0 right-0 bg-black-alphaMedium flex items-center justify-center overflow-hidden w-full h-[100vh]' >
+    { modal &&(<div onClick={closeModalHandler} className='MODAL fixed top-0 left-0 right-0 bg-black-alphaMedium flex items-center justify-center overflow-hidden w-full h-[100vh] z-50' >
     <RestaurantInfoModal  
     closeModal={closeModalBtn} 
     name={name}
