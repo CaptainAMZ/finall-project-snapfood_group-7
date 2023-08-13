@@ -11,7 +11,7 @@ import { getLocalData } from '@/lib/localdata';
 export default async function InfoTitle({params,comments}) {
 
    
-      console.log(params);
+    
     const {restCats, restaurants} = await getLocalData();
     const resturant = restaurants.find(items=> items.id == params.restaurant)
 
@@ -24,7 +24,7 @@ export default async function InfoTitle({params,comments}) {
       
     <div className='font-vrg'>
         <div className='flex mb-10 '>
-            <div className='pl-spacing-1 min-w-[100px] '  >
+            <div className='pl-spacing-1 min-w-[100px]'>
             <Image
             src={resturant.logo}
             width={100}
@@ -35,7 +35,7 @@ export default async function InfoTitle({params,comments}) {
             <div className='flex flex-col mr-1'>
             <div className='flex mb-2 md:mb-2 lg:mb-6 sm:mb-7  items-center  justify-between mt-2  w-[100%]'>
                 <div className='flex '>
-                <div className=' flex items-center  '>
+                <div className=' flex items-center'>
                  <div>
                  <Image
                  src="/images/icons8-star-20.png"
@@ -50,7 +50,7 @@ export default async function InfoTitle({params,comments}) {
                 </div>
         </div>
         <div>
-             <h2 className='w-[%] truncate text-scales-large font-vb'>{resturant.name}</h2>
+             <h2 className='w-[95%] truncate text-scales-large font-vb'>{resturant.name}</h2>
          </div>
             </div>
         </div>
