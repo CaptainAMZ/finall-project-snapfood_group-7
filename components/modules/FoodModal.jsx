@@ -48,7 +48,7 @@ export default function FoodModal({
           <div className="flex flex-col px-4 w-[100%]">
             <div className="flex items-center  justify-between mt-2 ">
               <h1 className="font-vb text-scales-default "> {name} </h1>
-              <div className="flex items-center border-borders-xs  rounded-md p-[2px] ">
+              <div className="flex items-center border-borders-xs  rounded-md px-[10px]">
                 <div className="min-w-[15px]">
                   <Image
                     className="object-cover ml-spacing-1 "
@@ -58,7 +58,7 @@ export default function FoodModal({
                     alt=""
                   />
                 </div>
-                <p className="text-scales-body font-vsb">{rate}</p>
+                <p className="text-scales-body font-vsb pt-[4px]">{rate}</p>
               </div>
             </div>
             <div className="text-right mt-4 text-scales-body font-vmd text-gray-500">

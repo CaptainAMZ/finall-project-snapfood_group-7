@@ -86,7 +86,7 @@ import defImg from "../../public/images/deflogo-1.jpg";
         </div>
       </div>
       <div>
-        {
+         {
             openModal && (
               <div
                 onClick={handleCloseModal}
