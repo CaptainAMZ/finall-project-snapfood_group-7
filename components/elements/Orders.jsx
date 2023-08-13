@@ -50,7 +50,7 @@ export default function Orders() {
                       
         <div className='mt-spacing-2 flex flex-col items-start w-full'>
   
-          <p className='font-vsb text-.75 leading-lineHeight-caption inline-block text-carbon-light text-start w-full'>
+          <p className='font-vb text-.75 leading-lineHeight-caption inline-block text-carbon-light text-start w-full'>
                                         سفارش های پیشین
           </p>
           

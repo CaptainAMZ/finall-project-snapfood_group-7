@@ -40,11 +40,11 @@ export default function OrderItem({setmodal,modal,info}) {
             <p className="cursor-pointer font-vxb leading-lineHeight-body text-scales-body inline-block text-carbon-main text-start">
               {resName}
             </p>
-            <div className="flex">
+            <div className="flex mt-1">
               <p className="font-vrg text-.75 leading-lineHeight-caption text-carbon-main">
               {dateDay} {dateDate} {dateMonth}   
               </p>
-              <p className="font-vrg text-.75 leading-lineHeight-caption text-carbon-main mr-spacing-2">
+              <p className="font-vrg text-.75 leading-lineHeight-caption text-carbon-main mr-spacing-2 ">
                 {dateHour}:{dateMin}
               </p>
             </div>
