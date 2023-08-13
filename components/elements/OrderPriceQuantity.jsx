@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import FoodPrice from './FoodPrice'
 import OrderCountChange from './OrderCountChange'

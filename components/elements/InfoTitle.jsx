@@ -10,8 +10,8 @@ import { getLocalData } from '@/lib/localdata';
 
 export default async function InfoTitle({params,comments}) {
 
-
-      
+   
+      console.log(params);
     const {restCats, restaurants} = await getLocalData();
     const resturant = restaurants.find(items=> items.id == params.restaurant)
 
@@ -61,7 +61,6 @@ export default async function InfoTitle({params,comments}) {
           {
             restCats.filter(item => item.restId == params.restaurant)
             .map(({id,title} )=> (
-              
               <FoodCategoryList key={id} title={title}/>
             ))
           }

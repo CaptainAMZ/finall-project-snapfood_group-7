@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 // import cross from '../../public/images/images-home/cross.svg'
@@ -13,7 +14,7 @@ export default function ModalOrder({onClose}) {
   const {items,resName,id,dataHour,dataMounth,totalPrice,tax,deliveryCost,payment} = historyList[index]
   
  
-  console.log('i',items);
+ 
 
   
   return (
@@ -22,7 +23,7 @@ export default function ModalOrder({onClose}) {
             <div className=' w-[25rem] overflow-hidden  bg-white shadow-shadows-modal rounded-xl  m-auto '>
                 <div className='relative w-full h-[56px] pl-[56px] flex justify-between items-center '>
                   <button onClick={onClose} className='w-[56px] h-[56px]  py[1px] px[6px] flex justify-center items-center'>
-                        <Image className='cursor-pointer' src={"/images/images-home/cross.svg"} width={14} height={14}/>
+                        <Image className='cursor-pointer' src={"/images/images-home/cross.svg"} width={14} height={14} alt='cross'/>
                   </button>
 
                  

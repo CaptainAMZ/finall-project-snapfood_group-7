@@ -1,26 +1,28 @@
 "use client";
 
-import React, { useState,useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Search from "./Search";
-// import { useRouter } from 'next/router'
-import { useSelectedLayoutSegment } from "next/navigation";
-import { useRouter } from "next/navigation";
 import { useParams } from "next/navigation";
-import { usePathname, useSearchParams } from "next/navigation";
 
 export default function SearchDiv({ foods, cats, restaurants }) {
   const [modal, setModal] = useState(false);
-  const location = window.location;
-  const path = location.pathname;
-  const showFilter = useRef()
-  const [searchedText , setSearchedText] = useState('')
-
+  const [searchedText, setSearchedText] = useState("");
   const { restaurant: restId } = useParams();
+  const showFilter = useRef();
+
+  const [path, setPath] = useState("");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setPath(window.location.pathname);
+    }
+  });
 
   let restaurantName;
-
   let text = "";
+
+
   switch (path) {
     case "/":
       text = "اسنپ فود";
@@ -31,17 +33,11 @@ export default function SearchDiv({ foods, cats, restaurants }) {
     case `/service/restaurants/${restId}`:
       restaurantName = restaurants.find((item) => item.id == restId).name;
       text = restaurantName;
-
-
-    case "/search":  
-    case "/service/restaurants/search":  
-    case "/search":  
-
   }
 
   const closeFunc = () => {
-    showFilter.current.click()
-  }
+    showFilter.current.click();
+  };
 
   const closeModalHandler = (e) => {
     const targetClass = e.target.className;
@@ -77,12 +73,18 @@ export default function SearchDiv({ foods, cats, restaurants }) {
 
       {modal && (
         <div
-        ref={showFilter}
-        
+          ref={showFilter}
           onClick={closeModalHandler}
           className="CLOSE  fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-screen z-50 "
         >
-          <Search restId={restId} setSearchedText={setSearchedText} foods={foods} cats={cats} restaurants={restaurants} onClose={closeFunc} />
+          <Search
+            restId={restId}
+            setSearchedText={setSearchedText}
+            foods={foods}
+            cats={cats}
+            restaurants={restaurants}
+            onClose={closeFunc}
+          />
         </div>
       )}
     </>

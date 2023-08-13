@@ -32,7 +32,7 @@ const Rests = () => {
           <div className="hidden absolute z-999 left-0 right-0 top-[120%] border-[1px] rounded-sm border-[#CCCCCC]">
             <ul className="bg-white shadow-md py-1 space-y-1 ">
               {items.map((item) => (
-                <li className="first:bg-blue-200 px-2 py-3 hover:bg-blue-200 rounded-sm cursor-pointer">
+                <li key={item} className="first:bg-blue-200 px-2 py-3 hover:bg-blue-200 rounded-sm cursor-pointer">
                   {item}
                 </li>
               ))}
@@ -50,7 +50,7 @@ const Rests = () => {
           </h2>
           <ul className="space-y-2 ">
             {listItems.map((item) => (
-              <li className="flex py-2 font-vrg text-sm">
+              <li key={item} className="flex py-2 font-vrg text-sm">
                 <img
                   className="w-8 h-8 "
                   src="/images/pizza-logo.png"
@@ -64,7 +64,7 @@ const Rests = () => {
         <div>
           <ul className="space-y-2 ">
             {filterItems.map((item) => (
-              <li className="flex justify-between py-2 font-vrg text-sm">
+              <li key={item} className="flex justify-between py-2 font-vrg text-sm">
                 <p className="mr-3">{item}</p>
                 <img
                   className="w-8 h-8 "

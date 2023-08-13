@@ -1,3 +1,4 @@
+'use client'
 import { useSearchParams } from "next/navigation";
 import Card from "./Card";
  function CartResteurants({productCards}) {
@@ -12,7 +13,7 @@ import Card from "./Card";
       <div className=" md:flex md:flex-row md:flex-wrap  ">
       {filteredRestaurants.map((item) => (
        
-           <Card item={item}/>
+           <Card key={item.id} item={item}/>
         
       ))}
     </div>

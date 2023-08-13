@@ -21,12 +21,12 @@ const list2 = [
 
 const Footer = () => {
   return (
-    <section className="w-100  md:flex flex-wrap">
+    <section className="w-100 md:flex flex-wrap">
       <div className="flex p-12">
         <div className="flex-1 max-w-fit ml-3">
           <img
             className="w-20 h-20"
-            src="./images/images-home/logo.svg"
+            src="/images/images-home/logo.svg"
             alt=""
           />
         </div>
@@ -39,8 +39,8 @@ const Footer = () => {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             {icons.map((item) => (
-              <div className="w-10 h-10 rounded-full flex items-center justify-center shadow-md">
-                <img src={`./images/${item}.svg`} alt={item + "icon"} />
+              <div key={item} className="w-10 h-10 rounded-full flex items-center justify-center shadow-md">
+                <img className="w-6 h-6"  src={`/images/${item}.svg`} alt={item + "icon"} />
               </div>
             ))}
           </div>
@@ -53,12 +53,12 @@ const Footer = () => {
       <div className="p-12 flex justify-end md:w-[100%] md:pt-0 lg:w-auto lg:pt-12">
         <img
           className="w-[70px] h-[70px]"
-          src="./images/enamad.png"
+          src="/images/enamad.png"
           alt="enamad"
         />
         <img
           className="w-[70px] h-[70px]"
-          src="./images/buisness.png"
+          src="/images/buisness.png"
           alt="buisness logo"
         />
       </div>

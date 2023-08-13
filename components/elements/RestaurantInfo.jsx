@@ -1,7 +1,6 @@
 import React from 'react'
 import InfoTitle from './InfoTitle'
 import FoodList from './FoodList'
-import PageSides from './PageSides'
 import { getLocalData } from '@/lib/localdata';
 import PageSliderWrapper from './PageSliderWrapper';
 

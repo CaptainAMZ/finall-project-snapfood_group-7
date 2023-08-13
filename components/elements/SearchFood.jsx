@@ -7,7 +7,7 @@ export default function SearchFood({foodName,restaurant,img,price}) {
 
     <div className='p-[1.125rem] flex flex-col'>
             <div className='flex items-center h-[5rem]'>
-                    <Image className='ml-spacing-2  ' src={img} width={56} height={56}/>
+                    <Image className='ml-spacing-2  ' src={img} width={56} height={56} alt='food'/>
 
                     <div className='flex flex-col  '>
 

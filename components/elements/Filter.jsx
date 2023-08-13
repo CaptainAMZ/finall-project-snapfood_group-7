@@ -91,7 +91,7 @@ function Filter({ productCards, setProductCards }) {
                   className="w-full h-[40px] flex items-center pr-2  hover:bg-[rgba(185,232,245,0.57)]"
                   value={item}
                   onClick={(e) => sortProductsByprice(e)}
-                  key={index}
+                  key={item.id}
                 >
                   {item}
                 </option>

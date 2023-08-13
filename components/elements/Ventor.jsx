@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import VentorPrice from './VentorPrice'
 import { useParams } from 'next/navigation'
@@ -20,7 +21,7 @@ function Ventor
           
             <div className='flex flex-row flex-nowrap items-center'>
                 {/* ventor icon */}
-                <img src='/images/icon-ventor.svg' className='ml-4'/>
+                <img src='/images/icon-ventor.svg' className='ml-4 w-5 h-5'/>
                 {/* ventor's price, see VentorPrice.jsx */}
                 <VentorPrice price={deliveryCost}/>
             </div>

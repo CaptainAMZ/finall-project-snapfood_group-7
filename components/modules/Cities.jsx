@@ -77,7 +77,6 @@ const cities = [
     "سلمان شهر",
     "نسیم شهر",
     "صدرا",
-    "رودهن",
     "دماوند",
     "قوچان",
     "فولادشهر",
@@ -157,7 +156,7 @@ const Cities = () => {
         <h3 className="text-base font-vsb mb-8">اسنپ‌فود در شهرهای ایران</h3>
         <div className="flex flex-wrap">
           {cities.map((item) => (
-            <p className="basis-1/3 p-1 text-[10px] font-vl text-inactive-dark sm:basis-1/4 md:basis-1/6 lg:basis-1/12">
+            <p key={item} className="basis-1/3 p-1 text-[10px] font-vl text-inactive-dark sm:basis-1/4 md:basis-1/6 lg:basis-1/12">
               {item}
             </p>
           ))}
