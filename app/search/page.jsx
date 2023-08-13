@@ -7,6 +7,15 @@ import Link from "next/link";
 import Nav from "@/components/elements/Nav";
 import Image from "next/image";
 
+export async function generateMetadata({ searchParams }) {
+
+  const searchValue = searchParams.search;
+  
+ return {title :` نتایج جستجو برای ${searchValue} | اسنپ فود`,
+           }
+  
+}
+
 export default async function page({ searchParams }) {
   const { foods, restaurants } = await getLocalData();
 
