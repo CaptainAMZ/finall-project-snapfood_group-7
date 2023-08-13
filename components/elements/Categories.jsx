@@ -11,7 +11,7 @@ export default async function Categories() {
 
 
   return (
-    <div className="flex-col items-start mb-spacing-8 ">
+    <div className="flex-col items-start mb-spacing-8  ">
       <p className="font-vb font-bold leading-lineHeight-default inline-block text-carbon-light text-start mb-spacing-4 w-full ">
         دسته بندی ها
       </p>
