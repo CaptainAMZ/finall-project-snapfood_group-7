@@ -18,7 +18,7 @@ async function page() {
         <div className="position sticky transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-[20] w-full shadow-head">
           <Header />
         </div>
-        <div className="transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-[20] w-full shadow-head">
+        <div className="transform translate-y-0 transition all 0.3s ease-in 0s top-0 right-0 left-0 z-[20] w-full ">
           <Nav />
         </div>
         <MainServer restaurants={restaurants} cats={cats} />
