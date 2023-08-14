@@ -44,7 +44,7 @@ export default async function Header() {
 
         <SearchDiv cats={cats} restaurants={restaurants} foods={foods} />
 
-        <div className=" flex items-center z-999 md:gap-x-spacing-3">
+        <div className=" flex items-center z-[2] md:gap-x-spacing-3">
           <Person/>
 
           <OrderDiv />
