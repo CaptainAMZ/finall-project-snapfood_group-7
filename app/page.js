@@ -21,12 +21,12 @@ export const metadata = {
 
 export default async function Home() {
 
-  const { restaurants } = await getLocalData();
+  const { restaurants ,services } = await getLocalData();
 
   return (
     <div>
       <div className="sticky top-16 right-0 left-0 z-[1] w-full shadow-head">
-        <Nav />
+        <Nav services={services} />
       </div>
       <div className="min-h-screen flex-col items-start bg-white">
         <div className=" grow w-full max-w-85.375 mx-auto p-[1rem] sm:p-[1.5rem] md:p-[2.5rem] ">

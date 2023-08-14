@@ -18,15 +18,6 @@ export default function SearchDiv({ foods, cats, restaurants }) {
   let restaurantName;
   let text='';
 
-
-  
-
-  
-
-
-
-
-
   useEffect(() => {
     if (typeof window !== "undefined") {
       setPath(window.location.pathname);
