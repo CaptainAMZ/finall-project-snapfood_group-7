@@ -1,6 +1,7 @@
 import Header from '@/components/elements/Header'
 import './globals.css'
 import Footer from '@/components/modules/Footer'
+import Providers from '@/redux/Provider'
 
 
 
@@ -14,11 +15,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir='rtl'>
       <body>
-        <div className="sticky top-0 right-0 left-0 z-[2] w-full ">
-          <Header />
-        </div>
-        {children}
-        <Footer />
+        <Providers>
+          <div className="sticky top-0 right-0 left-0 z-[2] w-full ">
+            <Header />
+          </div>
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   )

@@ -4,8 +4,6 @@ import React, { useCallback } from 'react'
 import Image from "next/image";
 import Orders from './Orders'
 import { useState } from 'react';
-import { Provider } from 'react-redux';
-import { store } from '@/redux';
 
 
 
@@ -49,9 +47,7 @@ export default function OrderDiv() {
       </div>
 
       {modal && <div onClick={closeModalHandler} className='CLOSE  fixed inset-spacing-0 bg-black-alphaMedium flex items-center justify-center w-full h-screen z-50'>
-        <Provider store={store}>
           <Orders />
-        </Provider>
       </div>
       }
 
