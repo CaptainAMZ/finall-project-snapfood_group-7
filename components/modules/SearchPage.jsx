@@ -34,7 +34,7 @@ const SearchPage = ({foods,restaurants,services}) => {
                   </p>
                 </Link>
               </header>
-              <div className="mt-[1.5625rem] w-[calc(100%+1.5rem)] m-[calc(-0.75rem)] flex flex-wrap justify-center ">
+              <div className="mt-[1.5625rem] w-[calc(100%+1.5rem)] m-[calc(-0.75rem)] flex flex-wrap justify-center md:justify-start ">
                 {filteredRestaurants.map((item) => (
                   <Card key={item.id} item={item} />
                 ))}
