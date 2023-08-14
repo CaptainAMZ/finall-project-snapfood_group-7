@@ -6,6 +6,7 @@ import SearchMarket from "./SearchMarket";
 import SearchProduct from "./SearchProduct";
 import { useRouter } from "next/navigation";
 
+
 export default function Search({
   foods,
   cats,
@@ -13,7 +14,6 @@ export default function Search({
   onClose,
   restId,
 }) {
-
 
 
   const router = useRouter();

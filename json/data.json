@@ -2,7 +2,7 @@
   "services":[
     { "service": "رستوران", "img": "/images/images-home/service-food.png" },
     { "service": "سویرمارکت", "img": "/images/images-home/service-supermarket.png" },
-    {" service": "کافه", "img":  "/images/images-home/service-cafe.png"},
+    { "service": "کافه", "img":  "/images/images-home/service-cafe.png"},
     { "service": "شیرینی", "img":  "/images/images-home/service-sweet.png" },
     { "service": "نانوایی", "img":  "/images/images-home/service-bakery.png" },
     { "service": "میوه", "img":  "/images/images-home/service-fruit.png" },
