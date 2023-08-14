@@ -20,7 +20,7 @@ const SearchPage = ({foods,restaurants,services}) => {
     return (
       <>
         <Nav services={services} />
-        <main className="min-w-[80vh] pt-[4.25rem] pb-[1.5rem] px-[1.5rem] mx-auto my-0 max-w-[85.375rem] bg-white">
+        <main className=" pt-[4.25rem] pb-[1.5rem] px-[1.5rem] mx-auto my-0 max-w-[85.375rem] bg-white">
           {!!filteredRestaurants.length && (
             <section className="mb-[3.75rem]">
               <header className="flex justify-between">
@@ -34,7 +34,7 @@ const SearchPage = ({foods,restaurants,services}) => {
                   </p>
                 </Link>
               </header>
-              <div className="mt-[1.5625rem] w-[calc(100%+1.5rem)] m-[calc(-0.75rem)] flex flex-wrap">
+              <div className="mt-[1.5625rem] w-[calc(100%+1.5rem)] m-[calc(-0.75rem)] flex flex-wrap justify-center md:justify-start ">
                 {filteredRestaurants.map((item) => (
                   <Card key={item.id} item={item} />
                 ))}
@@ -55,7 +55,7 @@ const SearchPage = ({foods,restaurants,services}) => {
                   </p>
                 </Link>
               </header>
-              <div className="mt-[1.5625rem] w-[calc(100%+1.5rem)] m-[calc(-0.75rem)] flex flex-wrap">
+              <div className="mt-[1.5625rem] w-[calc(100%+1.5rem)] m-[calc(-0.75rem)] flex flex-wrap ">
                 {filteredFoods.map((item) => (
                   <SearchProductCard
                     key={item.id}
