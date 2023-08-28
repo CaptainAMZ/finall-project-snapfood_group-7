@@ -6,8 +6,6 @@ import Image from 'next/image';
 
 export default function FoodCardWrapper({foods,fcomments, getSearch, url}) {
 
- 
-
     const basket = useSelector(state=> state.basket.foods)
     
     const resultFilter = foods.filter(items => getSearch ? items.restId == url.restaurant && items.name.includes(getSearch): items.restId == url.restaurant)
