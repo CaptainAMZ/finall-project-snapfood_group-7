@@ -5,8 +5,6 @@ import { useSelector } from "react-redux";
 
 export default function FoodCardWrapper({foods,fcomments, getSearch, url}) {
 
-  console.log(url.restaurant);
-
     const basket = useSelector(state=> state.basket.foods)
     
     const resultFilter = foods.filter(items => getSearch ? items.restId == url.restaurant && items.name.includes(getSearch): items.restId == url.restaurant)

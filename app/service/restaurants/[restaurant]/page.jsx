@@ -9,10 +9,14 @@ import Footer from "@/components/modules/Footer";
 
 export async function generateMetadata({ params }) {
  
-  const id = params.restaurants
+  const id = params.restaurant
+  // console.log("generateMetadata ~ id:", id)
+
+  
   
   const {restaurants} = await getLocalData();
-  const res= restaurants.find(item => item.name)
+  const res= restaurants.find(item => item.id == id)
+  console.log("generateMetadata ~ res:", res)
 
   
   
